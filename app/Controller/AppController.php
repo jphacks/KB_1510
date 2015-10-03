@@ -63,5 +63,11 @@ class AppController extends Controller {
 
   public function beforeFilter(){
     $this->Auth->allow('index', 'view');
+    #$this->Security->blackHoleCallback = 'blackhole';
+    #$this->Security->validatePost = false;
+  }
+
+  public function blackhole($type){
+
   }
 }
