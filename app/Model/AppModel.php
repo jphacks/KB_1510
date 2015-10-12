@@ -30,11 +30,11 @@ App::uses('Model', 'Model');
  * @package       app.Model
  */
 class AppModel extends Model {
-  function __construct($id = false, $table = null, $ds = null){
-    $connection = Configure::read('CAKE_ENV');
-    if(!empty($connection)){
-      $this->useDbConfig = $connection;
+  function __construct(){
+    if(env('SERVER_ADDR') == 'localhost'){
+      $this->useDbConfig = "local";
+    }else{
+      $this->useDbConfig = 'test_server';
     }
-    parent::__construct($id, $table, $ds);
   }
 }

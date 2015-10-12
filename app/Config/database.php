@@ -68,6 +68,8 @@
  */
 class DATABASE_CONFIG {
 
+	public $default = array();
+
 	public $local = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
@@ -90,7 +92,7 @@ class DATABASE_CONFIG {
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);
-	
+
 	public $test = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
@@ -101,4 +103,12 @@ class DATABASE_CONFIG {
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
+
+	public function __construct(){
+		if(env('SERVER_ADDR') !== 'localhost'){
+			$this->default = $this->test_server;
+		}else{
+			$this->default = $this->local;
+		}
+	}
 }
