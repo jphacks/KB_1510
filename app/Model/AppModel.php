@@ -31,10 +31,10 @@ App::uses('Model', 'Model');
  */
 class AppModel extends Model {
   function __construct(){
-    if(env('SERVER_ADDR') == 'localhost'){
-      $this->useDbConfig = "local";
+    if(env('SERVER_ADDR') == '127.0.0.1'){
+      $this->useDbConfig = "test_server";
     }else{
-      $this->useDbConfig = 'test_server';
+      $this->useDbConfig = 'local';
     }
   }
 }

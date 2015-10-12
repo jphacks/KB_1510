@@ -105,10 +105,10 @@ class DATABASE_CONFIG {
 	);
 
 	public function __construct(){
-		if(env('SERVER_ADDR') !== 'localhost'){
-			$this->default = $this->test_server;
-		}else{
+		if(env('SERVER_ADDR') !== '127.0.0.1'){
 			$this->default = $this->local;
+		}else{
+			$this->default = $this->test_server;
 		}
 	}
 }
