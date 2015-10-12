@@ -60,6 +60,10 @@ class TeachersController extends AppController{
       $this->request->data = $this->Teacher->findById($id);
       unset($this->request->data['Teacher']['password']);
     }
+
+    $this->set('program_language',$this->Teacher->find('list', array(
+      'fields' => array('C', 'C+', 'Java')
+    )));
   }
 
   public function delete($id = null){
@@ -75,5 +79,19 @@ class TeachersController extends AppController{
     }
     $this->Flash->error(__('User was not deleted.'));
     $this->redirect(array('action' => 'index'));
+  }
+
+  public function isAuthorized($user){
+    if($this->action === 'add'){
+      return true;
+    }
+
+    if(in_array($this->action, array('edit', 'delete'))){
+      $teacherId = (int)$this->request->param['pass'][0];
+      if($this->Teacher->isOwnedBy($teacherId, $user['id'])){
+        return true;
+      }
+    }
+    return parent::isAuthorized($user);
   }
 }

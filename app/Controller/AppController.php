@@ -37,7 +37,7 @@ class AppController extends Controller {
     'DebugKit.Toolbar',
     'Auth' => array(
       'loginRedirect' => array(
-        'controller' => 'posts',
+        #'controller' => 'posts',
         'action' => 'index',
       ),
       'logoutRedirct' => array(
@@ -55,7 +55,8 @@ class AppController extends Controller {
   );
 
   public function isAuthorized($user){
-    if(isset($user['role']) && $user['role'] === 'admin'){
+    #if(isset($user['role']) && $user['role'] === 'admin'){
+    if(empty($this->request->param['admin'])){
       return true;
     }
     return false;
@@ -67,7 +68,4 @@ class AppController extends Controller {
     #$this->Security->validatePost = false;
   }
 
-  public function blackhole($type){
-
-  }
 }

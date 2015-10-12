@@ -1,7 +1,7 @@
 <?php
 
 App::uses('AppModel', 'Model');
-App::uses('BlowfishPasswordHasaher', 'Controller/component/Auth');
+App::uses('BlowfishPasswordHasher', 'Controller/component/Auth');
 
 class Teacher extends AppModel{
   public $validate = array(
@@ -21,11 +21,15 @@ class Teacher extends AppModel{
 
   public function beforesave($options = array()){
     if(isset($this->data[$this->alias]['password'])){
-      $passwordHasher = new BlowfishPasswordHasaher();
+      $passwordHasher = new BlowfishPasswordHasher();
       $this->data[$this->alias]['password'] = $passwordHasher->hash(
         $this->data[$this->alias]['password']
       );
     }
     return true;
+  }
+
+  public function isOwnedBy($teacher, $user){
+    return $this->field('id', array('id' => $teacher)) !== false;
   }
 }

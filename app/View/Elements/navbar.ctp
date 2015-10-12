@@ -15,9 +15,8 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <?php echo $this->Html->link('お問い合わせ', array('controller' => 'contact', 'action' => 'index')); ?>
-            <?php echo $this->Html->link('Login', array('controller' => 'user', 'action' => 'login')); ?>
+            <?php echo $this->Html->link('Login', array('controller' => 'users', 'action' => 'login')); ?>
         </ul>
-        -->
     </div>
 </div>
 </nav>
