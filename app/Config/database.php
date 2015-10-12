@@ -68,33 +68,29 @@
  */
 class DATABASE_CONFIG {
 
-	public $default = array();
-
-	//ローカル開発環境での開発
 	public $local = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'dbuser',
-		'password' => 'dbuser',
-		'database' => 'shinjima',
+		'login' => 'prokate',
+		'password' => 'Gm24WMNzC5fndaBu',
+		'database' => 'prokate',
 		'prefix' => '',
 		'encoding' => 'utf8'
 		//'encoding' => 'utf8',
 	);
 
-	//テストサーバー用
 	public $test_server = array(
 		'datasource' => 'Database/Mysql',
 		'persisitent' => false,
 		'host' => 'appart-linux.cloudapp.net',
 		'login' => 'prokate_db',
 		'password' => 'VVZPWexdL42MsAsL',
-		'database' => 'test_prokate',
+		'database' => 'test_prokate_cake',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);
-
+	
 	public $test = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
@@ -105,12 +101,4 @@ class DATABASE_CONFIG {
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
-
-	public function __construct(){
-		if(env('SERVER_ADDR') != 'localhost'){
-			$this->default = $this->local;
-		}else{
-			$this->default = $this->test_server;
-		}
-	}
 }

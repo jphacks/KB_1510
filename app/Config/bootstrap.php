@@ -98,6 +98,9 @@ Configure::write('Dispatcher.filters', array(
 	'CacheDispatcher'
 ));
 
+/*db settign */
+Configure::write('CAKE_ENV', 'local');
+
 /**
  * Configures default file logging options
  */
@@ -112,4 +115,3 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
-CakePlugin::load('DebugKit');
