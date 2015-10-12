@@ -30,4 +30,11 @@ App::uses('Model', 'Model');
  * @package       app.Model
  */
 class AppModel extends Model {
+  function __construct($id = false, $table = null, $ds = null){
+    $connection = Configure::read('CAKE_ENV');
+    if(!empty($connection)){
+      $this->useDbConfig = $connection;
+    }
+    parent::__construct($id, $table, $ds);
+  }
 }

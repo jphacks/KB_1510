@@ -7,6 +7,7 @@ Request URL: /prokate/test
 Stack Trace:
 #0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+<<<<<<< HEAD
 2015-10-12 18:33:50 Error: [MissingPluginException] Plugin DebugKit could not be found.
 Exception Attributes: array (
   'plugin' => 'DebugKit',
@@ -236,3 +237,242 @@ Request URL: /cake_prokate/deployment.php?key=prokate2015release
 Stack Trace:
 #0 /home/appartlinux_HgGWJ/web/main/cake_prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+=======
+2015-10-12 18:43:38 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1044] Access denied for user \'dbuser\'@\'localhost\' to database \'prokate\'',
+  'enabled' => true,
+)
+Request URL: /prokate/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3621): ConnectionManager::getDataSource('default')
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1155): Model->setDataSource('default')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('users')
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 /Applications/MAMP/htdocs/prokate/app/View/Users/login.ctp(4): FormHelper->create('User')
+#9 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(971): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#13 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-10-12 18:44:10 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1044] Access denied for user \'dbuser\'@\'localhost\' to database \'prokate\'',
+  'enabled' => true,
+)
+Request URL: /prokate/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3621): ConnectionManager::getDataSource('default')
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1155): Model->setDataSource('default')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('users')
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 /Applications/MAMP/htdocs/prokate/app/View/Users/login.ctp(4): FormHelper->create('User')
+#9 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(971): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#13 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-10-12 18:46:28 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: NO)',
+  'enabled' => true,
+)
+Request URL: /prokate/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3621): ConnectionManager::getDataSource('default')
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1155): Model->setDataSource('default')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('users')
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 /Applications/MAMP/htdocs/prokate/app/View/Users/login.ctp(4): FormHelper->create('User')
+#9 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(971): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#13 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-10-12 18:46:37 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: NO)',
+  'enabled' => true,
+)
+Request URL: /prokate/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3621): ConnectionManager::getDataSource('default')
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1155): Model->setDataSource('default')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('users')
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 /Applications/MAMP/htdocs/prokate/app/View/Users/login.ctp(4): FormHelper->create('User')
+#9 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(971): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#13 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-10-12 19:23:22 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /prokate/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(227): CakePlugin::path('DebugKit')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(549): App::path('Controller/Comp...', 'DebugKit')
+#2 [internal function]: App::load('ToolbarComponen...')
+#3 [internal function]: spl_autoload_call('ToolbarComponen...')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(UsersController))
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(188): Controller->constructClasses()
+#8 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-10-12 19:24:12 Error: Fatal Error (64): require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '/database.php' (include_path='/Applications/MAMP/htdocs/prokate/lib:.:/Applications/MAMP/bin/php/php5.6.10/lib/php') in [/Applications/MAMP/htdocs/prokate/app/Config/database.php, line 69]
+2015-10-12 19:24:12 Error: [FatalErrorException] require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '/database.php' (include_path='/Applications/MAMP/htdocs/prokate/lib:.:/Applications/MAMP/bin/php/php5.6.10/lib/php')
+Request URL: /prokate/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'require_once() ...', '/Applications/M...', 69)
+#1 [internal function]: ErrorHandler::handleError(64, 'require_once() ...', '/Applications/M...', 69, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'require_once() ...', '/Applications/M...', 69, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-12 19:31:49 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+Exception Attributes: array (
+  'config' => 'default',
+)
+Request URL: /prokate/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/ConnectionManager.php(91): ConnectionManager::_getConnectionObject('default')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3621): ConnectionManager::getDataSource('default')
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1155): Model->setDataSource('default')
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('users')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#7 /Applications/MAMP/htdocs/prokate/app/View/Users/login.ctp(4): FormHelper->create('User')
+#8 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(971): include('/Applications/M...')
+#9 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#13 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#14 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-10-12 19:31:51 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+Exception Attributes: array (
+  'config' => 'default',
+)
+Request URL: /prokate/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/ConnectionManager.php(91): ConnectionManager::_getConnectionObject('default')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3621): ConnectionManager::getDataSource('default')
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1155): Model->setDataSource('default')
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('users')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#7 /Applications/MAMP/htdocs/prokate/app/View/Users/login.ctp(4): FormHelper->create('User')
+#8 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(971): include('/Applications/M...')
+#9 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#13 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#14 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-10-12 19:33:41 Error: [MissingDatasourceConfigException] The datasource configuration "localhost" was not found in database.php
+Exception Attributes: array (
+  'config' => 'localhost',
+)
+Request URL: /prokate/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/ConnectionManager.php(91): ConnectionManager::_getConnectionObject('localhost')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3621): ConnectionManager::getDataSource('localhost')
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1155): Model->setDataSource('localhost')
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('users')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#7 /Applications/MAMP/htdocs/prokate/app/View/Users/login.ctp(4): FormHelper->create('User')
+#8 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(971): include('/Applications/M...')
+#9 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#13 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#14 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-10-12 19:33:43 Error: [MissingDatasourceConfigException] The datasource configuration "localhost" was not found in database.php
+Exception Attributes: array (
+  'config' => 'localhost',
+)
+Request URL: /prokate/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/ConnectionManager.php(91): ConnectionManager::_getConnectionObject('localhost')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3621): ConnectionManager::getDataSource('localhost')
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1155): Model->setDataSource('localhost')
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('users')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#7 /Applications/MAMP/htdocs/prokate/app/View/Users/login.ctp(4): FormHelper->create('User')
+#8 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(971): include('/Applications/M...')
+#9 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#13 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#14 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-10-12 19:33:46 Error: [MissingDatasourceConfigException] The datasource configuration "localhost" was not found in database.php
+Exception Attributes: array (
+  'config' => 'localhost',
+)
+Request URL: /prokate/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/ConnectionManager.php(91): ConnectionManager::_getConnectionObject('localhost')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3621): ConnectionManager::getDataSource('localhost')
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1155): Model->setDataSource('localhost')
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('users')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#7 /Applications/MAMP/htdocs/prokate/app/View/Users/login.ctp(4): FormHelper->create('User')
+#8 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(971): include('/Applications/M...')
+#9 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#13 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#14 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+>>>>>>> 6dd4ac57e86d8f658e687fccc8d9452b7171a122

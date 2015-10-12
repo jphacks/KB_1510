@@ -98,6 +98,9 @@ Configure::write('Dispatcher.filters', array(
 	'CacheDispatcher'
 ));
 
+/*db settign */
+Configure::write('CAKE_ENV', 'local');
+
 /**
  * Configures default file logging options
  */
