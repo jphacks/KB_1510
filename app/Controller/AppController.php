@@ -34,7 +34,6 @@ class AppController extends Controller {
 
   public $components = array(
     'Flash',
-    'DebugKit.Toolbar',
     'Auth' => array(
       'loginRedirect' => array(
         #'controller' => 'posts',
