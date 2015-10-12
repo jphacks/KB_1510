@@ -737,3 +737,12 @@ Stack Trace:
 #14 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #15 /home/appartlinux_HgGWJ/web/main/cake_prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #16 {main}
+2015-10-12 20:27:53 Error: [MissingControllerException] Controller class Deployment.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Deployment.phpController',
+  'plugin' => NULL,
+)
+Request URL: /cake_prokate/deployment.php?key=prokate2015release
+Stack Trace:
+#0 /home/appartlinux_HgGWJ/web/main/cake_prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
