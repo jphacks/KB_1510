@@ -1,0 +1,9 @@
+2015-10-12 18:09:34 Error: [MissingControllerException] Controller class TestController could not be found.
+Exception Attributes: array (
+  'class' => 'TestController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/test
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
