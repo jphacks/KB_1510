@@ -107,7 +107,7 @@ class DATABASE_CONFIG {
 	public function __construct(){
 		$env = env("WEB APP_ENV");
 		switch($env){
-			case 'test_server':
+			case 'appart-linux.cloudapp.net':
 				$this->default = $this->test_server;
 				break;
 			default:
