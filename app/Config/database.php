@@ -85,7 +85,7 @@ class DATABASE_CONFIG {
 	public $test_server = array(
 		'datasource' => 'Database/Mysql',
 		'persisitent' => false,
-		'host' => 'appart-linux.cloudapp.net',
+		'host' => '127.0.0.1',
 		'login' => 'prokate_db',
 		'password' => 'VVZPWexdL42MsAsL',
 		'database' => 'test_prokate_cake',
