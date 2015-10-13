@@ -33,7 +33,7 @@ cakePHPでは、主に3つのフォルダをいじります。
 
 ##フロント側
 ###トップページ
-![トップ](README/home.png)
+![トップ](README/Home.png)
 pass : prokate/index.php  
 トップページは上記のファイルにて記述  
 しかし、head部分やnav, footerなどは別ファイルから参照している（詳細は後述）
