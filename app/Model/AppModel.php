@@ -30,11 +30,22 @@ App::uses('Model', 'Model');
  * @package       app.Model
  */
 class AppModel extends Model {
-  function __construct(){
-    if(env('SERVER_ADDR') == '127.0.0.1'){
-      $this->useDbConfig = "test_server";
-    }else{
-      $this->useDbConfig = 'local';
+  /*public function __construct($id = null, $table = null, $ds = null) {
+
+    // データソースへの参照を取得
+    $dbSource = ConnectionManager::getDataSource ($this->useDbConfig);
+
+    // ローカル環境かどうかでデータベース名の切り替え
+    if ($_SERVER ['REMOTE_ADDR'] == '127.0.0.1') {
+            $dbName = 'default';
+    } else {
+            $dbName = 'test_server';
     }
-  }
+
+    // データベース名の書き換え
+    $dbSource->config ['database'] = $dbName;
+
+    parent::__construct ($id, $table, $ds);
+
+  }*/
 }

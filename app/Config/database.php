@@ -68,7 +68,7 @@
  */
 class DATABASE_CONFIG {
 
-	public $default = array();
+	public $default = null;
 
 	public $local = array(
 		'datasource' => 'Database/Mysql',
@@ -105,10 +105,15 @@ class DATABASE_CONFIG {
 	);
 
 	public function __construct(){
-		if(env('SERVER_ADDR') !== '127.0.0.1'){
-			$this->default = $this->local;
-		}else{
-			$this->default = $this->test_server;
+		$env = env("WEB APP_ENV");
+		switch($env){
+			case 'test_server':
+				$this->default = $this->test_server;
+				break;
+			default:
+				$this->default = $this->local;
+				break;
 		}
 	}
+
 }
