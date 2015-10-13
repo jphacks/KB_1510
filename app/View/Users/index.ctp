@@ -24,3 +24,4 @@
   <?php endforeach; ?>
   <?php unset($user); ?>
 </table>
+<?php echo env("SERVER_NAME"); ?>

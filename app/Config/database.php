@@ -107,11 +107,11 @@ class DATABASE_CONFIG {
 	public function __construct(){
 		$env = env("SERVER_NAME");
 		switch($env){
-			case 'appart-linux.cloudapp.net':
-				$this->default = $this->test_server;
+			case '127.0.0.1':
+				$this->default = $this->local;
 				break;
 			default:
-				$this->default = $this->local;
+				$this->default = $this->test_server;
 				break;
 		}
 	}
