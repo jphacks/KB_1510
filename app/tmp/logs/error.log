@@ -773,3 +773,103 @@ Request URL: /cake_prokate/deployment.php?key=prokate2015release
 Stack Trace:
 #0 /home/appartlinux_HgGWJ/web/main/cake_prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-10-12 20:52:52 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'prokate\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /cake_prokate/users/login
+Stack Trace:
+#0 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/Model.php(3621): ConnectionManager::getDataSource('local')
+#3 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/Model.php(1155): Model->setDataSource('local')
+#4 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/Model.php(3648): Model->setSource(NULL)
+#5 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#6 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 /home/appartlinux_HgGWJ/web/main/cake_prokate/app/View/Users/login.ctp(4): FormHelper->create('User')
+#9 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/View/View.php(971): include('/home/appartlin...')
+#10 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/View/View.php(933): View->_evaluate('/home/appartlin...', Array)
+#11 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/View/View.php(473): View->_render('/home/appartlin...')
+#12 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#13 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /home/appartlinux_HgGWJ/web/main/cake_prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-10-12 20:56:21 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'prokate\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /cake_prokate/users/login
+Stack Trace:
+#0 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/Model.php(3621): ConnectionManager::getDataSource('local')
+#3 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/Model.php(1155): Model->setDataSource('local')
+#4 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/Model.php(3648): Model->setSource(NULL)
+#5 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#6 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 /home/appartlinux_HgGWJ/web/main/cake_prokate/app/View/Users/login.ctp(4): FormHelper->create('User')
+#9 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/View/View.php(971): include('/home/appartlin...')
+#10 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/View/View.php(933): View->_evaluate('/home/appartlin...', Array)
+#11 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/View/View.php(473): View->_render('/home/appartlin...')
+#12 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#13 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /home/appartlinux_HgGWJ/web/main/cake_prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-10-12 21:26:03 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'prokate\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /cake_prokate/users/login
+Stack Trace:
+#0 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/Model.php(3621): ConnectionManager::getDataSource('local')
+#3 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/Model.php(1155): Model->setDataSource('local')
+#4 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/Model.php(3648): Model->setSource(NULL)
+#5 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#6 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 /home/appartlinux_HgGWJ/web/main/cake_prokate/app/View/Users/login.ctp(4): FormHelper->create('User')
+#9 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/View/View.php(971): include('/home/appartlin...')
+#10 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/View/View.php(933): View->_evaluate('/home/appartlin...', Array)
+#11 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/View/View.php(473): View->_render('/home/appartlin...')
+#12 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#13 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /home/appartlinux_HgGWJ/web/main/cake_prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-10-13 18:35:57 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'prokate\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /cake_prokate/users/login
+Stack Trace:
+#0 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/Model.php(3621): ConnectionManager::getDataSource('local')
+#3 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/Model.php(1155): Model->setDataSource('local')
+#4 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/Model.php(3648): Model->setSource(NULL)
+#5 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#6 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 /home/appartlinux_HgGWJ/web/main/cake_prokate/app/View/Users/login.ctp(4): FormHelper->create('User')
+#9 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/View/View.php(971): include('/home/appartlin...')
+#10 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/View/View.php(933): View->_evaluate('/home/appartlin...', Array)
+#11 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/View/View.php(473): View->_render('/home/appartlin...')
+#12 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#13 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /home/appartlinux_HgGWJ/web/main/cake_prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /home/appartlinux_HgGWJ/web/main/cake_prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
