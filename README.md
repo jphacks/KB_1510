@@ -1,4 +1,18 @@
-# ProKate cake version
+# Pr/Applications/MAMP/htdocs/prokateoKate cake version
+##だいじゅくんに特にいじってほしいところ
+だいきくんには、投稿・編集機能の実装をお願いしています。そのため、以下の2つの作業をお願いいたします。
+
+- 講師プロフィール  
+【ファイル場所】  
+コントローラー app/Controller/TeachersController.php
+モデル app/Model/Teacher.php   
+ビュー app/View/Teachers/add.ctp, edit.ctp
+- 生徒プロフィール
+ 【ファイル場所】  
+コントローラー app/Controller/UsersController.php
+モデル app/Model/User.php   
+ビュー app/View/Users/add.ctp, edit.ctp
+
 
 ##ローカル開発環境設定
 - [bitbucket](https://bitbucket.org/appitg/prokate_cake)  

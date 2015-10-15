@@ -37,18 +37,14 @@
 			<?php echo $this->element('navbar'); ?>
 		</div>
 
+		<!-- コンテンツ部分 -->
 		<div id="content">
 			<?php echo $this->Flash->render(); ?>
 			<?php echo $this->fetch('content'); ?>
 		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => '', 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
-				);
-			?>
-		</div>
+
+		<!-- フッター部分 -->
+		<?php echo $this->element('footer'); ?>
 	</div>
 	<?php echo $this->Html->script(array('//code.jquery.com/jquery-2.1.4.min.js', 'bootstrap.min' , 'script')); ?>
 </body>
