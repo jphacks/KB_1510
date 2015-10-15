@@ -15,7 +15,13 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <?php echo $this->Html->link('お問い合わせ', array('controller' => 'contact', 'action' => 'index')); ?>
-            <?php echo $this->Html->link('Login', array('controller' => 'users', 'action' => 'login')); ?>
+            <?php
+              if($acountSession == null){
+                echo $this->Html->link('Login', array('controller' => 'users', 'action' => 'login')); #ログインはmodal
+              }else{
+                echo $this->Html->link('Logout', array('action'=>'logout'));
+              }
+            ?>
         </ul>
     </div>
 </div>

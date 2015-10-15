@@ -62,8 +62,7 @@ class AppController extends Controller {
 
   public function beforeFilter(){
     $this->Auth->allow('index', 'view');
-    #$this->Security->blackHoleCallback = 'blackhole';
-    #$this->Security->validatePost = false;
+    $this->set('acountSession', $this->Auth->user());
   }
 
 }

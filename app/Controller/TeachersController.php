@@ -31,7 +31,7 @@ class TeachersController extends AppController{
     if(!$id){
       throw new NotFoundException(__('ログインされていません'));
     }
-    $this->set('user', $this->Teacher->findById($id));
+    $this->set('teacher', $this->Teacher->findById($id));
   }
 
   public function view($id = null){
