@@ -10,7 +10,8 @@ class UsersController extends AppController{
   public function login(){
     if($this->request->is('post')){
       if($this->Auth->login()){
-        $this->redirect($this->Auth->redirect());
+        $id = $this->Auth->user();
+        $this->redirect($this->Auth->redirect($id));
       }else{
         $this->Flash->error(__('Invalid username or password, try again'));
       }
@@ -27,8 +28,8 @@ class UsersController extends AppController{
   }
 
   public function view($id = null){
-    if(!$this->User->exists($id)){
-      throw new NotFoundException(__('Invalid User'));
+    if(!!$this->User->exists($id)){
+      throw new NotFoundException(__('無効なユーザーです。'));
     }
     $this->set('user', $this->User->findById($id));
   }
@@ -38,7 +39,7 @@ class UsersController extends AppController{
       $this->User->create();
       if($this->User->save($this->request->data)){
         $this->Flash->success(__('The user has been saved.'));
-        $this->redirect(array('action' => 'index'));
+        $this->redirect(array('action' => 'login'));
       }else{
         $this->Flash->error(__('The user could not be saved. Please try again.'));
       }

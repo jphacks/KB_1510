@@ -107,7 +107,7 @@ class DATABASE_CONFIG {
 	public function __construct(){
 		$env = env("SERVER_NAME");
 		switch($env){
-			case '127.0.0.1':
+			case '127.0.0.1': case 'localhost':
 				$this->default = $this->local;
 				break;
 			default:
