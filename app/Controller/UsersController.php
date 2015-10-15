@@ -11,7 +11,7 @@ class UsersController extends AppController{
     if($this->request->is('post')){
       if($this->Auth->login()){
         $id = $this->Auth->user();
-        $this->redirect($this->Auth->redirect($id));
+        $this->redirect($this->Auth->redirect());
       }else{
         $this->Flash->error(__('Invalid username or password, try again'));
       }
@@ -22,13 +22,21 @@ class UsersController extends AppController{
     $this->redirect($this->Auth->logout());
   }
 
-  public function index(){
-    $this->User->recursive = 0;
-    $this->set('users', $this->paginate());
+  public function mypage(){
+    $id = $this->Auth->user('id');
+    if(!$id){
+      throw new NotFoundException(__('ログインされていません'));
+    }
+    $this->set('user', $this->User->findById($id));
   }
 
+  /*public function index(){
+    $this->User->recursive = 0;
+    $this->set('users', $this->paginate());
+  }*/
+
   public function view($id = null){
-    if(!!$this->User->exists($id)){
+    if(!$this->User->exists($id)){
       throw new NotFoundException(__('無効なユーザーです。'));
     }
     $this->set('user', $this->User->findById($id));

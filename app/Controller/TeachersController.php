@@ -21,9 +21,17 @@ class TeachersController extends AppController{
     $this->redirect($this->Auth->logout());
   }
 
-  public function index(){
+  /*public function index(){
     $this->Teacher->recursive = 0;
     $this->set('teachers', $this->paginate());
+  }*/
+
+  public function mypage(){
+    $id = $this->Auth->user('id');
+    if(!$id){
+      throw new NotFoundException(__('ログインされていません'));
+    }
+    $this->set('user', $this->Teacher->findById($id));
   }
 
   public function view($id = null){
@@ -38,7 +46,7 @@ class TeachersController extends AppController{
       $this->Teacher->create();
       if($this->Teacher->save($this->request->data)){
         $this->Flash->success(__('The user has been saved.'));
-        $this->redirect(array('action' => 'index'));
+        $this->redirect(array('action' => 'login'));
       }else{
         $this->Flash->error(__('The user could not be saved. Please try again.'));
       }
@@ -52,7 +60,7 @@ class TeachersController extends AppController{
     if($this->request->is('post') || $this->request->is('put')){
       if($this->Teacher->save($this->request->data)){
         $this->Flash->success(__('The user has been saved.'));
-        $this->redirect(array('action' => 'index'));
+        $this->redirect(array('action' => 'mypage'));
       }else{
         $this->Flash->error(__('The user could not be saved. Please try again.'));
       }
