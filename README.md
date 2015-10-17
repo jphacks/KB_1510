@@ -23,6 +23,9 @@ phpを用いているので必須です。phpmyadminやmysqlが用意できる�
 「インポート」という方法でこちらのファイルをダウンロードしてデータベースを立ててください。  
 [sqlファイル](README/prokate.sql)
 
+##サーバー
+- [テストサーバーurl](http://appart-linux.cloudapp.net/cake_prokate/)
+
 ###pushする際の注意
 git add .  
 とすると、キャッシュファイルが絶賛コンフリクトしてしまうエラーがおきているので  
