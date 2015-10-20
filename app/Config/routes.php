@@ -36,7 +36,9 @@ Router::connect('/mypages/*', array('controller' => 'teachers', 'action' => 'myp
 
 Router::connect('/teachers/*', array('controller' => 'teachers', 'action' => 'lists'));
 
-Router::connect('/comments/*', array('controller' => 'comments', 'action' => 'lists'));
+//Router::connect('/comments/*', array('controller' => 'comments', 'action' => 'lists'));
+
+
 /**
  * Load all plugin routes. See the CakePlugin documentation on
  * how to customize the loading of plugin routes.

@@ -18,7 +18,10 @@ class CommentsController extends AppController{
 
 
   public function add(){
-    if($this->request->is('post')){
+    if($this->request->is('get')){
+      throw new MethodNotAllowedException();
+    }
+    // if($this->request->is('ajax')){
       $this->Comment->create();
       if($this->Comment->save($this->request->data)){
         $this->Flash->success(__('The comment has been saved.'));
@@ -26,7 +29,7 @@ class CommentsController extends AppController{
       }else{
         $this->Flash->error(__('The user could not be saved. Please try again.'));
       }
-    }
+    //}
   }
 
   public function edit($id = null){
@@ -50,19 +53,29 @@ class CommentsController extends AppController{
     )));
   }
 
-  public function delete($id = null){
-    $this->request->onlyAllow('post');
-
-    $this->Comment->id = $id;
-    if(!$this->Comment->exists()){
-      throw new NotFoundException(__('Invalid user'));
+  public function delete($id){
+    //$this->request->onlyAllow('ajax')  $this->Comment->id = $id;
+    if($this->request->is('get')){
+      throw new Exception("Error Processing Request");
     }
-    if($this->Comment->delete()){
-      $this->Flash->success(__('User deleted.'));
-      $this->redirect(array('action' => 'index'));
+    // if(!$this->Comment->exists()){
+    //   throw new NotFoundException(__('Invalid user'));
+    // }
+    if($this->request->is('ajax')){
+      debug($this->request);
+      if($this->Comment->delete(($id))){
+            $this->autoRendor = false;
+            $this->autoLayout = false;
+            $response = array('id' => $id);
+            $this->header('Content-Type: application/json');
+            echo json_encode($response);
+            exit();
+      }else{
+        $this->Session->setFlash('failed delete!', 'flash_custom');
+      }
     }
-    $this->Flash->error(__('User was not deleted.'));
-    $this->redirect(array('action' => 'index'));
+    $this->Flash->error(__('Comment was not deleted.'));
+    $this->redirect(array('action' => 'lists'));
   }
 
   public function isAuthorized($user){
