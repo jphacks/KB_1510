@@ -5,7 +5,7 @@ class CommentsController extends AppController{
  public function beforeFilter(){
     parent::beforeFilter();
     $this->Auth->allow();
-  }
+ }
 
 
   public function lists(){
@@ -17,6 +17,10 @@ class CommentsController extends AppController{
   }
 
 
+  public function jsontest(){
+
+  }
+
   public function add(){
     if($this->request->is('get')){
       throw new MethodNotAllowedException();
@@ -25,7 +29,7 @@ class CommentsController extends AppController{
       $this->Comment->create();
       if($this->Comment->save($this->request->data)){
         $this->Flash->success(__('The comment has been saved.'));
-        $this->redirect(array('action' => 'list'));
+        $this->redirect(array('action' => 'lists'));
       }else{
         $this->Flash->error(__('The user could not be saved. Please try again.'));
       }
@@ -63,10 +67,13 @@ class CommentsController extends AppController{
     // }
     if($this->request->is('ajax')){
       debug($this->request);
-      if($this->Comment->delete(($id))){
+      if($id != $deletepass){
+        throw new Exception("Error Missing Password");
+      }
+      if($this->Comment->delete($id)){
             $this->autoRendor = false;
             $this->autoLayout = false;
-            $response = array('id' => $id);
+            $response = array('id' => $id,);
             $this->header('Content-Type: application/json');
             echo json_encode($response);
             exit();

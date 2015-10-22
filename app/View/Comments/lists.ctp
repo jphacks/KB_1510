@@ -1,16 +1,29 @@
+<?php
+echo $this->Form->create('Comment', array('action' => 'add')); ?>
 <div class="row">
                 
-                <div class="col-sm-2">名前：</div>
-                <div class="col-sm-10"><textarea class="text" name="nickname"  id="nickname" cols="30" rows="1"></textarea></div>
+            <!--     <div class="col-sm-2">名前：</div>
+                <div class="col-sm-10"> -->
+                <!-- <textarea class="text" name="nickname"  id="nickname" cols="30" rows="1"></textarea> -->
+                <?php echo $this->Form->input('commenter',array('label' => '名前')); ?>
+         <!--        </div>
                 <br><br>
                 <div class="col-sm-12">コンタクトを取るコメントを入力しよう！(300字以内) </div> 
                 <div class="col-sm-2">書き込み：</div>
                 <div class="col-sm-10"><textarea class="text" name="contents"   id="comment_val" cols="30" rows="3"></textarea></div>
                 <div class="col-sm-2">削除パス：</div>
-                <div class="col-sm-10" ><textarea class="text" name="pass"  id="pass" cols="10" rows="1"></textarea></div>
+                <div class="col-sm-10" ><textarea class="text" name="pass"  id="pass" cols="10" rows="1"></textarea></div> -->
+
+<?php
+echo $this->Form->input('password',array('label' => '削除パス'));?>
+<div class="col-sm-12">コンタクトを取るコメントを入力しよう！(300字以内) </div> 
+<?php 
+echo $this->Form->input('body', array('rows' => '3','label' => 'コメント内容'));
+echo $this->Form->end('コメント');
+?>
                     
-                <input type="button" value="コメントする" id="comment_post" class="btn btn-primary pull-right" >
-            </div>
+           <!--      <input type="button" value="コメントする" id="comment_post" class="btn btn-primary pull-right" >
+            </div> -->
 
 <ul><?php //debug($comment); ?>
 
@@ -61,7 +74,8 @@ $(function(){
 	
 	$('a#delete').click(function(e){
 		if(confirm('sure?'+$(this).data('comment-id'))){
-			$.post('/prokate_cake/comments/delete/'+$(this).data('comment-id'),{},function(res){ //deletepass: $('#delete-pass')↑｛｝内
+			$.post('/prokate_cake/comments/delete/'+$(this).data('comment-id'),{
+			deletepass: $('#delete-pass').val()},function(res){ //deletepass: $('#delete-pass')↑｛｝内
 					alert(res);
 					$('#comment_'+res.id).fadeOut();
 		}, "json");
