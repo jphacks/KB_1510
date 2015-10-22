@@ -4,7 +4,7 @@ class UsersController extends AppController{
 
   public function beforeFilter(){
     parent::beforeFilter();
-    $this->Auth->allow('add', 'logout');
+    $this->Auth->allow('add', 'logout','mypage','lists');
   }
 
   public function login(){
@@ -16,6 +16,14 @@ class UsersController extends AppController{
         $this->Flash->error(__('Invalid username or password, try again'));
       }
     }
+  }
+
+    public function lists(){
+    $params = array(
+        'order' => 'modified desc',
+        'limit' => 20
+      );
+    $this->set('user', $this->User->find('all', $params));
   }
 
   public function logout(){
