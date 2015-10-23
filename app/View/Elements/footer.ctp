@@ -4,11 +4,10 @@
 <footer id="footer">
     <div class="container">
         <div class="row">
-            <div class="col-xs-6 col-md-3 col-md-offset-3 column">
+            <div class="col-xs-6 col-md-3 column">
                 <h4>Follow Us</h4>
                 <ul class="nav">
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Facebook</a></li>
+                    <li><a href="https://twitter.com/info_prokate">Twitter</a></li>
                 </ul>
             </div>
             <div class="col-xs-6 col-md-3 column">
