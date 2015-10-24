@@ -4,7 +4,7 @@ class TeachersController extends AppController{
 
   public function beforeFilter(){
     parent::beforeFilter();
-    $this->Auth->allow('add', 'logout');
+    $this->Auth->allow('add', 'logout','mypage','lists');
   }
 
   public function login(){
@@ -28,10 +28,20 @@ class TeachersController extends AppController{
 
   public function mypage(){
     $id = $this->Auth->user('id');
+    $id = 11;
     if(!$id){
       throw new NotFoundException(__('ログインされていません'));
     }
     $this->set('teacher', $this->Teacher->findById($id));
+  }
+
+
+  public function lists(){
+    $params = array(
+        'order' => 'modified desc',
+        'limit' => 20
+      );
+    $this->set('teacher', $this->Teacher->find('all', $params));
   }
 
   public function view($id = null){
