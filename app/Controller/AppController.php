@@ -62,6 +62,9 @@ class AppController extends Controller {
 
   public function beforeFilter(){
     $this->Auth->allow('index', 'view');
+		if ($this->params['controller'] == 'pages') {
+   		$this->Auth->allow();
+  	}
     $this->set('acountSession', $this->Auth->user());
   }
 
