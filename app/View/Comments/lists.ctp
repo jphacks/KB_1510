@@ -1,13 +1,13 @@
 <?php
 header("Content-Type: text/html; charset=Shift_JIS");
 
-echo $this->Form->create('Comment', array('action' => 'add')); ?>
+//echo $this->Form->create('Comment', array('action' => 'add')); ?>
 <div class="row">
                 
             <!--     <div class="col-sm-2">名前：</div>
                 <div class="col-sm-10"> -->
                 <!-- <textarea class="text" name="nickname"  id="nickname" cols="30" rows="1"></textarea> -->
-                <?php echo $this->Form->input('commenter',array('label' => '名前')); ?>
+                <?php //echo $this->Form->input('commenter',array('label' => '名前')); ?>
          <!--        </div>
                 <br><br>
                 <div class="col-sm-12">コンタクトを取るコメントを入力しよう！(300字以内) </div> 
@@ -15,33 +15,49 @@ echo $this->Form->create('Comment', array('action' => 'add')); ?>
                 <div class="col-sm-10"><textarea class="text" name="contents"   id="comment_val" cols="30" rows="3"></textarea></div>
                 <div class="col-sm-2">削除パス：</div>
                 <div class="col-sm-10" ><textarea class="text" name="pass"  id="pass" cols="10" rows="1"></textarea></div> -->
+               
+名前：<input type="text" id="myname" value=""><br>
+内容：<textarea class="text" id="contents" cols="30" rows="3"></textarea><br>
+削除パス：<input type="text" id="deletepass"><br>
+	<input type="button" id="com_submit" value="送信"><br>
+	<br>
+	<br>
+
 
 <?php
-echo $this->Form->input('password',array('label' => '削除パス'));?>
-<div class="col-sm-12">コンタクトを取るコメントを入力しよう！(300字以内) </div> 
-<?php 
-echo $this->Form->input('body', array('rows' => '3','label' => 'コメント内容'));
-echo $this->Form->end('コメント');
+// echo $this->Form->input('password',array('label' => '削除パス'));?>
+<!--  <div class="col-sm-12">コンタクトを取るコメントを入力しよう！(300字以内) </div>  -->
+// <?php 
+// echo $this->Form->input('body', array('rows' => '3','label' => 'コメント内容'));
+// echo $this->Form->end('コメント');
 
 ?>
                     
            <!--      <input type="button" value="コメントする" id="comment_post" class="btn btn-primary pull-right" >
             </div> -->
-
-<ul><?php //debug($comment); ?>
+<table>
+<thead>
+<th>名前</th>>
+<th>コメント</th>
+<th>時間</th>
+<th>削除pass</th>
+<th>削除</th>
+</thead>
+<tbody id="com_list"><?php //debug($comment); ?>
 
 <?php 
 foreach($comment as $list): ?>
-	<div class="col-sm-10" id="comment_<?php echo h($list['Comment']['id']); ?>">
-	<li><?php echo $list['Comment']['modified']; ?><br><?php echo $this->HTML->link($list['Comment']['commenter'],array('controller'=>'teachers','action' =>'view',$list['Comment']['teacher_id'])) ?> :</li>
-	<?php echo h($list['Comment']['body']); ?>
-	<?php echo $this->HTML->link('編集','#',array('class'=>'btn btn-primary','action'=>'edit', $list['Comment']['id'])); ?>　　　　　　
-	削除パス<textarea class="text" name="delete-pass"  id="delete-pass" cols="10" rows="1"></textarea>
-	<?php echo $this->HTML->link('削除','#',array('class'=>'btn btn-primary','id'=>'delete', 'data-comment-id'=>$list['Comment']['id'],'data-comment-password'=>$list['Comment']['password'])); ?>
-	</div>
+	<tr id="comment_<?php echo h($list['Comment']['id']); ?>">
+	<td><?php echo $list['Comment']['created']; ?></td><td><?php echo $this->HTML->link($list['Comment']['commenter'],array('controller'=>'teachers','action' =>'view',$list['Comment']['teacher_id'])) ?> :</td><td>
+	<?php echo h($list['Comment']['body']); ?></td>
+	<td><?php echo $this->HTML->link('編集','#',array('class'=>'btn btn-primary','action'=>'edit', $list['Comment']['id'])); ?>　　　　　　
+	削除パス<textarea class="text" name="delete-pass"  id="delete-pass" cols="10" rows="1"></textarea></td><td>
+	<?php echo $this->HTML->link('削除','#',array('class'=>'btn btn-primary','id'=>'delete', 'data-comment-id'=>$list['Comment']['id'],'data-comment-password'=>$list['Comment']['password'])); ?></td>
+	</tr>
 <?php endforeach;?>
-<div id="add_com"></div>
-</ul>
+<a id="add_com"></div>
+</tbody>
+</table>
 
 
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
@@ -52,6 +68,7 @@ $(function(){
 	$('#comment_post').click(function(){
 	  $.post('prokate_teacherscomment_inf.php',{
 	    userid: $('#id').val(),
+	    dataType:'json',
 	    pass: $('#pass').val(),
 	    contents: $('comment_val').val(),
 	    nickname: $('nickname').val()
@@ -89,6 +106,23 @@ $(function(){
 			}
 			return false;
 	});
+
+
+	$('#com_submit').click(function(e){
+		  $.post('/prokate_cake/jsons/',{
+		    name : $("#myname").val(),
+		    deletepass: $('#deletepass').val(),
+		    content : $("#contents").val()
+		}, function(data){
+			console.log(data);
+			alert(data);
+			newdata = data[data.length-1];
+			newtext = "<textarea class='text' name='delete-pass'  id='delete-pass' cols='10' rows='1'></textarea>";
+		        var box = "<tr><td>"+newdata['time']+"</td><td>"+newdata['name']+"</td><td>"+newdata['content']+"</td><td>+"+newtext+"</td><td>"+"button"+"</td></tr>";
+		     $("#com_list").append(box);
+		  });
+});
+
 
 });
 </script>

@@ -35,6 +35,7 @@ class UsersController extends AppController{
     if(!$id){
       throw new NotFoundException(__('ログインされていません'));
     }
+    $id = 3;
     $this->set('user', $this->User->findById($id));
   }
 
