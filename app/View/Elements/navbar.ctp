@@ -12,6 +12,10 @@
     <div class="navbar-collapse collapse" id="navbar-collapsible">
         <ul class="nav navbar-nav navbar-left">
             <li><?php echo $this->Html->link('Top', '/'); ?></li>
+            <li><?php echo $this->Form->create('Users',array('action' => 'search')); 
+                echo $this->Form->input('keyword',array('label' => '検索'));
+                echo $this->Form->end('検索');
+            ?></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <?php echo $this->Html->link('お問い合わせ', array('controller' => 'contact', 'action' => 'index')); ?>

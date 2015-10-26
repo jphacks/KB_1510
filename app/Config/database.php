@@ -74,8 +74,8 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'prokate',
-		'password' => 'Gm24WMNzC5fndaBu',
+		'login' => 'root',
+		'password' => 'root',
 		'database' => 'prokate',
 		'prefix' => '',
 		'encoding' => 'utf8'
