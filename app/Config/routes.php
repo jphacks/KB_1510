@@ -34,8 +34,6 @@ Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'
 
 Router::connect('/mypages/*', array('controller' => 'teachers', 'action' => 'mypage'));
 
-Router::connect('/teacherlists/*', array('controller' => 'teachers', 'action' => 'lists'));
-
 //Router::connect('/comments/*', array('controller' => 'comments', 'action' => 'lists'));
 
 Router::connect('/jsons/*', array('controller' => 'comments', 'action' => 'comment_inf'));
