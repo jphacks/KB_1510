@@ -1,6 +1,6 @@
 <?php
 
-class UsersController extends AppController{
+class MatchingsController extends AppController{
 
   public function beforeFilter(){
     parent::beforeFilter();

@@ -88,7 +88,7 @@ class DATABASE_CONFIG {
 		'host' => '127.0.0.1',
 		'login' => 'prokate_db',
 		'password' => 'VVZPWexdL42MsAsL',
-		'database' => 'test_prokate_cake',
+		'database' => 'test_prokate',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);

@@ -13,6 +13,7 @@ html,body {
     h1 {
         font-size:68px;
     }
+}
 
 img {
     max-width: 100%;
@@ -229,5 +230,9 @@ section{
     margin: 0 auto;
 }
 
-=======
+/* コピーライト */
+
+.copyright{
+    text-align: right;
+    margin-top: 10px;
 }
