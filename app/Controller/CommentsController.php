@@ -2,8 +2,23 @@
 
 class CommentsController extends AppController{
 
+  public $components = array('RequestHandler');
+
  public function beforeFilter(){
     parent::beforeFilter();
+     if ($this->RequestHandler->accepts('html')) {
+            // クライアントが HTML (text/html) のレスポンスを受付ける場合のみ実行されます
+        } elseif ($this->RequestHandler->accepts('xml')) {
+            // XMLのみ実行するコード
+        }
+        if ($this->RequestHandler->accepts(array('xml', 'rss', 'atom'))) {
+            // XML か RSS か Atom の場合に実行される
+        }
+
+        if ($this->request->is('ajax')) {
+          $this->disableCache();
+        }
+// コントローラのアクションの続き
     $this->Auth->allow();
  }
 
@@ -22,6 +37,11 @@ class CommentsController extends AppController{
 
   public function apridata_json(){
 
+  }
+
+
+  public function comment_inf(){
+    $this->layout = "ajax";
   }
 
   // public function add(){
