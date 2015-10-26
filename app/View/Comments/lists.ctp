@@ -1,4 +1,6 @@
 <?php
+header("Content-Type: text/html; charset=Shift_JIS");
+
 echo $this->Form->create('Comment', array('action' => 'add')); ?>
 <div class="row">
                 
@@ -20,6 +22,7 @@ echo $this->Form->input('password',array('label' => '削除パス'));?>
 <?php 
 echo $this->Form->input('body', array('rows' => '3','label' => 'コメント内容'));
 echo $this->Form->end('コメント');
+
 ?>
                     
            <!--      <input type="button" value="コメントする" id="comment_post" class="btn btn-primary pull-right" >
@@ -33,8 +36,8 @@ foreach($comment as $list): ?>
 	<li><?php echo $list['Comment']['modified']; ?><br><?php echo $this->HTML->link($list['Comment']['commenter'],array('controller'=>'teachers','action' =>'view',$list['Comment']['teacher_id'])) ?> :</li>
 	<?php echo h($list['Comment']['body']); ?>
 	<?php echo $this->HTML->link('編集','#',array('class'=>'btn btn-primary','action'=>'edit', $list['Comment']['id'])); ?>　　　　　　
-	<textarea class="text" name="delete-pass"  id="delete-pass" cols="10" rows="1">削除パス</textarea>
-	<?php echo $this->HTML->link('削除','#',array('class'=>'btn btn-primary','id'=>'delete', 'data-comment-id'=>$list['Comment']['id'])); ?>
+	削除パス<textarea class="text" name="delete-pass"  id="delete-pass" cols="10" rows="1"></textarea>
+	<?php echo $this->HTML->link('削除','#',array('class'=>'btn btn-primary','id'=>'delete', 'data-comment-id'=>$list['Comment']['id'],'data-comment-password'=>$list['Comment']['password'])); ?>
 	</div>
 <?php endforeach;?>
 <div id="add_com"></div>
@@ -44,6 +47,8 @@ foreach($comment as $list): ?>
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script>
 $(function(){
+	//alert($('#delete-pass').val);
+
 	$('#comment_post').click(function(){
 	  $.post('prokate_teacherscomment_inf.php',{
 	    userid: $('#id').val(),
@@ -73,14 +78,17 @@ $(function(){
 	});
 	
 	$('a#delete').click(function(e){
-		if(confirm('sure?'+$(this).data('comment-id'))){
-			$.post('/prokate_cake/comments/delete/'+$(this).data('comment-id'),{
-			deletepass: $('#delete-pass').val()},function(res){ //deletepass: $('#delete-pass')↑｛｝内
+		var a = 0;
+		if(confirm('sure?'+$(this).data('comment-id')+'&'+$('#delete-pass').val())){
+			$.post('/prokate_cake/comments/delete/'+$(this).data('comment-id')+'&'+$(this).data('comment-password')+'&'+$(this).data('comment-delitepass'),{
+				datapass:$('#delete-pass').val()
+			},function(res){ //deletepass: $('#delete-pass')↑｛｝内
 					alert(res);
 					$('#comment_'+res.id).fadeOut();
 		}, "json");
 			}
 			return false;
 	});
+
 });
 </script>
