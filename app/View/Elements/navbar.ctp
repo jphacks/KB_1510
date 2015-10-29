@@ -14,20 +14,21 @@
     <div class="navbar-collapse collapse" id="navbar-collapsible">
         <ul class="nav navbar-nav navbar-left">
             <li><?php echo $this->Html->link('Top', '/'); ?></li>
-            <li><?php echo $this->Form->create('Users',array('action' => 'search')); 
+            <li><?php echo $this->Form->create('Users',array('action' => 'search'));
                 echo $this->Form->input('keyword',array('label' => '検索'));
                 echo $this->Form->end('検索');
             ?></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><?php echo $this->Html->link('お問い合わせ', array('controller' => 'contact', 'action' => 'index')); ?></li>
             <li><?php
               if($acountSession == null){
-                echo $this->Html->link('Login', array('controller' => 'users', 'action' => 'login')); #ログインはmodal
+                echo $this->Html->link('生徒ログイン', array('controller' => 'users', 'action' => 'login')) . "<li>";
+                echo "<li>" . $this->Html->link('講師ログイン', array('controller' => 'teachers', 'action' => 'login'));
               }else{
                 echo $this->Html->link('Logout', array('action'=>'logout'));
               }
             ?></li>
+            <li><?php echo $this->Html->link('お問い合わせ', array('controller' => 'contact', 'action' => 'index')); ?></li>
         </ul>
     </div>
 
