@@ -2918,6 +2918,7 @@ Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
 Stack Trace:
 #0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+<<<<<<< HEAD
 2015-10-26 23:42:01 Error: [MissingControllerException] Controller class FontsController could not be found.
 Exception Attributes: array (
   'class' => 'FontsController',
@@ -3391,3 +3392,5 @@ Stack Trace:
 #3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+=======
+>>>>>>> 12e5095fc04407db2372260c45026f35224df367
