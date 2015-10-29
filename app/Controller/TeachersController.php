@@ -4,7 +4,7 @@ class TeachersController extends AppController{
 
   public function beforeFilter(){
     parent::beforeFilter();
-    $this->Auth->allow('add', 'logout','mypage','lists','edit');
+    $this->Auth->allow('add', 'logout','mypage','lists','edit','lists_json');
   }
 
   public function login(){
@@ -34,6 +34,19 @@ class TeachersController extends AppController{
     }
     $this->set('teacher', $this->Teacher->findById($id));
   }
+
+
+  public function lists_json(){
+    $data = array(
+      'status' => 'success',
+      'order' => 'created desc'
+    );
+      $teachers = $this->Teacher->find('all',$data);
+      $this->viewClass = 'Json';
+      $this->set(compact('teachers'));
+      $this->set('_serialize', 'teachers');
+  }
+
 
 
   public function lists(){

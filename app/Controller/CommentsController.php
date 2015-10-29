@@ -61,8 +61,7 @@ class CommentsController extends AppController{
   public function lists_json(){
   $data = array(
   'status' => 'success',
-  'order' => 'created desc',
-  'limit' => 20
+  'order' => 'created desc'
   );
   $comments = $this->Comment->find('all',$data);
   $this->viewClass = 'Json';

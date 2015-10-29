@@ -26,6 +26,19 @@ class UsersController extends AppController{
     $this->set('user', $this->User->find('all', $params));
   }
 
+
+    public function lists_json(){
+    $data = array(
+      'status' => 'success',
+      'order' => 'created desc'
+    );
+      $users = $this->User->find('all',$data);
+      $this->viewClass = 'Json';
+      $this->set(compact('users'));
+      $this->set('_serialize', 'users');
+  }
+
+
   public function logout(){
     $this->redirect($this->Auth->logout());
   }
