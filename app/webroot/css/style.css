@@ -3,10 +3,8 @@
 
 html,body {
 	height:100%;
-    background:center no-repeat fixed url('../img/top.jpg');
-    background-size: cover;
-    color:#444;
-    font-family: 'Lato', sans-serif;
+  color:#444;
+  font-family: 'Lato', sans-serif;
 }
 
 @media (min-width:768px) {
@@ -150,15 +148,20 @@ footer .nav>li>a:hover {
 
 section{
 	padding-top:70px;
-    padding-bottom:50px;
-    min-height:100%;
-    min-height:calc(100% - 0);
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
+  padding-bottom:50px;
+  min-height:100%;
+  min-height:calc(100% - 0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
+/* ====================================
+トップページのセクション別スタイル
+ ==================================== */
 #section1, #section3 {
+	background:center no-repeat fixed url('../img/top.jpg');
+	background-size: cover;
 	background-color: rgba(0,0,0,0.7);
 	color:#fff;
 	font-family: 'Bitter', serif;

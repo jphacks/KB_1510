@@ -84,7 +84,7 @@ class UsersController extends AppController{
     if($this->request->is('post') || $this->request->is('put')){
       if($this->User->save($this->request->data)){
         $this->Flash->success(__('The user has been saved'));
-        $this->redirect(array('controller' => 'posts', 'action' => 'index'));
+        $this->redirect(array('controller' => 'users', 'action' => 'mypage'));
       }else{
         $this->Flash->error(__('The user could not saved. Please try again.'));
       }
