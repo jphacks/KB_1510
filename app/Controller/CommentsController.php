@@ -2,30 +2,54 @@
 
 class CommentsController extends AppController{
 
-  public $components = array('RequestHandler');
+//   public $components = array('RequestHandler');
+
+
+//   $parser = function ($data) {
+//     $rows = str_getcsv($data, "\n");
+//     foreach ($rows as &$row) {
+//         $row = str_getcsv($row, ',');
+//     }
+//     return $rows;
+// };
+//$this->RequestHandler->addInputType('json', array('json_decode', true));
+
 
  public function beforeFilter(){
     parent::beforeFilter();
-     if ($this->RequestHandler->accepts('html')) {
-            // クライアントが HTML (text/html) のレスポンスを受付ける場合のみ実行されます
-        } elseif ($this->RequestHandler->accepts('xml')) {
-            // XMLのみ実行するコード
-        }
-        if ($this->RequestHandler->accepts(array('xml', 'rss', 'atom'))) {
-            // XML か RSS か Atom の場合に実行される
-        }
-
-        if ($this->request->is('ajax')) {
-          $this->disableCache();
-        }
+     // if ($this->RequestHandler->accepts('html')) {
+     //        // クライアントが HTML (text/html) のレスポンスを受付ける場合のみ実行されます
+     //    } elseif ($this->RequestHandler->accepts('xml')) {
+     //        // XMLのみ実行するコード
+     //    }
+     //    if ($this->RequestHandler->accepts(array('xml', 'rss', 'atom','json'))) {
+     //        // XML か RSS か Atom の場合に実行される
+     //    }
+     //    if ($this->request->is('ajax')) {
+     //      $this->disableCache();
+     //    }
 // コントローラのアクションの続き
     $this->Auth->allow();
  }
 
 
+ public function jsonfunc(){
+  $data = array(
+  'status' => 'success',
+  'items' => array(
+      array('id' => 1, 'name' => 'apple', 'price' => 100),
+      array('id' => 2, 'name' => 'banana', 'price' => 80),
+    ),
+  );
+  $this->viewClass = 'Json';
+  $this->set(compact('data'));
+  $this->set('_serialize', 'data');
+}
+
+
   public function lists(){
     $params = array(
-        'order' => 'modified desc',
+        'order' => 'created desc',
         'limit' => 20
       );
     $this->set('comment', $this->Comment->find('all',$params));
@@ -34,15 +58,40 @@ class CommentsController extends AppController{
     }
   }
 
+  public function lists_json(){
+  $data = array(
+  'status' => 'success',
+  'order' => 'created desc'
+  );
+  $comments = $this->Comment->find('all',$data);
+  $this->viewClass = 'Json';
+  $this->set(compact('comments'));
+  $this->set('_serialize', 'comments');
+  }
+
+
+   function method(){
+    $output->error = array(
+      array('code' => '101', 'msg' => 'GET method is not supported')
+    );
+    $this->set('output', $output);
+  }
 
   public function apridata_json(){
 
   }
 
 
+
   public function comment_inf(){
-    $this->layout = "ajax";
+   $this->layout = "ajax";
   }
+
+
+     public function afterFilter() {
+   /* Viewのrenderより後に実行したい処理を書く */
+    $this->set('comments',$this->Comment->find('all'));
+   }
 
   // public function add(){
   //   if($this->request->is('get')){
@@ -66,35 +115,23 @@ class CommentsController extends AppController{
 
           $this->autoRender = false;   // 自動描画をさせない
 
-
-
           // json response data ('succeed' と 'message'をJSON形式で返します)
 
           $succeed = $this->Comment->save($this->request->data);
-
           $message = $succeed ? '追加しました' : '追加に失敗しました';
-
-
 
           // Model::$validationErrors があれば、その先頭の一つをメッセージにセット
 
           if (!$succeed && $this->Comment->validationErrors) {
-
               $validationError = array_shift($this->Comment->validationErrors);
-
               $message = $validationError[0];
-
           }
-
           $data = compact('succeed', 'message');
           $this->response->type('json');
           echo json_encode($data);
           exit;
-
       }
-
       /* 通常の処理は省略 */
-
   }
 
 
@@ -120,12 +157,9 @@ class CommentsController extends AppController{
       }
 
 
-
       Configure::write('debug', 0); // 余分な情報の出力を抑制
 
       $this->autoRender = false;
-
-
 
       // $_POST['num'] で取得件数をリクエストされる。念のためデフォルトで5件。
 
@@ -154,7 +188,6 @@ class CommentsController extends AppController{
       $lastUpdate = $this->Comment->find('all', compact('conditions', 'fields', 'contain', 'order', 'limit'));
 
       $succeed = $lastUpdate ? true : false;
-
 
       $this->response->type('json');
 

@@ -2918,3 +2918,479 @@ Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
 Stack Trace:
 #0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+<<<<<<< HEAD
+2015-10-26 23:42:01 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-26 23:42:01 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-26 23:42:02 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-27 00:04:25 Error: [MissingViewException] View file "Comments/json/comment_inf.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Comments/json/comment_inf.ctp',
+)
+Request URL: /prokate_cake/jsons/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/JsonView.php(107): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(960): JsonView->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-27 00:06:00 Error: [MissingViewException] View file "Comments/json/comment_inf.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Comments/json/comment_inf.ctp',
+)
+Request URL: /prokate_cake/jsons/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/JsonView.php(107): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(960): JsonView->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-28 23:23:05 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/CommentsController.php, line 38]
+2015-10-28 23:23:05 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /prokate_cake/comments/index/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 38, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 38, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-28 23:23:13 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/CommentsController.php, line 38]
+2015-10-28 23:23:13 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /prokate_cake/jsons/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 38, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 38, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-28 23:23:13 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/CommentsController.php, line 38]
+2015-10-28 23:23:13 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /prokate_cake/jsons/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 38, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 38, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-28 23:28:32 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/CommentsController.php, line 38]
+2015-10-28 23:28:32 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /prokate_cake/jsons/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 38, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 38, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-28 23:29:04 Error: [MissingViewException] View file "Comments/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Comments/index.ctp',
+)
+Request URL: /prokate_cake/jsons/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-29 11:30:50 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/ApiController.php, line 16]
+2015-10-29 11:30:50 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/api/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 16, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 16, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 11:31:55 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/ApiController.php, line 17]
+2015-10-29 11:31:55 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/api/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 17, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 17, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 11:32:18 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/ApiController.php, line 17]
+2015-10-29 11:32:18 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/api/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 17, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 17, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 11:46:58 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/ApiController.php, line 17]
+2015-10-29 11:46:58 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/api/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 17, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 17, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 11:52:51 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/ApiController.php, line 17]
+2015-10-29 11:52:51 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/api/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 17, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 17, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 11:55:10 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/ApiController.php, line 17]
+2015-10-29 11:55:10 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/api/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 17, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 17, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 11:56:05 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/ApiController.php, line 20]
+2015-10-29 11:56:05 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/api/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 20, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 20, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 11:58:45 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';' in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/ApiController.php, line 7]
+2015-10-29 11:58:45 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';'
+Request URL: /prokate_cake/api/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 7, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 7, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 11:58:57 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/ApiController.php, line 21]
+2015-10-29 11:58:57 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/api/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 21, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 21, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 12:07:22 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/ApiController.php, line 23]
+2015-10-29 12:07:22 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/api/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 23, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 23, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 12:10:19 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/ApiController.php, line 23]
+2015-10-29 12:10:19 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/api/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 23, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 23, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 12:10:32 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/ApiController.php, line 23]
+2015-10-29 12:10:32 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/api/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 23, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 23, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 12:11:16 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/ApiController.php, line 23]
+2015-10-29 12:11:16 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/api/search
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 23, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 23, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 15:25:04 Error: [BadRequestException] Ajax以外でのアクセスは許可していません。
+Request URL: /prokate_cake/api/ex1
+Stack Trace:
+#0 [internal function]: ApiController->beforeFilter(Object(CakeEvent))
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApiController), Object(CakeRequest))
+#5 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-10-29 17:37:46 Error: [BadRequestException] Ajax以外でのアクセスは許可していません。
+Request URL: /prokate_cake/api/ex1
+Stack Trace:
+#0 [internal function]: ApiController->beforeFilter(Object(CakeEvent))
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApiController), Object(CakeRequest))
+#5 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-10-29 17:37:53 Error: [BadRequestException] Ajax以外でのアクセスは許可していません。
+Request URL: /prokate_cake/api/ex1.ajax
+Stack Trace:
+#0 [internal function]: ApiController->beforeFilter(Object(CakeEvent))
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApiController), Object(CakeRequest))
+#5 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-10-29 17:37:57 Error: [BadRequestException] Ajax以外でのアクセスは許可していません。
+Request URL: /prokate_cake/api/ex1.json
+Stack Trace:
+#0 [internal function]: ApiController->beforeFilter(Object(CakeEvent))
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApiController), Object(CakeRequest))
+#5 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-10-29 17:38:45 Error: [BadRequestException] Ajax以外でのアクセスは許可していません。
+Request URL: /prokate_cake/api/ex1.json
+Stack Trace:
+#0 [internal function]: ApiController->beforeFilter(Object(CakeEvent))
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApiController), Object(CakeRequest))
+#5 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-10-29 20:57:02 Error: Fatal Error (4): syntax error, unexpected '$parser' (T_VARIABLE), expecting function (T_FUNCTION) in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/CommentsController.php, line 8]
+2015-10-29 20:57:02 Error: [FatalErrorException] syntax error, unexpected '$parser' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /prokate_cake/comments/lists/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 8, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 8, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 20:57:04 Error: Fatal Error (4): syntax error, unexpected '$parser' (T_VARIABLE), expecting function (T_FUNCTION) in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/CommentsController.php, line 8]
+2015-10-29 20:57:04 Error: [FatalErrorException] syntax error, unexpected '$parser' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /prokate_cake/comments/json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 8, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 8, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 20:57:56 Error: Fatal Error (4): syntax error, unexpected '$parser' (T_VARIABLE), expecting function (T_FUNCTION) in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/CommentsController.php, line 8]
+2015-10-29 20:57:56 Error: [FatalErrorException] syntax error, unexpected '$parser' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /prokate_cake/comments/json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 8, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 8, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 20:58:16 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/CommentsController.php, line 15]
+2015-10-29 20:58:16 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /prokate_cake/comments/json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 15, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 15, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 20:58:22 Error: Fatal Error (1): Call to a member function accepts() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/CommentsController.php, line 20]
+2015-10-29 20:58:22 Error: [FatalErrorException] Call to a member function accepts() on null
+Request URL: /prokate_cake/comments/json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 20, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 20, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 20:59:53 Error: [BadRequestException] Ajax以外でのアクセスは許可していません。
+Request URL: /prokate_cake/api/ex1.json
+Stack Trace:
+#0 [internal function]: ApiController->beforeFilter(Object(CakeEvent))
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApiController), Object(CakeRequest))
+#5 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-10-29 20:59:56 Error: [BadRequestException] Ajax以外でのアクセスは許可していません。
+Request URL: /prokate_cake/api/ex1.jsonfunc
+Stack Trace:
+#0 [internal function]: ApiController->beforeFilter(Object(CakeEvent))
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApiController), Object(CakeRequest))
+#5 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-10-29 21:00:00 Error: [BadRequestException] Ajax以外でのアクセスは許可していません。
+Request URL: /prokate_cake/api/ex1.json
+Stack Trace:
+#0 [internal function]: ApiController->beforeFilter(Object(CakeEvent))
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApiController), Object(CakeRequest))
+#5 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-10-29 21:00:15 Error: [BadRequestException] Ajax以外でのアクセスは許可していません。
+Request URL: /prokate_cake/api/ex1.jsonfunc
+Stack Trace:
+#0 [internal function]: ApiController->beforeFilter(Object(CakeEvent))
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ApiController), Object(CakeRequest))
+#5 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-10-29 21:02:52 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/CommentsController.php, line 64]
+2015-10-29 21:02:52 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /prokate_cake/comments/jsonfunc/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 64)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 64, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 64, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 21:03:16 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/CommentsController.php, line 64]
+2015-10-29 21:03:16 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /prokate_cake/comments/jsonfunc/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 64)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 64, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 64, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 21:04:24 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/CommentsController.php, line 64]
+2015-10-29 21:04:24 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /prokate_cake/comments/jsonfunc/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 64)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 64, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 64, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 21:05:11 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/CommentsController.php, line 64]
+2015-10-29 21:05:11 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /prokate_cake/comments/jsonfunc/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 64)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 64, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 64, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 21:05:26 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/CommentsController.php, line 64]
+2015-10-29 21:05:26 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /prokate_cake/comments/lists_json/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 64)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 64, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 64, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 21:05:45 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/CommentsController.php, line 64]
+2015-10-29 21:05:45 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /prokate_cake/comments/lists_json/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 64)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 64, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 64, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 21:06:26 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/CommentsController.php, line 64]
+2015-10-29 21:06:26 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /prokate_cake/comments/lists_json/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 64)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 64, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 64, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 21:06:39 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/CommentsController.php, line 64]
+2015-10-29 21:06:39 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /prokate_cake/comments/lists_json/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 64)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 64, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 64, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 21:07:01 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/CommentsController.php, line 64]
+2015-10-29 21:07:01 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /prokate_cake/comments/lists_json/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 64)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 64, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 64, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 21:07:15 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/CommentsController.php, line 64]
+2015-10-29 21:07:15 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /prokate_cake/comments/lists_json/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 64)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 64, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 64, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+=======
+>>>>>>> 12e5095fc04407db2372260c45026f35224df367
