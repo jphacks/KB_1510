@@ -117,8 +117,8 @@ $(function(){
 			console.log(data);
 			alert(data);
 			newdata = data[data.length-1];
-			newtext = "<textarea class='text' name='delete-pass'  id='delete-pass' cols='10' rows='1'></textarea>";
-		        var box = "<tr><td>"+newdata['time']+"</td><td>"+newdata['name']+"</td><td>"+newdata['content']+"</td><td>+"+newtext+"</td><td>"+"button"+"</td></tr>";
+			newtext = "削除パス<textarea class='text' name='delete-pass'  id='delete-pass' cols='10' rows='1'></textarea>";
+		        var box = "<tr><td>"+newdata['time']+"</td><td>"+newdata['name']+"</td><td>"+newdata['content']+"</td><td>+"+"button"+"</td><td>+"+newtext+"</td><td>"+"button"+"</td></tr>";
 		     $("#com_list").append(box);
 		  });
 });

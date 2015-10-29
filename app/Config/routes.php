@@ -36,8 +36,13 @@ Router::connect('/mypages/*', array('controller' => 'teachers', 'action' => 'myp
 
 //Router::connect('/comments/*', array('controller' => 'comments', 'action' => 'lists'));
 
-Router::connect('/jsons/*', array('controller' => 'comments', 'action' => 'comment_inf'));
+Router::connect('/jsons/*', array('controller' => 'comments', 'action' => 'method'));
 
+Router::connect('/comjsons/*', array('controller' => 'comments', 'action' => 'comment_inf'));
+
+
+Router::mapResources('CommentsController');
+Router::parseExtensions('json');
 /**
  * Load all plugin routes. See the CakePlugin documentation on
  * how to customize the loading of plugin routes.

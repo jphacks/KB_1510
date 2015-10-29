@@ -29,6 +29,7 @@
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 </head>
 <body>
 	<div id="container">
@@ -47,5 +48,12 @@
 		<?php echo $this->element('footer'); ?>
 	</div>
 	<?php echo $this->Html->script(array('//code.jquery.com/jquery-2.1.4.min.js', 'bootstrap.min' , 'script')); ?>
+	<script>
+	$(function(){
+		setTimeout(function(){
+			
+		},800);
+	})
+	</script>>
 </body>
 </html>
