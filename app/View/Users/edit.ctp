@@ -1,4 +1,4 @@
-<h1>プロフィール編集画面</h1>
+<h1>プロフィール編集</h1>
 <?php
 echo $this->Form->create('User');
 echo $this->Form->input('role');
