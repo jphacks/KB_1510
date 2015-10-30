@@ -3471,3 +3471,33 @@ Stack Trace:
 #3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-10-30 16:45:04 Error: Fatal Error (4): syntax error, unexpected '<<' (T_SL) in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/TeachersController.php, line 7]
+2015-10-30 16:45:04 Error: [FatalErrorException] syntax error, unexpected '<<' (T_SL)
+Request URL: /prokate_cake/teachers/edit/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 7, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 7, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-30 16:45:10 Error: Fatal Error (4): syntax error, unexpected '<<' (T_SL) in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/TeachersController.php, line 7]
+2015-10-30 16:45:10 Error: [FatalErrorException] syntax error, unexpected '<<' (T_SL)
+Request URL: /prokate_cake/teachers/list/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 7, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 7, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-30 16:45:13 Error: Fatal Error (4): syntax error, unexpected '<<' (T_SL) in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/TeachersController.php, line 7]
+2015-10-30 16:45:13 Error: [FatalErrorException] syntax error, unexpected '<<' (T_SL)
+Request URL: /prokate_cake/teachers/lists/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 7, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 7, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
