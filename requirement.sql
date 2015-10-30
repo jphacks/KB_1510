@@ -1,3 +1,4 @@
+//2015年10月30日追加sql
 ALTER TABLE `users` DROP `role`;
 
 ALTER TABLE `teachers` ADD `programing_skill` VARCHAR(250) NOT NULL AFTER `language`, ADD `price` INT NOT NULL AFTER `programing_skill`, ADD `introduction` VARCHAR(250) NOT NULL AFTER `price`;
