@@ -4,11 +4,8 @@ class TeachersController extends AppController{
 
   public function beforeFilter(){
     parent::beforeFilter();
-<<<<<<< HEAD
     $this->Auth->allow('add', 'logout','mypage','lists','edit','lists_json');
-=======
-    $this->Auth->allow('add', 'logout','mypage','lists','edit');
->>>>>>> singo
+
   }
 
   public function login(){
