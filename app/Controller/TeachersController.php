@@ -4,7 +4,11 @@ class TeachersController extends AppController{
 
   public function beforeFilter(){
     parent::beforeFilter();
+<<<<<<< HEAD
     $this->Auth->allow('add', 'logout','mypage','lists','edit','lists_json');
+=======
+    $this->Auth->allow('add', 'logout','mypage','lists','edit');
+>>>>>>> singo
   }
 
   public function login(){
@@ -64,6 +68,34 @@ class TeachersController extends AppController{
     $this->set('teacher', $this->Teacher->findById($id));
   }
 
+
+   public function searched(){
+   
+    if(isset($this->request->data)){
+      $id = $this->request->data['keyword'];
+    }else{
+      $keyword = "";
+    }
+     $teachers = $this->Teacher->find(
+          'all',
+          array('conditions' => array(
+            $keyword =>' like Teacher.name',
+            $keyword => 'like Teacher.gender'
+            // 'Teacher.way like' => $keyword,
+            // 'Teacher.program like' => $keyword,
+            // 'Teacher.job like' => $keyword,
+            // 'Teacher.position like' => $keyword,
+            // 'Teacher.prefecture like' => $keyword
+            )
+        )
+      );
+
+     $this->set('teacher',$teachers);
+     $this->redirect((array('action' => 'lists')));
+     exit();
+  }
+  
+
   public function add(){
     if($this->request->is('post')){
       $this->Teacher->create();
@@ -77,9 +109,9 @@ class TeachersController extends AppController{
   }
 
   public function edit($id = null){
-    if(!$this->Teacher->exists()){
-      throw new NotFoundException(__('Invalid user'));
-    }
+    // if(!$this->Teacher->exists()){
+    //   throw new NotFoundException(__('Invalid user'));
+    // }
     if($this->request->is('post') || $this->request->is('put')){
       if($this->Teacher->save($this->request->data)){
         $this->Flash->success(__('The user has been saved.'));
