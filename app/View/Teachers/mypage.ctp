@@ -13,6 +13,8 @@
         ?>
         <?php echo $teacher['Teacher']['language']; ?>
         <?php echo $this->Html->link('プロフィール編集', array('controller' => 'teachers', 'action' => 'edit', $teacher['Teacher']['id'])); ?>
+        <br>
+        <?php echo $this->Html->link('トップ画編集', array('controller' => 'teachers', 'action' => 'upload', $teacher['Teacher']['id'])); ?>
       </div>
     </div>
   </div>

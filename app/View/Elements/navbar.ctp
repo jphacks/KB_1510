@@ -15,19 +15,9 @@
         <ul class="nav navbar-nav navbar-left">
 
             <li><?php echo $this->Html->link('Top', '/'); ?></li>
-            <?php //echo $this->Form->create('Users',array('action' => 'search'));
-            //     echo $this->Form->input('keyword',array('label' => '検索'));
-            //     echo $this->Form->end('検索');
-            ?>
-                  <li style="margin-top: 4%;"><?php //echo $this->Form->create('Teachers',array('action' => 'search'));
 
-            <?php echo $this->Html->link('Top', '/'); ?></li>
-            
-                  <li style="margin-top: 4%;">
-                    <?php //echo $this->Form->create('Users',array('action' => 'search'));
-            //     echo $this->Form->input('keyword',array('label' => '検索'));
-            //     echo $this->Form->end('検索');
-            ?>
+       <li style="margin-top: 4%;">
+
                   <?php //echo $this->Form->create('Teachers',array('action' => 'search'));
 
             //     echo $this->Form->input('keyword',array('label' => '検索'));
