@@ -26,12 +26,13 @@
  *
  * Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
 */
-Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
+Router::connect('/', array('controller' => 'teachers', 'action' => 'index'));
 /**
 * ...and connect the rest of 'Pages' controller's URLs.
 */
+/*いらないと思ったもの
 Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
-
+*/
 Router::connect('/mypages/*', array('controller' => 'teachers', 'action' => 'mypage'));
 
 //Router::connect('/comments/*', array('controller' => 'comments', 'action' => 'lists'));

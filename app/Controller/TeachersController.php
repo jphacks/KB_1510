@@ -22,10 +22,10 @@ class TeachersController extends AppController{
     $this->redirect($this->Auth->logout());
   }
 
-  /*public function index(){
+  public function index(){
     $this->Teacher->recursive = 0;
-    $this->set('teachers', $this->paginate());
-  }*/
+    $this->set('teacher', $this->paginate());
+  }
 
   public function mypage(){
     $id = $this->Auth->user('id');
@@ -67,7 +67,7 @@ class TeachersController extends AppController{
 
 
    public function searched(){
-   
+
     if(isset($this->request->data)){
       $id = $this->request->data['keyword'];
     }else{
@@ -91,7 +91,7 @@ class TeachersController extends AppController{
      $this->redirect((array('action' => 'lists')));
      exit();
   }
-  
+
 
   public function add(){
     if($this->request->is('post')){
