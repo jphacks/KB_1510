@@ -2,16 +2,18 @@
   <div class="profile">
     <div class="rows">
       <div class="profile_img">
-        <!-- 自分のプロフィール画像（なければ初期設定でこちらから用意） -->
+        <!-- <?php #echo $this->Html->Image(); ?> 自分のプロフィール画像（なければ初期設定でこちらから用意） -->
       </div>
       <div class="profile_text">
         <h2><?php echo h($user['User']['username']); ?></h2>
         <?php
-        echo $user['User']['job'];
-        echo $user['User']['gender'];
+        echo $user['User']['job'] . "/";
+        echo $user['User']['gender'] . "/";
         echo $user['User']['old'];
         ?>
-        <?php echo $user['User']['programin_lang']; ?>
+        <ul>
+          <li>
+          <?php echo $user['User']['programin_lang']; ?><!-- 一つ一つの言語が分割してタブ形式で表示される -->
         <?php echo $this->Html->link('プロフィール編集', array('controller' => 'users', 'action' => 'edit', $user['User']['id'])); ?>
       </div>
     </div>

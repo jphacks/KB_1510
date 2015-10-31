@@ -56,7 +56,10 @@
   <h2 class="text-center">講師一覧</h2>
   <div class="container-fluid">
     <div class="row">
-      <?php echo $this->Html->link('もっと見る', array('controller' => 'teachers', 'action' => 'lists'), array('class' => 'btn btn-success')); ?>
-    </div>
+      <?php foreach($teacher as $list): ?>
+      	<li class="col-md-3"><?php echo h($list['Teacher']['username']) ?> by <?php echo h($list['Teacher']['job']); ?></li>
+      <?php endforeach;?>
   </div>
+  <?php echo $this->Html->link('もっと見る', array('controller' => 'teachers', 'action' => 'lists'), array('class' => 'btn btn-success')); ?>
+</div>
 </section>
