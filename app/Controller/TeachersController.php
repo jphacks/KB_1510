@@ -68,6 +68,40 @@ class TeachersController extends AppController{
   }
 
 
+  public function mypicture($id = null){
+    $this->layout = "";
+    return 0;
+  }
+
+
+  public function upload($id = null){
+    if($this->request->data){
+      $file = $this->request->data['file'];
+      $original_filename = $file['name'];
+      $uploaded_file = $file['tmp_name'];
+      $filesize = $file['size'];
+      $filetype = $file['type'];
+
+      $dest_jullpath = APP.'tmp/'.md5(uniqid(rand(),true));
+
+      move_uploaded_file($file['tmp_name'], $dest_jullpath);
+
+      $root = 'http://localhost:8888/'
+      $folder_path = $root.'prokate_cake/teachers/userphoto/'
+      $photourl = $folder_path.'&'.$file['name'];
+      $teacher = $this->Teacher->find(
+          'first',
+          array('conditions' => array('Teacher.id' => $id))
+        );
+
+      $teacher['Teacher']['photo_url'] = $photourl;
+      $this->Teacher->save($teacher);
+      $this->redirect(array('action' => 'mypage'));
+    }
+  }
+
+
+
    public function searched(){
 
     if(isset($this->request->data)){
@@ -92,32 +126,6 @@ class TeachersController extends AppController{
      $this->set('teacher',$teachers);
      $this->redirect((array('action' => 'lists')));
      exit();
-  }
-
-
-  public function upload($id = null){
-    if($this->request->data){
-      $file = $this->request->data['file'];
-
-      $original_filename = $file['name'];
-      $uploaded_file = $file['tmp_name'];
-      $filesize = $file['size'];
-      $filetype = $file['type'];
-
-      $dest_jullpath = APP.'tmp/'.md5(uniqid(rand(),true));
-
-      move_uploaded_file($file['tmp_name'], $dest_jullpath);
-
-      $photourl = 'teachers/userphoto/&'.$file['name'];
-      $teacher = $this->Teacher->find(
-          'first',
-          array('conditions' => array('Teacher.id' => $id))
-        );
-
-      $teacher['Teacher']['photo_url'] = $photourl;
-      $this->Teacher->save($teacher);
-      $this->redirect(array('action' => 'mypage'));
-    }
   }
 
 
