@@ -57,7 +57,9 @@
   <div class="container-fluid">
     <div class="row">
       <?php foreach($teacher as $list): ?>
-      	<li class="col-md-3"><?php echo h($list['Teacher']['username']) ?> by <?php echo h($list['Teacher']['job']); ?></li>
+      	<li class="col-md-3"><?php echo h($list['Teacher']['username']) ?> by <?php echo h($list['Teacher']['job']); ?>
+        <?php echo $this->Html->link('詳細', array('controller' => 'teachers', 'action' => 'view', $list['Teacher']['id'])); ?>
+        </li>
       <?php endforeach;?>
   </div>
   <?php echo $this->Html->link('もっと見る', array('controller' => 'teachers', 'action' => 'lists'), array('class' => 'btn btn-success')); ?>
