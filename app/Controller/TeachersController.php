@@ -86,16 +86,17 @@ class TeachersController extends AppController{
 
       move_uploaded_file($file['tmp_name'], $dest_jullpath);
 
-      $root = 'http://localhost:8888/'
-      $folder_path = $root.'prokate_cake/teachers/userphoto/'
-      $photourl = $folder_path.'&'.$file['name'];
+      $document_root = 'http://localhost:8888/';
+      $folder_path = $document_root.'prokate_cake/teachers/mypicture';
+      $photourl = $folder_path.'&id='.$id;
       $teacher = $this->Teacher->find(
           'first',
           array('conditions' => array('Teacher.id' => $id))
         );
-
+      $theacher['Teacher']['photo_data'] = $file;
       $teacher['Teacher']['photo_url'] = $photourl;
       $this->Teacher->save($teacher);
+      $this->set('photo',$file['name']);
       $this->redirect(array('action' => 'mypage'));
     }
   }
