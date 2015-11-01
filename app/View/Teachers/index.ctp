@@ -65,3 +65,18 @@
   <?php echo $this->Html->link('もっと見る', array('controller' => 'teachers', 'action' => 'lists'), array('class' => 'btn btn-success')); ?>
 </div>
 </section>
+<br>
+<section class="container-fluid" id="section5">
+  <h2 class="text-center">生徒一覧</h2>
+  <div class="container-fluid">
+    <div class="row">
+      <?php foreach($user as $list): ?>
+        <li class="col-md-3"><?php echo h($list['User']['username']) ?> by <?php echo h($list['User']['job']); ?>
+        <?php echo $this->Html->link('詳細', array('controller' => 'users', 'action' => 'view', $list['User']['id'])); ?>
+        </li>
+      <?php endforeach;?>
+  </div>
+  <?php echo $this->Html->link('もっと見る', array('controller' => 'users', 'action' => 'lists'), array('class' => 'btn btn-success')); ?>
+</div>
+</section>
+
