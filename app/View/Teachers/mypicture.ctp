@@ -1,0 +1,1 @@
+<?php echo $this->Html->image('13.png', array('alt' => 'CakePHP','width'=>'300','height'=>'200')); ?>
