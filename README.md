@@ -192,3 +192,14 @@ echo $user['User']['name']; //Userモデルのカラムのidの値が4の、name
 - app/View/Email/text/default.ctp
 - app/Controller/ContactController.php
 - app/Model/Contact.php
+
+
+##Component
+####AuthComponent
+ユーザーログイン認証の実装を行うComponent(Auth)
+  
+######例 ログインせずに画面を見る（Controllerの関数を呼び出す）許可
+```
+$this->Auth->allow('add', 'logout'); //addと、logoutという機能に関しては、ログイン認証なしに呼び出せる。 
+```  
+この機能があれば、同じ環境でいろんなViewの編集ができるので、覚えておくと便利。
