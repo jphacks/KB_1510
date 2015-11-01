@@ -6,7 +6,7 @@ class TeachersController extends AppController{
     parent::beforeFilter();
 
 
-    $this->Auth->allow('add', 'logout','mypage','lists','edit','lists_json','upload');
+    $this->Auth->allow('add', 'logout','mypage','lists','edit','lists_json','upload','mypicture');
 
   }
 
@@ -87,16 +87,16 @@ class TeachersController extends AppController{
       move_uploaded_file($file['tmp_name'], $dest_jullpath);
 
       $document_root = 'http://localhost:8888/';
-      $folder_path = $document_root.'prokate_cake/teachers/mypicture';
-      $photourl = $folder_path.'&id='.$id;
+      $folder_path = $document_root.'prokate_cake/teachers/mypicture/';
+      $photourl = $folder_path.$id;
       $teacher = $this->Teacher->find(
           'first',
-          array('conditions' => array('Teacher.id' => $id))
+          array('conditions' => array('Teacher.id' => $id,'Teacher.photo_url' =>  $photourl))
         );
       $theacher['Teacher']['photo_data'] = $file;
       $teacher['Teacher']['photo_url'] = $photourl;
       $this->Teacher->save($teacher);
-      $this->set('photo',$file['name']);
+      $this->set('photo',$file);
       $this->redirect(array('action' => 'mypage'));
     }
   }

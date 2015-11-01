@@ -1,4 +1,6 @@
-<?php
+
+<?php echo $this->Html->image($photo, array('alt' => 'CakePHP','width'=>'300','height'=>'200'));
+
 echo($this->Form->create(
 	null,
 	array('url' => '/teachers/upload', 'type' => 'file')
