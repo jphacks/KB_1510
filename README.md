@@ -194,9 +194,9 @@ echo $user['User']['name']; //Userモデルのカラムのidの値が4の、name
 - app/Model/Contact.php
 
 
-##Component
+##Component(コンポーネント)
 ####AuthComponent
-ユーザーログイン認証の実装を行うComponent(Auth)
+ユーザーログイン認証の実装を行うComponent。AppControllerに、共通の機能を実装する処理を実装し、各クラス(Controller)に継承させることで、機能の引き継ぎが行える。また、各クラスごとのbeforeFilterという関数に処理を施すと、Controllerの関数を呼び出す前に、beforeFillterを呼ぶ。このような処理により、認証などの前処理を行うことが出来る。
   
 ######例 ログインせずに画面を見る（Controllerの関数を呼び出す）許可
 ```
