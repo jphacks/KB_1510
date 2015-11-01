@@ -135,6 +135,42 @@ action名っていうのは「public function」の後のヤツです。indexと
 
 
 ##バックエンド側
+####データベースの設定、操作(find,set)
+次のコマンドで、データベースの内容を取得し、モデルのインスタンス（モデルの機能を、所定の条件で持たせたオブジェクト）を、viewに生成します。
+  
+######例3 全て持ってくる
+```
+$this->set('user', $this->User->find('all'); //ユーザーモデルの全ての情報 
+```  
+
+######例4　指定のidを持ってくる
+```
+$this->set('user', $this->User->findById($id)); //ユーザーモデルの全ての,idカラムの値が$idのユーザー情報 
+```  
+
+######例5　特定の条件で持ってくる
+```
+  $params = array( //$paramsという情報に、以下の条件を持たせる。
+        'order' => 'modified desc', //modefiedの最新順に上から表示するという指定
+        'limit' => 20 //20件取得するという指定
+      ); 
+$this->set('user', $this->User->find('all', $params)); //$paramsという条件をもたせたUserモデルのインスタンスを、Viewに生成
+```  
+
+他にも、実際にSQL文で持ってくるなどの方法もあります。
+詳細はこちら 
+[findcookbook](http://book.cakephp.org/2.0/ja/models/retrieving-your-data.html)  
+
+
+####viewでの書き方
+Controllerのsetで命名した、
+$インスタンス名[モデル名]['カラム名']で、dbのquery同様に、情報を取ってこれます。
+######例6
+```
+//例4で、$id=4とした場合。//[setを含んだfunction名].ctpにて
+echo $user['User']['name']; //Userモデルのカラムのidの値が4の、nameカラムの値が表示される。
+//= mysql_db_query("所定のdb","select name from users where id = 4");
+``` 
 
 ##作業場所参照
 
