@@ -140,7 +140,8 @@ action名っていうのは「public function」の後のヤツです。indexと
   
 ######例3 全て持ってくる
 ```
-$this->set('user', $this->User->find('all'); //ユーザーモデルの全ての情報 
+$this->set('user', $this->User->find('all'); //ユーザーモデルの全ての情報 。
+//viewでは、$userというインスタンスが生成される。
 ```  
 
 ######例4　指定のidを持ってくる
@@ -154,7 +155,7 @@ $this->set('user', $this->User->findById($id)); //ユーザーモデルの全て
         'order' => 'modified desc', //modefiedの最新順に上から表示するという指定
         'limit' => 20 //20件取得するという指定
       ); 
-$this->set('user', $this->User->find('all', $params)); //$paramsという条件をもたせたUserモデルのインスタンスを、Viewに生成
+$this->set('user', $this->User->find('all', $params)); //$paramsという条件をもたせたUserモデルのインスタンス$userを、Viewに生成
 ```  
 
 他にも、実際にSQL文で持ってくるなどの方法もあります。
