@@ -172,6 +172,16 @@ echo $user['User']['name']; //Userモデルのカラムのidの値が4の、name
 //= mysql_db_query("所定のdb","select name from users where id = 4");
 ``` 
 
+##Component(コンポーネント)
+####AuthComponent
+ユーザーログイン認証の実装を行うComponent。AppControllerに、共通の機能を実装する処理を実装し、各クラス(Controller)に継承させることで、機能の引き継ぎが行える。また、各クラスごとのbeforeFilterという関数に処理を施すと、Controllerの関数を呼び出す前に、beforeFillterを呼ぶ。このような処理により、認証などの前処理を行うことが出来る。
+  
+######例 ログインせずに画面を見る（Controllerの関数を呼び出す）許可
+```
+$this->Auth->allow('add', 'logout'); //addと、logoutという機能に関しては、ログイン認証なしに呼び出せる。 
+```  
+この機能があれば、同じ環境で、ログインを気にせずにいろんなViewの編集ができるので、覚えておくと便利。
+
 ##作業場所参照
 
 ###講師側機能実装部分  
@@ -193,13 +203,3 @@ echo $user['User']['name']; //Userモデルのカラムのidの値が4の、name
 - app/Controller/ContactController.php
 - app/Model/Contact.php
 
-
-##Component(コンポーネント)
-####AuthComponent
-ユーザーログイン認証の実装を行うComponent。AppControllerに、共通の機能を実装する処理を実装し、各クラス(Controller)に継承させることで、機能の引き継ぎが行える。また、各クラスごとのbeforeFilterという関数に処理を施すと、Controllerの関数を呼び出す前に、beforeFillterを呼ぶ。このような処理により、認証などの前処理を行うことが出来る。
-  
-######例 ログインせずに画面を見る（Controllerの関数を呼び出す）許可
-```
-$this->Auth->allow('add', 'logout'); //addと、logoutという機能に関しては、ログイン認証なしに呼び出せる。 
-```  
-この機能があれば、同じ環境でいろんなViewの編集ができるので、覚えておくと便利。
