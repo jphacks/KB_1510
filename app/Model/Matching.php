@@ -3,7 +3,9 @@
 App::uses('AppModel', 'Model');
 
 class Matching extends AppModel{
-  public $hasOne = 'Message'
+  public $hasOne = 'Message';
+  public $belongTo = 'Teacher';
+  public $belongsTo = 'User';
   public $validate = array(
     'username' => array(
       'required' => array(
