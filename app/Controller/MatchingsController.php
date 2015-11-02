@@ -26,6 +26,16 @@ class MatchingsController extends AppController{
     $this->set('user', $this->User->find('all', $params));
   }
 
+
+  public function offer_fromme(){ //自分からのオファーリスト
+
+  }
+
+
+  public function offer_tomi(){ //自分へのオファーリスト
+    
+  }
+
   public function logout(){
     $this->redirect($this->Auth->logout());
   }

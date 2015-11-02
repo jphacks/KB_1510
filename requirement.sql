@@ -16,3 +16,5 @@ ALTER TABLE `teachers` ADD `email` VARCHAR(255) NOT NULL AFTER `password`;
 ALTER TABLE `users` ADD `email` VARCHAR(255) NOT NULL AFTER `password`;
 
 create table matchings(id int(8) not null auto_increment primary key, opponents_id int(8) not null, status varchar(8));
+
+ALTER TABLE `matchings` ADD `offer_to_me` VARCHAR(50) NOT NULL , ADD `offer_from_me` VARCHAR(50) NOT NULL , ADD `matched` VARCHAR(50) NOT NULL ;
