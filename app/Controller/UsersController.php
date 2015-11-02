@@ -4,7 +4,7 @@ class UsersController extends AppController{
 
   public function beforeFilter(){
     parent::beforeFilter();
-    $this->Auth->allow('add', 'logout','mypage','lists','lists_json');
+    $this->Auth->allow('add','lists','lists_json');
   }
 
   public function login(){
@@ -13,7 +13,7 @@ class UsersController extends AppController{
         $id = $this->Auth->user();
         $this->redirect($this->Auth->redirect());
       }else{
-        $this->Flash->error(__('Invalid username or password, try again'));
+        $this->Flash->error(__('メールアドレスとパスワードのどちらかが間違っています。もう一度入力してください。'));
       }
     }
   }

@@ -3,10 +3,10 @@
   <?php
   echo $this->Form->create('User');
   echo $this->Form->inputs(array(
-    'legend' => __('Please enter your username and password'),
-    'username',
+    'legend' => __('メールアドレスとパスワードを入力してください、'),
+    'email',
     'password',
   ));
-  echo $this->Form->end(__('Login'));
+  echo $this->Form->end(__('ログインする'));
   ?>
 </div>

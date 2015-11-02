@@ -7,13 +7,14 @@ class TeachersController extends AppController{
   public function beforeFilter(){
     parent::beforeFilter();
 
-    $this->Auth->allow('add', 'logout','mypage','lists','edit','lists_json','upload','mypicture');
+    $this->Auth->allow('login','lists','lists_json','upload','mypicture');
 
   }
 
   public function login(){
     if($this->request->is('post')){
       if($this->Auth->login()){
+        $id = $this->Auth->user();
         $this->redirect($this->Auth->redirect());
       }else{
         $this->Flash->error(__('メールアドレスかパスワードが間違っています。もう一度入力して下さい。'));
@@ -138,10 +139,10 @@ class TeachersController extends AppController{
     if($this->request->is('post')){
       $this->Teacher->create();
       if($this->Teacher->save($this->request->data)){
-        $this->Flash->success(__('The user has been saved.'));
+        $this->Flash->success(__('登録されました。'));
         $this->redirect(array('action' => 'login'));
       }else{
-        $this->Flash->error(__('The user could not be saved. Please try again.'));
+        $this->Flash->error(__('エラーが発生しました。もう一度よろしくお願いいたします。'));
       }
     }
   }
