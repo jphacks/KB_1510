@@ -24,6 +24,7 @@ class UsersController extends AppController{
         'limit' => 20
       );
     $this->set('user', $this->User->find('all', $params));
+    $this->set('teachersmatching',$teacher_matchings);
   }
 
 
@@ -61,7 +62,10 @@ class UsersController extends AppController{
     if(!$this->User->exists($id)){
       throw new NotFoundException(__('無効なユーザーです。'));
     }
-    $this->set('user', $this->User->findById($id));
+    // $this->set('user', $this->User->findById($id));
+    $this->User->id = $id;
+    $this->set('user', $this->User->read());
+    //$this->set('teacher_matchings',$this->User->find('all',array('user' => 'User.id')));
   }
 
   public function add(){

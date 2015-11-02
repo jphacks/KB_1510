@@ -35,6 +35,19 @@ class Teacher_matchingsController extends AppController{
   public function offer_tomi(){ //自分へのオファーリスト
     
   }
+  
+
+    public function lists_json(){
+    $data = array(
+      'status' => 'success',
+      'order' => 'created desc'
+    );
+      $teachers = $this->Teacher->find('all',$data);
+      $this->viewClass = 'Json';
+      $this->set(compact('teachers'));
+      $this->set('_serialize', 'teachers');
+  }
+
 
   public function logout(){
     $this->redirect($this->Auth->logout());
