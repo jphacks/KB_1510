@@ -24,3 +24,5 @@ DROP TABLE `matchings`;
 CREATE TABLE `teacher_matchings` ( `id` int(8) NOT NULL, `teacher_id` int(8) NOT NULL, `status` varchar(8) DEFAULT NULL, `offer_to_me` varchar(50) NOT NULL, `offer_from_me` varchar(50) NOT NULL, `matched` varchar(50) NOT NULL ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `user_matchings` ( `id` int(8) NOT NULL, `user_id` int(8) NOT NULL, `status` varchar(8) DEFAULT NULL, `offer_to_me` varchar(50) NOT NULL, `offer_from_me` varchar(50) NOT NULL, `matched` varchar(50) NOT NULL ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ALTER TABLE `teacher_matchings` ADD `teacher_id` INT(8) NOT NULL AFTER `user_id`;
