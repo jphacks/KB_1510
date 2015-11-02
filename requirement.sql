@@ -12,3 +12,5 @@ ALTER TABLE `teachers` ADD `facebook_id` BIGINT(20) UNSIGNED NOT NULL;
 ALTER TABLE `users` ADD `facebook_id` BIGINT(20) UNSIGNED NOT NULL;
 
 ALTER TABLE `teachers` ADD `email` VARCHAR(255) NOT NULL AFTER `password`;
+
+ALTER TABLE `users` ADD `email` VARCHAR(255) NOT NULL AFTER `password`;
