@@ -2,7 +2,7 @@
 
 class TeachersController extends AppController{
 
-  public $uses = array('Teacher','User');
+  public $uses = array('Teacher', 'User');
 
   public function beforeFilter(){
     parent::beforeFilter();
@@ -35,7 +35,6 @@ class TeachersController extends AppController{
 
   public function mypage(){
     $id = $this->Auth->user('id');
-    $id = 11;
     if(!$id){
       throw new NotFoundException(__('ログインされていません'));
     }
