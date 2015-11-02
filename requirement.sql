@@ -21,6 +21,6 @@ ALTER TABLE `matchings` ADD `offer_to_me` VARCHAR(50) NOT NULL , ADD `offer_from
 
 DROP TABLE `matchings`;
 
-CREATE TABLE `teacher_matchings` ( `id` int(8) NOT NULL, `user_id` int(8) NOT NULL, `status` varchar(8) DEFAULT NULL, `offer_to_me` varchar(50) NOT NULL, `offer_from_me` varchar(50) NOT NULL, `matched` varchar(50) NOT NULL ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `teacher_matchings` ( `id` int(8) NOT NULL, `teacher_id` int(8) NOT NULL, `status` varchar(8) DEFAULT NULL, `offer_to_me` varchar(50) NOT NULL, `offer_from_me` varchar(50) NOT NULL, `matched` varchar(50) NOT NULL ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `user_matchings` ( `id` int(8) NOT NULL, `user_id` int(8) NOT NULL, `status` varchar(8) DEFAULT NULL, `offer_to_me` varchar(50) NOT NULL, `offer_from_me` varchar(50) NOT NULL, `matched` varchar(50) NOT NULL ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
