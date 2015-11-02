@@ -2,6 +2,8 @@
 
 class TeachersController extends AppController{
 
+  public $uses = array('Teacher','User');
+
   public function beforeFilter(){
     parent::beforeFilter();
 
@@ -25,8 +27,10 @@ class TeachersController extends AppController{
   }
 
   public function index(){
-    $this->Teacher->recursive = 0;
-    $this->set('teacher', $this->paginate());
+    $teacher = $this->Teacher->find('all' ,array('limit' => 10));
+    #$this->set('teacher', $this->Teacher->find('all', array('limit' => 10)));
+    $user = $this->User->find('all' ,array('limit' => 10));
+    $this->set(compact('user', 'teacher'));
   }
 
   public function mypage(){

@@ -79,4 +79,3 @@
   <?php echo $this->Html->link('もっと見る', array('controller' => 'users', 'action' => 'lists'), array('class' => 'btn btn-success')); ?>
 </div>
 </section>
-
