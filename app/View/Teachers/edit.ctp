@@ -12,9 +12,6 @@ echo $this->Form->input('gender', array(
 echo $this->Form->input('old', array(
   'label' => '年齢'
 ));
-echo $this->Form->input('prefecture', array(
-  'label' => '都道府県'
-));
 echo $this->Form->input('job', array(
   'label' => '職業'
 ));
@@ -35,6 +32,13 @@ echo $this->Form->input('programing_skill', array(
   ),
   'empty' => '自分のレベルだと思うものを選択して下さい'
 ));
+echo $this->Form->input('prefecture', array(
+  'label' => '都道府県',
+  'options' => Configure::read('Pref'),
+  'type' => 'select',
+  'empty' => '選択してください。'
+));
+echo $this->Form->input('job');
 echo $this->Form->input('language', array(
   'type' => 'select',
   'multiple' => 'checkbox',
