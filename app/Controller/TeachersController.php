@@ -4,6 +4,10 @@ class TeachersController extends AppController{
 
   public $uses = array('Teacher','User');
 
+  public $compnents = array(
+    'Facebook.Facebook' => array('model' => 'Teacher')
+  );
+
   public function beforeFilter(){
     parent::beforeFilter();
 

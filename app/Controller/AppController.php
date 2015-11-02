@@ -32,6 +32,8 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
+  public $helpers = array('Facebook.Facebook');
+
   public $components = array(
     'Flash',
     'Paginator',

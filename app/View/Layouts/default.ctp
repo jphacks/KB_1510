@@ -29,6 +29,7 @@
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+	<?php $this->Facebook->html(); ?>
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 </head>
 <body>
@@ -47,11 +48,12 @@
 		<!-- フッター部分 -->
 		<?php echo $this->element('footer'); ?>
 	</div>
+	<?php $this->Facebook->init(); ?>
 	<?php echo $this->Html->script(array('//code.jquery.com/jquery-2.1.4.min.js', 'bootstrap.min' , 'script')); ?>
 	<script>
 	$(function(){
 		setTimeout(function(){
-			
+
 		},800);
 	})
 	</script>>

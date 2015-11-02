@@ -3501,3 +3501,1133 @@ Stack Trace:
 #3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-11-02 15:08:18 Error: [NotFoundException] ログインされていません
+Request URL: /prokate/users/mypage
+Stack Trace:
+#0 [internal function]: UsersController->mypage()
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-02 15:08:22 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 15:08:22 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 15:08:22 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.svg?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 15:08:49 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';' in [/Applications/MAMP/htdocs/prokate/app/Model/User.php, line 8]
+2015-11-02 15:08:49 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';'
+Request URL: /prokate/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 8, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 8, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:08:56 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';' in [/Applications/MAMP/htdocs/prokate/app/Model/User.php, line 8]
+2015-11-02 15:08:56 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';'
+Request URL: /prokate/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 8, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 8, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:08:59 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';' in [/Applications/MAMP/htdocs/prokate/app/Model/User.php, line 8]
+2015-11-02 15:08:59 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';'
+Request URL: /prokate/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 8, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 8, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:08:59 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';' in [/Applications/MAMP/htdocs/prokate/app/Model/User.php, line 8]
+2015-11-02 15:08:59 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';'
+Request URL: /prokate/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 8, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 8, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:20:30 Error: [MissingModelException] User
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(34): PaginatorComponent->paginate('User')
+#1 [internal function]: TeachersController->index()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#5 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-11-02 15:22:38 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';' in [/Applications/MAMP/htdocs/prokate/app/Model/User.php, line 8]
+2015-11-02 15:22:38 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';'
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 8, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 8, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:23:18 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';' in [/Applications/MAMP/htdocs/prokate/app/Model/User.php, line 8]
+2015-11-02 15:23:18 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';'
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 8, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 8, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:23:48 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(User), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(User), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(User), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#8 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#9 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#10 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(31): Controller->paginate()
+#11 [internal function]: TeachersController->index()
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#13 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#15 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-11-02 15:23:58 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 15:23:58 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 15:23:58 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 15:24:26 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 15:24:26 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 15:24:26 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 15:27:01 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 15:27:02 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 15:27:02 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 15:32:59 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 35]
+2015-11-02 15:32:59 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 35, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 35, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:33:10 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 15:33:10 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 15:33:10 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 15:34:24 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 30]
+2015-11-02 15:34:24 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:36:59 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 30]
+2015-11-02 15:36:59 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:37:18 Error: Fatal Error (1): Call to undefined method TeachersController::find() in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 30]
+2015-11-02 15:37:18 Error: [FatalErrorException] Call to undefined method TeachersController::find()
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/M...', 30, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/M...', 30, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:37:45 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teacher), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#8 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(30): Model->find('all', Array)
+#9 [internal function]: TeachersController->index()
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-02 15:39:43 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 30]
+2015-11-02 15:39:43 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:41:52 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 15:41:52 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 15:41:52 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 15:51:18 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 30]
+2015-11-02 15:51:18 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:51:57 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 30]
+2015-11-02 15:51:57 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:53:42 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 30]
+2015-11-02 15:53:42 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:53:43 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 30]
+2015-11-02 15:53:43 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:53:44 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 30]
+2015-11-02 15:53:44 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:53:44 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 30]
+2015-11-02 15:53:44 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:53:44 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 30]
+2015-11-02 15:53:44 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:53:44 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 30]
+2015-11-02 15:53:44 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:53:45 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 30]
+2015-11-02 15:53:45 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:53:45 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 30]
+2015-11-02 15:53:45 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:53:45 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 30]
+2015-11-02 15:53:45 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:53:53 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 15:53:54 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 15:53:54 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 15:56:00 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 30]
+2015-11-02 15:56:00 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 15:57:07 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 30]
+2015-11-02 15:57:07 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 16:03:05 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 30]
+2015-11-02 16:03:05 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 16:04:51 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teacher), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#8 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(30): Model->find('all', Array)
+#9 [internal function]: TeachersController->index()
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-02 16:08:39 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teacher), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#8 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(30): Model->find('all', Array)
+#9 [internal function]: TeachersController->index()
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-02 16:09:57 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teacher), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#8 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(30): Model->find('all', Array)
+#9 [internal function]: TeachersController->index()
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-02 16:11:57 Error: [MissingControllerException] Controller class EditController could not be found.
+Exception Attributes: array (
+  'class' => 'EditController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/edit/1
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 16:12:05 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/teachers/edit
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teacher), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('first', Array)
+#8 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(600): Model->find('first', Array)
+#9 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(827): DboSource->query('findById', Array, Object(Teacher))
+#10 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(161): Model->__call('findById', Array)
+#11 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(161): Teacher->findById(NULL)
+#12 [internal function]: TeachersController->edit()
+#13 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#14 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#15 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#16 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2015-11-02 16:12:09 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/teachers/edit/1
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teacher), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('first', Array)
+#8 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(600): Model->find('first', Array)
+#9 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(827): DboSource->query('findById', Array, Object(Teacher))
+#10 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(161): Model->__call('findById', Array)
+#11 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(161): Teacher->findById('1')
+#12 [internal function]: TeachersController->edit('1')
+#13 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#14 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#15 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#16 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2015-11-02 16:12:33 Error: Fatal Error (1): Call to a member function findById() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 161]
+2015-11-02 16:12:33 Error: [FatalErrorException] Call to a member function findById() on null
+Request URL: /prokate/teachers/edit/1
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 161)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 161, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 161, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 16:12:38 Error: Fatal Error (1): Call to a member function findById() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 161]
+2015-11-02 16:12:38 Error: [FatalErrorException] Call to a member function findById() on null
+Request URL: /prokate/teachers/edit/8
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 161)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 161, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 161, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 16:12:42 Error: Fatal Error (1): Call to a member function findById() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 161]
+2015-11-02 16:12:42 Error: [FatalErrorException] Call to a member function findById() on null
+Request URL: /prokate/teachers/edit/12
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 161)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 161, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 161, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 16:12:47 Error: Fatal Error (1): Call to a member function findById() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 161]
+2015-11-02 16:12:47 Error: [FatalErrorException] Call to a member function findById() on null
+Request URL: /prokate/teachers/edit/12
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 161)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 161, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 161, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 16:12:51 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 30]
+2015-11-02 16:12:51 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 16:14:37 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 30]
+2015-11-02 16:14:37 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 16:14:51 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 30]
+2015-11-02 16:14:51 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 30, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 16:15:16 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teacher), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#8 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(30): Model->find('all', Array)
+#9 [internal function]: TeachersController->index()
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-02 16:15:18 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teacher), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#8 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(30): Model->find('all', Array)
+#9 [internal function]: TeachersController->index()
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-02 16:15:19 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teacher), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#8 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(30): Model->find('all', Array)
+#9 [internal function]: TeachersController->index()
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-02 16:15:19 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teacher), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#8 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(30): Model->find('all', Array)
+#9 [internal function]: TeachersController->index()
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-02 16:15:19 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teacher), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#8 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(30): Model->find('all', Array)
+#9 [internal function]: TeachersController->index()
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-02 16:15:19 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teacher), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#8 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(30): Model->find('all', Array)
+#9 [internal function]: TeachersController->index()
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-02 16:15:19 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teacher), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#8 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(30): Model->find('all', Array)
+#9 [internal function]: TeachersController->index()
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-02 16:15:20 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teacher), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#8 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(30): Model->find('all', Array)
+#9 [internal function]: TeachersController->index()
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-02 16:15:20 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teacher), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#8 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(30): Model->find('all', Array)
+#9 [internal function]: TeachersController->index()
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-02 16:15:20 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teacher), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#8 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(30): Model->find('all', Array)
+#9 [internal function]: TeachersController->index()
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-02 16:15:20 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teacher), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#8 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(30): Model->find('all', Array)
+#9 [internal function]: TeachersController->index()
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-02 16:15:20 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teacher), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#8 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(30): Model->find('all', Array)
+#9 [internal function]: TeachersController->index()
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-02 16:15:20 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teacher), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#8 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(30): Model->find('all', Array)
+#9 [internal function]: TeachersController->index()
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-02 16:15:21 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teacher), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#8 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(30): Model->find('all', Array)
+#9 [internal function]: TeachersController->index()
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-02 16:15:21 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teacher), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#8 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(30): Model->find('all', Array)
+#9 [internal function]: TeachersController->index()
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-02 16:15:21 Error: [MissingTableException] Table matchings for model Matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'matchings',
+  'class' => 'Matching',
+  'ds' => 'default',
+)
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3648): Model->setSource('matchings')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(Matching), 'Matching', '')
+#4 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(Teacher), Object(Matching), 'hasMany', 'Matching', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teacher), Array)
+#7 /Applications/MAMP/htdocs/prokate/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#8 /Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php(30): Model->find('all', Array)
+#9 [internal function]: TeachersController->index()
+#10 /Applications/MAMP/htdocs/prokate/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#11 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/prokate/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-02 16:16:34 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 16:49:35 Error: [MissingPluginException] Plugin Facebook could not be found.
+Exception Attributes: array (
+  'plugin' => 'Facebook',
+)
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/Config/bootstrap.php(115): CakePlugin::load('Facebook')
+#1 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/Configure.php(92): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/bootstrap.php(431): Configure::bootstrap(true)
+#3 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(100): include('/Applications/M...')
+#4 {main}
+2015-11-02 16:51:06 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/prokate/app/Controller/TeachersController.php, line 8]
+2015-11-02 16:51:06 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /prokate/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 8, Array)
+#2 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 8, Array)
+#3 /Applications/MAMP/htdocs/prokate/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-02 16:51:19 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 16:51:20 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-02 16:51:20 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
