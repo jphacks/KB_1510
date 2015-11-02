@@ -4,13 +4,8 @@ class TeachersController extends AppController{
 
   public $uses = array('Teacher','User');
 
-  public $compnents = array(
-    'Facebook.Facebook' => array('model' => 'Teacher')
-  );
-
   public function beforeFilter(){
     parent::beforeFilter();
-
 
     $this->Auth->allow('add', 'logout','mypage','lists','edit','lists_json','upload','mypicture');
 
@@ -27,6 +22,7 @@ class TeachersController extends AppController{
   }
 
   public function logout(){
+    $this->Session->destroy(); #セッションを消す。facebookについて。
     $this->redirect($this->Auth->logout());
   }
 

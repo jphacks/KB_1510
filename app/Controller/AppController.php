@@ -37,6 +37,7 @@ class AppController extends Controller {
   public $components = array(
     'Flash',
     'Paginator',
+    'Facebook.Connect',
     'Auth' => array(
       'loginRedirect' => array(
         'action' => 'mypage'
@@ -63,9 +64,9 @@ class AppController extends Controller {
 
   public function beforeFilter(){
     $this->Auth->allow('index', 'view');
-		if ($this->params['controller'] == 'pages') {
+		/*if ($this->params['controller'] == 'pages') {
    		$this->Auth->allow();
-  	}
+  	}*/
     $this->set('acountSession', $this->Auth->user());
   }
 

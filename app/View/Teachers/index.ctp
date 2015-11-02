@@ -4,9 +4,12 @@
         <h2 class="text-center lato animate slideInDown">Teacher and Student for you </h2>
         <p class="text-center">
             <br>
-            <?php echo $this->Html->image('facebook_login.png', array('width' => '300', 'height' => '70', 'alt' => 'facebook_login',
-					 	'url' => $this->Facebook->login(array('perms' => 'name, email, gender, user_photos')))); ?>
-')); ?>
+            <?php #echo $this->Html->image('facebook_login.png', array('width' => '300', 'height' => '70', 'alt' => 'facebook_login',
+					 	#'url' => $this->Facebook->login(array('width' => '174', 'height' => '25', 'perms' => 'name, email, gender, user_photos')))); ?>
+            <?php
+            echo $this->Facebook->login(array('width' => '174', 'height' => '25', 'scope' => 'email'),
+             __('Login with Facebook', true));
+            ?>
         </p>
     </div>
         <div class="scroll-down bounceInDown animated">
