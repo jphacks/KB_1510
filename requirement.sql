@@ -10,3 +10,5 @@ ALTER TABLE `teachers` ADD `old` INT NOT NULL AFTER `way`;
 //2015年年11月2日追加sql
 ALTER TABLE `teachers` ADD `facebook_id` BIGINT(20) UNSIGNED NOT NULL;
 ALTER TABLE `users` ADD `facebook_id` BIGINT(20) UNSIGNED NOT NULL;
+
+ALTER TABLE `teachers` ADD `email` VARCHAR(255) NOT NULL AFTER `password`;

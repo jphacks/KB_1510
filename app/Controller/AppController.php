@@ -43,7 +43,8 @@ class AppController extends Controller {
         'action' => 'mypage'
       ),
       'logoutRedirct' => array(
-        'action' => 'login',
+        'controller' => 'teachers',
+        'action' => 'index',
       ),
       'authenticate' => array(
         'Form' => array(
@@ -63,7 +64,7 @@ class AppController extends Controller {
   }
 
   public function beforeFilter(){
-    $this->Auth->allow('index', 'view');
+    $this->Auth->allow('index', 'view', 'login');
 		/*if ($this->params['controller'] == 'pages') {
    		$this->Auth->allow();
   	}*/

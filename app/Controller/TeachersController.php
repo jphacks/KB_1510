@@ -16,13 +16,13 @@ class TeachersController extends AppController{
       if($this->Auth->login()){
         $this->redirect($this->Auth->redirect());
       }else{
-        $this->Flash->error(__('Invalid username or password, try again.'));
+        $this->Flash->error(__('メールアドレスかパスワードが間違っています。もう一度入力して下さい。'));
       }
     }
   }
 
   public function logout(){
-    $this->Session->destroy(); #セッションを消す。facebookについて。
+    #$this->Session->destroy(); #セッションを消す。facebookについて。
     $this->redirect($this->Auth->logout());
   }
 
@@ -38,7 +38,8 @@ class TeachersController extends AppController{
     if(!$id){
       throw new NotFoundException(__('ログインされていません'));
     }
-    $this->set('teacher', $this->Teacher->findById($id));
+    $teacher = $this->Teacher->findById($id);
+    $this->set(compact('teacher'));
   }
 
 
