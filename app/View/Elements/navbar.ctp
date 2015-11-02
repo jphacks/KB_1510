@@ -40,6 +40,8 @@
                 echo "<li>" . $this->Html->link('講師ログイン', array('controller' => 'teachers', 'action' => 'login'));
               }else{
                 echo $this->Html->link('Logout', array('action'=>'logout'));
+                #Facebookログアウトについて
+                #echo $this->Facebook->logout(array('redirect' => array('controller' => 'users', 'action' => 'logout'), 'img' => '/Facebook/img/facebook-logout.png'));
               }
             ?></li>
             <li><?php echo $this->Html->link('お問い合わせ', array('controller' => 'contact', 'action' => 'index')); ?></li>

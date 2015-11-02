@@ -5,7 +5,8 @@
         <p class="text-center">
             <br>
             <?php echo $this->Html->image('facebook_login.png', array('width' => '300', 'height' => '70', 'alt' => 'facebook_login',
-					 	'url' => array('controller' => 'users', 'action' => 'login'))); ?>
+					 	'url' => $this->Facebook->login(array('perms' => 'name, email, gender, user_photos')))); ?>
+')); ?>
         </p>
     </div>
         <div class="scroll-down bounceInDown animated">

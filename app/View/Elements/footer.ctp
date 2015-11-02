@@ -16,6 +16,9 @@
                     <li><a href="http://appart-linux.cloudapp.net/test_prokate/contact/">Email</a></li>
                 </ul>
             </div>
+            <?php echo $this->Facebook->share('https://prokate.com');
+                  echo $this->Facebook->like();
+            ?>
         </div>
         <!--/row-->
         <p class="copyright">© 2015 Tech Spreaders</p>
