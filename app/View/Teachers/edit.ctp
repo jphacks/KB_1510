@@ -6,7 +6,12 @@ echo $this->Form->input('gender', array(
   'options' => array('男', '女'),
   'empty' => '選択してください'
 ));
-echo $this->Form->input('prefecture');
+echo $this->Form->input('prefecture', array(
+  'label' => '都道府県',
+  'options' => Configure::read('Pref'),
+  'type' => 'select',
+  'empty' => '選択してください。'
+));
 echo $this->Form->input('job');
 echo $this->Form->input('language', array(
   'type' => 'select',
