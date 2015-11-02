@@ -18,6 +18,10 @@ img {
     height: auto;
 }
 
+#content{
+	margin-top: 50px;
+}
+
 a {
     color:#999;
 }

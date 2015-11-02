@@ -49,7 +49,7 @@
 		<?php echo $this->element('footer'); ?>
 	</div>
 	<?php $this->Facebook->init(); ?>
-	<?php echo $this->Html->script(array('//code.jquery.com/jquery-2.1.4.min.js', 'bootstrap.min' , 'script')); ?>
+	<?php echo $this->Html->script(array('http://code.jquery.com/jquery-2.1.4.min.js', 'bootstrap.min' , 'script')); ?>
 	<script>
 	$(function(){
 		setTimeout(function(){
