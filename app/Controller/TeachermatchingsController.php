@@ -1,6 +1,6 @@
 <?php
 
-class Teacher_matchingsController extends AppController{
+class TeachermatchingsController extends AppController{
 
   public function beforeFilter(){
     parent::beforeFilter();
@@ -35,7 +35,7 @@ class Teacher_matchingsController extends AppController{
   public function offer_tomi(){ //自分へのオファーリスト
     
   }
-  
+
 
     public function lists_json(){
     $data = array(
@@ -55,9 +55,9 @@ class Teacher_matchingsController extends AppController{
 
   public function mypage(){
     $id = $this->Auth->user('id');
-    if(!$id){
-      throw new NotFoundException(__('ログインされていません'));
-    }
+    // if(!$id){
+    //   throw new NotFoundException(__('ログインされていません'));
+    // }
     $id = 3;
     $this->set('user', $this->User->findById($id));
   }
@@ -76,10 +76,9 @@ class Teacher_matchingsController extends AppController{
 
   public function add(){
     if($this->request->is('post')){
-      $this->User->create();
-      if($this->User->save($this->request->data)){
-        $this->Flash->success(__('The user has been saved.'));
-        $this->redirect(array('action' => 'login'));
+      if($this->Teachermatching->save($this->request->data)){
+        $this->Flash->success(__('The matching has been saved.'));
+        $this->redirect(array('controller'=>'users','action' => 'mypage',$this->data['Teachermatching']['user_id']));
       }else{
         $this->Flash->error(__('The user could not be saved. Please try again.'));
       }

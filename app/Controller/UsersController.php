@@ -24,7 +24,7 @@ class UsersController extends AppController{
         'limit' => 20
       );
     $this->set('user', $this->User->find('all', $params));
-    $this->set('teachersmatching',$teacher_matchings);
+    $this->set('teachersmatching',$teachermatchings);
   }
 
 
@@ -65,7 +65,7 @@ class UsersController extends AppController{
     // $this->set('user', $this->User->findById($id));
     $this->User->id = $id;
     $this->set('user', $this->User->read());
-    //$this->set('teacher_matchings',$this->User->find('all',array('user' => 'User.id')));
+    //$this->set('teachermatchings',$this->User->find('all',array('user' => 'User.id')));
   }
 
   public function add(){

@@ -2,7 +2,7 @@
 
 App::uses('AppModel', 'Model');
 
-class Teacher_matching extends AppModel{
+class Teachermatching extends AppModel{
   // public $hasOne = 'Message';
   public $belongsTo = 'User';
 
