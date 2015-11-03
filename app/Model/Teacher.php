@@ -5,7 +5,7 @@ App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 
 class Teacher extends AppModel{
   // public $hasMany = "Comment";
-  public $hasMany = "User_matching";
+  public $hasMany = "Teachermatching";
   public $validate = array(
     'username' => array(
       'required' => array(
