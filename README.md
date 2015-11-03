@@ -1,7 +1,150 @@
-# Pr/Applications/MAMP/htdocs/prokateoKate cake version
-##だいじゅくんに特にいじってほしいところ
-だいきくんには、投稿・編集機能の実装をお願いしています。そのため、以下の2つの作業をお願いいたします。
+##Prokate：プログラミング家庭教師
+***
+###メニュー
 
+1. プロカテとは
+2. チーム構成
+2. プロカテ開発の際の環境設定
+	1. ローカル開発環境設定
+	2. ウェブ上のテストサーバー
+	3. 【要確認】pushする際の注意
+	4. データベース設定(database.php)
+	5. テーブル構築 
+3. システム概要
+4. システム詳細
+	1. 各コントローラーの機能
+	2. 各コントローラーの関係性
+	3. テーブル一覧
+	4. テーブル構成
+5. 学習教材
+
+***
+
+###1. プロカテとは
+
+***
+
+###2. チーム構成
+
+***
+
+###3. プロカテ開発の際の環境設定
+####3.1 ローカル開発環境設定
+サーバーを経由したウェブアプリケーションなので「[ローカル開発環境](http://ecsite.jugem.jp/?eid=25)」が必要になります。  
+
+- [bitbucket](https://bitbucket.org/appitg/prokate_cake)  
+こちらで自分PCの適当な場所にレポジトリー作成してpullしてください。  
+- ローカル開発環境(MAMP, Vagrant)  
+phpを用いているので必須です。phpmyadminやmysqlが用意できる場所を用意しておいてください。
+
+
+####3.2 ウェブ上のテストサーバー
+ウェブ上で実際に動いているかテストするためのテストサーバーはこちらのURLになります。  
+※こちらで開発したものを反映させるためにはサーバー側からpullしなければいけません。
+
+- [テストサーバーurl](http://appart-linux.cloudapp.net/cake_prokate/)
+
+####3.3 【要確認】pushする際の注意
+app/tmp以下のキャッシュファイルが入っているのでこれを除いてpushしないと各自のPCで溜まったキャッシュファイルが衝突してエラーが起きる現象が起きています。  
+
+######【対応策】  
+1. _git add [変更したファイル名]_
+
+git add .と全てのファイルをステージングエリアに投げてcommitしてpushしてしまうと上の現象が発生する。  
+（例）  
+Contoroller内のTeachersController.phpをいじった場合  
+
+`
+git add Controller/TeachersController.php
+`
+
+`
+git commit -m ""
+`
+
+`
+git push origin
+`
+
+例の通りadd->commit->pushしてください。
+
+
+2. _git checkout app/tmp_
+
+git checkoutによってtmp以下のファイルの変更がキャンセルされます。これによってtmp以下のファイルをaddしないように毎回すればgit add .で構いません。  
+（例）  
+Contoroller内のTeachersController.phpをいじった場合  
+
+`
+git checkout tmp/ 
+`
+
+`
+git add .
+`
+
+以下はわかる通り。
+
+
+####3.5 テーブル構築
+- データベースの設定
+「インポート」という方法でこちらのファイルをダウンロードしてデータベースを立ててください。   
+[sqlファイル](requirements.sql)  
+
+[参考：phpmyadminでインポートする方法](http://www.dbonline.jp/phpmyadmin/export-import/index3.html)  
+[参考：MySQLコマンドでインポートする方法](http://qiita.com/rato303/items/2e614f23e5feee150ffc)
+
+***
+
+###4. システム概要
+####4.1 システム全体像
+![files](README/files.png)
+cakePHPでは、主に3つのフォルダをいじります。
+
+- Model: サーバーとのデータのやりとり
+- Controller: ModelとViewの橋渡し（ロジック部分）
+- View: 見た目のhtmlの出力
+
+サーバーサイドを担当する人はModel, Controllerをいじることが多くて、フロントサイドを担当する人はController, Viewをいじることが多いかと思います。
+
+***
+
+###5. システム詳細
+1. 各コントローラーの機能
+2. 各コントローラーの関係性
+3. テーブル一覧
+4. テーブルごとの役割
+
+####5.1 各コントローラーの機能
+| Controller                    | 役割                                     |
+|-------------------------------|------------------------------------------|
+| UsersController               | 生徒のプロフィール情報関連               |
+| TeachersController            | 講師のプロフィール情報関連               |
+| MessagesController            | メッセージ一覧を表示するため             |
+| Indivisual_MessagesController | 個別メッセージをやりとりするため         |
+| ContactController             | お問い合わせ関連                         |
+| ApiController                 | jsonをまとめて返すため（今使ってない。） |
+
+#####今後使わないController
+
+- PostsController
+
+生徒からの要望を公募できる機能。優先順位は低いと判断し撤去
+
+- User_MatchingController
+
+TeacherMatchingControllerと機能が一致しているので。
+
+- SendMeddagesController
+
+IndivisualMessageControllerと機能が一致しているので。 
+
+####5.2 各コントローラーの関係性
+####ver2 
+![コントローラーの関係性](README/outline_ver2.png)
+
+####ver3
+![コントローラーの関係性](README/outline_ver3.png)
 - 講師プロフィール  
 【ファイル場所】  
 コントローラー app/Controller/TeachersController.php
@@ -13,39 +156,31 @@
 モデル app/Model/User.php   
 ビュー app/View/Users/add.ctp, edit.ctp
 
+####5.3 テーブル一覧
+| テーブル名          | 役割                           |
+|---------------------|--------------------------------|
+| users               | 生徒情報                       |
+| teacher             | 講師情報                       |
+| teachermatching     | マッチングした生徒と講師の情報 |
+| messages            | メッセージの一覧の情報         |
+| indivisual_messages | 個別メッセージの情報           |
+| comments            | 今後使うかも                               |
 
-##ローカル開発環境設定
-- [bitbucket](https://bitbucket.org/appitg/prokate_cake)  
-こちらで自分PCの適当な場所にレポジトリー作成してpullしてください。  
-- ローカル開発環境(MAMP, Vagrant)  
-phpを用いているので必須です。phpmyadminやmysqlが用意できる場所を用意しておいてください。
-- データベースの設定
-「インポート」という方法でこちらのファイルをダウンロードしてデータベースを立ててください。  
-[sqlファイル](README/prokate.sql)
+#####今後使わないテーブル
 
-##サーバー
-- [テストサーバーurl](http://appart-linux.cloudapp.net/cake_prokate/)
-
-###pushする際の注意
-git add .  
-とすると、キャッシュファイルが絶賛コンフリクトしてしまうエラーがおきているので  
-git add (編集したファイル名)
-としてください。  
-それぞれ編集したもののみをadd->commit->pushしてください。
+- mentors
+- posts
+- user_matchings
 
 
+***
 
-##システム全体像
-![files](README/files.png)
-cakePHPでは、主に3つのフォルダをいじります。
+###6 学習教材
+1. [Codeschool](https://www.codeschool.com/)
 
-- Model: サーバーとのデータのやりとり
-- Controller: ModelとViewの橋渡し（ロジック部分）
-- View: 見た目のhtmlの出力
+海外サービスだが教材がわかりやすい。
 
-サーバーサイドを担当する人はModel, Controllerをいじることが多くて、フロントサイドを担当する人はController, Viewをいじることが多いかと思います。
-
-
+##以下未編集のもの
 
 
 ##フロント側
