@@ -28,3 +28,5 @@ CREATE TABLE `user_matchings` ( `id` int(8) NOT NULL, `user_id` int(8) NOT NULL,
 ALTER TABLE `teacher_matchings` ADD `teacher_id` INT(8) NOT NULL AFTER `user_id`;
 
 RENAME TABLE `prokate`.`teacher_matchings` TO `prokate`.`teachermatchings`;
+
+ALTER TABLE `teachermatchings` ADD `created` DATETIME NOT NULL ;
