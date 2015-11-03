@@ -4,7 +4,7 @@ class TeachermatchingsController extends AppController{
 
   public function beforeFilter(){
     parent::beforeFilter();
-    $this->Auth->allow('add', 'logout','mypage','lists');
+    $this->Auth->allow();
   }
 
   public function login(){
@@ -39,13 +39,12 @@ class TeachermatchingsController extends AppController{
 
     public function lists_json(){
     $data = array(
-      'status' => 'success',
-      'order' => 'created desc'
+      'status' => 'success'
     );
-      $teachers = $this->Teacher->find('all',$data);
+      $teachermatchings = $this->Teachermatching->find('all',$data);
       $this->viewClass = 'Json';
-      $this->set(compact('teachers'));
-      $this->set('_serialize', 'teachers');
+      $this->set(compact('teachermatchings'));
+      $this->set('_serialize', 'teachermatchings');
   }
 
 
