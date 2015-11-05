@@ -114,4 +114,4 @@ CakeLog::config('error', array(
 ));
 Configure::load("pref");
 CakePlugin::load('Facebook');
-
+CakePlugin::load('Upload');

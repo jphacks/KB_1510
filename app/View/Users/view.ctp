@@ -12,7 +12,10 @@ echo $this->Form->end('生徒リクエスト');
 }
 ?>
 
-<?php foreach($user['User'] as $teacherof_user): ?>
-	<li><?php echo $teacherof_user['Teachermatching']['name']; ?>
+<?php $n = 0;
+foreach($user['User'] as $teacherof_user): ?>
+	<?php //echo $teacherof_user['Teachermatching']['name']; 
+	$n++;
+	?>
 <?php endforeach; ?>
 

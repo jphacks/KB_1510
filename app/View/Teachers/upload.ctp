@@ -15,3 +15,5 @@ echo($this->Form->input(
 
 echo($this->Form->submit('アップロード'));
 echo($this->Form->end());
+
+echo $photo;

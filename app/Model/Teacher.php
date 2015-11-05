@@ -21,6 +21,17 @@ class Teacher extends AppModel{
     )
   );
 
+    public $actsAs = [
+        'Upload.Upload' => [
+            'photo' => [
+                'fields' => [
+                    'dir' => 'photo_dir'
+                ]
+            ]
+        ]
+    ];
+    
+
   public function beforesave($options = array()){
     if(isset($this->data[$this->alias]['password'])){
       $passwordHasher = new BlowfishPasswordHasher();

@@ -73,9 +73,11 @@ class TeachersController extends AppController{
   }
 
 
-  public function mypicture($id = null){
+  public function mypicture(){
     $this->layout = "";
-    return 0;
+    // $this->autoRender = false;
+    // $this->RequestHandler->responseAs('image/png');
+    // readfile(APP.'/Vendor/image.png');
   }
 
 
@@ -91,17 +93,18 @@ class TeachersController extends AppController{
 
       move_uploaded_file($file['tmp_name'], $dest_jullpath);
 
-      $document_root = 'http://localhost:8888/';
-      $folder_path = $document_root.'prokate_cake/teachers/mypicture/';
-      $photourl = $folder_path.$id;
-      $teacher = $this->Teacher->find(
-          'first',
-          array('conditions' => array('Teacher.id' => $id,'Teacher.photo_url' =>  $photourl))
-        );
-      $theacher['Teacher']['photo_data'] = $file;
-      $teacher['Teacher']['photo_url'] = $photourl;
-      $this->Teacher->save($teacher);
+      // $document_root = 'http://localhost:8888/';
+      // $folder_path = $document_root.'prokate_cake/teachers/mypicture/';
+      // $photourl = $folder_path.$id;
+      // $teacher = $this->Teacher->find(
+      //     'first',
+      //     array('conditions' => array('Teacher.id' => $id,'Teacher.photo_url' =>  $photourl))
+      //   );
+      // $theacher['Teacher']['photo_data'] = $file;
+      // $teacher['Teacher']['photo_url'] = $photourl;
+      // $this->Teacher->save($teacher);
       $this->set('photo',$file);
+      $this->User->save($this->request->data);
       $this->redirect(array('action' => 'mypage'));
     }
   }

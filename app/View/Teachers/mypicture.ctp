@@ -1,1 +1,5 @@
-<?php echo $this->Html->image('13.png', array('alt' => 'CakePHP','width'=>'300','height'=>'200')); ?>
+<?php
+echo $photo;
+$picture = '13.png';
+echo $this->Html->image($picture, array('alt' => 'CakePHP','width'=>'300','height'=>'200'));
+?>
