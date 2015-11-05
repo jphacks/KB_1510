@@ -31,6 +31,7 @@
             <input type="submit" value="検索">
             </form>
             </li>
+            <li><?php echo $this->Html->link('お知らせ', array('controller' => 'notices', 'action' => 'lists')); ?>
 
         </ul>
         <ul class="nav navbar-nav navbar-right">

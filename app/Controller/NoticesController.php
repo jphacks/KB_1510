@@ -1,6 +1,6 @@
 <?php
 
-class ProfilesController extends AppController{
+class NoticesController extends AppController{
 	public $helpers  = array('Html', 'Form', 'Flash');
 	public $components = array('Flash');
 
@@ -14,9 +14,18 @@ public $scaffold;
 	/**
 	 * 初期表示
 	 */
-	public function upload(){
-		$this->render('upload');
+	public function index(){
+		$this->render('index');
 	}
+
+
+	public function lists(){
+    $params = array(
+        'order' => 'modified desc',
+        'limit' => 20
+      );
+    $this->set('teacher', $this->Notice->find('all', $params));
+  }
 	
 	/**
 	 * 投稿処理
@@ -25,28 +34,28 @@ public $scaffold;
 		
 		if($this->request->is('post')){
 			// 登録処理を行う。
-			// $id = $this->Profile->save($this->request->data);
-			$session_id = 3;
-			$id = $session_id;
-			$this->Profile->save($this->request->data);
+			$id = $this->Notice->save($this->request->data);
+			
 			// 登録後、参照画面にリダイレクトする。
-			$this->redirect('/Profiles/view/'.$this->Profile->id);
+			$this->redirect('/Notices/view/'.$this->Notice->id);
 			return;
 		}
 		
-		$this->render('upload');
+		$this->render('index');
 	}
 	
 	/**
 	 * 投稿データ参照
 	 */
 	public function view(){
+		
 		// 投稿idを取得する。
-		// $id = $this->request->pass[0];
-
+		$id = $this->request->pass[0];
+		
+		
 		// データを取得する。
-		$options = array('conditions' => array('Profile.userid' => $id));
-		$data = $this->Profile->find('all', $options);
+		$options = array('conditions' => array('Notice.id' => $id));
+		$data = $this->Notice->find('all', $options);
 		
 		// 取得したデータをveiwにセットする。
 		$this->set('data', $data);
@@ -54,12 +63,23 @@ public $scaffold;
 		$this->render('view');
 	}
 
+	// public function view($id = null){
+	// 	if(!$id){
+	// 		throw new NotFoundException(__('Invalid post'));
+	// 	}
+
+	// 	$post = $this->Notice->findById($id);
+	// 	if(!$post){
+	// 		throw new NotFoundException(__('Invalid post'));
+	// 	}
+	// 	$this->set('post', $post);
+	// }
 
 	public function add(){
 		if($this->request->is('post')){
-			$this->request->data['Post']['user_id'] = $this->Auth->user('id');
-			$this->Profile->create();
-			if($this->Profile->save($this->request->data)){
+			$this->request->data['Notice']['user_id'] = $this->Auth->user('id');
+			$this->Notice->create();
+			if($this->Notice->save($this->request->data)){
 				$this->Flash->success(__('Your post has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			}
@@ -72,14 +92,14 @@ public $scaffold;
 			throw new NotFoundException(__('Invalid post'));
 		}
 
-		$post = $this->Profile->findById($id);
+		$post = $this->Notice->findById($id);
 		if(!$post){
 			throw new NotFoundException(__('Invalid post'));
 		}
 
 		if($this->request->is(array('post', 'put'))){
-			$this->Profile->id = $id;
-			if($this->Profile->save($this->request->data)){
+			$this->Notice->id = $id;
+			if($this->Notice->save($this->request->data)){
 				$this->Flash->success(__('Your post has been updated.'));
 				return $this->redirect(array('action' => 'index'));
 			}
@@ -96,7 +116,7 @@ public $scaffold;
 			throw new MethodNotAllowedException();
 		}
 
-		if($this->Profile->delete($id)){
+		if($this->Notice->delete($id)){
 			$this->Flash->success(
 				__('The post with id: %s has been deleted.', h($id)));
 		}else{
@@ -114,7 +134,7 @@ public $scaffold;
 
 		if(in_array($this->action, array('edit', 'delete'))){
 			$postId = (int) $this->request->param['pass'][0];
-			if($this->Profile->isOwnedBy($postId, $user['id'])){
+			if($this->Notice->isOwnedBy($postId, $user['id'])){
 				return true;
 			}
 		}

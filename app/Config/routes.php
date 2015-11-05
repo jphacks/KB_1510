@@ -39,6 +39,8 @@ Router::connect('/mypages/*', array('controller' => 'teachers', 'action' => 'myp
 
 Router::connect('/jsons/*', array('controller' => 'comments', 'action' => 'method'));
 
+Router::connect('/info/*', array('controller' => 'notices', 'action' => 'lists'));
+
 Router::connect('/comjsons/*', array('controller' => 'comments', 'action' => 'comment_inf'));
 
 
