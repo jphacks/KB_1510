@@ -5,20 +5,20 @@
         <!-- 自分のプロフィール画像（なければ初期設定でこちらから用意） -->
       </div>
       <div class="profile_text col-md-9"><!-- プロフィールのテキスト-->
-      <?php  debug($teacher['username']);
-      if(empty($teacher['username'])){
+      <?php  //debug($teacher['Teacher']['username']);
+      if(empty($teacher['Teacher'])){
         echo "読み込みエラー！通信エラーかもしくは、ユーザーが存在しない可能性があります。";
         exit();
       }else{
-        $profile = $teacher['Teacher'][0]; 
+        $profile = $teacher['Teacher']; 
         } ?>
         <h2><?php echo h($profile['username']); ?></h2>
         <?php
-        echo $profile['job'];
-        echo $profile['gender'];
-        echo $profile['old'];
-        ?>
-        <?php echo $profile['language']; ?>
+        echo $profile['job']."\n";
+        echo $profile['gender']."\n";
+        echo $profile['old']."\n";
+        ?><br>
+        <?php echo $profile['language']; ?><br>
         <?php echo $this->Html->link('プロフィール編集', array('controller' => 'teachers', 'action' => 'edit', $profile['id'])); ?>
         <br>
         <?php echo $this->Html->link('トップ画編集', array('controller' => 'teachers', 'action' => 'upload', $profile['id'])); ?>

@@ -36,11 +36,12 @@ class TeachersController extends AppController{
 
   public function mypage(){
     $id = $this->Auth->user('id');
-    $id = 3; //後で消します。
+    $id = 8; //後で消します。
     if(!$id){
       throw new NotFoundException(__('ログインされていません'));
     }
-    $teacher = $this->Teacher->findById($id);
+    //$teacher = $this->Teacher->findById($id);
+    $teacher = $this->Teacher->find('first', ['conditions' => ['Teacher.id' => $id]]);
     //$this->set(compact('teacher'));
     $this->set('teacher',$teacher);
   }
