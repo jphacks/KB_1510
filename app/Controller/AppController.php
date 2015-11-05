@@ -54,7 +54,7 @@ class AppController extends Controller {
             'password' => 'password'
           ),
         )
-      )
+      ),
       'authorize' => array('Controller')
     )
   );
