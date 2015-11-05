@@ -5,16 +5,23 @@
         <!-- 自分のプロフィール画像（なければ初期設定でこちらから用意） -->
       </div>
       <div class="profile_text col-md-9"><!-- プロフィールのテキスト-->
-        <h2><?php echo h($teacher['Teacher']['username']); ?></h2>
+      <?php  debug($teacher['username']);
+      if(empty($teacher['username'])){
+        echo "読み込みエラー！通信エラーかもしくは、ユーザーが存在しない可能性があります。";
+        exit();
+      }else{
+        $profile = $teacher['Teacher'][0]; 
+        } ?>
+        <h2><?php echo h($profile['username']); ?></h2>
         <?php
-        echo $teacher['Teacher']['job'];
-        echo $teacher['Teacher']['gender'];
-        echo $teacher['Teacher']['old'];
+        echo $profile['job'];
+        echo $profile['gender'];
+        echo $profile['old'];
         ?>
-        <?php echo $teacher['Teacher']['language']; ?>
-        <?php echo $this->Html->link('プロフィール編集', array('controller' => 'teachers', 'action' => 'edit', $teacher['Teacher']['id'])); ?>
+        <?php echo $profile['language']; ?>
+        <?php echo $this->Html->link('プロフィール編集', array('controller' => 'teachers', 'action' => 'edit', $profile['id'])); ?>
         <br>
-        <?php echo $this->Html->link('トップ画編集', array('controller' => 'teachers', 'action' => 'upload', $teacher['Teacher']['id'])); ?>
+        <?php echo $this->Html->link('トップ画編集', array('controller' => 'teachers', 'action' => 'upload', $profile['id'])); ?>
       </div>
     </div>
   </div>

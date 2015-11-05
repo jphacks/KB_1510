@@ -7,7 +7,7 @@ class TeachersController extends AppController{
   public function beforeFilter(){
     parent::beforeFilter();
 
-    $this->Auth->allow('login','lists','lists_json','upload','mypicture');
+    $this->Auth->allow('login','lists','lists_json','upload','mypicture','mypage');
 
   }
 
@@ -36,11 +36,13 @@ class TeachersController extends AppController{
 
   public function mypage(){
     $id = $this->Auth->user('id');
+    $id = 3; //後で消します。
     if(!$id){
       throw new NotFoundException(__('ログインされていません'));
     }
     $teacher = $this->Teacher->findById($id);
-    $this->set(compact('teacher'));
+    //$this->set(compact('teacher'));
+    $this->set('teacher',$teacher);
   }
 
 
@@ -75,7 +77,6 @@ class TeachersController extends AppController{
 
   public function mypicture(){
     $this->layout = "";
-    // $this->autoRender = false;
     // $this->RequestHandler->responseAs('image/png');
     // readfile(APP.'/Vendor/image.png');
   }
