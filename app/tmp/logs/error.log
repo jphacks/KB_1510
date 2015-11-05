@@ -4631,3 +4631,2961 @@ Request URL: /prokate/fonts/fontawesome-webfont.ttf?v=4.3.0
 Stack Trace:
 #0 /Applications/MAMP/htdocs/prokate/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-11-03 01:47:38 Error: Fatal Error (4): syntax error, unexpected '$user_matchings' (T_VARIABLE), expecting function (T_FUNCTION) in [/Applications/MAMP/htdocs/prokate_cake/app/Model/User.php, line 30]
+2015-11-03 01:47:38 Error: [FatalErrorException] syntax error, unexpected '$user_matchings' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /prokate_cake/users/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 30, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 30, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-03 01:48:40 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/UsersController.php, line 27]
+2015-11-03 01:48:40 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/users/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 27, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 27, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-03 01:48:56 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/UsersController.php, line 27]
+2015-11-03 01:48:56 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/users/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 27, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 27, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-03 01:50:17 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/UsersController.php, line 66]
+2015-11-03 01:50:17 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/users/view/10
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 66)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 66, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 66, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-03 01:54:22 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/UsersController.php, line 66]
+2015-11-03 01:54:22 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/users/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 66)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 66, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 66, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-03 02:00:16 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/UsersController.php, line 66]
+2015-11-03 02:00:16 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/users/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 66)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 66, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 66, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-03 02:00:56 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/UsersController.php, line 66]
+2015-11-03 02:00:56 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/users/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 66)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 66, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 66, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-03 02:04:35 Error: Fatal Error (4): syntax error, unexpected 'foreach' (T_FOREACH) in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 3]
+2015-11-03 02:04:35 Error: [FatalErrorException] syntax error, unexpected 'foreach' (T_FOREACH)
+Request URL: /prokate_cake/users/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 3, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 3, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-03 02:05:10 Error: Fatal Error (4): syntax error, unexpected 'foreach' (T_FOREACH) in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 3]
+2015-11-03 02:05:10 Error: [FatalErrorException] syntax error, unexpected 'foreach' (T_FOREACH)
+Request URL: /prokate_cake/users/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 3, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 3, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:45:55 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:10 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:10 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:10 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:10 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:10 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:10 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:10 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:10 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:10 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:10 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:10 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:10 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:10 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:10 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:16 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:22 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:22 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:22 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:22 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:22 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:22 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:22 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:22 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:22 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:22 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:22 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:22 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:22 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:22 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'Teacher_matching' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:46:30 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 4]
+Trace:
+include - APP/View/Users/view.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 960
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2015-11-03 02:52:53 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/img/13.png
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:01:15 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:01:16 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:01:16 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:01:22 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:01:23 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:01:23 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:01:28 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:01:29 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:01:29 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:01:32 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:01:32 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:01:33 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:01:50 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:01:50 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:01:50 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:02:06 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:02:06 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:02:07 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:02:21 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:02:21 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:02:21 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:02:26 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:02:26 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:02:26 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:02:52 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:02:53 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:02:53 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:03:01 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:03:01 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 03:03:01 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 08:25:47 Error: [MissingPluginException] Plugin Teacher_matching could not be found.
+Exception Attributes: array (
+  'plugin' => 'Teacher_matching',
+)
+Request URL: /prokate_cake/users/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(227): CakePlugin::path('Teacher_matchin...')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(549): App::path('Model', 'Teacher_matchin...')
+#2 [internal function]: App::load('user_id')
+#3 [internal function]: spl_autoload_call('user_id')
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Utility/ClassRegistry.php(146): class_exists('user_id')
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(171): ClassRegistry::init('Teacher_matchin...', true)
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(204): FormHelper->_getModel('Teacher_matchin...')
+#7 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(354): FormHelper->_introspectModel('Teacher_matchin...', 'key')
+#8 /Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp(10): FormHelper->create('Teacher_matchin...', Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(971): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#11 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#12 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#13 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-11-03 08:26:34 Error: [MissingPluginException] Plugin Teacher_matching could not be found.
+Exception Attributes: array (
+  'plugin' => 'Teacher_matching',
+)
+Request URL: /prokate_cake/users/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(227): CakePlugin::path('Teacher_matchin...')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(549): App::path('Model', 'Teacher_matchin...')
+#2 [internal function]: App::load('user_id')
+#3 [internal function]: spl_autoload_call('user_id')
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Utility/ClassRegistry.php(146): class_exists('user_id')
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(171): ClassRegistry::init('Teacher_matchin...', true)
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(204): FormHelper->_getModel('Teacher_matchin...')
+#7 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(354): FormHelper->_introspectModel('Teacher_matchin...', 'key')
+#8 /Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp(6): FormHelper->create('Teacher_matchin...', Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(971): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#11 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#12 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#13 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-11-03 08:30:55 Error: [MissingTableException] Table teacher_matchings for model Teacher_matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'teacher_matchings',
+  'class' => 'Teacher_matching',
+  'ds' => 'default',
+)
+Request URL: /prokate_cake/users/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(3648): Model->setSource('teacher_matchin...')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(AppModel), 'Teacher_matchin...', '')
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(User), Object(AppModel), 'hasMany', 'Teacher_matchin...', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasMany', 'Teacher_matchin...', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(3026): DboSource->read(Object(User), Array)
+#7 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(2998): Model->_readDataSource('first', Array)
+#8 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(1630): Model->find('first', Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/app/Controller/UsersController.php(67): Model->read()
+#10 [internal function]: UsersController->view('11')
+#11 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#12 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#14 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-03 08:31:36 Error: [MissingTableException] Table teacher_matchings for model Teacher_matching was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'teacher_matchings',
+  'class' => 'Teacher_matching',
+  'ds' => 'default',
+)
+Request URL: /prokate_cake/users/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(3648): Model->setSource('teacher_matchin...')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(2525): Model->schema()
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1765): DboSource->fields(Object(AppModel), 'Teacher_matchin...', '')
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1265): DboSource->generateAssociationQuery(Object(User), Object(AppModel), 'hasMany', 'Teacher_matchin...', Array, Array, true)
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1145): DboSource->queryAssociation(Object(User), Object(AppModel), 'hasMany', 'Teacher_matchin...', Array, Array, true, Array, 0, Array)
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(3026): DboSource->read(Object(User), Array)
+#7 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(2998): Model->_readDataSource('first', Array)
+#8 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(1630): Model->find('first', Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/app/Controller/UsersController.php(67): Model->read()
+#10 [internal function]: UsersController->view('11')
+#11 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#12 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#14 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-03 08:32:23 Error: [MissingPluginException] Plugin Teachermatching could not be found.
+Exception Attributes: array (
+  'plugin' => 'Teachermatching',
+)
+Request URL: /prokate_cake/users/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(227): CakePlugin::path('Teachermatching')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(549): App::path('Model', 'Teachermatching')
+#2 [internal function]: App::load('user_id')
+#3 [internal function]: spl_autoload_call('user_id')
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Utility/ClassRegistry.php(146): class_exists('user_id')
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(171): ClassRegistry::init('Teachermatching...', true)
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(204): FormHelper->_getModel('Teachermatching...')
+#7 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(354): FormHelper->_introspectModel('Teachermatching...', 'key')
+#8 /Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp(6): FormHelper->create('Teachermatching...', Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(971): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#11 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#12 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#13 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-11-03 08:33:56 Error: [MissingPluginException] Plugin Teachermatching could not be found.
+Exception Attributes: array (
+  'plugin' => 'Teachermatching',
+)
+Request URL: /prokate_cake/users/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(227): CakePlugin::path('Teachermatching')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(549): App::path('Model', 'Teachermatching')
+#2 [internal function]: App::load('user_id')
+#3 [internal function]: spl_autoload_call('user_id')
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Utility/ClassRegistry.php(146): class_exists('user_id')
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(171): ClassRegistry::init('Teachermatching...', true)
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(204): FormHelper->_getModel('Teachermatching...')
+#7 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(354): FormHelper->_introspectModel('Teachermatching...', 'key')
+#8 /Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp(6): FormHelper->create('Teachermatching...', Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(971): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#11 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#12 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#13 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-11-03 08:34:15 Error: [MissingPluginException] Plugin Teachermatching could not be found.
+Exception Attributes: array (
+  'plugin' => 'Teachermatching',
+)
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/Config/bootstrap.php(117): CakePlugin::load('Teachermatching')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/Configure.php(92): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/bootstrap.php(431): Configure::bootstrap(true)
+#3 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(100): include('/Applications/M...')
+#4 {main}
+2015-11-03 08:34:28 Error: [MissingPluginException] Plugin Teachermatching could not be found.
+Exception Attributes: array (
+  'plugin' => 'Teachermatching',
+)
+Request URL: /prokate_cake/users/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(227): CakePlugin::path('Teachermatching')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(549): App::path('Model', 'Teachermatching')
+#2 [internal function]: App::load('user_id')
+#3 [internal function]: spl_autoload_call('user_id')
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Utility/ClassRegistry.php(146): class_exists('user_id')
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(171): ClassRegistry::init('Teachermatching...', true)
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(204): FormHelper->_getModel('Teachermatching...')
+#7 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(354): FormHelper->_introspectModel('Teachermatching...', 'key')
+#8 /Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp(6): FormHelper->create('Teachermatching...', Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(971): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#11 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#12 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#13 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-11-03 08:36:02 Error: [MissingPluginException] Plugin Teachermatching could not be found.
+Exception Attributes: array (
+  'plugin' => 'Teachermatching',
+)
+Request URL: /prokate_cake/users/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(227): CakePlugin::path('Teachermatching')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(549): App::path('Model', 'Teachermatching')
+#2 [internal function]: App::load('user_id')
+#3 [internal function]: spl_autoload_call('user_id')
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Utility/ClassRegistry.php(146): class_exists('user_id')
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(171): ClassRegistry::init('Teachermatching...', true)
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(204): FormHelper->_getModel('Teachermatching...')
+#7 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(354): FormHelper->_introspectModel('Teachermatching...', 'key')
+#8 /Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp(6): FormHelper->create('Teachermatching...', Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(971): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#11 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#12 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#13 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-11-03 08:36:14 Error: [MissingPluginException] Plugin Teachermatching could not be found.
+Exception Attributes: array (
+  'plugin' => 'Teachermatching',
+)
+Request URL: /prokate_cake/users/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(227): CakePlugin::path('Teachermatching')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(549): App::path('Model', 'Teachermatching')
+#2 [internal function]: App::load('user_id')
+#3 [internal function]: spl_autoload_call('user_id')
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Utility/ClassRegistry.php(146): class_exists('user_id')
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(171): ClassRegistry::init('Teachermatching...', true)
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(204): FormHelper->_getModel('Teachermatching...')
+#7 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(354): FormHelper->_introspectModel('Teachermatching...', 'key')
+#8 /Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp(6): FormHelper->create('Teachermatching...', Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(971): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#11 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#12 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#13 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-11-03 08:36:38 Error: [MissingPluginException] Plugin Teachermatching could not be found.
+Exception Attributes: array (
+  'plugin' => 'Teachermatching',
+)
+Request URL: /prokate_cake/users/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(227): CakePlugin::path('Teachermatching')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(549): App::path('Model', 'Teachermatching')
+#2 [internal function]: App::load('user_id')
+#3 [internal function]: spl_autoload_call('user_id')
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Utility/ClassRegistry.php(146): class_exists('user_id')
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(171): ClassRegistry::init('Teachermatching...', true)
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(204): FormHelper->_getModel('Teachermatching...')
+#7 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(354): FormHelper->_introspectModel('Teachermatching...', 'key')
+#8 /Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp(6): FormHelper->create('Teachermatching...', Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(971): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#11 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#12 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#13 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-11-03 08:37:45 Error: [MissingPluginException] Plugin Teachermatching could not be found.
+Exception Attributes: array (
+  'plugin' => 'Teachermatching',
+)
+Request URL: /prokate_cake/users/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(227): CakePlugin::path('Teachermatching')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(549): App::path('Model', 'Teachermatching')
+#2 [internal function]: App::load('user_id')
+#3 [internal function]: spl_autoload_call('user_id')
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Utility/ClassRegistry.php(146): class_exists('user_id')
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(171): ClassRegistry::init('Teachermatching...', true)
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(204): FormHelper->_getModel('Teachermatching...')
+#7 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(354): FormHelper->_introspectModel('Teachermatching...', 'key')
+#8 /Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp(6): FormHelper->create('Teachermatching...', Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(971): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#11 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#12 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#13 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-11-03 08:37:53 Error: [MissingPluginException] Plugin Teachermatching could not be found.
+Exception Attributes: array (
+  'plugin' => 'Teachermatching',
+)
+Request URL: /prokate_cake/users/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(227): CakePlugin::path('Teachermatching')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(549): App::path('Model', 'Teachermatching')
+#2 [internal function]: App::load('user_id')
+#3 [internal function]: spl_autoload_call('user_id')
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Utility/ClassRegistry.php(146): class_exists('user_id')
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(171): ClassRegistry::init('Teachermatching...', true)
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(204): FormHelper->_getModel('Teachermatching...')
+#7 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(354): FormHelper->_introspectModel('Teachermatching...', 'key')
+#8 /Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp(6): FormHelper->create('Teachermatching...', Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(971): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#11 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#12 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#13 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-11-03 08:39:19 Error: [MissingControllerException] Controller class TeachermatchingsController could not be found.
+Exception Attributes: array (
+  'class' => 'TeachermatchingsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/teachermatchings/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 08:40:12 Error: [MissingControllerException] Controller class TeachermatchingsController could not be found.
+Exception Attributes: array (
+  'class' => 'TeachermatchingsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/teachermatchings/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 08:47:03 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS), expecting ')' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 5]
+2015-11-03 08:47:03 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS), expecting ')'
+Request URL: /prokate_cake/users/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 5, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 5, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-03 08:47:26 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 6]
+2015-11-03 08:47:26 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /prokate_cake/users/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 6, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 6, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-03 08:48:18 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Users/view.ctp, line 6]
+2015-11-03 08:48:18 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /prokate_cake/users/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 6, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 6, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-03 09:55:14 Error: Fatal Error (64): Cannot redeclare Teachermatching::$belongsTo in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Teachermatching.php, line 8]
+2015-11-03 09:55:14 Error: [FatalErrorException] Cannot redeclare Teachermatching::$belongsTo
+Request URL: /prokate_cake/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/M...', 8)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/M...', 8, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/M...', 8, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-03 09:56:07 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 09:56:07 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 09:56:08 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 10:16:12 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 10:16:13 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 10:16:13 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 10:17:09 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'created' in order clause is ambiguous
+Request URL: /prokate_cake/teachermatchings/lists_json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Teacher...', Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Teacher...', Array, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1114): DboSource->fetchAll('SELECT `Teacher...', false)
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teachermatching), Array)
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/prokate_cake/app/Controller/TeachermatchingsController.php(45): Model->find('all', Array)
+#7 [internal function]: TeachermatchingsController->lists_json()
+#8 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachermatchingsController), Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachermatchingsController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-11-03 10:19:56 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'created' in order clause is ambiguous
+Request URL: /prokate_cake/teachermatchings/lists_json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Teacher...', Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Teacher...', Array, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1114): DboSource->fetchAll('SELECT `Teacher...', false)
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teachermatching), Array)
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/prokate_cake/app/Controller/TeachermatchingsController.php(45): Model->find('all', Array)
+#7 [internal function]: TeachermatchingsController->lists_json()
+#8 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachermatchingsController), Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachermatchingsController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-11-03 11:47:17 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'created' in order clause is ambiguous
+Request URL: /prokate_cake/teachermatchings/lists_json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Teacher...', Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Teacher...', Array, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1114): DboSource->fetchAll('SELECT `Teacher...', false)
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teachermatching), Array)
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/prokate_cake/app/Controller/TeachermatchingsController.php(45): Model->find('all', Array)
+#7 [internal function]: TeachermatchingsController->lists_json()
+#8 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachermatchingsController), Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachermatchingsController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-11-03 12:37:25 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'created' in order clause is ambiguous
+Request URL: /prokate_cake/teachermatchings/lists_json
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Teacher...', Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Teacher...', Array, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1114): DboSource->fetchAll('SELECT `Teacher...', false)
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Teachermatching), Array)
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/prokate_cake/app/Controller/TeachermatchingsController.php(45): Model->find('all', Array)
+#7 [internal function]: TeachermatchingsController->lists_json()
+#8 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachermatchingsController), Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachermatchingsController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-11-03 12:56:47 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 12:56:47 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 12:56:48 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 12:59:58 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 12:59:58 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 12:59:58 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 13:00:27 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 13:00:28 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 13:00:28 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 13:00:34 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/img/13.png
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 13:00:37 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/img/13.png
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 13:00:50 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 13:00:50 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 13:00:51 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 15:36:53 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 15:36:53 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 15:36:53 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 15:37:08 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 15:37:08 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 15:37:08 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 15:42:01 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 15:42:02 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 15:42:02 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 15:46:57 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 15:46:57 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 15:46:57 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 15:55:46 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 15:55:46 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 15:55:46 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 16:03:59 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 16:03:59 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-03 16:04:00 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 13:40:36 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 13:40:37 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 13:40:37 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 13:40:57 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 13:40:58 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 13:40:58 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 13:41:19 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 13:41:19 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 13:41:20 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 13:44:31 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 13:44:32 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 13:44:32 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 13:44:42 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 13:44:43 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 13:44:43 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 13:46:47 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 13:46:47 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 13:46:47 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 13:47:05 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 13:47:06 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 13:47:06 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 14:03:19 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 14:03:19 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 14:03:20 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 14:03:37 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 14:03:37 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 14:03:38 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 14:03:42 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 14:03:42 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 14:03:42 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 14:07:02 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/img/13.png
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 19:24:02 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/img/13.png
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 19:24:07 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 19:24:07 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 19:24:07 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 19:59:24 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 19:59:24 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-04 19:59:24 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-05 01:03:15 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-05 01:03:15 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-05 01:03:16 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-05 01:20:13 Error: [MissingPluginException] Plugin Upload could not be found.
+Exception Attributes: array (
+  'plugin' => 'Upload',
+)
+Request URL: /prokate_cake/teachers/upload
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(227): CakePlugin::path('Upload')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(549): App::path('Model/Behavior', 'Upload')
+#2 [internal function]: App::load('UploadBehavior')
+#3 [internal function]: spl_autoload_call('UploadBehavior')
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/BehaviorCollection.php(120): class_exists('UploadBehavior')
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Upload.Upload', Array)
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(774): BehaviorCollection->init('Teacher', Array)
+#7 [internal function]: Model->__construct(Array)
+#8 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(164): ClassRegistry::init(Array)
+#10 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(204): FormHelper->_getModel('Teacher')
+#11 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(354): FormHelper->_introspectModel('Teacher', 'key')
+#12 /Applications/MAMP/htdocs/prokate_cake/app/View/Teachers/upload.ctp(8): FormHelper->create(NULL, Array)
+#13 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(971): include('/Applications/M...')
+#14 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#15 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#16 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#17 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#18 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#19 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2015-11-05 01:21:13 Error: [MissingPluginException] Plugin Upload could not be found.
+Exception Attributes: array (
+  'plugin' => 'Upload',
+)
+Request URL: /prokate_cake/teachers/upload
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(227): CakePlugin::path('Upload')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(549): App::path('Model/Behavior', 'Upload')
+#2 [internal function]: App::load('UploadBehavior')
+#3 [internal function]: spl_autoload_call('UploadBehavior')
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/BehaviorCollection.php(120): class_exists('UploadBehavior')
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Upload.Upload', Array)
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(774): BehaviorCollection->init('Teacher', Array)
+#7 [internal function]: Model->__construct(Array)
+#8 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(164): ClassRegistry::init(Array)
+#10 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(204): FormHelper->_getModel('Teacher')
+#11 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(354): FormHelper->_introspectModel('Teacher', 'key')
+#12 /Applications/MAMP/htdocs/prokate_cake/app/View/Teachers/upload.ctp(8): FormHelper->create(NULL, Array)
+#13 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(971): include('/Applications/M...')
+#14 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#15 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#16 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#17 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#18 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#19 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2015-11-05 01:22:14 Error: [MissingPluginException] Plugin Upload could not be found.
+Exception Attributes: array (
+  'plugin' => 'Upload',
+)
+Request URL: /prokate_cake/teachers/upload
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(227): CakePlugin::path('Upload')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(549): App::path('Model/Behavior', 'Upload')
+#2 [internal function]: App::load('UploadBehavior')
+#3 [internal function]: spl_autoload_call('UploadBehavior')
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/BehaviorCollection.php(120): class_exists('UploadBehavior')
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Upload.Upload', Array)
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(774): BehaviorCollection->init('Teacher', Array)
+#7 [internal function]: Model->__construct(Array)
+#8 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(164): ClassRegistry::init(Array)
+#10 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(204): FormHelper->_getModel('Teacher')
+#11 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/Helper/FormHelper.php(354): FormHelper->_introspectModel('Teacher', 'key')
+#12 /Applications/MAMP/htdocs/prokate_cake/app/View/Teachers/upload.ctp(8): FormHelper->create(NULL, Array)
+#13 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(971): include('/Applications/M...')
+#14 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#15 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#16 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#17 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#18 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#19 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2015-11-05 08:32:02 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-05 08:32:02 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-05 08:32:02 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-05 11:08:01 Error: [MissingActionException] Action UsersController::mypicture() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'mypicture',
+)
+Request URL: /prokate_cake/users/mypicture
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-05 11:08:08 Error: Fatal Error (1): Call to a member function responseAs() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/TeachersController.php, line 79]
+2015-11-05 11:08:08 Error: [FatalErrorException] Call to a member function responseAs() on null
+Request URL: /prokate_cake/teachers/mypicture
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 79)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 79, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 79, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-05 11:08:37 Error: Fatal Error (1): Call to a member function responseAs() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/TeachersController.php, line 79]
+2015-11-05 11:08:37 Error: [FatalErrorException] Call to a member function responseAs() on null
+Request URL: /prokate_cake/teachers/mypicture
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 79)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 79, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 79, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-05 11:17:43 Error: Fatal Error (1): Call to a member function responseAs() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/TeachersController.php, line 79]
+2015-11-05 11:17:43 Error: [FatalErrorException] Call to a member function responseAs() on null
+Request URL: /prokate_cake/teachers/mypicture
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 79)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 79, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 79, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-05 11:18:29 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/img/13.png
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-05 11:19:14 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/img/13.png
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-05 15:25:44 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-05 15:25:44 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-05 15:25:45 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-05 15:25:54 Error: [MissingViewException] View file "Profiles/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Profiles/index.ctp',
+)
+Request URL: /prokate_cake/profiles/addphoto
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(470): View->_getViewFileName('index')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(960): View->render('index', NULL)
+#2 /Applications/MAMP/htdocs/prokate_cake/app/Controller/ProfilesController.php(18): Controller->render('index')
+#3 [internal function]: ProfilesController->addphoto()
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfilesController), Array)
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest))
+#7 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-05 15:27:41 Error: [MissingActionException] Action PostsController::post() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'post',
+)
+Request URL: /prokate_cake/posts/post
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-05 15:29:58 Error: [MissingActionException] Action PostsController::post() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'post',
+)
+Request URL: /prokate_cake/posts/post
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-05 15:30:06 Error: [MissingViewException] View file "Profiles/addphoto.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Profiles/addphoto.ctp',
+)
+Request URL: /prokate_cake/profiles/addphoto
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(470): View->_getViewFileName('addphoto')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(960): View->render('addphoto', NULL)
+#2 /Applications/MAMP/htdocs/prokate_cake/app/Controller/ProfilesController.php(18): Controller->render('addphoto')
+#3 [internal function]: ProfilesController->addphoto()
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfilesController), Array)
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest))
+#7 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-05 15:30:48 Error: Fatal Error (64): Cannot redeclare class Post in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Profile.php, line 26]
+2015-11-05 15:30:48 Error: [FatalErrorException] Cannot redeclare class Post
+Request URL: /prokate_cake/profiles/upload
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/M...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/M...', 26, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/M...', 26, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-05 15:32:01 Error: Fatal Error (64): Cannot redeclare class Post in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Profile.php, line 26]
+2015-11-05 15:32:01 Error: [FatalErrorException] Cannot redeclare class Post
+Request URL: /prokate_cake/profiles/upload
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/M...', 26)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/M...', 26, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/M...', 26, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-05 15:32:23 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/files/profiles/photo/1/hwheell.jpg
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-05 15:41:53 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/files/profiles/photo/1/hwheell.jpg
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-05 15:41:53 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/files/profiles/photo/1/hwheell.jpg
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-05 15:42:15 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/files/profiles/photo/2/images.jpeg
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
