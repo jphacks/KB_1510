@@ -56,6 +56,6 @@
 
 		},800);
 	})
-	</script>>
+	</script>
 </body>
 </html>
