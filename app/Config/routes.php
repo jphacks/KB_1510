@@ -43,6 +43,7 @@ Router::connect('/info/*', array('controller' => 'notices', 'action' => 'lists')
 
 Router::connect('/comjsons/*', array('controller' => 'comments', 'action' => 'comment_inf'));
 
+Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
 Router::mapResources('CommentsController');
 Router::parseExtensions('json');
