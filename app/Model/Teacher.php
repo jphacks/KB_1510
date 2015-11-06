@@ -32,6 +32,7 @@ class Teacher extends AppModel{
     ];
     
 
+
   public function beforesave($options = array()){
     if(isset($this->data[$this->alias]['password'])){
       $passwordHasher = new BlowfishPasswordHasher();

@@ -7,7 +7,7 @@ class TeachersController extends AppController{
   public function beforeFilter(){
     parent::beforeFilter();
 
-    $this->Auth->allow('login','lists','lists_json','upload','mypicture','mypage');
+    $this->Auth->allow('login','lists','lists_json','upload','mypicture','mypage','edit');
 
   }
 
@@ -34,17 +34,6 @@ class TeachersController extends AppController{
     $this->set(compact('user', 'teacher'));
   }
 
-  public function mypage(){
-    $id = $this->Auth->user('id');
-    $id = 8; //後で消します。
-    if(!$id){
-      throw new NotFoundException(__('ログインされていません'));
-    }
-    //$teacher = $this->Teacher->findById($id);
-    $teacher = $this->Teacher->find('first', ['conditions' => ['Teacher.id' => $id]]);
-    //$this->set(compact('teacher'));
-    $this->set('teacher',$teacher);
-  }
 
 
   public function lists_json(){
@@ -76,39 +65,77 @@ class TeachersController extends AppController{
   }
 
 
-  public function mypicture(){
-    $this->layout = "";
-    // $this->RequestHandler->responseAs('image/png');
-    // readfile(APP.'/Vendor/image.png');
+    public function mypage(){
+    $id = $this->Auth->user('id');
+    $id = 8; //後で消します。
+    if(!$id){
+      throw new NotFoundException(__('ログインされていません'));
+    }
+    //$teacher = $this->Teacher->findById($id);
+    $teacher = $this->Teacher->find('first', ['conditions' => ['Teacher.id' => $id]]);
+    //$this->set(compact('teacher'));
+    $this->set('teacher',$teacher);
+  }
+
+ /**
+   * 初期表示
+   */
+  public function upload(){
+    $this->set('teacher',$this->Teacher->find('first', ['conditions' => ['Teacher.id' => $id]]));
+    $this->render('upload');
+  }
+  
+  /**
+   * 投稿処理
+   */
+  public function post(){
+    if($this->request->is('post')){
+      // 登録処理を行う。
+      // $id = $this->Teacher->save($this->request->data);
+      $session_id = 3;
+      $id = $session_id;
+      $this->Teacher->save($this->request->data);
+      // 登録後、参照画面にリダイレクトする。
+      $this->redirect('/Profiles/view/'.$this->Teacher->id);
+      return;
+    }
+    $this->render('upload');
+  }
+  
+  /**
+   * 投稿データ参照
+   */
+  public function mypicture($id = null){
+    // 投稿idを取得する。
+    // $id = $this->request->pass[0];
+    // データを取得する。
+    $options = array('conditions' => array('Teacher.id' => $id));
+    $data = $this->Teacher->find('all', $options);
+    // 取得したデータをveiwにセットする。
+    $this->set('data', $data);
+    $this->render('mypicture');
   }
 
 
-  public function upload($id = null){
-    if($this->request->data){
-      $file = $this->request->data['file'];
-      $original_filename = $file['name'];
-      $uploaded_file = $file['tmp_name'];
-      $filesize = $file['size'];
-      $filetype = $file['type'];
-
-      $dest_jullpath = APP.'tmp/'.md5(uniqid(rand(),true));
-
-      move_uploaded_file($file['tmp_name'], $dest_jullpath);
-
-      // $document_root = 'http://localhost:8888/';
-      // $folder_path = $document_root.'prokate_cake/teachers/mypicture/';
-      // $photourl = $folder_path.$id;
-      // $teacher = $this->Teacher->find(
-      //     'first',
-      //     array('conditions' => array('Teacher.id' => $id,'Teacher.photo_url' =>  $photourl))
-      //   );
-      // $theacher['Teacher']['photo_data'] = $file;
-      // $teacher['Teacher']['photo_url'] = $photourl;
-      // $this->Teacher->save($teacher);
-      $this->set('photo',$file);
-      $this->User->save($this->request->data);
-      $this->redirect(array('action' => 'mypage'));
+  public function edit($id = null){
+    // if(!$this->Teacher->exists()){
+    //   throw new NotFoundException(__('Invalid user'));
+    // }
+    if($this->request->is('post') || $this->request->is('put')){
+      if($this->Teacher->save($this->request->data)){
+        $this->Flash->success(__('The user has been saved.'));
+        $this->redirect(array('action' => 'mypage'));
+      }else{
+        $this->Flash->error(__('The user could not be saved. Please try again.'));
+      }
+    }else{
+      $this->request->data = $this->Teacher->findById($id);
+      unset($this->request->data['Teacher']['password']);
     }
+
+    $this->set('program_language',$this->Teacher->find('list', array(
+      'fields' => array('C', 'C+', 'Java')
+    )));
   }
 
 
@@ -152,26 +179,7 @@ class TeachersController extends AppController{
     }
   }
 
-  public function edit($id = null){
-    // if(!$this->Teacher->exists()){
-    //   throw new NotFoundException(__('Invalid user'));
-    // }
-    if($this->request->is('post') || $this->request->is('put')){
-      if($this->Teacher->save($this->request->data)){
-        $this->Flash->success(__('The user has been saved.'));
-        $this->redirect(array('action' => 'mypage'));
-      }else{
-        $this->Flash->error(__('The user could not be saved. Please try again.'));
-      }
-    }else{
-      $this->request->data = $this->Teacher->findById($id);
-      unset($this->request->data['Teacher']['password']);
-    }
-
-    $this->set('program_language',$this->Teacher->find('list', array(
-      'fields' => array('C', 'C+', 'Java')
-    )));
-  }
+  
 
   public function delete($id = null){
     $this->request->onlyAllow('post');
