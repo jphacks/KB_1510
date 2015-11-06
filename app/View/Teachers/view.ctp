@@ -11,3 +11,8 @@ echo $this->Form->input('Teachermatching.user_id',array('type'=>'hidden','value'
 echo $this->Form->end('講師リクエスト');
 }
 ?>
+      <?php //foreach ($teacher['Teachermatching'] as $student): ?>
+          <li><?php //echo h($student['name']) ?></li>
+          <li><?php //echo h($student['job']) ?> </li>
+          
+        <?php //endforeach ?>

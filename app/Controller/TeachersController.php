@@ -73,6 +73,7 @@ class TeachersController extends AppController{
     }
     //$teacher = $this->Teacher->findById($id);
     $teacher = $this->Teacher->find('first', ['conditions' => ['Teacher.id' => $id]]);
+    //$matchings = $this->User->find('all',['conditions' => ['Teachermatching.user_id' => $id]]);
     //$this->set(compact('teacher'));
     $this->set('teacher',$teacher);
   }
