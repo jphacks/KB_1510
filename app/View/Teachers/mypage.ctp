@@ -32,8 +32,8 @@
         <?php var_dump($teacher['Teachermatching']); ?><br>
         <?php foreach ($teacher['Teachermatching'] as $student): ?>
           <tr>
-          <td><?php echo h($student['user_id']) ?></td>
-          <td><?php echo $this->Html->link('生徒', array('controller' => 'users', 'action' => 'view', $student['user_id'])); ?></td>
+          <td><?php echo h($student['id']) ?></td>
+          <td><?php echo $this->Html->link('生徒：'.$student['name'], array('controller' => 'users', 'action' => 'view', $student['user_id'])); ?></td>
           </tr><br>
         <?php endforeach ?>
       </div>

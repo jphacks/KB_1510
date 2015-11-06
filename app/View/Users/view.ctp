@@ -6,6 +6,7 @@ if(!empty($session_id)){
 echo $this->Form->create('Teachermatching',array('action'=>'add'));
 
 echo $this->Form->input('Teachermatching.user_id',array('type'=>'hidden','value'=>$user['User']['id']));
+echo $this->Form->input('Teachermatching.name',array('type'=>'hidden','value'=>$user['User']['username']));
 echo $this->Form->input('Teachermatching.teacher_id',array('type'=>'hidden','value'=>$session_id));
 
 echo $this->Form->end('生徒リクエスト');

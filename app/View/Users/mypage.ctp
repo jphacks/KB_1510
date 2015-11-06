@@ -22,6 +22,13 @@
     <div><!-- 自分に関する講師情報 -->
       <div class="myteachers">
         <!-- 自分の講師一覧表示 -->
+          <?php var_dump($user['Teachermatching']); ?><br>
+        <?php foreach ($user['Teachermatching'] as $teacher): ?>
+          <tr>
+          <td><?php echo h($teacher['user_id']) ?></td>
+          <td><?php echo $this->Html->link($teacher['name'], array('controller' => 'users', 'action' => 'view', $teacher['user_id'])); ?></td>
+          </tr><br>
+        <?php endforeach ?>
       </div>
       <div class="newteachers">
         <!-- 新着講師情報 -->
