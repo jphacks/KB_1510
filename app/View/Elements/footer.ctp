@@ -28,7 +28,7 @@
                 <ul class="nav">
                     <li><a href="http://appart.co.jp" target="_blank">株式会社APパートナーズ</a></li>
                     <li><a href="<?php echo 'http://'.$_SERVER["HTTP_HOST"].$this->webroot.'pages/agreement'; ?>">利用規約</a></li>
-                    <li><a href="">プライバシーポリシー</a></li>
+                    <li><a href="<?php echo 'http://'.$_SERVER["HTTP_HOST"].$this->webroot.'pages/privacy'; ?>">プライバシーポリシー</a></li>
                 </ul>
             </div>
         </div>
