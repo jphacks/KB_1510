@@ -11,6 +11,10 @@
     echo $this->Form->input('email', array(
       'label' => 'メールアドレス',
     ));
+
+     echo $this->Form->input('isStudent', array(
+      'type' => 'hidden','value' => 0
+    ));
     ?>
   </fieldset>
 <?php echo $this->Form->end(__('登録する')); ?>

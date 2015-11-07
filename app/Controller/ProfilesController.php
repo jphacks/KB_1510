@@ -27,8 +27,8 @@ public $scaffold;
 			// 登録処理を行う。
 			// $id = $this->Profile->save($this->request->data);
 			$session_id = 3;
-			$id = $session_id;
-			$this->Profile->save($this->request->data);
+			$user_id = $session_id;
+			$id = $this->Profile->save($this->request->data);
 			// 登録後、参照画面にリダイレクトする。
 			$this->redirect('/Profiles/view/'.$this->Profile->id);
 			return;
@@ -42,10 +42,10 @@ public $scaffold;
 	 */
 	public function view(){
 		// 投稿idを取得する。
-		// $id = $this->request->pass[0];
+		$id = $this->request->pass[0];
 
 		// データを取得する。
-		$options = array('conditions' => array('Profile.userid' => $id));
+		$options = array('conditions' => array('Profile.id' => $id));
 		$data = $this->Profile->find('all', $options);
 		
 		// 取得したデータをveiwにセットする。
