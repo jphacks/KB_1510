@@ -3,6 +3,7 @@
 class ProfilesController extends AppController{
 	public $helpers  = array('Html', 'Form', 'Flash');
 	public $components = array('Flash');
+	public $uses = array('Teacher', 'User');
 
   public function beforeFilter(){
     parent::beforeFilter();
@@ -14,7 +15,18 @@ public $scaffold;
 	/**
 	 * 初期表示
 	 */
-	public function upload(){
+	public function upload($id = null){
+		$session_state = 1;
+		$param = $this->Teacher->find('all');
+    #$this->set('teacher', $this->Teacher->find('all', array('limit' => 10)));
+		if($session_state = 1){
+			$param = $this->Teacher->findById($id);
+		}else{
+			$param = $this->User->findById($id);
+		}
+  //   	$user = $this->User->find('all');
+		// $this->set(compact('user', 'teacher'));
+		$this->set('thisuser',$params);
 		$this->render('upload');
 	}
 	
@@ -27,9 +39,11 @@ public $scaffold;
 			// 登録処理を行う。
 			// $id = $this->Profile->save($this->request->data);
 			$session_id = 3;
-			$user_id = $session_id;
+			$sessein_status = 1;
+			
 			$id = $this->Profile->save($this->request->data);
 			// 登録後、参照画面にリダイレクトする。
+			$option = $this->Profile->findById($id);
 			$this->redirect('/Profiles/view/'.$this->Profile->id);
 			return;
 		}
@@ -46,7 +60,7 @@ public $scaffold;
 
 		// データを取得する。
 		$options = array('conditions' => array('Profile.id' => $id));
-		$data = $this->Profile->find('all', $options);
+		$data = $this->Profile->find('first', $options);
 		
 		// 取得したデータをveiwにセットする。
 		$this->set('data', $data);

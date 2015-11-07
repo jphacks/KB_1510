@@ -27,8 +27,7 @@
   </div>
   <div class="rows">
     <div><!-- 自分に関する生徒情報 -->
-    <?php echo $this->Html->link('プロフィール詳細', array('action' => 'profile',$teacher['Teacher']['id'])); ?>
-      <div class="myteachers">
+      <div class="mystudents">
         <!-- 自分の生徒一覧表示 -->
         <?php //var_dump($teacher['Teachermatching']); ?><br>
         <?php foreach ($teacher['Teachermatching'] as $student): ?>
@@ -40,6 +39,38 @@
       </div>
       <div class="newteachers">
         <!-- 新着生徒情報 -->
+      </div>
+    </div>
+     <div class="rows">
+      <div class="addcomment">
+        <!-- コメント追加欄 -->
+  <?php
+  $session_id = 8; //上と合わせると、講師のidが9という条件の選択 （この２つの値をSessionComponentsで調整）
+  $session_name = "kazuki";
+
+  echo $this->Form->create('Comment',array('action'=>'add_to_teacher'));
+  
+//コメントする人が講師か生徒かによって、場合分け（講師と生徒のidは同じものがあるので、どちらのtableかを決定するため）
+      echo $this->Form->input('body',array('rows'=>3));
+      echo $this->Form->input('commenter',array('type'=>'hidden','value'=>$session_name)); //コメントした人
+      echo $this->Form->input('Comment.teacher_id',array('type'=>'hidden','value'=>$session_id)); //今ログインしている人がコメントするため。
+   echo $this->Form->end('コメント');
+  ?>
+      </div>
+    <!-- 自分へのコメントに関する情報 -->
+      <div class="mycomments">
+        <!-- コメント一覧 -->
+        <?php //var_dump($teacher['Teachermatching']); ?><br>
+        <?php foreach ($teacher['Comment'] as $comment): ?>
+          <tr>
+          <td><?php echo h($comment['id']) ?></td>
+           <td><?php echo $comment['created']; ?></td>
+          <td><?php echo $comment['commenter']; ?></td>
+          <td><?php echo $comment['body']; ?></td>
+          <td><?php echo $this->Html->link($comment['commenter'], array('controller' => 'users', 'action' => 'view', $comment['user_id'])); ?></td>
+          </tr><br>
+        <?php endforeach ?>
+      </div>
       </div>
     </div>
     <div><!-- サイドバー -->

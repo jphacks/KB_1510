@@ -4,7 +4,8 @@ App::uses('AppModel', 'Model');
 App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 
 class User extends AppModel{
-  public $hasMany = "Teachermatching";
+  public $hasMany = array("Teachermatching","Comment");
+  
   public $validate = array(
     'username' => array(
       'required' => array(
@@ -26,6 +27,16 @@ class User extends AppModel{
       )
     )
   );
+
+    public $actsAs = [
+        'Upload.Upload' => [
+            'photo' => [
+                'fields' => [
+                    'dir' => 'photo_dir'
+                ]
+            ]
+        ]
+    ];
 
 
   public function beforeSave($options = array()){

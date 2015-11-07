@@ -7,7 +7,7 @@ class TeachersController extends AppController{
   public function beforeFilter(){
     parent::beforeFilter();
 
-    $this->Auth->allow('login','lists','lists_json','upload','mypicture','mypage','edit');
+    $this->Auth->allow('login','lists','lists_json','upload','mypicture','mypage','edit','profile');
 
   }
 
@@ -67,7 +67,7 @@ class TeachersController extends AppController{
 
     public function mypage(){
     $id = $this->Auth->user('id');
-    $id = 8; //後で消します。
+    $id = 8; //後で消します。,
     if(!$id){
       throw new NotFoundException(__('ログインされていません'));
     }
@@ -76,6 +76,11 @@ class TeachersController extends AppController{
     //$matchings = $this->User->find('all',['conditions' => ['Teachermatching.user_id' => $id]]);
     //$this->set(compact('teacher'));
     $this->set('teacher',$teacher);
+  }
+
+
+  public function profile($id = null){
+    $this->set('teacher', $this->Teacher->findById($id));
   }
 
  /**
@@ -123,12 +128,12 @@ class TeachersController extends AppController{
     //   throw new NotFoundException(__('Invalid user'));
     // }
     if($this->request->is('post') || $this->request->is('put')){
-      if($this->Teacher->save($this->request->data)){
-        $this->Flash->success(__('The user has been saved.'));
-        $this->redirect(array('action' => 'mypage'));
-      }else{
-        $this->Flash->error(__('The user could not be saved. Please try again.'));
-      }
+        if($this->Teacher->save($this->request->data)){
+          $this->Flash->success(__('The user has been saved.'));
+          $this->redirect(array('action' => 'mypage'));
+        }else{
+          $this->Flash->error(__('The user could not be saved. Please try again.'));
+        }
     }else{
       $this->request->data = $this->Teacher->findById($id);
       unset($this->request->data['Teacher']['password']);

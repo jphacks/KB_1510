@@ -93,46 +93,46 @@ class CommentsController extends AppController{
     $this->set('comments',$this->Comment->find('all'));
    }
 
-  // public function add(){
-  //   if($this->request->is('get')){
-  //     throw new MethodNotAllowedException();
-  //   }
-  //   // if($this->request->is('ajax')){
-  //     $this->Comment->create();
-  //     if($this->Comment->save($this->request->data)){
-  //       $this->Flash->success(__('The comment has been saved.'));
-  //       $this->redirect(array('action' => 'lists'));
-  //     }else{
-  //       $this->Flash->error(__('The user could not be saved. Please try again.'));
-  //     }
-  // }
-
-  public function add(){
-
-      // ajax 通信だった場合に以下のブロックを処理する。
-
-      if ($this->request->is('ajax')) {
-
-          $this->autoRender = false;   // 自動描画をさせない
-
-          // json response data ('succeed' と 'message'をJSON形式で返します)
-
-          $succeed = $this->Comment->save($this->request->data);
-          $message = $succeed ? '追加しました' : '追加に失敗しました';
-
-          // Model::$validationErrors があれば、その先頭の一つをメッセージにセット
-
-          if (!$succeed && $this->Comment->validationErrors) {
-              $validationError = array_shift($this->Comment->validationErrors);
-              $message = $validationError[0];
-          }
-          $data = compact('succeed', 'message');
-          $this->response->type('json');
-          echo json_encode($data);
-          exit;
+  public function add_to_teacher(){
+    if($this->request->is('get')){
+      throw new MethodNotAllowedException();
+    }
+    // if($this->request->is('ajax')){
+      $this->Comment->create();
+      if($this->Comment->save($this->request->data)){
+        $this->Flash->success(__('The comment has been saved.'));
+        $this->redirect(array('controller'=>'teachers','action' => 'profile',$this->data['Comment']['teacher_id']));
+      }else{
+        $this->Flash->error(__('The user could not be saved. Please try again.'));
       }
-      /* 通常の処理は省略 */
   }
+
+  // public function addfrom_user(){
+
+  //     // ajax 通信だった場合に以下のブロックを処理する。
+
+  //     if ($this->request->is('ajax')) {
+
+  //         $this->autoRender = false;   // 自動描画をさせない
+
+  //         // json response data ('succeed' と 'message'をJSON形式で返します)
+
+  //         $succeed = $this->Comment->save($this->request->data);
+  //         $message = $succeed ? '追加しました' : '追加に失敗しました';
+
+  //         // Model::$validationErrors があれば、その先頭の一つをメッセージにセット
+
+  //         if (!$succeed && $this->Comment->validationErrors) {
+  //             $validationError = array_shift($this->Comment->validationErrors);
+  //             $message = $validationError[0];
+  //         }
+  //         $data = compact('succeed', 'message');
+  //         $this->response->type('json');
+  //         echo json_encode($data);
+  //         exit;
+  //     }
+  //     /* 通常の処理は省略 */
+  // }
 
 
 
