@@ -46,12 +46,19 @@ class UsersController extends AppController{
 
   public function mypage(){
     $id = $this->Auth->user('id');
+    $id = 3;
     if(!$id){
       throw new NotFoundException(__('ログインされていません'));
     }
-    $id = 3;
+    
     $this->set('user', $this->User->findById($id));
   }
+
+
+    public function profile($id = null){
+    $this->set('user', $this->User->findById($id));
+  }
+
 
   /*public function index(){
     $this->User->recursive = 0;
