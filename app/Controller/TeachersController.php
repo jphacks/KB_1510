@@ -51,8 +51,7 @@ class TeachersController extends AppController{
 
   public function lists(){
     $params = array(
-        'order' => 'modified desc',
-        'limit' => 20
+        'order' => 'modified desc'
       );
     $this->set('teacher', $this->Teacher->find('all', $params));
   }

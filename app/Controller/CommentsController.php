@@ -107,6 +107,20 @@ class CommentsController extends AppController{
       }
   }
 
+    public function add_to_teacherview(){
+    if($this->request->is('get')){
+      throw new MethodNotAllowedException();
+    }
+    // if($this->request->is('ajax')){
+      $this->Comment->create();
+      if($this->Comment->save($this->request->data)){
+        $this->Flash->success(__('The comment has been saved.'));
+        $this->redirect(array('controller'=>'teachers','action' => 'view',$this->data['Comment']['teacher_id']));
+      }else{
+        $this->Flash->error(__('The user could not be saved. Please try again.'));
+      }
+  }
+
 
   public function add_to_user(){
     if($this->request->is('get')){
@@ -117,6 +131,21 @@ class CommentsController extends AppController{
       if($this->Comment->save($this->request->data)){
         $this->Flash->success(__('The comment has been saved.'));
         $this->redirect(array('controller'=>'users','action' => 'profile',$this->data['Comment']['user_id']));
+      }else{
+        $this->Flash->error(__('The user could not be saved. Please try again.'));
+      }
+  }
+
+
+   public function add_to_userview(){
+    if($this->request->is('get')){
+      throw new MethodNotAllowedException();
+    }
+    // if($this->request->is('ajax')){
+      $this->Comment->create();
+      if($this->Comment->save($this->request->data)){
+        $this->Flash->success(__('The comment has been saved.'));
+        $this->redirect(array('controller'=>'users','action' => 'view',$this->data['Comment']['user_id']));
       }else{
         $this->Flash->error(__('The user could not be saved. Please try again.'));
       }
