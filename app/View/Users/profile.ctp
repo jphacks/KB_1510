@@ -51,10 +51,10 @@
   echo $this->Form->create('Comment',array('action'=>'add_to_user'));
   
 //コメントする人が講師か生徒かによって、場合分け（講師と生徒のidは同じものがあるので、どちらのtableかを決定するため）
-      echo $this->Form->input('body',array('rows'=>3));
-      echo $this->Form->input('commenter',array('type'=>'hidden','value'=>$session_name)); //コメントした人
-      echo $this->Form->input('Comment.user_id',array('type'=>'hidden','value'=>$session_id)); //今ログインしている人がコメントするため。
-   echo $this->Form->end('コメント');
+   //    echo $this->Form->input('body',array('rows'=>3));
+   //    echo $this->Form->input('commenter',array('type'=>'hidden','value'=>$session_name)); //コメントした人
+   //    echo $this->Form->input('Comment.user_id',array('type'=>'hidden','value'=>$session_id)); //今ログインしている人がコメントするため。
+   // echo $this->Form->end('コメント');
   ?>
       </div>
     <!-- 自分へのコメントに関する情報 -->
@@ -67,7 +67,7 @@
            <td><?php echo $comment['created']; ?></td>
           <td><?php echo $comment['commenter']; ?></td>
           <td><?php echo $comment['body']; ?></td>
-          <td><?php echo $this->Html->link($comment['commenter'], array('controller' => 'users', 'action' => 'view', $comment['user_id'])); ?></td>
+          <td><?php echo $this->Html->link($comment['commenter'], array('controller' => 'teachers', 'action' => 'view', $comment['teacher_id'])); ?></td>
           </tr><br>
         <?php endforeach ?>
       </div>

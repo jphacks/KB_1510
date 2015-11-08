@@ -74,7 +74,13 @@ class TeachersController extends AppController{
     $teacher = $this->Teacher->find('first', ['conditions' => ['Teacher.id' => $id]]);
     //$matchings = $this->User->find('all',['conditions' => ['Teachermatching.user_id' => $id]]);
     //$this->set(compact('teacher'));
-    $this->set('teacher',$teacher);
+    $params = array(
+      'order' => 'modified desc',
+      'limit' => 10
+      );
+    $user = $this->User->find('all',$params);
+    // $this->set('teacher',$teacher);
+    $this->set(compact('teacher','user'));
   }
 
 

@@ -2,9 +2,11 @@
 
 class UsersController extends AppController{
 
+  public $uses = array('Teacher', 'User');
+
   public function beforeFilter(){
     parent::beforeFilter();
-    $this->Auth->allow('add','lists','lists_json');
+    $this->Auth->allow('add','lists','lists_json','mypage','profile');
   }
 
   public function login(){
@@ -51,7 +53,14 @@ class UsersController extends AppController{
       throw new NotFoundException(__('ログインされていません'));
     }
     
-    $this->set('user', $this->User->findById($id));
+     $params = array(
+      'order' => 'modified desc',
+      'limit' => 10
+      );
+    $teacher = $this->Teacher->find('all',$params);
+    // $this->set('teacher',$teacher);
+    $user = $this->User->findById($id);
+    $this->set(compact('teacher','user'));
   }
 
 

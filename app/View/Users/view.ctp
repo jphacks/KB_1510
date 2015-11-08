@@ -31,7 +31,7 @@ $session_name = "kazuki"; //Controllerから渡されたsession名
       echo $this->Form->input('body',array('rows'=>3));
       echo $this->Form->input('commenter',array('type'=>'hidden','value'=>$session_name)); //コメントした自分の名前
       echo $this->Form->input('Comment.teacher_id',array('type'=>'hidden','value'=>$session_id)); //コメントした自分のid
-      echo $this->Form->input('Comment.teacher_id',array('type'=>'hidden','value'=>$user['User']['id'])); //コメントした相手のid
+      echo $this->Form->input('Comment.user_id',array('type'=>'hidden','value'=>$user['User']['id'])); //コメントした相手のid
    echo $this->Form->end('コメント');
   ?>
       </div>

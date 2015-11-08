@@ -30,6 +30,7 @@
     <?php echo $this->Html->link('プロフィール詳細', array('action' => 'profile',$teacher['Teacher']['id'])); ?>
       <div class="myteachers">
         <!-- 自分の生徒一覧表示 -->
+        <h2><?php echo $profile['username'] ?>さんの生徒一覧</h2>
         <?php //var_dump($teacher['Teachermatching']); ?><br>
         <?php foreach ($teacher['Teachermatching'] as $student): ?>
           <tr>
@@ -40,6 +41,15 @@
       </div>
       <div class="newteachers">
         <!-- 新着生徒情報 -->
+           <div class="newteachers">
+          <!-- 新着生徒情報 -->
+          <h2>新着生徒</h2>
+          <?php foreach ($user as $list): ?>
+            <td><?php echo $this->Html->link($list['User']['username'],array('controller' => 'users', 'action' => 'view', $list['User']['id']))?></td>
+          
+          <?php endforeach ?>
+          <h3><?php echo $this->Html->link('もっと見る', array('controller' => 'users', 'action' => 'lists')); ?></h3>
+      </div>
       </div>
     </div>
     <div><!-- サイドバー -->
