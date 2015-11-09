@@ -42,6 +42,13 @@ echo $this->Form->end('講師リクエスト');
           <td><?php echo $comment['commenter']; ?></td>
           <td><?php echo $comment['body']; ?></td>
           <td><?php echo $this->Html->link($comment['commenter'], array('controller' => 'users', 'action' => 'view', $comment['user_id'])); ?></td>
+          <td>
+          	<?php
+          	if($comment['user_id'] == $session_id){
+          		echo $this->Html->link('削除','#', array('class'=>'delete', 'data-comment-id'=>$comment['id'],'data-comment-user_id'=>$comment['user_id'])); 
+          	}
+          	?>
+          </td>
           </tr><br>
         <?php endforeach ?>
       </div>

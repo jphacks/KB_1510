@@ -8,3 +8,7 @@ foreach($teacher as $list): ?>
 	  </li>
 <?php endforeach;?>
 </ul>
+
+<?php
+$num = 
+?>

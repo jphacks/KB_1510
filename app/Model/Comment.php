@@ -6,13 +6,14 @@ App::uses('BlowfishPasswordHasher', 'Controller/component/Auth');
 class Comment extends AppModel{
   public $belongsTo = array('User','Teacher');
   public $validate = array(
-    'password' => array(
+    'body' => array(
       'required' => array(
         'rule' => array('notBlank'),
         'message' => 'A password is required.'
       )
     )
   );
+
 
   public function beforesave($options = array()){
     if(isset($this->data[$this->alias]['password'])){

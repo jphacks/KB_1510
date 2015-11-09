@@ -151,6 +151,19 @@ class CommentsController extends AppController{
       }
   }
 
+
+  public function delete_from_teacher($id = null){
+    $this->request->onlyAllow('post');
+
+    $this->Teacher->id = $id;
+    if($this->Comment->delete()){
+      $this->Flash->success(__('User deleted.'));
+      $this->redirect(array('action' => 'index'));
+    }
+    $this->Flash->error(__('User was not deleted.'));
+    $this->redirect(array('action' => 'index'));
+  }
+
   // public function addfrom_user(){
 
   //     // ajax 通信だった場合に以下のブロックを処理する。
@@ -262,19 +275,10 @@ class CommentsController extends AppController{
     )));
   }
 
-  public function delete($id,$password,$pass){
+  public function delete_from_view($id,$state,$teacher_id,$user_id){
     //$this->request->onlyAllow('ajax')  $this->Comment->id = $id;
-    if($this->request->is('get')){
-      throw new Exception("Error Processing Request");
-    }
+
     if($this->request->is('ajax')){
-      debug($this->request);
-      if($pass != $password){
-        // throw new Exception("Error Missing Password");
-            $this->Flash->error(__('パスワードが違います！'));
-            $this->redirect(array('action' => 'lists'));
-            exit();
-      }
       if($this->Comment->delete($id)){
             $this->autoRendor = false;
             $this->autoLayout = false;
@@ -287,7 +291,10 @@ class CommentsController extends AppController{
       }
     }
     $this->Flash->error(__('Comment was not deleted.'));
-    $this->redirect(array('action' => 'lists'));
+    if($state == 0){
+      $this->redirect(array('controller' => 'teachers', 'action' => 'view',$teacher_id));
+    }
+    $this->redirect(array('controller' => 'users', 'action' => 'view',$user_id));
   }
 
 

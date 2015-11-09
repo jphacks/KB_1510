@@ -21,7 +21,7 @@
         <?php echo $profile['language']; ?><br>
         <?php echo $this->Html->link('プロフィール編集', array('controller' => 'teachers', 'action' => 'edit', $profile['id'])); ?>
         <br>
-        <?php echo $this->Html->link('トップ画編集', array('controller' => 'teachers', 'action' => 'upload', $profile['id'])); ?>
+        <?php echo $this->Html->link('トップ画編集', array('controller' => 'comments', 'action' => 'upload', $profile['id'])); ?>
       </div>
     </div>
   </div>
@@ -38,9 +38,7 @@
           </tr><br>
         <?php endforeach ?>
       </div>
-      <div class="newteachers">
-        <!-- 新着生徒情報 -->
-      </div>
+
     </div>
      <div class="rows">
       <div class="addcomment">
@@ -71,6 +69,9 @@
           <td><?php echo $comment['commenter']; ?></td>
           <td><?php echo $comment['body']; ?></td>
           <td><?php echo $this->Html->link($comment['commenter'], array('controller' => 'users', 'action' => 'view', $comment['user_id'])); ?></td>
+           <td><?php 
+          echo $this->Html->link('削除',array('controller' => 'teachers', 'action' => 'delete'));
+          ?></td>
           </tr><br>
         <?php endforeach ?>
       </div>

@@ -46,7 +46,14 @@ $session_name = "kazuki"; //Controllerから渡されたsession名
            <td><?php echo $this->Html->link($comment['commenter'], array('controller' => 'teachers', 'action' => 'view', $comment['teacher_id'])); ?>
           <td><?php echo $comment['commenter']; ?></td>
           <td><?php echo $comment['body']; ?></td>
-           ?></td>
+           </td>
+            <td>
+          	<?php
+          	if($comment['teacher_id'] == $session_id){
+          		echo $this->Html->link('削除',array('controller' => 'comments', 'action' => 'delete'));
+          	}
+          	?>
+          </td>
           </tr><br>
         <?php endforeach ?>
       </div>
