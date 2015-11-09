@@ -64,11 +64,11 @@
         <?php //var_dump($teacher['Teachermatching']); ?><br>
         <?php foreach ($teacher['Comment'] as $comment): ?>
           <tr>
-          <td><?php echo h($comment['id']) ?></td>
+          <td><?php //echo h($comment['id']) ?></td>
            <td><?php echo $comment['created']; ?></td>
-          <td><?php echo $comment['commenter']; ?></td>
-          <td><?php echo $comment['body']; ?></td>
           <td><?php echo $this->Html->link($comment['commenter'], array('controller' => 'users', 'action' => 'view', $comment['user_id'])); ?></td>
+          <td><?php echo $comment['body']; ?></td>
+          
            <td><?php 
           echo $this->Html->link('削除',array('controller' => 'teachers', 'action' => 'delete'));
           ?></td>

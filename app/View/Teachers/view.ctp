@@ -39,9 +39,9 @@ echo $this->Form->end('講師リクエスト');
           <tr>
           <td><?php echo h($comment['id']) ?></td>
            <td><?php echo $comment['created']; ?></td>
-          <td><?php echo $comment['commenter']; ?></td>
+            <td><?php echo $this->Html->link($comment['commenter'], array('controller' => 'users', 'action' => 'view', $comment['user_id'])); ?></td>
           <td><?php echo $comment['body']; ?></td>
-          <td><?php echo $this->Html->link($comment['commenter'], array('controller' => 'users', 'action' => 'view', $comment['user_id'])); ?></td>
+        
           <td>
           	<?php
           	if($comment['user_id'] == $session_id){
