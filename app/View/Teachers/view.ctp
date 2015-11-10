@@ -35,8 +35,9 @@ echo $this->Form->end('講師リクエスト');
       <div class="mycomments">
         <!-- コメント一覧 -->
         <?php //var_dump($teacher['Teachermatching']); ?><br>
+        <table>
         <?php foreach ($teacher['Comment'] as $comment): ?>
-          <tr id="comment_<?php echo h($comment['id']); ?>">
+          <tr id="comment_<?php echo ($comment['id']); ?>">
           <td><?php echo h($comment['id']) ?></td>
            <td><?php echo $comment['created']; ?></td>
             <td><?php echo $this->Html->link($comment['commenter'], array('controller' => 'users', 'action' => 'view', $comment['user_id'])); ?></td>
@@ -51,6 +52,7 @@ echo $this->Form->end('講師リクエスト');
           </td>
           </tr><br>
         <?php endforeach ?>
+        </table>
       </div>
       </div>
     </div>
@@ -63,8 +65,9 @@ echo $this->Form->end('講師リクエスト');
 $(function(){
 	$('a.delete').click(function(e){
 		if(confirm('本当に削除しますか?削除しても、相手には通知されません。')){
-			$.post('/prokate_cake/comments/delete'+$(this).data('comment-id'),{},function(res){
+			$.post('<?php echo $this->webroot; ?>comments/delete/'+$(this).data('comment-id'),{},function(res){
 				$('#comment_'+res.id).fadeOut();
+        console.log(res.id);
 			},"json");
 		}
 		return false;
