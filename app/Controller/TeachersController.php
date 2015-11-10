@@ -7,7 +7,7 @@ class TeachersController extends AppController{
   public function beforeFilter(){
     parent::beforeFilter();
 
-    $this->Auth->allow('login','lists','lists_json','upload','mypicture','mypage','edit','profile');
+    $this->Auth->allow('login','lists','lists_json','upload','mypicture','mypage','edit','profile','post','matching_lists');
 
   }
 
@@ -64,9 +64,10 @@ class TeachersController extends AppController{
   }
 
 
+
     public function mypage(){
     $id = $this->Auth->user('id');
-    $id = 8; //後で消します。,
+    $id = 10; //後で消します。
     if(!$id){
       throw new NotFoundException(__('ログインされていません'));
     }
@@ -84,6 +85,15 @@ class TeachersController extends AppController{
   }
 
 
+  public function matching_lists(){
+      $id = $this->Auth->teacher('id');
+      $id = 10; //後で消す
+      $teacher = $this->Teacher->find('first', ['conditions' => ['Teacher.id' => $id]]);
+      $this->set('teacher', $teacher);
+  }
+
+
+
   public function profile($id = null){
     $this->set('teacher', $this->Teacher->findById($id));
   }
@@ -92,7 +102,9 @@ class TeachersController extends AppController{
    * 初期表示
    */
   public function upload(){
-    $this->set('teacher',$this->Teacher->find('first', ['conditions' => ['Teacher.id' => $id]]));
+    $session_id = 10;
+
+    $this->set('teacher',$this->Teacher->find('first', ['conditions' => ['id' => $session_id]]));
     $this->render('upload');
   }
   
@@ -103,11 +115,12 @@ class TeachersController extends AppController{
     if($this->request->is('post')){
       // 登録処理を行う。
       // $id = $this->Teacher->save($this->request->data);
-      $session_id = 3;
+      $session_id = 10;
+
       $id = $session_id;
       $this->Teacher->save($this->request->data);
       // 登録後、参照画面にリダイレクトする。
-      $this->redirect('/Profiles/view/'.$this->Teacher->id);
+      $this->redirect(array('action' => 'mypage'));
       return;
     }
     $this->render('upload');

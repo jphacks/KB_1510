@@ -34,7 +34,8 @@
         <?php foreach ($teacher['Teachermatching'] as $student): ?>
           <tr>
           <td><?php echo h($student['id']) ?></td>
-          <td><?php echo $this->Html->link('生徒：'.$student['name'], array('controller' => 'users', 'action' => 'view', $student['user_id'])); ?></td>
+          <td><?php 
+          echo $this->Html->link('生徒：'.$student['name'], array('controller' => 'users', 'action' => 'view', $student['user_id'])); ?></td>
           </tr><br>
         <?php endforeach ?>
       </div>
@@ -47,6 +48,7 @@
   <?php
   $session_id = 8; //上と合わせると、講師のidが9という条件の選択 （この２つの値をSessionComponentsで調整）
   $session_name = "kazuki";
+  $session_state = 0;
 
 //   echo $this->Form->create('Comment',array('action'=>'add_to_teacher'));
   
@@ -66,7 +68,15 @@
           <tr>
           <td><?php //echo h($comment['id']) ?></td>
            <td><?php echo $comment['created']; ?></td>
-          <td><?php echo $this->Html->link($comment['commenter'], array('controller' => 'users', 'action' => 'view', $comment['user_id'])); ?></td>
+          <td><?php 
+          // if($comment['user_id'] == $teacher['Teacher']['id'] && $session_state = 0){
+            echo $this->Html->link($comment['commenter'], array('controller' => 'users', 'action' => 'view', $comment['user_id']));
+          // }else{
+          //   echo $comment['commenter'];
+          //   echo $session_state;
+          //   echo $comment['user_id'];
+          // }
+          ?></td>
           <td><?php echo $comment['body']; ?></td>
           
            <td><?php 

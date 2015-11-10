@@ -1,7 +1,7 @@
 <table>
   <tr>
     <th>Id</th>
-    <th>Title</th>
+    <th>Name</th>
     <th>Created</th>
   </tr>
 <?php echo $this->Html->link(

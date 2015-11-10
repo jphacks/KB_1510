@@ -3,7 +3,7 @@
 <?php
 $session_id = 5;
 if(!empty($session_id)){
-	echo $this->Form->create('Teachermatching',array('action'=>'add'));
+	echo $this->Form->create('Teachermatching',array('action'=>'add_student'));
 
 echo $this->Form->input('Teachermatching.teacher_id',array('type'=>'hidden','value'=>$teacher['Teacher']['id']));
 echo $this->Form->input('Teachermatching.name',array('type'=>'hidden','value'=>$teacher['Teacher']['username']));

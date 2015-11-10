@@ -12,6 +12,7 @@
       }else{
         $profile = $teacher['Teacher']; 
         } ?>
+        <?php echo h($profile['id']); ?>
         <h2><?php echo h($profile['username']); ?></h2>
         <?php
         echo $profile['job']."\n";
@@ -38,6 +39,7 @@
           <td><?php echo $this->Html->link('生徒：'.$student['name'], array('controller' => 'users', 'action' => 'view', $student['user_id'])); ?></td>
           </tr><br>
         <?php endforeach ?>
+        <h3><?php echo $this->Html->link('もっと見る', array('controller' => 'teachers', 'action' => 'matching_lists', $profile['id'])); ?></h3>
       </div>
       <div class="newteachers">
         <!-- 新着生徒情報 -->

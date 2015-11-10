@@ -18,13 +18,7 @@ class TeachermatchingsController extends AppController{
     }
   }
 
-    public function lists(){
-    $params = array(
-        'order' => 'modified desc',
-        'limit' => 20
-      );
-    $this->set('user', $this->User->find('all', $params));
-  }
+
 
 
   public function offer_fromme(){ //自分からのオファーリスト
@@ -52,19 +46,11 @@ class TeachermatchingsController extends AppController{
     $this->redirect($this->Auth->logout());
   }
 
-  public function mypage(){
-    $id = $this->Auth->user('id');
-    // if(!$id){
-    //   throw new NotFoundException(__('ログインされていません'));
-    // }
-    $id = 3;
-    $this->set('user', $this->User->findById($id));
+
+  public function userlists(){
+
   }
 
-  /*public function index(){
-    $this->User->recursive = 0;
-    $this->set('users', $this->paginate());
-  }*/
 
   public function view($id = null){
     if(!$this->User->exists($id)){
@@ -73,16 +59,32 @@ class TeachermatchingsController extends AppController{
     $this->set('user', $this->User->findById($id));
   }
 
-  public function add(){
+
+  public function add_student(){
     if($this->request->is('post')){
       if($this->Teachermatching->save($this->request->data)){
-        $this->Flash->success(__('The matching has been saved.'));
-        $this->redirect(array('controller'=>'users','action' => 'mypage',$this->data['Teachermatching']['user_id']));
+        $this->Flash->success(__('生徒が追加されました'));
+        $this->redirect(array('controller'=>'users','action' => 'mypage'));
       }else{
         $this->Flash->error(__('The user could not be saved. Please try again.'));
       }
     }
   }
+
+
+
+    public function add_teacher(){
+    if($this->request->is('post')){
+      if($this->Teachermatching->save($this->request->data)){
+        $this->Flash->success(__('講師が追加されました！'));
+        $this->redirect(array('controller'=>'teachers','action' => 'mypage'));
+      }else{
+        $this->Flash->error(__('The user could not be saved. Please try again.'));
+      }
+    }
+  }
+
+
 
   public function edit($id = null){
     $this->User->id = $id;

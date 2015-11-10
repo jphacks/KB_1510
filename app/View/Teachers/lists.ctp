@@ -9,6 +9,3 @@ foreach($teacher as $list): ?>
 <?php endforeach;?>
 </ul>
 
-<?php
-$num = 
-?>

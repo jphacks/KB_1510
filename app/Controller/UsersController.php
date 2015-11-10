@@ -48,7 +48,7 @@ class UsersController extends AppController{
 
   public function mypage(){
     $id = $this->Auth->user('id');
-    $id = 3;
+    $id = 5;
     if(!$id){
       throw new NotFoundException(__('ログインされていません'));
     }

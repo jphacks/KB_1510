@@ -14,8 +14,7 @@
 	echo $this->Html->image($photo, array('alt' => 'CakePHP','width'=>'300','height'=>'200')); ?>
 
 <h3>投稿ページ</h3>
-<?php echo $this->Form->create('Teacher', array('type' => 'file', 'action' => 'teacher')); ?>
+<?php echo $this->Form->create('Teacher', array('type' => 'file', 'action' => 'post')); ?>
     <?php echo $this->Form->input('Teacher.photo', array('type' => 'file', 'label' => '投稿画像')); ?>
     <?php echo $this->Form->input('Teacher.photo_dir', array('type' => 'hidden')); ?>
 <?php echo $this->Form->end('Submit'); ?>
-

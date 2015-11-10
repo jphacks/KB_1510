@@ -1,9 +1,9 @@
 <h1><?php echo h($user['User']['username']); ?></h1>
 <p><?php echo h($user['User']['job']); ?></p>
 <?php
-$session_id = 2;
+$session_id = 10; //現在ログインしているユーザーと紐付ける
 if(!empty($session_id)){
-echo $this->Form->create('Teachermatching',array('action'=>'add'));
+echo $this->Form->create('Teachermatching',array('action'=>'add_teacher'));
 
 echo $this->Form->input('Teachermatching.user_id',array('type'=>'hidden','value'=>$user['User']['id']));
 echo $this->Form->input('Teachermatching.name',array('type'=>'hidden','value'=>$user['User']['username']));
@@ -21,7 +21,7 @@ foreach($user['User'] as $teacherof_user): ?>
 <?php endforeach; ?>
 
 <?php
-$session_id = 8; 
+$session_id = 8; //Controllerから渡されるセッションid
 $session_name = "kazuki"; //Controllerから渡されたsession名
 //上と合わせると、講師のidが9という条件の選択 （この２つの値をSessionComponentsで調整）
 
