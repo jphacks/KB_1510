@@ -9985,3 +9985,22 @@ Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
 Stack Trace:
 #0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-11-10 11:18:04 Error: [MissingControllerException] Controller class MypagesController could not be found.
+Exception Attributes: array (
+  'class' => 'MypagesController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/mypages
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-10 11:18:18 Error: Fatal Error (1): Call to undefined method AuthComponent::teacher() in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/TeachersController.php, line 89]
+2015-11-10 11:18:18 Error: [FatalErrorException] Call to undefined method AuthComponent::teacher()
+Request URL: /prokate_cake/teachers/matching_lists/10
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/M...', 89)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/M...', 89, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/M...', 89, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

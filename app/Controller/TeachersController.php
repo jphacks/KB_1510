@@ -86,7 +86,7 @@ class TeachersController extends AppController{
 
 
   public function matching_lists(){
-      $id = $this->Auth->teacher('id');
+      $id = $this->Auth->user('id');
       $id = 10; //後で消す
       $teacher = $this->Teacher->find('first', ['conditions' => ['Teacher.id' => $id]]);
       $this->set('teacher', $teacher);
