@@ -164,6 +164,29 @@ class CommentsController extends AppController{
     $this->redirect(array('action' => 'index'));
   }
 
+
+  public function delete($id){
+    if($this->request->is('get')){
+      throw new MethodNotAllowedException();
+    }
+    if($this->request->is('ajax')){
+        if($this->Comment->delete($id)){
+            $this->autoRender = false;
+            $this->autoLayout = false;
+            $response = array('id' => $id);
+            $this->header('Content-Type: application/json');
+            echo json_encode($response);
+            exit();
+        }
+      $session_state = 0;
+      if($session_state == 0){ //⇢講師としてログインしてる場合
+        $this->redirect(array('controller'=>'teachers', 'action' => 'mypage'));
+      }else{
+        $this->redirect(array('controller'=>'users', 'action' => 'mypage'));
+      }
+    }
+  }
+
   // public function addfrom_user(){
 
   //     // ajax 通信だった場合に以下のブロックを処理する。

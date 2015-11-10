@@ -36,16 +36,16 @@ echo $this->Form->end('講師リクエスト');
         <!-- コメント一覧 -->
         <?php //var_dump($teacher['Teachermatching']); ?><br>
         <?php foreach ($teacher['Comment'] as $comment): ?>
-          <tr>
+          <tr id="comment_<?php echo h($comment['id']); ?>">
           <td><?php echo h($comment['id']) ?></td>
            <td><?php echo $comment['created']; ?></td>
             <td><?php echo $this->Html->link($comment['commenter'], array('controller' => 'users', 'action' => 'view', $comment['user_id'])); ?></td>
           <td><?php echo $comment['body']; ?></td>
         
-          <td>
+          <td id="comment_<?php echo h($comment['id']); ?>">
           	<?php
           	if($comment['user_id'] == $session_id){
-          		echo $this->Html->link('削除','#', array('class'=>'delete', 'data-comment-id'=>$comment['id'],'data-comment-user_id'=>$comment['user_id'])); 
+          		echo $this->Html->link('削除','#', array('class'=>'delete', 'data-comment-id'=>$comment['id'])); 
           	}
           	?>
           </td>
@@ -58,4 +58,17 @@ echo $this->Form->end('講師リクエスト');
     </div>
   </div>
 </div>
+
+<script>
+$(function(){
+	$('a.delete').click(function(e){
+		if(confirm('本当に削除しますか?削除しても、相手には通知されません。')){
+			$.post('/prokate_cake/comments/delete'+$(this).data('comment-id'),{},function(res){
+				$('#comment_'+res.id).fadeOut();
+			},"json");
+		}
+		return false;
+	});
+});
+</script>
 
