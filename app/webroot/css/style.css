@@ -248,3 +248,8 @@ section{
     text-align: right;
     margin-top: 10px;
 }
+
+  #locatemap{
+      width: 100%;
+      height: 100%;
+    }

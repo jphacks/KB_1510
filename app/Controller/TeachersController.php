@@ -7,7 +7,7 @@ class TeachersController extends AppController{
   public function beforeFilter(){
     parent::beforeFilter();
 
-    $this->Auth->allow('login','lists','lists_json','upload','mypicture','mypage','edit','profile','post','matching_lists');
+    $this->Auth->allow('login','lists','lists_json','upload','mypicture','mypage','edit','profile','post','matching_lists','location_map');
 
   }
 
@@ -191,6 +191,11 @@ class TeachersController extends AppController{
   }
 
 
+  public function location_map(){
+
+  }
+
+
   public function add(){
     if($this->request->is('post')){
       $this->Teacher->create();
@@ -202,6 +207,8 @@ class TeachersController extends AppController{
       }
     }
   }
+
+
 
   
 
@@ -219,6 +226,9 @@ class TeachersController extends AppController{
     $this->Flash->error(__('User was not deleted.'));
     $this->redirect(array('action' => 'index'));
   }
+
+
+
 
   public function isAuthorized($user){
     if($this->action === 'add'){

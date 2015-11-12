@@ -29,6 +29,9 @@
   <div class="rows">
     <div><!-- 自分に関する生徒情報 -->
     <?php echo $this->Html->link('プロフィール詳細', array('action' => 'profile',$teacher['Teacher']['id'])); ?>
+    </div>
+    <div><?php echo $this->Html->link('周辺情報', array('controller' => 'teachers', 'action' => 'location_map')); ?>
+    </div>
       <div class="myteachers">
         <!-- 自分の生徒一覧表示 -->
         <h2><?php echo $profile['username'] ?>さんの生徒一覧</h2>
