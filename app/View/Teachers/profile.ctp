@@ -21,7 +21,7 @@
         <?php echo $profile['language']; ?><br>
         <?php echo $this->Html->link('プロフィール編集', array('controller' => 'teachers', 'action' => 'edit', $profile['id'])); ?>
         <br>
-        <?php echo $this->Html->link('トップ画編集', array('controller' => 'comments', 'action' => 'upload', $profile['id'])); ?>
+        <?php echo $this->Html->link('トップ画編集', array('controller' => 'teachers', 'action' => 'uploads', $profile['id'])); ?>
       </div>
     </div>
   </div>

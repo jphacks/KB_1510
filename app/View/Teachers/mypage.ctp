@@ -15,14 +15,15 @@
         <?php echo h($profile['id']); ?>
         <h2><?php echo h($profile['username']); ?></h2>
         <?php
-        echo $profile['job']."\n";
-        echo $profile['gender']."\n";
-        echo $profile['old']."\n";
+        echo $profile['job']."<br>";
+        echo $profile['gender']."<br>";
+        echo $profile['old']."<br>";
+        echo $profile['photo_number']+1;
         ?><br>
         <?php echo $profile['language']; ?><br>
         <?php echo $this->Html->link('プロフィール編集', array('controller' => 'teachers', 'action' => 'edit', $profile['id'])); ?>
         <br>
-        <?php echo $this->Html->link('トップ画編集', array('controller' => 'teachers', 'action' => 'upload', $profile['id'])); ?>
+        <?php echo $this->Html->link('トップ画編集', array('controller' => 'teachers', 'action' => 'uploads', $profile['id'])); ?>
       </div>
     </div>
   </div>

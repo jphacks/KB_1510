@@ -7,7 +7,7 @@ class TeachersController extends AppController{
   public function beforeFilter(){
     parent::beforeFilter();
 
-    $this->Auth->allow('login','lists','lists_json','upload','mypicture','mypage','edit','profile','post','matching_lists','location_map');
+    $this->Auth->allow('login','lists','lists_json','uploads','mypicture','mypage','edit','profile','post','matching_lists','location_map');
 
   }
 
@@ -101,17 +101,28 @@ class TeachersController extends AppController{
  /**
    * 初期表示
    */
-  public function upload(){
-    $session_id = 10;
-
-    $this->set('teacher',$this->Teacher->find('first', ['conditions' => ['id' => $session_id]]));
-    $this->render('upload');
+  public function uploads($id = null){
+     // if(!$this->Teacher->exists()){
+    //   throw new NotFoundException(__('Invalid user'));
+    // }
+    $this->Teacher->id = $id;
+    if($this->request->is('get')){
+      $this->request->data = $this->Teacher->read();
+    }else{
+      if($this->Teacher->save($this->request->data)){
+        $this->Flash->success('写真を変更しました。');
+        $this->redirect(array('action' => 'mypage'));
+      }else{
+        $this->Flash->error('failed');
+      }
+    }
+    $this->render('uploads');
   }
   
   /**
    * 投稿処理
    */
-  public function post(){
+  public function posts(){
     if($this->request->is('post')){
       // 登録処理を行う。
       // $id = $this->Teacher->save($this->request->data);
@@ -123,7 +134,7 @@ class TeachersController extends AppController{
       $this->redirect(array('action' => 'mypage'));
       return;
     }
-    $this->render('upload');
+    $this->render('posts');
   }
   
   /**

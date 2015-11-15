@@ -35,6 +35,7 @@ class AppController extends Controller {
   public $helpers = array('Facebook.Facebook');
 
   public $components = array(
+    'Session',
     'Flash',
     'Paginator',
     'Facebook.Connect',

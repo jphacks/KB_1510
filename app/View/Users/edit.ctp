@@ -40,5 +40,5 @@ echo $this->Form->input('programin_lang', array(
 ));
 
 
-echo $this->Form->input('id',array('type'=>'hidden'));
+echo $this->Form->input('id',array('type'=>'hidden','value'=>$teacher['Teacher']['id']));
 echo $this->Form->end('変更を保存する');
