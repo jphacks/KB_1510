@@ -48,7 +48,7 @@ class UsersController extends AppController{
 
   public function mypage(){
     $id = $this->Auth->user('id');
-    $id = 5;
+    // $id = 5;
     if(!$id){
       throw new NotFoundException(__('ログインされていません'));
     }
@@ -68,6 +68,26 @@ class UsersController extends AppController{
     $this->set('user', $this->User->findById($id));
   }
 
+
+
+public function uploads($id = null){
+     // if(!$this->Teacher->exists()){
+    //   throw new NotFoundException(__('Invalid user'));
+    // }
+    $this->Teacher->id = $id;
+    if($this->request->is('get')){
+      $this->set('teacher',$this->User->findById($id));
+      $this->request->data = $this->Teacher->read();
+    }else{
+      if($this->Teacher->save($this->request->data)){
+        $this->Flash->success('写真を変更しました。');
+        $this->redirect(array('action' => 'mypage'));
+      }else{
+        $this->Flash->error('failed');
+      }
+    }
+    $this->render('uploads');
+  }
 
   /*public function index(){
     $this->User->recursive = 0;

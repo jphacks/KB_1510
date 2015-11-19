@@ -15,11 +15,11 @@ public $scaffold;
 	/**
 	 * 初期表示
 	 */
-	public function upload($id = null){
-		$session_state = 1;
+	public function upload(){
+		$session_isteacher = 1;
 		$param = $this->Teacher->find('all');
     #$this->set('teacher', $this->Teacher->find('all', array('limit' => 10)));
-		if($session_state = 1){
+		if($session_isteacher = 1){
 			$param = $this->Teacher->findById($id);
 		}else{
 			$param = $this->User->findById($id);
@@ -38,23 +38,29 @@ public $scaffold;
 		if($this->request->is('post')){
 			// 登録処理を行う。
 			// $id = $this->Profile->save($this->request->data);
-			$session_id = 3;
+			$session_id = 10;
 			$sessein_status = 1;
 			
+			$this->loadModel('Profile');
 			$id = $this->Profile->save($this->request->data);
 			// 登録後、参照画面にリダイレクトする。
 			$option = $this->Profile->findById($id);
-			$this->redirect('/Profiles/view/'.$this->Profile->id);
+			$this->redirect('/Profiles/lists/');
 			return;
 		}
 		
 		$this->render('upload');
 	}
+
+
+	public function lists(){
+		$this->set('images',$this->Profile->find('all'));
+	}
 	
 	/**
 	 * 投稿データ参照
 	 */
-	public function view(){
+	public function view($id = null){
 		// 投稿idを取得する。
 		$id = $this->request->pass[0];
 

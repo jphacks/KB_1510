@@ -4,22 +4,99 @@ class PostsController extends AppController{
 	public $helpers  = array('Html', 'Form', 'Flash');
 	public $components = array('Flash');
 
+  public function beforeFilter(){
+    parent::beforeFilter();
+    $this->Auth->allow();
+  }
+
+public $scaffold;
+	
+
+	public function lists(){
+
+		$data = $this->Post->find('all');
+		$this->set('datas',$data);
+		$this->render('lists');
+	}
+
+ public function userphoto($id = null){
+    $this->layout = "";
+    $this->set('user',$this->Post->findById($id));
+  }
+	/**
+	 * 初期表示
+	 */
 	public function index(){
-		$this->set('title_for_layout', 'Pro Kate | プロカテ');
-		$this->set('posts', $this->Post->find('all'));
+
+		$this->render('index');
+	}
+	
+	/**
+	 * 投稿処理
+	 */
+	public function post(){
+		
+		if($this->request->is('post')){
+			// 登録処理を行う。
+			$id = $this->Post->save($this->request->data);
+
+			
+			// 登録後、マイページにリダイレクトする。
+			//$this->redirect('/Posts/view/'.$this->Post->id);
+			// if(!empty($this->Post->teacher_id)){
+				$this->redirect(array('controller'=>'teachers','action'=>'mypage'));
+			//}else{
+				//$this->redirect(array('controller'=>'users','action'=>'uploads',$this->Post->user_id));
+			//}
+			
+			return;
+		}
+		
+		$this->render('index');
 	}
 
-	public function view($id = null){
-		if(!$id){
-			throw new NotFoundException(__('Invalid post'));
-		}
 
-		$post = $this->Post->findById($id);
-		if(!$post){
-			throw new NotFoundException(__('Invalid post'));
-		}
-		$this->set('post', $post);
+	public function delete_from_teacher($id = null){
+    $this->request->onlyAllow('post');
+
+    $this->Teacher->id = $id;
+    if($this->Comment->delete()){
+      $this->Flash->success(__('User deleted.'));
+      $this->redirect(array('action' => 'index'));
+    }
+    $this->Flash->error(__('User was not deleted.'));
+    $this->redirect(array('action' => 'index'));
+  }
+
+	
+	/**
+	 * 投稿データ参照
+	 */
+	public function view(){
+		// 投稿idを取得する。
+		$id = $this->request->pass[0];
+		
+		// データを取得する。
+		$options = array('conditions' => array('Post.id' => $id));
+		$data = $this->Post->find('all', $options);
+		
+		// 取得したデータをveiwにセットする。
+		$this->set('data', $data);
+
+		$this->render('view');
 	}
+
+	// public function view($id = null){
+	// 	if(!$id){
+	// 		throw new NotFoundException(__('Invalid post'));
+	// 	}
+
+	// 	$post = $this->Post->findById($id);
+	// 	if(!$post){
+	// 		throw new NotFoundException(__('Invalid post'));
+	// 	}
+	// 	$this->set('post', $post);
+	// }
 
 	public function add(){
 		if($this->request->is('post')){

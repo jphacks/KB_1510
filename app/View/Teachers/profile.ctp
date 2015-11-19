@@ -79,7 +79,7 @@
           ?></td>
           <td><?php echo $comment['body']; ?></td>
           
-           <td><?php 
+           <td><?php
           echo $this->Html->link('削除',array('controller' => 'teachers', 'action' => 'delete'));
           ?></td>
           </tr><br>
@@ -91,6 +91,21 @@
     </div>
   </div>
 </div>
+
+<script>
+$(function(){
+  $('a.delete').click(function(e){
+    if(confirm('本当に削除しますか?削除しても、相手には通知されません。')){
+      $.post('<?php echo $this->webroot; ?>comments/delete/'+$(this).data('comment-id'),{},function(res){
+        $('#comment_'+res.id).fadeOut();
+        console.log(res.id);
+      },"json");
+    }
+    return false;
+  });
+});
+</script>
+
 
 <!-- <ul>
 <?php foreach($teacher['Comment'] as $comment): ?>

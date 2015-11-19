@@ -10960,3 +10960,1055 @@ Request URL: /prokate_cake/img/13.png
 Stack Trace:
 #0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-11-16 19:46:19 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-16 19:46:19 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-16 19:46:20 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-16 19:46:33 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-16 19:46:33 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-16 19:46:33 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-17 16:56:58 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-17 16:56:59 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-17 16:56:59 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-17 17:06:54 Error: [NotFoundException] Invalid user
+Request URL: /prokate_cake/teachers/view/41
+Stack Trace:
+#0 [internal function]: TeachersController->view('41')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-17 17:07:02 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-17 17:07:02 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-17 17:07:02 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-17 17:07:20 Error: [NotFoundException] 無効なユーザーです。
+Request URL: /prokate_cake/users/view/0
+Stack Trace:
+#0 [internal function]: UsersController->view('0')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-17 20:18:49 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-17 20:18:49 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-17 20:18:49 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 01:11:38 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 01:11:38 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 01:11:38 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 09:50:46 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 09:50:46 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 09:50:47 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 09:57:33 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 09:57:34 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 09:57:34 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 13:58:52 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 13:58:52 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 13:58:53 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 13:59:38 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.email' in 'where clause'
+Request URL: /prokate_cake/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1114): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(3026): DboSource->read(Object(User), Array)
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(2998): Model->_readDataSource('first', Array)
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(130): Model->find('first', Array)
+#7 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(79): BaseAuthenticate->_findUser('trsei21@yahoo.c...', '0')
+#8 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Component/AuthComponent.php(764): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Component/AuthComponent.php(609): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/MAMP/htdocs/prokate_cake/app/Controller/UsersController.php(14): AuthComponent->login()
+#11 [internal function]: UsersController->login()
+#12 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-11-18 15:00:16 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 15:00:16 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 15:00:17 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 17:05:24 Error: Fatal Error (1): Call to a member function save() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/ProfilesController.php, line 44]
+2015-11-18 17:05:24 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /prokate_cake/profiles/post
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 44)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 44, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 44, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-18 17:10:51 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+Request URL: /prokate_cake/profiles/post
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Profile...', Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Profile...', Array, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1114): DboSource->fetchAll('SELECT `Profile...', false)
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Profile), Array)
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(2998): Model->_readDataSource('first', Array)
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(600): Model->find('first', Array)
+#7 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(827): DboSource->query('findById', Array, Object(Profile))
+#8 /Applications/MAMP/htdocs/prokate_cake/app/Controller/ProfilesController.php(47): Model->__call('findById', Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/app/Controller/ProfilesController.php(47): Profile->findById(Array)
+#10 [internal function]: ProfilesController->post()
+#11 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfilesController), Array)
+#12 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest))
+#14 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-18 17:13:26 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+Request URL: /prokate_cake/profiles/post
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Profile...', Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Profile...', Array, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1114): DboSource->fetchAll('SELECT `Profile...', false)
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Profile), Array)
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(2998): Model->_readDataSource('first', Array)
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(600): Model->find('first', Array)
+#7 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(827): DboSource->query('findById', Array, Object(Profile))
+#8 /Applications/MAMP/htdocs/prokate_cake/app/Controller/ProfilesController.php(47): Model->__call('findById', Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/app/Controller/ProfilesController.php(47): Profile->findById(Array)
+#10 [internal function]: ProfilesController->post()
+#11 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfilesController), Array)
+#12 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest))
+#14 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-18 17:19:12 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+Request URL: /prokate_cake/profiles/post
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Profile...', Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Profile...', Array, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1114): DboSource->fetchAll('SELECT `Profile...', false)
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Profile), Array)
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(2998): Model->_readDataSource('first', Array)
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(600): Model->find('first', Array)
+#7 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(827): DboSource->query('findById', Array, Object(Profile))
+#8 /Applications/MAMP/htdocs/prokate_cake/app/Controller/ProfilesController.php(47): Model->__call('findById', Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/app/Controller/ProfilesController.php(47): Profile->findById(Array)
+#10 [internal function]: ProfilesController->post()
+#11 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfilesController), Array)
+#12 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest))
+#14 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-18 17:21:39 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+Request URL: /prokate_cake/profiles/post
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Profile...', Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Profile...', Array, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1114): DboSource->fetchAll('SELECT `Profile...', false)
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Profile), Array)
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(2998): Model->_readDataSource('first', Array)
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(600): Model->find('first', Array)
+#7 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(827): DboSource->query('findById', Array, Object(Profile))
+#8 /Applications/MAMP/htdocs/prokate_cake/app/Controller/ProfilesController.php(47): Model->__call('findById', Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/app/Controller/ProfilesController.php(47): Profile->findById(Array)
+#10 [internal function]: ProfilesController->post()
+#11 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProfilesController), Array)
+#12 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ProfilesController), Object(CakeRequest))
+#14 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-18 17:34:20 Error: [NotFoundException] 無効なユーザーです。
+Request URL: /prokate_cake/users/view
+Stack Trace:
+#0 [internal function]: UsersController->view()
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-18 17:34:26 Error: [MissingControllerException] Controller class ProfilewController could not be found.
+Exception Attributes: array (
+  'class' => 'ProfilewController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/profilew/view
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 17:34:29 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/ProfilesController.php, line 64]
+2015-11-18 17:34:29 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/profiles/view
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 64)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 64, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 64, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-18 17:34:57 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/ProfilesController.php, line 69]
+2015-11-18 17:34:57 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/profiles/view
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 69)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 69, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 69, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-18 17:35:04 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/ProfilesController.php, line 57]
+2015-11-18 17:35:04 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/profiles/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 57, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 57, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-18 17:51:55 Error: [MissingControllerException] Controller class ImgesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgesController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/imges/index
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 18:53:07 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 18:53:08 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 18:53:08 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 21:38:34 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 21:38:34 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 21:38:34 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 22:25:27 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /prokate_cake/posts/post
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1020): DboSource->execute('INSERT INTO `pr...')
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(1928): DboSource->create(Object(Post), Array, Array)
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Applications/MAMP/htdocs/prokate_cake/app/Controller/PostsController.php(28): Model->save(Array)
+#6 [internal function]: PostsController->post()
+#7 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-11-18 23:38:53 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 23:38:53 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 23:38:53 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 23:39:00 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/files/post/photo/23/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202015-02-05%2017.42.34.png
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 23:39:00 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/files/post/photo/cat.jpeg
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 23:39:00 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/files/post/photo/44/427.png
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 23:39:00 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/files/post/photo/21/12.png
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 23:39:00 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/files/post/photo/22/haikeiSkymugi.jpg
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 23:39:00 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/files/post/photo/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 23:39:01 Error: [MissingControllerException] Controller class FilesController could not be found.
+Exception Attributes: array (
+  'class' => 'FilesController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/files/post/photo/45/426.png
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-18 23:39:17 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /prokate_cake/posts/post
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1020): DboSource->execute('INSERT INTO `pr...')
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(1928): DboSource->create(Object(Post), Array, Array)
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Applications/MAMP/htdocs/prokate_cake/app/Controller/PostsController.php(41): Model->save(Array)
+#6 [internal function]: PostsController->post()
+#7 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-11-18 23:42:25 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /prokate_cake/posts/post
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1020): DboSource->execute('INSERT INTO `pr...')
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(1928): DboSource->create(Object(Post), Array, Array)
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Applications/MAMP/htdocs/prokate_cake/app/Controller/PostsController.php(41): Model->save(Array)
+#6 [internal function]: PostsController->post()
+#7 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-11-18 23:43:30 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /prokate_cake/posts/post
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1020): DboSource->execute('INSERT INTO `pr...')
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(1928): DboSource->create(Object(Post), Array, Array)
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Applications/MAMP/htdocs/prokate_cake/app/Controller/PostsController.php(41): Model->save(Array)
+#6 [internal function]: PostsController->post()
+#7 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-11-19 01:15:41 Error: Fatal Error (4): syntax error, unexpected end of file in [/Applications/MAMP/htdocs/prokate_cake/app/View/Posts/index.ctp, line 20]
+2015-11-19 01:15:41 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /prokate_cake/Posts/index
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 20, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 20, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-19 01:25:41 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-19 01:25:42 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-19 01:25:42 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-19 01:25:44 Error: [NotFoundException] ログインされていません
+Request URL: /prokate_cake/teachers/mypage
+Stack Trace:
+#0 [internal function]: TeachersController->mypage()
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TeachersController), Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-19 01:26:34 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/img/13.png
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-19 01:27:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/img/13.png
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-19 01:27:37 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/img/13.png
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-19 02:18:30 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/img/13.png
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-19 02:21:09 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/img/13.png
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-19 02:21:10 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/img/13.png
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-19 02:31:38 Error: Fatal Error (4): syntax error, unexpected 'endforeach' (T_ENDFOREACH) in [/Applications/MAMP/htdocs/prokate_cake/app/View/Teachers/uploads.ctp, line 18]
+2015-11-19 02:31:38 Error: [FatalErrorException] syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+Request URL: /prokate_cake/teachers/uploads/10
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 18, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 18, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-19 02:35:30 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-19 02:35:30 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-19 02:35:31 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-19 02:43:28 Error: [MissingActionException] Action TeachersController::upload() could not be found.
+Exception Attributes: array (
+  'controller' => 'TeachersController',
+  'action' => 'upload',
+)
+Request URL: /prokate_cake/Teachers/upload/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-19 02:45:29 Error: [MissingActionException] Action TeachersController::upload() could not be found.
+Exception Attributes: array (
+  'controller' => 'TeachersController',
+  'action' => 'upload',
+)
+Request URL: /prokate_cake/Teachers/upload/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-19 02:48:10 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-19 02:48:10 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-19 02:48:10 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-19 02:50:22 Error: Fatal Error (4): syntax error, unexpected ',', expecting ')' in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/PostsController.php, line 49]
+2015-11-19 02:50:22 Error: [FatalErrorException] syntax error, unexpected ',', expecting ')'
+Request URL: /prokate_cake/posts/post
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 49)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 49, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 49, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-19 02:53:29 Error: [MissingActionException] Action UsersController::uploads() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'uploads',
+)
+Request URL: /prokate_cake/users/uploads
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-19 02:55:20 Error: [MissingActionException] Action UsersController::uploads() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'uploads',
+)
+Request URL: /prokate_cake/users/uploads
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-19 03:01:11 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+Request URL: /prokate_cake/posts/post
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1114): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Post), Array)
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/prokate_cake/app/Controller/PostsController.php(45): Model->find('all', Array)
+#7 [internal function]: PostsController->post()
+#8 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-11-19 03:01:43 Error: [MissingActionException] Action TeachersController::upload() could not be found.
+Exception Attributes: array (
+  'controller' => 'TeachersController',
+  'action' => 'upload',
+)
+Request URL: /prokate_cake/teachers/upload
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-19 03:04:41 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+Request URL: /prokate_cake/posts/post
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1114): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Post), Array)
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/prokate_cake/app/Controller/PostsController.php(45): Model->find('all', Array)
+#7 [internal function]: PostsController->post()
+#8 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-11-19 03:12:43 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /prokate_cake/posts/delete/49
+Stack Trace:
+#0 [internal function]: PostsController->delete('49')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-19 03:13:30 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /prokate_cake/posts/delete/50
+Stack Trace:
+#0 [internal function]: PostsController->delete('50')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-19 03:14:43 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /prokate_cake/posts/delete/53
+Stack Trace:
+#0 [internal function]: PostsController->delete('53')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-19 03:16:44 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /prokate_cake/comments/delete
+Stack Trace:
+#0 [internal function]: CommentsController->delete()
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-19 03:19:51 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-19 03:19:52 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-19 03:19:52 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-19 03:19:54 Error: [MissingActionException] Action TeachersController::upload() could not be found.
+Exception Attributes: array (
+  'controller' => 'TeachersController',
+  'action' => 'upload',
+)
+Request URL: /prokate_cake/teachers/upload
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-19 03:19:54 Error: [MissingActionException] Action TeachersController::upload() could not be found.
+Exception Attributes: array (
+  'controller' => 'TeachersController',
+  'action' => 'upload',
+)
+Request URL: /prokate_cake/teachers/upload
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-19 03:20:00 Error: [MissingActionException] Action TeachersController::upload() could not be found.
+Exception Attributes: array (
+  'controller' => 'TeachersController',
+  'action' => 'upload',
+)
+Request URL: /prokate_cake/teachers/upload/10
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TeachersController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-19 09:42:54 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Teachers/uploads.ctp, line 19]
+2015-11-19 09:42:54 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /prokate_cake/teachers/uploads/10
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 19, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 19, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-19 09:43:19 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Teachers/uploads.ctp, line 19]
+2015-11-19 09:43:19 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /prokate_cake/teachers/uploads/10
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 19, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 19, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-19 09:45:20 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Teachers/uploads.ctp, line 19]
+2015-11-19 09:45:20 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /prokate_cake/teachers/uploads/10
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 19, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 19, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-19 09:45:25 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/prokate_cake/app/View/Teachers/uploads.ctp, line 19]
+2015-11-19 09:45:25 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /prokate_cake/teachers/uploads/10
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 19, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 19, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

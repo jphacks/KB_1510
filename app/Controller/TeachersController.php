@@ -107,6 +107,7 @@ class TeachersController extends AppController{
     // }
     $this->Teacher->id = $id;
     if($this->request->is('get')){
+      $this->set('teacher',$this->Teacher->findById($id));
       $this->request->data = $this->Teacher->read();
     }else{
       if($this->Teacher->save($this->request->data)){

@@ -1,26 +1,21 @@
-<table>
-  <tr>
-    <th>Id</th>
-    <th>Name</th>
-    <th>Created</th>
-  </tr>
-<?php echo $this->Html->link(
-  'Add Post',
-  array('controller' => 'posts', 'action' => 'add')
-); ?>
-  <?php foreach ($posts as $post): ?>
-  <tr>
-    <td><?php echo $post['Post']['id']; ?></td>
-    <td><?php echo $this->Html->link($post['Post']['title'], array('controller' => 'posts', 'action' => 'view', $post['Post']['id'])); ?></td>
-    <td>
-      <?php echo $this->Form->postlink(
-      'Delete',
-      array('action' => 'delete', $post['Post']['id']),
-      array('confirm' => 'Are you sure?')); ?>
-      <?php echo $this->Html->link('Edit', array('controller' => 'posts', 'action' => 'edit', $post['Post']['id'])); ?>
-    </td>
-    <td><?php echo $post['Post']['created']; ?></td>
-  </tr>
-  <?php endforeach; ?>
-  <?php unset($post); ?>
-</table>
+<h3>写真アップロード</h3>
+<?php echo $this->Form->create('Post', array('type' => 'file', 'action' => 'post')); ?>
+    <?php //echo $this->Form->input('Post.title', array('label' => 'タイトル')); ?>
+    <?php //echo $this->Form->input('Post.body', array('label' => '本文')); ?>
+    <?php echo $this->Form->input('Post.photo', array('type' => 'file', 'label' => '投稿画像')); ?>
+    <?php echo $this->Form->input('Post.photo_dir', array('type' => 'hidden')); ?>
+
+    <?php 
+    $session_id = 10;
+    $session_isteacher = 1;
+    if($session_isteacher == 1){
+    	echo $this->Form->input('Post.teacher_id',array('type' => 'hidden','value' => $session_id));
+    }else if($session_isteacher == 1){
+    	echo $this->Form->input('Post.user_id',array('type' => 'hidden','value' => $session_id));
+    }else{
+    	echo"不正な値の可能性があります。";
+    	exit();
+    }
+     ?>
+    
+<?php echo $this->Form->end('Submit'); ?>
