@@ -43,7 +43,7 @@
         <div class="row">
           <div class="col-xs-4 col-xs-offset-1 text-center">
             <div class="panel panel-default slideInLeft animate">
-							<?php echo $this->Html->link('講師登録／ログイン', array('controller' => 'teachers', 'action' => 'add'), array('class' => 'center-block btn btn-default btn-lg btn-huge lato animate slideInRight')); ?>
+							<?php echo $this->Html->link('講師登録／ログイン', array('controller' => 'users', 'action' => 'add',1), array('class' => 'center-block btn btn-default btn-lg btn-huge lato animate slideInRight')); ?>
             </div>
           </div>
           <div class="col-xs-4 col-xs-offset-1 text-center">

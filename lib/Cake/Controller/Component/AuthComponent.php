@@ -617,6 +617,22 @@ class AuthComponent extends Component {
 		return (bool)$this->user();
 	}
 
+
+	// public function login($teacher = null) {
+	// 	$this->_setDefaults();
+
+	// 	if (empty($teacher)) {
+	// 		$teacher = $this->identify($this->request, $this->response);
+	// 	}
+	// 	if ($teacher) {
+	// 		$this->Session->renew();
+	// 		$this->Session->write(static::$sessionKey, $teacher);
+	// 		$event = new CakeEvent('Auth.afterIdentify', $this, array('teacher' => $teacher));
+	// 		$this->_Collection->getController()->getEventManager()->dispatch($event);
+	// 	}
+	// 	return (bool)$this->teacher();
+	// }
+
 /**
  * Log a user out.
  *
@@ -670,6 +686,21 @@ class AuthComponent extends Component {
 		return Hash::get($user, $key);
 	}
 
+
+	// public static function teacher($key = null) {
+	// 	if (!empty(static::$_teacher)) {
+	// 		$teacher = static::$_teacher;
+	// 	} elseif (static::$sessionKey && CakeSession::check(static::$sessionKey)) {
+	// 		$teacher = CakeSession::read(static::$sessionKey);
+	// 	} else {
+	// 		return null;
+	// 	}
+	// 	if ($key === null) {
+	// 		return $teacher;
+	// 	}
+	// 	return Hash::get($teacher, $key);
+	// }
+
 /**
  * Similar to AuthComponent::user() except if the session user cannot be found, connected authentication
  * objects will have their getUser() methods called. This lets stateless authentication methods function correctly.
@@ -696,6 +727,29 @@ class AuthComponent extends Component {
 
 		return false;
 	}
+
+
+	// protected function _getTeacher() {
+	// 	$teacher = $this->teacher();
+	// 	if ($teacher) {
+	// 		$this->Session->delete('Auth.redirect');
+	// 		return true;
+	// 	}
+
+	// 	if (empty($this->_authenticateObjects)) {
+	// 		$this->constructAuthenticate();
+	// 	}
+	// 	foreach ($this->_authenticateObjects as $auth) {
+	// 		$result = $auth->getTeacher($this->request);
+	// 		if (!empty($result) && is_array($result)) {
+	// 			static::$_teacher = $result;
+	// 			return true;
+	// 		}
+	// 	}
+
+	// 	return false;
+	// }
+
 
 /**
  * Backwards compatible alias for AuthComponent::redirectUrl().

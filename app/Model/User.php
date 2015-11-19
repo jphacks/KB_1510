@@ -5,6 +5,9 @@ App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 
 class User extends AppModel{
   public $hasMany = array("Teachermatching","Comment","Post");
+  public $hasOne = "Teacher";
+
+  public $name = 'User';
   
   public $validate = array(
     'username' => array(
@@ -17,7 +20,11 @@ class User extends AppModel{
       'required' => array(
         'rule' => array('notBlank'),
         'message' => 'A password is required.'
-      )
+      ),
+      array(
+        'rule' => array('minLength', 8),
+        'message' => '8文字以上で入力して下さい'
+        )
     ),
     'role' => array(
       'valid' => array(
@@ -25,7 +32,11 @@ class User extends AppModel{
         'message' => 'Please enter a valid role.',
         'allowEmpty' => false
       )
-    )
+    ),
+    'email' => array(
+       'rule'   => 'isUnique',
+      'message' => 'そのメールアドレスは既に使用されています。',
+    ),
   );
 
     public $actsAs = [

@@ -10,3 +10,4 @@
   echo $this->Form->end(__('ログインする'));
   ?>
 </div>
+<div class="to_Resister"><?php echo $this->HTML->link('生徒登録はこちら',array('controller'=>'users','action'=>'add')); ?>

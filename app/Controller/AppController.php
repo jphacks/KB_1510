@@ -51,7 +51,7 @@ class AppController extends Controller {
         'Form' => array(
           'passwordHasher' => 'Blowfish',
           'fields' => array(
-            'username' => 'email',
+            'email' => 'email',
             'password' => 'password'
           ),
         )

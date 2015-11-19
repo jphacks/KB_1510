@@ -4,6 +4,34 @@ class TeachersController extends AppController{
 
   public $uses = array('Teacher', 'User');
 
+  public $name = 'Teachers';
+
+  public $components = array(
+      'Auth' => array(
+          'loginAction' => array(
+              'controller' => 'Teachers',
+              'action' => 'login',
+            ),
+          'authenticate' => array(
+            'Form' => array(
+              'teacherModel' => 'Teacher',
+              'fields' => array(
+                  'email' => 'email',
+                  'password' => 'password',
+                ),
+            )
+        ),
+      'loginRedirect' => array(
+          'controller' => 'Teachers',
+          'action' => 'mypage'
+        ),
+      'logoutRedirect' => array(
+            'controller' => 'Teachers',
+            'action' => 'index'
+        ),
+      )
+    );
+
   public function beforeFilter(){
     parent::beforeFilter();
 
@@ -14,7 +42,7 @@ class TeachersController extends AppController{
   public function login(){
     if($this->request->is('post')){
       if($this->Auth->login()){
-        $id = $this->Auth->user();
+        $session_id = $this->Auth->user();
         $this->redirect($this->Auth->redirect());
       }else{
         $this->Flash->error(__('メールアドレスかパスワードが間違っています。もう一度入力して下さい。'));
@@ -66,9 +94,10 @@ class TeachersController extends AppController{
 
 
     public function mypage(){
-    $id = $this->Auth->user('id');
-    $id = 10; //後で消します。
-    if(!$id){
+    $session_id = $this->Auth->user('id');
+    $session_isteacher = $this->Auth->user('isteacher');
+    // $id = 10; //後で消します。
+    if(!$session_id){
       throw new NotFoundException(__('ログインされていません'));
     }
     //$teacher = $this->Teacher->findById($id);

@@ -14,7 +14,7 @@
     ));
 
     echo $this->Form->input('isteacher', array(
-      'type' => 'hidden','value' => 0
+      'type' => 'hidden','value' => 1
     ));
     ?>
   </fieldset>

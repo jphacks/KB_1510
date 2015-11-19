@@ -9,10 +9,10 @@ class UsersController extends AppController{
     $this->Auth->allow('add','lists','lists_json','mypage','profile');
   }
 
-  public function login(){
+  public function login($id = null){
     if($this->request->is('post')){
       if($this->Auth->login()){
-        $id = $this->Auth->user();
+        $logged_in = $this->Auth->user();
         $this->redirect($this->Auth->redirect());
       }else{
         $this->Flash->error(__('メールアドレスとパスワードのどちらかが間違っています。もう一度入力してください。'));
@@ -104,10 +104,17 @@ public function uploads($id = null){
     //$this->set('teachermatchings',$this->User->find('all',array('user' => 'User.id')));
   }
 
-  public function add(){
+  public function add($teacher = null){
     if($this->request->is('post')){
       $this->User->create();
       if($this->User->save($this->request->data)){
+        if($teacher == 1){
+          if($this->Teacher->save($this->request->data)){
+            $this->Flash->success(__('The teacher has been saved.'));
+            $this->redirect(array('action' => 'login',1));
+            exit();
+          }
+        }
         $this->Flash->success(__('The user has been saved.'));
         $this->redirect(array('action' => 'login'));
       }else{
@@ -115,6 +122,20 @@ public function uploads($id = null){
       }
     }
   }
+
+
+    // public function add_teacher(){
+    // if($this->request->is('post')){
+    //   $this->User->create();
+    //   if($this->User->save($this->request->data)){
+    //     $this->Flash->success(__('The user has been saved.'));
+    //     $this->redirect(array('action' => 'login'));
+    //   }else{
+    //     $this->Flash->error(__('The user could not be saved. Please try again.'));
+    //   }
+    // }
+ // }
+
 
   public function edit($id = null){
     $this->User->id = $id;
