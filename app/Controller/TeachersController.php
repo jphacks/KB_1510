@@ -4,33 +4,33 @@ class TeachersController extends AppController{
 
   public $uses = array('Teacher', 'User');
 
-  public $name = 'Teachers';
+  // public $name = 'Teachers';
 
-  public $components = array(
-      'Auth' => array(
-          'loginAction' => array(
-              'controller' => 'Teachers',
-              'action' => 'login',
-            ),
-          'authenticate' => array(
-            'Form' => array(
-              'teacherModel' => 'Teacher',
-              'fields' => array(
-                  'email' => 'email',
-                  'password' => 'password',
-                ),
-            )
-        ),
-      'loginRedirect' => array(
-          'controller' => 'Teachers',
-          'action' => 'mypage'
-        ),
-      'logoutRedirect' => array(
-            'controller' => 'Teachers',
-            'action' => 'index'
-        ),
-      )
-    );
+  // public $components = array(
+  //     'Auth' => array(
+  //         'loginAction' => array(
+  //             'controller' => 'Teachers',
+  //             'action' => 'login',
+  //           ),
+  //         'authenticate' => array(
+  //           'Form' => array(
+  //             'teacherModel' => 'Teacher',
+  //             'fields' => array(
+  //                 'email' => 'email',
+  //                 'password' => 'password',
+  //               ),
+  //           )
+  //       ),
+  //     'loginRedirect' => array(
+  //         'controller' => 'Teachers',
+  //         'action' => 'mypage'
+  //       ),
+  //     'logoutRedirect' => array(
+  //           'controller' => 'Teachers',
+  //           'action' => 'index'
+  //       ),
+  //     )
+  //   );
 
   public function beforeFilter(){
     parent::beforeFilter();
@@ -40,6 +40,7 @@ class TeachersController extends AppController{
   }
 
   public function login(){
+    $this->redirect(array('controller'=>'users','action'=>'login',1));
     if($this->request->is('post')){
       if($this->Auth->login()){
         $session_id = $this->Auth->user();

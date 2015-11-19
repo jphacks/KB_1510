@@ -1,4 +1,4 @@
-<h2>生徒登録</h2>
+<h2><?php echo $addname; ?>登録</h2>
 <div class="users form">
 <?php echo $this->Form->create('User'); ?>
   <fieldset>

@@ -6,10 +6,10 @@ class UsersController extends AppController{
 
   public function beforeFilter(){
     parent::beforeFilter();
-    $this->Auth->allow('add','lists','lists_json','mypage','profile');
+    $this->Auth->allow('add','lists','lists_json','mypage','profile','login');
   }
 
-  public function login($id = null){
+  public function login($teacher = null){
     if($this->request->is('post')){
       if($this->Auth->login()){
         $logged_in = $this->Auth->user();
@@ -17,6 +17,11 @@ class UsersController extends AppController{
       }else{
         $this->Flash->error(__('メールアドレスとパスワードのどちらかが間違っています。もう一度入力してください。'));
       }
+    }
+    if($teacher == 1){
+      $this->set('loginname','講師');
+    }else{
+      $this->set('loginname','生徒');
     }
   }
 
@@ -120,6 +125,11 @@ public function uploads($id = null){
       }else{
         $this->Flash->error(__('The user could not be saved. Please try again.'));
       }
+    }
+    if($teacher == 1){
+      $this->set('addname','講師');
+    }else{
+      $this->set('addname','生徒');
     }
   }
 
