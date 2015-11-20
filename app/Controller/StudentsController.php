@@ -1,8 +1,8 @@
 <?php
 
-class UsersController extends AppController{
+class StudentsController extends AppController{
 
-  public $uses = array('Teacher', 'User');
+  public $uses = array('Teacher', 'Student');
 
   public function beforeFilter(){
     parent::beforeFilter();
@@ -30,7 +30,7 @@ class UsersController extends AppController{
         'order' => 'modified desc',
         'limit' => 20
       );
-    $this->set('user', $this->User->find('all', $params));
+    $this->set('student', $this->Student->find('all', $params));
     $this->set('teachersmatching',$teachermatchings);
   }
 
@@ -40,7 +40,7 @@ class UsersController extends AppController{
       'status' => 'success',
       'order' => 'created desc'
     );
-      $users = $this->User->find('all',$data);
+      $users = $this->Student->find('all',$data);
       $this->viewClass = 'Json';
       $this->set(compact('users'));
       $this->set('_serialize', 'users');
@@ -64,13 +64,13 @@ class UsersController extends AppController{
       );
     $teacher = $this->Teacher->find('all',$params);
     // $this->set('teacher',$teacher);
-    $user = $this->User->findById($id);
+    $user = $this->Student->findById($id);
     $this->set(compact('teacher','user'));
   }
 
 
     public function profile($id = null){
-    $this->set('user', $this->User->findById($id));
+    $this->set('student', $this->Student->findById($id));
   }
 
 
@@ -81,7 +81,7 @@ public function uploads($id = null){
     // }
     $this->Teacher->id = $id;
     if($this->request->is('get')){
-      $this->set('teacher',$this->User->findById($id));
+      $this->set('teacher',$this->Student->findById($id));
       $this->request->data = $this->Teacher->read();
     }else{
       if($this->Teacher->save($this->request->data)){
@@ -95,28 +95,28 @@ public function uploads($id = null){
   }
 
   /*public function index(){
-    $this->User->recursive = 0;
+    $this->Student->recursive = 0;
     $this->set('users', $this->paginate());
   }*/
 
   public function view($id = null){
-    if(!$this->User->exists($id)){
+    if(!$this->Student->exists($id)){
       throw new NotFoundException(__('無効なユーザーです。'));
     }
-    // $this->set('user', $this->User->findById($id));
-    $this->User->id = $id;
-    $this->set('user', $this->User->read());
-    //$this->set('teachermatchings',$this->User->find('all',array('user' => 'User.id')));
+    // $this->set('student', $this->Student->findById($id));
+    $this->Student->id = $id;
+    $this->set('student', $this->Student->read());
+    //$this->set('teachermatchings',$this->Student->find('all',array('user' => 'User.id')));
   }
 
   public function add($teacher = null){
     if($this->request->is('post')){
-      $this->User->create();
-      if($this->User->save($this->request->data)){
-      $new = $this->User->find('all',array('fields' => array('max(id) as User.id')));
+      $this->Student->create();
+      if($this->Student->save($this->request->data)){
+      $new = $this->Student->find('all',array('fields' => array('max(id) as User.id')));
       $id = $new[0]['id_new'];
-      $newuser = $this->User->findById($id);
-        if($newuser['User']['isteacer'] == 1){
+      $newuser = $this->Student->findById($id);
+        if($newuser['Student']['isteacer'] == 1){
             $this->Flash->success(__('登録ありがとうございます。'));
             $this->redirect(array('action' => 'add_teacher'));
         }
@@ -147,36 +147,61 @@ public function uploads($id = null){
     // }
     //   $newteacher = $this->Teacher->find('all',array('fields' => array('max(id) as User.id_new')));
     //   $id = $newteacher[0]['id_new'];
-    //   $this->set('newteacher',$this->User->findById($id));
+    //   $this->set('newteacher',$this->Student->findById($id));
  }
 
 
+ /**
+ * _addAssociated method
+ *
+ * @return void
+ */
+    private function _addAssociated() {
+        if ($this->request->is('post')) {
+            $this->Student->create();
+ 
+            $this->log($this->request->data, 'debug');
+ 
+            $result = $this->Student->saveAssociated($this->request->data);
+            $this->log($result, 'debug');
+ 
+            if ($result) {
+                $this->Session->setFlash(__('The user has been saved'));
+                $this->redirect(array('action' => 'index'));
+            } else {
+                $this->Session->setFlash(__('The user could not be saved. Please, try again.'));
+            }
+        }
+    }
+    
+
+
   public function edit($id = null){
-    $this->User->id = $id;
-    if(!$this->User->exists()){
+    $this->Student->id = $id;
+    if(!$this->Student->exists()){
       throw new NotFoundException(__('Invalid user'));
     }
     if($this->request->is('post') || $this->request->is('put')){
-      if($this->User->save($this->request->data)){
+      if($this->Student->save($this->request->data)){
         $this->Flash->success(__('The user has been saved'));
         $this->redirect(array('controller' => 'users', 'action' => 'mypage'));
       }else{
         $this->Flash->error(__('The user could not saved. Please try again.'));
       }
     }else{
-      $this->request->data = $this->User->findById($id);
-      unset($this->request->data['User']['password']);
+      $this->request->data = $this->Student->findById($id);
+      unset($this->request->data['Student']['password']);
     }
   }
 
   public function delete($id = null){
     $this->request->onlyAllow('post');
 
-    $this->User->id = $id;
-    if(!$this->User->exists()){
+    $this->Student->id = $id;
+    if(!$this->Student->exists()){
       throw new NotFoundException(__('Invalid User'));
     }
-    if($this->User->delete()){
+    if($this->Student->delete()){
       $this->Flash->success(__('User deleted'));
       $this->redirect(array('action' => 'index'));
     }
