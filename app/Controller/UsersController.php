@@ -113,17 +113,17 @@ public function uploads($id = null){
     if($this->request->is('post')){
       $this->User->create();
       if($this->User->save($this->request->data)){
-      $new = $this->User->find('all',array('fields' => array('max(id) as User.id')));
-      $id = $new[0]['id_new'];
-      $newuser = $this->User->findById($id);
-        if($newuser['User']['isteacer'] == 1){
-            $this->Flash->success(__('登録ありがとうございます。'));
-            $this->redirect(array('action' => 'add_teacher'));
+        if($teacher == 1){
+          if($this->Teacher->save($this->request->data)){
+            $this->Flash->success(__('The teacher has been saved.'));
+            $this->redirect(array('action' => 'login',1));
+            exit();
+          }
         }
-        $this->Flash->success(__('ユーザー登録が完了しました。'));
+        $this->Flash->success(__('The user has been saved.'));
         $this->redirect(array('action' => 'login'));
       }else{
-        $this->Flash->error(__('登録に失敗しました。もう一度やり直して下さい。'));
+        $this->Flash->error(__('The user could not be saved. Please try again.'));
       }
     }
     if($teacher == 1){
@@ -134,21 +134,17 @@ public function uploads($id = null){
   }
 
 
-  public function add_teacher(){
-    $this->_addAssociated();
+    // public function add_teacher(){
     // if($this->request->is('post')){
-    //   $this->Teacher->create();
-    //   if($this->Teacher->save($this->request->data)){
+    //   $this->User->create();
+    //   if($this->User->save($this->request->data)){
     //     $this->Flash->success(__('The user has been saved.'));
-    //     $this->redirect(array('controller' => 'teachers','action' => 'mypage'));
+    //     $this->redirect(array('action' => 'login'));
     //   }else{
     //     $this->Flash->error(__('The user could not be saved. Please try again.'));
     //   }
     // }
-    //   $newteacher = $this->Teacher->find('all',array('fields' => array('max(id) as User.id_new')));
-    //   $id = $newteacher[0]['id_new'];
-    //   $this->set('newteacher',$this->User->findById($id));
- }
+ // }
 
 
   public function edit($id = null){

@@ -54,7 +54,7 @@
 	$(function(){
 		setTimeout(function(){
 			$('#flashMessage').fadeOut("slow");
-		},1200);
+		},800);
 	})
 	</script>
 </body>

@@ -13,16 +13,9 @@
       'label' => "メールアドレス",
     ));
 
-    if($addname == "講師"){
-      echo $this->Form->input('isteacher', array(
-      'type' => 'hidden','value' => 1
-    ));
-    }else{
-      echo $this->Form->input('isteacher', array(
+    echo $this->Form->input('isteacher', array(
       'type' => 'hidden','value' => 0
     ));
-    }
-    
     ?>
   </fieldset>
 <?php echo $this->Form->end(__('登録する')); ?>
