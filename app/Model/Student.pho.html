@@ -19,12 +19,6 @@ class Teacher extends AppModel{
       'required' => array(
         'rule' => array('notBlank'),
         'message' => 'A password is required.'
-        ),
-      array(
-        'rule' => array(
-          'minLength' => 8,
-           'message' => '8文字以上で入力して下さい。'
-          )
       )
     )
   );

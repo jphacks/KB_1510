@@ -41,17 +41,18 @@ class AppController extends Controller {
     'Facebook.Connect',
     'Auth' => array(
       'loginRedirect' => array(
-        'action' => 'mypage'
+        'controller' => 'users',
+        'action' => 'tomypage'
       ),
       'logoutRedirct' => array(
-        'controller' => 'teachers',
+        'controller' => 'users',
         'action' => 'index',
       ),
       'authenticate' => array(
         'Form' => array(
           'passwordHasher' => 'Blowfish',
           'fields' => array(
-            'email' => 'email',
+            'username' => 'email',
             'password' => 'password'
           ),
         )
