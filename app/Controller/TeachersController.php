@@ -4,33 +4,33 @@ class TeachersController extends AppController{
 
   public $uses = array('Teacher', 'User');
 
-  // public $name = 'Teachers';
+  public $name = 'Teachers';
 
-  // public $components = array(
-  //     'Auth' => array(
-  //         'loginAction' => array(
-  //             'controller' => 'Teachers',
-  //             'action' => 'login',
-  //           ),
-  //         'authenticate' => array(
-  //           'Form' => array(
-  //             'teacherModel' => 'Teacher',
-  //             'fields' => array(
-  //                 'email' => 'email',
-  //                 'password' => 'password',
-  //               ),
-  //           )
-  //       ),
-  //     'loginRedirect' => array(
-  //         'controller' => 'Teachers',
-  //         'action' => 'mypage'
-  //       ),
-  //     'logoutRedirect' => array(
-  //           'controller' => 'Teachers',
-  //           'action' => 'index'
-  //       ),
-  //     )
-  //   );
+  public $components = array(
+      'Auth' => array(
+          'loginAction' => array(
+              'controller' => 'Teachers',
+              'action' => 'login',
+            ),
+          'authenticate' => array(
+            'Form' => array(
+              'teacherModel' => 'Teacher',
+              'fields' => array(
+                  'email' => 'email',
+                  'password' => 'password',
+                ),
+            )
+        ),
+      'loginRedirect' => array(
+          'controller' => 'Teachers',
+          'action' => 'mypage'
+        ),
+      'logoutRedirect' => array(
+            'controller' => 'Teachers',
+            'action' => 'index'
+        ),
+      )
+    );
 
   public function beforeFilter(){
     parent::beforeFilter();
@@ -102,13 +102,17 @@ class TeachersController extends AppController{
       throw new NotFoundException(__('ログインされていません'));
     }
     //$teacher = $this->Teacher->findById($id);
-    $teacher = $this->Teacher->find('first', ['conditions' => ['Teacher.id' => $id]]);
+    $teacher = $this->Teacher->find('first', ['conditions' => ['Teacher.user_id' => $session_id]]);
     //$matchings = $this->User->find('all',['conditions' => ['Teachermatching.user_id' => $id]]);
     //$this->set(compact('teacher'));
     $params = array(
       'order' => 'modified desc',
-      'limit' => 10
+      'limit' => 10,
+      'conditions' => array(
+          'isteacher' => 0 //isteacher=falseつまり、生徒ユーザーの情報を取ってくる。
+        )
       );
+
     $user = $this->User->find('all',$params);
     // $this->set('teacher',$teacher);
     $this->set(compact('teacher','user'));

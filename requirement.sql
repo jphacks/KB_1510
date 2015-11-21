@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: 2015 年 11 月 20 日 19:45
+-- Generation Time: 2015 年 11 月 21 日 03:29
 -- サーバのバージョン： 5.5.38
 -- PHP Version: 5.6.2
 
@@ -416,7 +416,7 @@ CREATE TABLE `teachers` (
   `fee` int(6) NOT NULL,
   `payment` int(6) NOT NULL,
   `user_id` int(8) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- テーブルのデータのダンプ `teachers`
@@ -456,7 +456,8 @@ INSERT INTO `teachers` (`id`, `username`, `password`, `created`, `modified`, `ge
 (55, NULL, NULL, '2015-11-21 03:17:07', '2015-11-21 03:17:07', NULL, NULL, NULL, '例.php3年（IT起業で、cakePHPを用いたWebメディアを作っていました。）', '', '', 0, 0, '', '', '', '', '', 0, 0, 0, 27),
 (56, NULL, NULL, '2015-11-21 03:32:14', '2015-11-21 03:32:14', NULL, NULL, NULL, '例.php3年（IT起業で、cakePHPを用いたWebメディアを作っていました。）', '', '', 0, 0, '', '', '', '', '', 0, 0, 0, 28),
 (57, NULL, NULL, '2015-11-21 03:39:50', '2015-11-21 03:39:50', NULL, NULL, NULL, '例.php3年（IT起業で、cakePHPを用いたWebメディアを作っていました。）', '', '', 0, 0, '', '', '', '', '', 0, 0, 0, 29),
-(58, NULL, NULL, '2015-11-21 03:40:37', '2015-11-21 03:40:37', NULL, NULL, NULL, '例.php3年（IT起業で、cakePHPを用いたWebメディアを作っていました。）', '', '', 0, 0, '', '', '', '', '', 0, 0, 0, 30);
+(58, NULL, NULL, '2015-11-21 03:40:37', '2015-11-21 03:40:37', NULL, NULL, NULL, '例.php3年（IT起業で、cakePHPを用いたWebメディアを作っていました。）', '', '', 0, 0, '', '', '', '', '', 0, 0, 0, 30),
+(59, NULL, NULL, '2015-11-21 11:04:24', '2015-11-21 11:04:24', NULL, NULL, NULL, 'swift,php', '', '', 0, 0, '', '', '', '', '', 0, 0, 0, 31);
 
 -- --------------------------------------------------------
 
@@ -484,7 +485,7 @@ CREATE TABLE `users` (
   `isteacher` tinyint(1) NOT NULL,
   `email` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
   `teacher_id` int(8) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- テーブルのデータのダンプ `users`
@@ -519,7 +520,8 @@ INSERT INTO `users` (`id`, `username`, `password`, `role`, `created`, `modified`
 (27, 'fsfd', '$2a$10$6sM.meGRhyWpsSzvbXSkye2MXygVI3eCFwh4MGbJ4btQkFfOmRKpO', NULL, '2015-11-21 03:17:06', '2015-11-21 03:17:07', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'rr@ee', 0),
 (28, 'aaaa', '$2a$10$63t.N2cpSEZQlVd.KN2BB.EZCprQTB/HV/m2mhKNFPSbEIQ.WQq6S', NULL, '2015-11-21 03:32:13', '2015-11-21 03:32:14', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'tr@gf', 0),
 (29, 'fdfdf', '$2a$10$mHHOodHkAd6zegxiAbUC/ep1RYo0oi1LRHxhavRP13nyJ3vrygsP6', NULL, '2015-11-21 03:39:50', '2015-11-21 03:39:50', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, '3232@1111', 0),
-(30, 'dna', '$2a$10$/DFZvmKT11ES8L/HWM0hiOB9vqaa99/dUyxDVrjOS.TSbMRM40t.6', NULL, '2015-11-21 03:40:37', '2015-11-21 03:40:37', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'a@a', 0);
+(30, 'dna', '$2a$10$/DFZvmKT11ES8L/HWM0hiOB9vqaa99/dUyxDVrjOS.TSbMRM40t.6', NULL, '2015-11-21 03:40:37', '2015-11-21 03:40:37', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'a@a', 0),
+(31, 'シャナ', '$2a$10$Gf.xfhX40CrBrPS9lCfg4OvxdsR4xF2KYhs7/61EjtyibGQMeo1gS', NULL, '2015-11-21 11:04:24', '2015-11-21 11:04:24', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'rr@fdf', 0);
 
 -- --------------------------------------------------------
 
@@ -665,12 +667,12 @@ MODIFY `id` int(8) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=49;
 -- AUTO_INCREMENT for table `teachers`
 --
 ALTER TABLE `teachers`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=59;
+MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=60;
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=31;
+MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=32;
 --
 -- AUTO_INCREMENT for table `user_matchings`
 --
