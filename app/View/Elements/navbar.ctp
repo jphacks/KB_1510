@@ -37,9 +37,13 @@
         <ul class="nav navbar-nav navbar-right">
             <li><?php
               if($acountSession == null){
+                echo $this->Html->link('講義を探す',array('controller'=>'rectures', 'action' => 'lists'));
+                echo"</li><li>";
                 echo $this->Html->link('生徒ログイン', array('controller' => 'users', 'action' => 'login')) . "<li>";
                 echo "<li>" . $this->Html->link('講師ログイン', array('controller' => 'teachers', 'action' => 'login'));
               }else{
+                echo $this->Html->link('講義を追加',array('controller'=>'rectures', 'action' => 'add'));
+                echo"</li><li>";
                 echo $this->Html->link('ログアウト', array('action'=>'logout'));
                 #Facebookログアウトについて
                 #echo $this->Facebook->logout(array('redirect' => array('controller' => 'users', 'action' => 'logout'), 'img' => '/Facebook/img/facebook-logout.png'));

@@ -36,11 +36,11 @@ class TeachersController extends AppController{
     parent::beforeFilter();
 
     $this->Auth->allow('logout','login','lists','lists_json','uploads','mypicture','mypage','edit','profile','post','matching_lists','location_map');
-
   }
 
+
   public function login(){
-    $this->redirect(array('controller'=>'users','action'=>'login',1));
+    $this->redirect(array('controller'=>'users','action'=>'login'));
     if($this->request->is('post')){
       if($this->Auth->login()){
         $session_id = $this->Auth->user();
@@ -51,10 +51,12 @@ class TeachersController extends AppController{
     }
   }
 
+
   public function logout(){
     #$this->Session->destroy(); #セッションを消す。facebookについて。
     $this->redirect($this->Auth->logout());
   }
+
 
   public function index(){
     $teacher = $this->Teacher->find('all' ,array('limit' => 10));
@@ -96,7 +98,7 @@ class TeachersController extends AppController{
 
 
 
-    public function mypage(){
+public function mypage(){
     $session_id = $this->Auth->user('id');
     $session_isteacher = $this->Auth->user('isteacher');
     // $id = 10; //後で消します。
@@ -111,14 +113,14 @@ class TeachersController extends AppController{
       'order' => 'modified desc',
       'limit' => 10,
       'conditions' => array(
-          'isteacher' => 0 //isteacher=falseつまり、生徒ユーザーの情報を取ってくる。
+          'Teacher.isteacher' => 0 //isteacher=falseつまり、生徒ユーザーの情報を取ってくる。
         )
       );
-
+​
     $user = $this->User->find('all',$params);
     // $this->set('teacher',$teacher);
     $this->set(compact('teacher','user'));
-  }
+}
 
 
   public function matching_lists(){
@@ -156,6 +158,7 @@ class TeachersController extends AppController{
     $this->render('uploads');
   }
   
+
   /**
    * 投稿処理
    */
@@ -257,7 +260,6 @@ class TeachersController extends AppController{
   }
 
 
-
   
 
   public function delete($id = null){
@@ -277,11 +279,11 @@ class TeachersController extends AppController{
 
 
 
-
   public function isAuthorized($user){
     if($this->action === 'add'){
       return true;
     }
+
 
     if(in_array($this->action, array('edit', 'delete'))){
       $teacherId = (int)$this->request->param['pass'][0];
@@ -291,4 +293,6 @@ class TeachersController extends AppController{
     }
     return parent::isAuthorized($user);
   }
+
 }
+

@@ -5,7 +5,8 @@ App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 
 class User extends AppModel{
   public $hasMany = array("Teachermatching","Comment","Post");
-   public $hasOne = array(
+  public $belongsTo = "Recture";
+  public $hasOne = array(
         'Student' => array(
             'className' => 'Student',
             'foreignKey' => 'user_id',

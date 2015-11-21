@@ -6,7 +6,7 @@ class UsersController extends AppController{
 
   public function beforeFilter(){
     parent::beforeFilter();
-    $this->Auth->allow('add_user_student','add_user_teacher','lists','lists_json','mypage','profile','login');
+    $this->Auth->allow('add_user_student','add_user_teacher','lists','lists_json','mypage','profile','login','logout');
 
     $this->Auth->redirectUrl(array(
       'action'=>'tomypage'));
@@ -75,7 +75,7 @@ class UsersController extends AppController{
     $session_id = $this->Auth->user('id');
     // $id = 5;
     if(!$session_id){
-      throw new NotFoundException(__('ログインされていません'));
+      throw new NotFoundException(__('ログインされていません。1秒後にページが飛びます。'));
     }
     
      $params = array(

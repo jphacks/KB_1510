@@ -14,7 +14,9 @@
         <ul>
           <li>
           <?php echo $user['User']['programin_lang']; ?><!-- 一つ一つの言語が分割してタブ形式で表示される -->
+          <?php echo $this->Html->link('プロフィール詳細', array('controller' => 'users', 'action' => 'profile', $user['User']['id'])); ?><br>
         <?php echo $this->Html->link('プロフィール編集', array('controller' => 'users', 'action' => 'edit', $user['User']['id'])); ?>
+
       </div>
     </div>
   </div>
@@ -23,10 +25,10 @@
       <div class="myteachers">
       <h2><?php echo $profile['username'] ?>さんの講師一覧</h2>
         <?php //var_dump($user['Teachermatching']); ?><br>
-        <?php foreach ($user['Teachermatching'] as $student): ?>
+        <?php foreach ($user['Teachermatching'] as $teacher): ?>
           <tr>
           <td><?php //echo h($student['id']) ?></td>
-          <td><?php echo $this->Html->link($student['name'], array('controller' => 'users', 'action' => 'view', $student['user_id'])); ?></td>
+          <td><?php echo $this->Html->link($teacher['name'], array('controller' => 'users', 'action' => 'view', $teacher['user_id'])); ?></td>
           </tr><br>
         <?php endforeach ?>
       </div>
