@@ -97,7 +97,6 @@ class TeachersController extends AppController{
   }
 
 
-
 public function mypage(){
     $session_id = $this->Auth->user('id');
     $session_isteacher = $this->Auth->user('isteacher');
@@ -110,16 +109,16 @@ public function mypage(){
     //$matchings = $this->User->find('all',['conditions' => ['Teachermatching.user_id' => $id]]);
     //$this->set(compact('teacher'));
     $params = array(
-      'order' => 'modified desc',
+      'order' => 'User.modified desc',
       'limit' => 10,
       'conditions' => array(
-          'User.isteacher' => 0 //isteacher=falseつまり、生徒(自分が教える側の)ユーザーの情報を取ってくる。
+          'User.isteacher' => 0 //isteacher=falseつまり、生徒ユーザーの情報を取ってくる。
         )
       );
-​
-    $user = $this->User->find('all',$params);
-    // $this->set('teacher',$teacher);
-    $this->set(compact('teacher','user'));
+// ​
+     $user = $this->User->find('all',$params);
+//     // $this->set('teacher',$teacher);
+     $this->set(compact('teacher','user'));
 }
 
 
