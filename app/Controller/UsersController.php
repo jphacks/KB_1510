@@ -64,32 +64,32 @@ class UsersController extends AppController{
     if($session_isteacher == 1){
       $this->redirect(array('controller'=>'teachers','action'=>'mypage'));
     }else if($session_isteacher == 0){
-      $this->redirect(array('controller'=>'students','action'=>'mypage'));
+      $this->redirect(array('controller'=>'users','action'=>'mypage'));
     }else{
       throw new NotFoundException(__('エラー。不正な値を受け取りました。やり直して下さい。'));
     }
   }
 
 
-  // public function mypage(){
-  //   $id = $this->Auth->user('id');
-  //   // $id = 5;
-  //   if(!$id){
-  //     throw new NotFoundException(__('ログインされていません'));
-  //   }
+  public function mypage(){
+    $session_id = $this->Auth->user('id');
+    // $id = 5;
+    if(!$session_id){
+      throw new NotFoundException(__('ログインされていません'));
+    }
     
-  //    $params = array(
-  //     'order' => 'modified desc',
-  //     'limit' => 10
-  //     );
-  //   $teacher = $this->Teacher->find('all',$params);
-  //   // $this->set('teacher',$teacher);
-  //   $user = $this->User->findById($id);
-  //   $this->set(compact('teacher','user'));
-  // }
+     $params = array(
+      'order' => 'modified desc',
+      'limit' => 10
+      );
+    $teacher = $this->Teacher->find('all',$params);
+    // $this->set('teacher',$teacher);
+    $user = $this->User->findById($session_id);
+    $this->set(compact('teacher','user'));
+  }
 
 
-    public function profile($id = null){
+  public function profile($id = null){
     $this->set('user', $this->User->findById($id));
   }
 
@@ -157,6 +157,20 @@ public function uploads($id = null){
     // }
     //   $this->set('addname','生徒');
     // }
+  }
+
+    public function add(){
+    $this->_addAssociated();
+    if($this->request->is('post')){
+      $this->User->create();
+      if($this->User->save($this->request->data)){
+
+        $this->Flash->success(__('登録完了しました。'));
+        $this->redirect(array('action' => 'login'));
+      }else{
+        $this->Flash->error(__('エラーがあります。以下の内容を確認して下さい。'));
+      }
+    }
   }
 
 

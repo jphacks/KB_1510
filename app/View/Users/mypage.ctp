@@ -7,8 +7,8 @@
       <div class="profile_text">
         <h2><?php echo h($user['User']['username']); ?></h2>
         <?php $profile = $user['User'];
-        echo $user['User']['job'] . "/";
-        echo $user['User']['gender'] . "/";
+        echo $user['User']['job'] . "<br>";
+        echo $user['User']['gender'] . "<br>";
         echo $user['User']['old'];
         ?>
         <ul>

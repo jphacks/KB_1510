@@ -35,7 +35,7 @@ class TeachersController extends AppController{
   public function beforeFilter(){
     parent::beforeFilter();
 
-    $this->Auth->allow('login','lists','lists_json','uploads','mypicture','mypage','edit','profile','post','matching_lists','location_map');
+    $this->Auth->allow('logout','login','lists','lists_json','uploads','mypicture','mypage','edit','profile','post','matching_lists','location_map');
 
   }
 
@@ -86,10 +86,12 @@ class TeachersController extends AppController{
   }
 
   public function view($id = null){
+    $session_id = $this->Auth->user('id');
     if(!$this->Teacher->exists($id)){
       throw new NotFoundException(__('Invalid user'));
     }
     $this->set('teacher', $this->Teacher->findById($id));
+    $this->set('session_id',$session_id);
   }
 
 

@@ -16,5 +16,5 @@
   echo $this->HTML->link('講師登録はこちら',array('controller'=>'users','action'=>'add_user_teacher')); ?>
 <br>
 <?php 
-  echo $this->HTML->link('生徒登録はこちら',array('controller'=>'users','action'=>'add_user_student'));
+  echo $this->HTML->link('生徒登録はこちら',array('controller'=>'users','action'=>'add'));
 ?>

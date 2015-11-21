@@ -1,7 +1,7 @@
 <h1><?php echo h($teacher['Teacher']['username']); ?></h1>
 <p><?php echo h($teacher['Teacher']['job']); ?></p>
 <?php
-$session_id = 5;
+// $session_id = 5;
 if(!empty($session_id)){
 	echo $this->Form->create('Teachermatching',array('action'=>'add_student'));
 
@@ -18,7 +18,7 @@ echo $this->Form->end('講師リクエスト');
           
         <?php //endforeach 
 
-        $session_id = 10; //上と合わせると、講師のidが9という条件の選択 （この２つの値をSessionComponentsで調整）
+        // $session_id = 10; //上と合わせると、講師のidが9という条件の選択 （この２つの値をSessionComponentsで調整）
   $session_name = "kazuki";
 
   echo $this->Form->create('Comment',array('action'=>'add_to_teacherview'));
