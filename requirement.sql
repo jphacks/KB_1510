@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: 2015 年 11 月 21 日 03:29
+-- Generation Time: 2015 年 11 月 21 日 17:16
 -- サーバのバージョン： 5.5.38
 -- PHP Version: 5.6.2
 
@@ -31,7 +31,7 @@ CREATE TABLE `comments` (
   `Comment.teacher_id` int(20) NOT NULL,
   `password` varchar(20) NOT NULL,
   `treated_value` int(2) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=73 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=74 DEFAULT CHARSET=utf8;
 
 --
 -- テーブルのデータのダンプ `comments`
@@ -95,7 +95,8 @@ INSERT INTO `comments` (`id`, `commenter`, `teacher_id`, `user_id`, `created`, `
 (69, 'kazuki', '8', 5, '2015-11-09 21:14:21', '2015-11-09 21:14:21', 'コメント', 0, '', 0),
 (70, 'kazuki', '8', 10, '2015-11-17 17:06:48', '2015-11-17 17:06:48', 'ありがとう！', 0, '', 0),
 (71, 'kazuki', '11', 10, '2015-11-18 14:16:49', '2015-11-18 14:16:49', '講師に興味があります！', 0, '', 0),
-(72, 'kazuki', '8', 3, '2015-11-19 03:16:39', '2015-11-19 03:16:39', 'ddd', 0, '', 0);
+(72, 'kazuki', '8', 3, '2015-11-19 03:16:39', '2015-11-19 03:16:39', 'ddd', 0, '', 0),
+(73, 'kazuki', '8', 32, '2015-11-21 14:52:16', '2015-11-21 14:52:16', '遊びたい', 0, '', 0);
 
 -- --------------------------------------------------------
 
@@ -314,6 +315,24 @@ INSERT INTO `profiles` (`id`, `photo`, `photo_dir`, `user_id`, `teacher_id`) VAL
 -- --------------------------------------------------------
 
 --
+-- テーブルの構造 `rectures`
+--
+
+CREATE TABLE `rectures` (
+`id` int(11) NOT NULL,
+  `title` varchar(80) DEFAULT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  `junle` int(2) DEFAULT NULL,
+  `language` int(2) DEFAULT NULL,
+  `body` text,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
+  `teacher_id` int(8) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- テーブルの構造 `students`
 --
 
@@ -358,7 +377,7 @@ CREATE TABLE `teachermatchings` (
   `offer_from_me` varchar(50) NOT NULL,
   `created` datetime DEFAULT NULL,
   `matching_fee` int(6) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=53 DEFAULT CHARSET=utf8;
 
 --
 -- テーブルのデータのダンプ `teachermatchings`
@@ -385,7 +404,11 @@ INSERT INTO `teachermatchings` (`id`, `name`, `user_id`, `teacher_id`, `is_match
 (45, '三輪', 5, 14, NULL, '', '', '2015-11-10 10:28:41', 0),
 (46, 'kazuki', 3, 10, NULL, '', '', '2015-11-10 12:45:41', 0),
 (47, 'シンゴ', 5, 46, NULL, '', '', '2015-11-18 14:13:52', 0),
-(48, '谷端', 5, 11, NULL, '', '', '2015-11-18 14:16:52', 0);
+(48, '谷端', 5, 11, NULL, '', '', '2015-11-18 14:16:52', 0),
+(49, 'しー', 5, 50, NULL, '', '', '2015-11-21 12:22:44', 0),
+(50, 'しー', 32, 50, NULL, '', '', '2015-11-21 12:36:46', 0),
+(51, 'tt5', 32, 51, NULL, '', '', '2015-11-21 12:38:20', 0),
+(52, '森ちゃん', 32, 20, NULL, '', '', '2015-11-21 12:38:38', 0);
 
 -- --------------------------------------------------------
 
@@ -416,7 +439,7 @@ CREATE TABLE `teachers` (
   `fee` int(6) NOT NULL,
   `payment` int(6) NOT NULL,
   `user_id` int(8) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- テーブルのデータのダンプ `teachers`
@@ -457,7 +480,8 @@ INSERT INTO `teachers` (`id`, `username`, `password`, `created`, `modified`, `ge
 (56, NULL, NULL, '2015-11-21 03:32:14', '2015-11-21 03:32:14', NULL, NULL, NULL, '例.php3年（IT起業で、cakePHPを用いたWebメディアを作っていました。）', '', '', 0, 0, '', '', '', '', '', 0, 0, 0, 28),
 (57, NULL, NULL, '2015-11-21 03:39:50', '2015-11-21 03:39:50', NULL, NULL, NULL, '例.php3年（IT起業で、cakePHPを用いたWebメディアを作っていました。）', '', '', 0, 0, '', '', '', '', '', 0, 0, 0, 29),
 (58, NULL, NULL, '2015-11-21 03:40:37', '2015-11-21 03:40:37', NULL, NULL, NULL, '例.php3年（IT起業で、cakePHPを用いたWebメディアを作っていました。）', '', '', 0, 0, '', '', '', '', '', 0, 0, 0, 30),
-(59, NULL, NULL, '2015-11-21 11:04:24', '2015-11-21 11:04:24', NULL, NULL, NULL, 'swift,php', '', '', 0, 0, '', '', '', '', '', 0, 0, 0, 31);
+(59, NULL, NULL, '2015-11-21 11:04:24', '2015-11-21 11:04:24', NULL, NULL, NULL, 'swift,php', '', '', 0, 0, '', '', '', '', '', 0, 0, 0, 31),
+(60, NULL, NULL, '2015-11-21 20:06:33', '2015-11-21 20:06:33', NULL, NULL, NULL, '例.php3年（IT起業で、cakePHPを用いたWebメディアを作っていました。）', '', '', 0, 0, '', '', '', '', '', 0, 0, 0, 33);
 
 -- --------------------------------------------------------
 
@@ -484,44 +508,48 @@ CREATE TABLE `users` (
   `photo_dir` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `isteacher` tinyint(1) NOT NULL,
   `email` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
-  `teacher_id` int(8) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `teacher_id` int(8) NOT NULL,
+  `recture_id` int(8) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- テーブルのデータのダンプ `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `password`, `role`, `created`, `modified`, `gender`, `old`, `prefecture`, `desire_time`, `way`, `programing_skill`, `programin_lang`, `job`, `introduction`, `photo_dir`, `isteacher`, `email`, `teacher_id`) VALUES
-(2, 'kazuki', '$2a$10$wWb3Bf0ZC1N2lKGWfgdQkO3/4x19xZc..W5PmEhKeqw5Gji3jDuF2', 'admin', '2015-10-02 17:14:38', '2015-10-06 09:01:43', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, '', 0),
-(3, 'kazuki', '$2a$10$rYKIUkNqkz3JOue6W0eUiuw.4pqhqE2/L31V.ZDIN2OoJvm20p9aa', 'admin', '2015-10-02 17:49:41', '2015-10-02 17:49:41', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, '', 0),
-(4, 'kazuki', '$2a$10$gZq4SxJqBC0vLiQDFBrQ8etM/gfkcXixdbpBDuhOlQP5RmJnhAHuu', 'admin', '2015-10-03 04:29:20', '2015-10-03 04:29:20', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, '', 0),
-(5, 'higashi', '$2a$10$WSyBIffGzPF6HxhF5Rph2eTpjWxgmzI.yx1ApGj1zjndBD.cC9b5u', 'admin', '2015-10-03 06:27:45', '2015-10-03 06:27:45', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '大学生', '', '', 1, '', 0),
-(6, 'higashi', '$2a$10$NEyCczkUreAz1X1cWu6/N.3RIsoehn5wF91Dur42j.LjgmgJjiSRm', 'admin', '2015-10-04 03:32:22', '2015-10-04 03:32:22', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, '', 0),
-(7, 'kazuki', '$2a$10$RTtwVrC5e.oBd/fHOKy04u1lrgIfyaEUfhPq.ovNv2VYpft5wNtDG', 'admin', '2015-10-04 03:33:50', '2015-10-04 03:33:50', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, '', 0),
-(8, 'kazuki', '$2a$10$82DMWfjCgGceEWuYZD1.1u6c33QouqHtWy1yzgTs/lwiMOhdZLq3G', 'admin', '2015-10-06 10:51:33', '2015-10-06 10:51:33', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, '', 0),
-(9, 'kazuki', '$2a$10$6SjTK6ststitLLLrLW6WteaSyCfA8w/I.79J8UsaiWc1Qkhj3xLmu', 'admin', '0000-00-00 00:00:00', '2015-10-06 10:51:52', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, '', 0),
-(10, 'kazuki', '$2a$10$B1W/52THdTUvhetOraw/VO0xPaquJ5ZRgDDNFgHyEEzbE61i7bBgO', 'admin', '2015-10-14 06:33:47', '2015-10-14 06:33:47', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, '', 0),
-(11, 'しんご', '00000', '', '2015-10-18 18:12:57', NULL, '男', 22, '京都府', NULL, '直接又はスカイプ', '中級者レベル', 'php,iOS,MySQL,javascript', '大学生', 'こんにちは。同志社大学理工学研究科の高橋良成です。現在、APパートナーズというベンチャー企業で、新規事業の開発を行っています。プログラミング経験自体は１年強ですが、前から数学を研究などで勉強していたので、演算系は得意です。毎日研究や開発の日々で忙しいですが、機会があればよろしくお願いします。', '', 0, '', 0),
-(12, NULL, NULL, NULL, '2015-11-05 11:07:55', '2015-11-05 11:07:55', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, '', 0),
-(13, NULL, NULL, NULL, '2015-11-05 11:08:27', '2015-11-05 11:08:27', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, '', 0),
-(14, 'しんご', '$2a$10$5gD2rNq7wa4FKHD5oFsjxu4rXste7d2tOS31QdCimGyozhDimJlAG', NULL, '2015-11-18 13:59:32', '2015-11-18 13:59:32', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, '', 0),
-(15, 'しん', '$2a$10$JBaGDDvWfvVtfSNwBNR7Z.t9Gl90oTOTtCeW7ZaszUV8zNSxF90rG', NULL, '2015-11-18 14:13:12', '2015-11-18 14:13:12', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'trsei21@yahoo.co.jp', 0),
-(16, 'しん', '$2a$10$S5kj5V2PRtKekqUmAPq4V.bBhI7wjmzYUesUKbpVMTVFkkgPtbBlC', NULL, '2015-11-18 14:13:32', '2015-11-18 14:13:32', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'trsei21@yahoo.co.jp', 0),
-(17, 'しんご', '$2a$10$Vt/DLGtNbjpyMlK6hnKXAein9uTdeEPN76JB0EYQi9EeHUPZOeneC', NULL, '2015-11-18 21:38:22', '2015-11-18 21:38:22', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'trsei21@yahoo.co.jp', 0),
-(18, 'しん', '$2a$10$QNNZeeBniV3dq8r3msweGe2jj/ANGq0Izn33fOjMW8mMg.wNxwJGi', NULL, '2015-11-20 00:02:45', '2015-11-20 00:02:45', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, 'zexel8716@gmail.com', 0),
-(19, 'fdfd', '$2a$10$3WgU49.5rhaywSOZvynO0.qK3q3KYKysvPHsRgy2E1ISkrb36vpeO', NULL, '2015-11-20 01:09:59', '2015-11-20 01:09:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, 'sfsf@dffdf', 0),
-(20, 'あああ', '$2a$10$drjoVHfBnWZ0A25g75Yk1uPniZYPixwpvoTAC4mKbEbivQ/JjtPe2', NULL, '2015-11-20 01:10:16', '2015-11-20 01:10:16', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, 'ffdfd@dfdfdfdfd', 0),
-(21, 'fdsf', '$2a$10$Pte9DjGgiauOf.VqhRqW6up15GSF5yiq/zluvmg6Lpmrw9gWfEdwS', NULL, '2015-11-20 01:19:55', '2015-11-20 01:19:55', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, 'ff@dhghg', 0),
-(22, 'dd', '$2a$10$rd0tLw68ZjpcbXi1Qba9BenDXE2YYBaWlfydNuD4WaYL601XIRmK.', NULL, '2015-11-20 01:23:09', '2015-11-20 01:23:09', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, 'mjmj@hjmh', 0),
-(23, 'dd', '$2a$10$75Ga0m0M4E4CDNzkYtNoiOgRE2qqwGsKU5LTkwGAJlCkJjDauMS8m', NULL, '2015-11-20 01:25:24', '2015-11-20 01:25:24', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, 'mjmj@hjmhfd', 0),
-(24, 'ららばえる', '$2a$10$rMI3DxoqOy0fgvXs3bfX5.pohJn04yhx4cSNDqWXAGvovofXc1b.q', NULL, '2015-11-21 00:38:42', '2015-11-21 00:38:42', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, 'dfsf@feerre', 0),
-(25, 'dsf', '$2a$10$LWE.RPNiBObsIToTnUUCDuFIvM/6uzNSBYubcUPVRSBrx9BJOlVLi', NULL, '2015-11-21 02:51:22', '2015-11-21 02:51:22', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, 'dfs@dsf', 0),
-(26, 'あああ', '$2a$10$KBw8IFSRJhqHZr8XyPmdJuZMFp3IRKbCt4iRsKC1qpdiU4BIhhgde', NULL, '2015-11-21 03:11:43', '2015-11-21 03:11:43', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, 'dfasf@fdfds', 0),
-(27, 'fsfd', '$2a$10$6sM.meGRhyWpsSzvbXSkye2MXygVI3eCFwh4MGbJ4btQkFfOmRKpO', NULL, '2015-11-21 03:17:06', '2015-11-21 03:17:07', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'rr@ee', 0),
-(28, 'aaaa', '$2a$10$63t.N2cpSEZQlVd.KN2BB.EZCprQTB/HV/m2mhKNFPSbEIQ.WQq6S', NULL, '2015-11-21 03:32:13', '2015-11-21 03:32:14', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'tr@gf', 0),
-(29, 'fdfdf', '$2a$10$mHHOodHkAd6zegxiAbUC/ep1RYo0oi1LRHxhavRP13nyJ3vrygsP6', NULL, '2015-11-21 03:39:50', '2015-11-21 03:39:50', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, '3232@1111', 0),
-(30, 'dna', '$2a$10$/DFZvmKT11ES8L/HWM0hiOB9vqaa99/dUyxDVrjOS.TSbMRM40t.6', NULL, '2015-11-21 03:40:37', '2015-11-21 03:40:37', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'a@a', 0),
-(31, 'シャナ', '$2a$10$Gf.xfhX40CrBrPS9lCfg4OvxdsR4xF2KYhs7/61EjtyibGQMeo1gS', NULL, '2015-11-21 11:04:24', '2015-11-21 11:04:24', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'rr@fdf', 0);
+INSERT INTO `users` (`id`, `username`, `password`, `role`, `created`, `modified`, `gender`, `old`, `prefecture`, `desire_time`, `way`, `programing_skill`, `programin_lang`, `job`, `introduction`, `photo_dir`, `isteacher`, `email`, `teacher_id`, `recture_id`) VALUES
+(2, 'kazuki', '$2a$10$wWb3Bf0ZC1N2lKGWfgdQkO3/4x19xZc..W5PmEhKeqw5Gji3jDuF2', 'admin', '2015-10-02 17:14:38', '2015-10-06 09:01:43', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, '', 0, 0),
+(3, 'kazuki', '$2a$10$rYKIUkNqkz3JOue6W0eUiuw.4pqhqE2/L31V.ZDIN2OoJvm20p9aa', 'admin', '2015-10-02 17:49:41', '2015-10-02 17:49:41', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, '', 0, 0),
+(4, 'kazuki', '$2a$10$gZq4SxJqBC0vLiQDFBrQ8etM/gfkcXixdbpBDuhOlQP5RmJnhAHuu', 'admin', '2015-10-03 04:29:20', '2015-10-03 04:29:20', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, '', 0, 0),
+(5, 'higashi', '$2a$10$WSyBIffGzPF6HxhF5Rph2eTpjWxgmzI.yx1ApGj1zjndBD.cC9b5u', 'admin', '2015-10-03 06:27:45', '2015-10-03 06:27:45', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '大学生', '', '', 1, '', 0, 0),
+(6, 'higashi', '$2a$10$NEyCczkUreAz1X1cWu6/N.3RIsoehn5wF91Dur42j.LjgmgJjiSRm', 'admin', '2015-10-04 03:32:22', '2015-10-04 03:32:22', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, '', 0, 0),
+(7, 'kazuki', '$2a$10$RTtwVrC5e.oBd/fHOKy04u1lrgIfyaEUfhPq.ovNv2VYpft5wNtDG', 'admin', '2015-10-04 03:33:50', '2015-10-04 03:33:50', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, '', 0, 0),
+(8, 'kazuki', '$2a$10$82DMWfjCgGceEWuYZD1.1u6c33QouqHtWy1yzgTs/lwiMOhdZLq3G', 'admin', '2015-10-06 10:51:33', '2015-10-06 10:51:33', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, '', 0, 0),
+(9, 'kazuki', '$2a$10$6SjTK6ststitLLLrLW6WteaSyCfA8w/I.79J8UsaiWc1Qkhj3xLmu', 'admin', '0000-00-00 00:00:00', '2015-10-06 10:51:52', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, '', 0, 0),
+(10, 'kazuki', '$2a$10$B1W/52THdTUvhetOraw/VO0xPaquJ5ZRgDDNFgHyEEzbE61i7bBgO', 'admin', '2015-10-14 06:33:47', '2015-10-14 06:33:47', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, '', 0, 0),
+(11, 'しんご', '00000', '', '2015-10-18 18:12:57', NULL, '男', 22, '京都府', NULL, '直接又はスカイプ', '中級者レベル', 'php,iOS,MySQL,javascript', '大学生', 'こんにちは。同志社大学理工学研究科の高橋良成です。現在、APパートナーズというベンチャー企業で、新規事業の開発を行っています。プログラミング経験自体は１年強ですが、前から数学を研究などで勉強していたので、演算系は得意です。毎日研究や開発の日々で忙しいですが、機会があればよろしくお願いします。', '', 0, '', 0, 0),
+(12, NULL, NULL, NULL, '2015-11-05 11:07:55', '2015-11-05 11:07:55', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, '', 0, 0),
+(13, NULL, NULL, NULL, '2015-11-05 11:08:27', '2015-11-05 11:08:27', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, '', 0, 0),
+(14, 'しんご', '$2a$10$5gD2rNq7wa4FKHD5oFsjxu4rXste7d2tOS31QdCimGyozhDimJlAG', NULL, '2015-11-18 13:59:32', '2015-11-18 13:59:32', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, '', 0, 0),
+(15, 'しん', '$2a$10$JBaGDDvWfvVtfSNwBNR7Z.t9Gl90oTOTtCeW7ZaszUV8zNSxF90rG', NULL, '2015-11-18 14:13:12', '2015-11-18 14:13:12', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'trsei21@yahoo.co.jp', 0, 0),
+(16, 'しん', '$2a$10$S5kj5V2PRtKekqUmAPq4V.bBhI7wjmzYUesUKbpVMTVFkkgPtbBlC', NULL, '2015-11-18 14:13:32', '2015-11-18 14:13:32', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'trsei21@yahoo.co.jp', 0, 0),
+(17, 'しんご', '$2a$10$Vt/DLGtNbjpyMlK6hnKXAein9uTdeEPN76JB0EYQi9EeHUPZOeneC', NULL, '2015-11-18 21:38:22', '2015-11-18 21:38:22', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'trsei21@yahoo.co.jp', 0, 0),
+(18, 'しん', '$2a$10$QNNZeeBniV3dq8r3msweGe2jj/ANGq0Izn33fOjMW8mMg.wNxwJGi', NULL, '2015-11-20 00:02:45', '2015-11-20 00:02:45', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, 'zexel8716@gmail.com', 0, 0),
+(19, 'fdfd', '$2a$10$3WgU49.5rhaywSOZvynO0.qK3q3KYKysvPHsRgy2E1ISkrb36vpeO', NULL, '2015-11-20 01:09:59', '2015-11-20 01:09:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, 'sfsf@dffdf', 0, 0),
+(20, 'あああ', '$2a$10$drjoVHfBnWZ0A25g75Yk1uPniZYPixwpvoTAC4mKbEbivQ/JjtPe2', NULL, '2015-11-20 01:10:16', '2015-11-20 01:10:16', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, 'ffdfd@dfdfdfdfd', 0, 0),
+(21, 'fdsf', '$2a$10$Pte9DjGgiauOf.VqhRqW6up15GSF5yiq/zluvmg6Lpmrw9gWfEdwS', NULL, '2015-11-20 01:19:55', '2015-11-20 01:19:55', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, 'ff@dhghg', 0, 0),
+(22, 'dd', '$2a$10$rd0tLw68ZjpcbXi1Qba9BenDXE2YYBaWlfydNuD4WaYL601XIRmK.', NULL, '2015-11-20 01:23:09', '2015-11-20 01:23:09', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, 'mjmj@hjmh', 0, 0),
+(23, 'dd', '$2a$10$75Ga0m0M4E4CDNzkYtNoiOgRE2qqwGsKU5LTkwGAJlCkJjDauMS8m', NULL, '2015-11-20 01:25:24', '2015-11-20 01:25:24', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, 'mjmj@hjmhfd', 0, 0),
+(24, 'ららばえる', '$2a$10$rMI3DxoqOy0fgvXs3bfX5.pohJn04yhx4cSNDqWXAGvovofXc1b.q', NULL, '2015-11-21 00:38:42', '2015-11-21 00:38:42', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, 'dfsf@feerre', 0, 0),
+(25, 'dsf', '$2a$10$LWE.RPNiBObsIToTnUUCDuFIvM/6uzNSBYubcUPVRSBrx9BJOlVLi', NULL, '2015-11-21 02:51:22', '2015-11-21 02:51:22', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, 'dfs@dsf', 0, 0),
+(26, 'あああ', '$2a$10$KBw8IFSRJhqHZr8XyPmdJuZMFp3IRKbCt4iRsKC1qpdiU4BIhhgde', NULL, '2015-11-21 03:11:43', '2015-11-21 03:11:43', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, 'dfasf@fdfds', 0, 0),
+(27, 'fsfd', '$2a$10$6sM.meGRhyWpsSzvbXSkye2MXygVI3eCFwh4MGbJ4btQkFfOmRKpO', NULL, '2015-11-21 03:17:06', '2015-11-21 03:17:07', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'rr@ee', 0, 0),
+(28, 'aaaa', '$2a$10$63t.N2cpSEZQlVd.KN2BB.EZCprQTB/HV/m2mhKNFPSbEIQ.WQq6S', NULL, '2015-11-21 03:32:13', '2015-11-21 03:32:14', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'tr@gf', 0, 0),
+(29, 'fdfdf', '$2a$10$mHHOodHkAd6zegxiAbUC/ep1RYo0oi1LRHxhavRP13nyJ3vrygsP6', NULL, '2015-11-21 03:39:50', '2015-11-21 03:39:50', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, '3232@1111', 0, 0),
+(30, 'dna', '$2a$10$/DFZvmKT11ES8L/HWM0hiOB9vqaa99/dUyxDVrjOS.TSbMRM40t.6', NULL, '2015-11-21 03:40:37', '2015-11-21 03:40:37', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'a@a', 0, 0),
+(31, 'シャナ', '$2a$10$Gf.xfhX40CrBrPS9lCfg4OvxdsR4xF2KYhs7/61EjtyibGQMeo1gS', NULL, '2015-11-21 11:04:24', '2015-11-21 11:04:24', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'rr@fdf', 0, 0),
+(32, 'あい', '$2a$10$r/HCGhPs/bCwiyO4J2qcDOWEXnNxk68zy3NsRTWxQK3y3uxysRA4i', NULL, '2015-11-21 12:19:56', '2015-11-21 12:19:56', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, '1@1', 0, 0),
+(33, 'w', '$2a$10$cPlcpMeLOZpbuWvHwvDQqOh//20LXD2g..2Ef9xuxrKn0IbkXBdTG', NULL, '2015-11-21 20:06:33', '2015-11-21 20:06:33', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'p@p', 0, 0),
+(34, 'a', '$2a$10$7r/W.Gtfg1poDevP1pL8YO5qOKshgFuPOJK6tZtqA50Nyf9z1Zy1y', NULL, '2015-11-22 00:27:07', '2015-11-22 00:27:08', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, '2@2', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -596,6 +624,12 @@ ALTER TABLE `profiles`
  ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `rectures`
+--
+ALTER TABLE `rectures`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `teachermatchings`
 --
 ALTER TABLE `teachermatchings`
@@ -627,7 +661,7 @@ ALTER TABLE `user_matchings`
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=73;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=74;
 --
 -- AUTO_INCREMENT for table `images`
 --
@@ -659,20 +693,25 @@ MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=59;
 ALTER TABLE `profiles`
 MODIFY `id` int(8) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
+-- AUTO_INCREMENT for table `rectures`
+--
+ALTER TABLE `rectures`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `teachermatchings`
 --
 ALTER TABLE `teachermatchings`
-MODIFY `id` int(8) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=49;
+MODIFY `id` int(8) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=53;
 --
 -- AUTO_INCREMENT for table `teachers`
 --
 ALTER TABLE `teachers`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=60;
+MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=61;
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=32;
+MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=35;
 --
 -- AUTO_INCREMENT for table `user_matchings`
 --

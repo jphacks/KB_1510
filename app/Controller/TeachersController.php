@@ -2,7 +2,7 @@
 
 class TeachersController extends AppController{
 
-  public $uses = array('Teacher', 'User');
+  public $uses = array('Teacher','User');
 
   public $name = 'Teachers';
 
@@ -113,7 +113,7 @@ public function mypage(){
       'order' => 'modified desc',
       'limit' => 10,
       'conditions' => array(
-          'Teacher.isteacher' => 0 //isteacher=falseつまり、生徒ユーザーの情報を取ってくる。
+          'User.isteacher' => 0 //isteacher=falseつまり、生徒(自分が教える側の)ユーザーの情報を取ってくる。
         )
       );
 ​
@@ -283,7 +283,6 @@ public function mypage(){
     if($this->action === 'add'){
       return true;
     }
-
 
     if(in_array($this->action, array('edit', 'delete'))){
       $teacherId = (int)$this->request->param['pass'][0];
