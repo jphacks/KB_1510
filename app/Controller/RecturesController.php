@@ -17,18 +17,7 @@ class RecturesController extends AppController{
 
  public function beforeFilter(){
     parent::beforeFilter();
-     // if ($this->RequestHandler->accepts('html')) {
-     //        // クライアントが HTML (text/html) のレスポンスを受付ける場合のみ実行されます
-     //    } elseif ($this->RequestHandler->accepts('xml')) {
-     //        // XMLのみ実行するコード
-     //    }
-     //    if ($this->RequestHandler->accepts(array('xml', 'rss', 'atom','json'))) {
-     //        // XML か RSS か Atom の場合に実行される
-     //    }
-     //    if ($this->request->is('ajax')) {
-     //      $this->disableCache();
-     //    }
-// コントローラのアクションの続き
+
     $this->Auth->allow();
  }
 
@@ -43,6 +32,24 @@ class RecturesController extends AppController{
 
   public function view($id = null){
     $this->set('recture',$this->Recture->findById($id));
+  }
+
+
+  public function add($session_id = null){
+    // if($this->request->is('get')){
+    //   throw new MethodNotAllowedException();
+    // }
+    if($this->request->is('post')){
+      $this->Recture->create();
+      if($this->Recture->save($this->request->data)){
+        $this->Flash->success(__('講義を追加しました。'));
+        $this->redirect(array('controller'=>'teachers','action' => 'mypage'));
+      }else{
+        $this->Flash->error(__('登録失敗。もう一度やり直して下さい'));
+      }
+    }
+    // $session_id = $this->Auth->user('id');
+    $this->set('teacher',$this->Teacher->findById($session_id));
   }
 
 
@@ -79,34 +86,7 @@ class RecturesController extends AppController{
       }
   }
 
-    public function add_to_teacherview(){
-    if($this->request->is('get')){
-      throw new MethodNotAllowedException();
-    }
-    // if($this->request->is('ajax')){
-      $this->Comment->create();
-      if($this->Comment->save($this->request->data)){
-        $this->Flash->success(__('The comment has been saved.'));
-        $this->redirect(array('controller'=>'teachers','action' => 'view',$this->data['Comment']['teacher_id']));
-      }else{
-        $this->Flash->error(__('The user could not be saved. Please try again.'));
-      }
-  }
 
-
-  public function add_to_user(){
-    if($this->request->is('get')){
-      throw new MethodNotAllowedException();
-    }
-    // if($this->request->is('ajax')){
-      $this->Comment->create();
-      if($this->Comment->save($this->request->data)){
-        $this->Flash->success(__('The comment has been saved.'));
-        $this->redirect(array('controller'=>'users','action' => 'profile',$this->data['Comment']['user_id']));
-      }else{
-        $this->Flash->error(__('The user could not be saved. Please try again.'));
-      }
-  }
 
 
    public function add_to_userview(){

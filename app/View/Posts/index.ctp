@@ -6,11 +6,11 @@
     <?php echo $this->Form->input('Post.photo_dir', array('type' => 'hidden')); ?>
 
     <?php 
-    $session_id = 10;
+    $session_id = $acountSession['id'];
     $session_isteacher = 1;
     if($session_isteacher == 1){
     	echo $this->Form->input('Post.teacher_id',array('type' => 'hidden','value' => $session_id));
-    }else if($session_isteacher == 1){
+    }else if($session_isteacher == 0){
     	echo $this->Form->input('Post.user_id',array('type' => 'hidden','value' => $session_id));
     }else{
     	echo"不正な値の可能性があります。";

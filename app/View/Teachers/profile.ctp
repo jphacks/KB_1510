@@ -21,7 +21,8 @@
         <?php echo $profile['language']; ?><br>
         <?php echo $this->Html->link('プロフィール編集', array('controller' => 'teachers', 'action' => 'edit', $profile['id'])); ?>
         <br>
-        <?php echo $this->Html->link('トップ画編集', array('controller' => 'teachers', 'action' => 'uploads', $profile['id'])); ?>
+        <?php echo $this->Html->link('トップ画編集', array('controller' => 'teachers', 'action' => 'uploads', $profile['id'])); ?><br>
+         <?php echo $this->Html->link('開設講座リスト', array('controller' => 'teachers', 'action' => 'rectures')); ?>
       </div>
     </div>
   </div>
@@ -63,7 +64,8 @@
       <div class="mycomments">
         <!-- コメント一覧 -->
          <h2><?php echo $profile['username']?>さんへのコメント</h2>
-        <?php //var_dump($teacher['Teachermatching']); ?><br>
+        <?php //var_dump($teacher['Teachermatching']); ?>
+        <br>
         <?php foreach ($teacher['Comment'] as $comment): ?>
           <tr>
           <td><?php //echo h($comment['id']) ?></td>

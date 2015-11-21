@@ -66,6 +66,11 @@ class TeachersController extends AppController{
   }
 
 
+  public function rectures(){
+    $this->set('recture',$this->Teacher->find('all',array('conditions' => array('Recture.teacher_id' => $session_id))));
+  }
+
+
 
   public function lists_json(){
     $data = array(

@@ -37,6 +37,11 @@ class UsersController extends AppController{
   }
 
 
+  public function albums($id = null){
+    $this->set('datas',$this->User->findById($id));
+  }
+
+
   public function lists(){
     $params = array(
         'order' => 'modified desc',
@@ -71,27 +76,28 @@ class UsersController extends AppController{
   }
 
 
-  public function mypage(){
-    $session_id = $this->Auth->user('id');
-    // $id = 5;
-    if(!$session_id){
-      throw new NotFoundException(__('ログインされていません。'));
-    }
-    
-     $params = array(
-      'order' => 'modified desc',
-      'limit' => 10
-      );
-    $teacher = $this->Teacher->find('all',$params);
-    // $this->set('teacher',$teacher);
-    $user = $this->User->findById($session_id);
-    $this->set(compact('teacher','user'));
+public function mypage(){
+  $session_id = $this->Auth->user('id');
+  $session_name = $this->Auth->user('username');
+  // $id = 5;
+  if(!$session_id){
+    throw new NotFoundException(__('ログインされていません。'));
   }
+  
+   $params = array(
+    'order' => 'modified desc',
+    'limit' => 10
+    );
+  $teacher = $this->Teacher->find('all',$params);
+  // $this->set('teacher',$teacher);
+  $user = $this->User->findById($session_id);
+  $this->set(compact('teacher','user'));
+}
 
 
-  public function profile($id = null){
-    $this->set('user', $this->User->findById($id));
-  }
+public function profile($id = null){
+  $this->set('user', $this->User->findById($id));
+}
 
 
 public function uploads($id = null){
@@ -162,27 +168,27 @@ public function uploads($id = null){
 
 
  private function _addAssociated(){
-        if ($this->request->is('post')) {
-            $this->User->create();
- 
-            $this->log($this->request->data, 'debug');
- 
-            $result = $this->User->saveAssociated($this->request->data);
-            $this->log($result, 'debug');
- 
-            
+      if ($this->request->is('post')) {
+          $this->User->create();
 
-            //if ($result) ↓書き換え
-            if($this->User->save($this->request->data)){
-                $this->Flash->success(__('ユーザー登録完了しました。'));
-                $session_id = $this->Auth->id;
-                $session_isteacher = $this->Auth->isteacher;
-                $this->redirect(array('action' => 'index'));
-            } else {
-                $this->Flash->error(__('登録に失敗しました。もう一度やり直してください。'));
-            }
-        }
-    }
+          $this->log($this->request->data, 'debug');
+
+          $result = $this->User->saveAssociated($this->request->data);
+          $this->log($result, 'debug');
+
+          
+
+          //if ($result) ↓書き換え
+          if($this->User->save($this->request->data)){
+              $this->Flash->success(__('ユーザー登録完了しました。'));
+              $session_id = $this->Auth->id;
+              $session_isteacher = $this->Auth->isteacher;
+              $this->redirect(array('action' => 'index'));
+          } else {
+              $this->Flash->error(__('登録に失敗しました。もう一度やり直してください。'));
+          }
+      }
+  }
 
 
 

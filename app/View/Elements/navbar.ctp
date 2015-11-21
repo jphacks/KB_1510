@@ -14,7 +14,19 @@
     <div class="navbar-collapse collapse" id="navbar-collapsible">
         <ul class="nav navbar-nav navbar-left">
 
-            <li><?php echo $this->Html->link('Top', '/'); ?></li>
+            <li><?php 
+            $isteacher = $acountSession['isteacher'];
+
+            if($acountSession == null){
+                 echo $this->Html->link('Top', '/'); 
+            }else if($isteacher == 1){
+                echo $this->Html->link('Top', '/teacher_mypages'); 
+            }else{
+                echo $this->Html->link('Top', '/user_mypages'); 
+            }
+                // var_dump($acountSession);
+
+             ?></li>
 
        <li style="margin-top: 4%;">
 

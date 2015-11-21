@@ -3,7 +3,7 @@
 <?php echo $this->Form->create('User'); ?>
   <fieldset>
     <legend><?php echo __('Add User'); ?></legend>
-    // <?php //echo $this->Form->input('User.username', array(
+     <?php //echo $this->Form->input('User.username', array(
     //   'label' => "ユーザーネーム",
     // ));
     echo $this->Form->input('User.password', array(
