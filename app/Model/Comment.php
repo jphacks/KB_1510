@@ -25,6 +25,7 @@ class Comment extends AppModel{
     return true;
   }
 
+
   public function isOwnedBy($teacher, $user){
     return $this->field('id', array('id' => $teacher)) !== false;
   }

@@ -40,7 +40,7 @@ class User extends AppModel{
         'message' => 'A password is required.'
       ),
       array(
-        'rule' => array('minLength', 8),
+        'rule' => array('minLength', 2),
         'message' => '8文字以上で入力して下さい'
         )
     ),

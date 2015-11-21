@@ -35,9 +35,14 @@ class RecturesController extends AppController{
 
   public function lists(){
     $params = array(
-        'order' => 'modified desc'
+        'order' => 'Recture.modified desc'
       );
     $this->set('recture', $this->Recture->find('all', $params));
+  }
+
+
+  public function view($id = null){
+    $this->set('recture',$this->Recture->findById($id));
   }
 
 
@@ -57,7 +62,7 @@ class RecturesController extends AppController{
 
   public function afterFilter() {
    /* Viewのrenderより後に実行したい処理を書く */
-    $this->set('comments',$this->Comment->find('all'));
+    //$this->set('comments',$this->Comment->find('all'));
   }
 
   public function add_to_teacher(){

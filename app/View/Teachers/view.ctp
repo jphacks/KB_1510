@@ -1,25 +1,33 @@
 <h1><?php echo h($teacher['Teacher']['username']); ?></h1>
 <p><?php echo h($teacher['Teacher']['job']); ?></p>
+
+
+
+<tr>
+<td><?php
+foreach ($teacher['Recture'] as $recture): ?></td>
+<td><?php echo $this->Html->link($recture['title'], array('controller' => 'rectures', 'action' => 'view', $recture['id'])); ?> 
+</td>
+<?php endforeach; ?>
+</tr>
+<br>
+<br>
+<div id="request" class="btn-primary" style="width: 120px; color: white;" >
 <?php
 // $session_id = 5;
-if(!empty($session_id)){
-	echo $this->Form->create('Teachermatching',array('action'=>'add_student'));
+if($acountSession == null){
+   echo $this->Html->link('講師リクエスト',array('controller'=>'users','action'=>'login'));
+}else{
+    	echo $this->Form->create('Teachermatching',array('action'=>'add_student'));
 
-echo $this->Form->input('Teachermatching.teacher_id',array('type'=>'hidden','value'=>$teacher['Teacher']['id']));
-echo $this->Form->input('Teachermatching.name',array('type'=>'hidden','value'=>$teacher['Teacher']['username']));
-echo $this->Form->input('Teachermatching.user_id',array('type'=>'hidden','value'=>$session_id));
+    echo $this->Form->input('Teachermatching.teacher_id',array('type'=>'hidden','value'=>$teacher['Teacher']['id']));
+    echo $this->Form->input('Teachermatching.name',array('type'=>'hidden','value'=>$teacher['Teacher']['username']));
+    echo $this->Form->input('Teachermatching.user_id',array('type'=>'hidden','value'=>$session_id));
+    echo"</br>";
+    echo $this->Form->end('講師リクエスト');
+    echo"</div>";
 
-echo $this->Form->end('講師リクエスト');
-}
-?>
-      <?php //foreach ($teacher['Teachermatching'] as $student): ?>
-          <li><?php //echo h($student['name']) ?></li>
-          <li><?php //echo h($student['job']) ?> </li>
-          
-        <?php //endforeach 
 
-        // $session_id = 10; //上と合わせると、講師のidが9という条件の選択 （この２つの値をSessionComponentsで調整）
-  $session_name = "kazuki";
 
   echo $this->Form->create('Comment',array('action'=>'add_to_teacherview'));
   
@@ -29,6 +37,16 @@ echo $this->Form->end('講師リクエスト');
       echo $this->Form->input('Comment.user_id',array('type'=>'hidden','value'=>$session_id)); //コメントした自分のid 
        echo $this->Form->input('Comment.teacher_id',array('type'=>'hidden','value'=>$teacher['Teacher']['id'])); //コメントした相手のid
    echo $this->Form->end('コメント');
+}
+?>
+         
+          
+        <?php //endforeach 
+
+        // $session_id = 10; //上と合わせると、講師のidが9という条件の選択 （この２つの値をSessionComponentsで調整）
+  // $session_name = "kazuki";
+
+
   ?>
       </div>
     <!-- 自分へのコメントに関する情報 -->

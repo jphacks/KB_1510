@@ -13892,3 +13892,362 @@ Stack Trace:
 #3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-11-22 02:00:36 Error: [MissingActionException] Action RecturesController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecturesController',
+  'action' => 'add',
+)
+Request URL: /prokate_cake/rectures/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecturesController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-22 02:14:58 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'modified' in order clause is ambiguous
+Request URL: /prokate_cake/rectures/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Recture...', Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Recture...', Array, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1114): DboSource->fetchAll('SELECT `Recture...', false)
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Recture), Array)
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/prokate_cake/app/Controller/RecturesController.php(40): Model->find('all', Array)
+#7 [internal function]: RecturesController->lists()
+#8 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RecturesController), Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecturesController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-11-22 02:15:34 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/RecturesController.php, line 60]
+2015-11-22 02:15:34 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/rectures/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 60)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 60, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 60, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:17:05 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/RecturesController.php, line 60]
+2015-11-22 02:17:05 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/rectures/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 60)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 60, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 60, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:18:02 Error: Fatal Error (64): Cannot redeclare class Recture in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Comment.php, line 32]
+2015-11-22 02:18:02 Error: [FatalErrorException] Cannot redeclare class Recture
+Request URL: /prokate_cake/rectures/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:19:17 Error: Fatal Error (64): Cannot redeclare class Recture in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Comment.php, line 32]
+2015-11-22 02:19:17 Error: [FatalErrorException] Cannot redeclare class Recture
+Request URL: /prokate_cake/rectures/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:19:23 Error: Fatal Error (64): Cannot redeclare class Recture in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Comment.php, line 32]
+2015-11-22 02:19:23 Error: [FatalErrorException] Cannot redeclare class Recture
+Request URL: /prokate_cake/rectures/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:19:32 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/RecturesController.php, line 60]
+2015-11-22 02:19:32 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/rectures/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 60)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 60, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 60, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:24:57 Error: Fatal Error (64): Cannot redeclare class Recture in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Comment.php, line 32]
+2015-11-22 02:24:57 Error: [FatalErrorException] Cannot redeclare class Recture
+Request URL: /prokate_cake/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:24:58 Error: Fatal Error (64): Cannot redeclare class Recture in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Comment.php, line 32]
+2015-11-22 02:24:58 Error: [FatalErrorException] Cannot redeclare class Recture
+Request URL: /prokate_cake/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:25:03 Error: Fatal Error (64): Cannot redeclare class Recture in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Comment.php, line 32]
+2015-11-22 02:25:03 Error: [FatalErrorException] Cannot redeclare class Recture
+Request URL: /prokate_cake/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:25:34 Error: Fatal Error (64): Cannot redeclare class Recture in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Comment.php, line 32]
+2015-11-22 02:25:34 Error: [FatalErrorException] Cannot redeclare class Recture
+Request URL: /prokate_cake/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:27:34 Error: Fatal Error (64): Cannot redeclare class Recture in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Comment.php, line 32]
+2015-11-22 02:27:34 Error: [FatalErrorException] Cannot redeclare class Recture
+Request URL: /prokate_cake/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:27:36 Error: Fatal Error (64): Cannot redeclare class Recture in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Comment.php, line 32]
+2015-11-22 02:27:36 Error: [FatalErrorException] Cannot redeclare class Recture
+Request URL: /prokate_cake/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:28:01 Error: Fatal Error (64): Cannot redeclare class Recture in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Comment.php, line 32]
+2015-11-22 02:28:01 Error: [FatalErrorException] Cannot redeclare class Recture
+Request URL: /prokate_cake/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:28:05 Error: Fatal Error (64): Cannot redeclare class Recture in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Comment.php, line 32]
+2015-11-22 02:28:05 Error: [FatalErrorException] Cannot redeclare class Recture
+Request URL: /prokate_cake/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:28:21 Error: Fatal Error (64): Cannot redeclare class Recture in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Comment.php, line 32]
+2015-11-22 02:28:21 Error: [FatalErrorException] Cannot redeclare class Recture
+Request URL: /prokate_cake/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:28:23 Error: Fatal Error (64): Cannot redeclare class Recture in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Comment.php, line 32]
+2015-11-22 02:28:23 Error: [FatalErrorException] Cannot redeclare class Recture
+Request URL: /prokate_cake/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:30:04 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Recture.php, line 21]
+2015-11-22 02:30:04 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /prokate_cake/rectures/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 21, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 21, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:30:06 Error: Fatal Error (64): Cannot redeclare class Recture in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Comment.php, line 32]
+2015-11-22 02:30:06 Error: [FatalErrorException] Cannot redeclare class Recture
+Request URL: /prokate_cake/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:30:08 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Recture.php, line 21]
+2015-11-22 02:30:08 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /prokate_cake/rectures/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 21, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 21, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:30:35 Error: Fatal Error (4): syntax error, unexpected ',', expecting ')' in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Recture.php, line 16]
+2015-11-22 02:30:35 Error: [FatalErrorException] syntax error, unexpected ',', expecting ')'
+Request URL: /prokate_cake/rectures/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 16, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 16, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:30:40 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Recture.php, line 21]
+2015-11-22 02:30:40 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /prokate_cake/rectures/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 21, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 21, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:31:01 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'modified' in order clause is ambiguous
+Request URL: /prokate_cake/rectures/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Recture...', Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Recture...', Array, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(1114): DboSource->fetchAll('SELECT `Recture...', false)
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(3026): DboSource->read(Object(Recture), Array)
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(2998): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/prokate_cake/app/Controller/RecturesController.php(40): Model->find('all', Array)
+#7 [internal function]: RecturesController->lists()
+#8 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RecturesController), Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecturesController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-11-22 02:31:30 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/RecturesController.php, line 65]
+2015-11-22 02:31:30 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/rectures/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 65)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 65, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 65, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:32:50 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/RecturesController.php, line 65]
+2015-11-22 02:32:50 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/rectures/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 65)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 65, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 65, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:34:13 Error: [MissingControllerException] Controller class ListsController could not be found.
+Exception Attributes: array (
+  'class' => 'ListsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/lists/view/1
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-22 02:50:35 Error: Fatal Error (64): Cannot redeclare class Recture in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Comment.php, line 32]
+2015-11-22 02:50:35 Error: [FatalErrorException] Cannot redeclare class Recture
+Request URL: /prokate_cake/teachers/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:51:43 Error: Fatal Error (64): Cannot redeclare class Recture in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Comment.php, line 32]
+2015-11-22 02:51:43 Error: [FatalErrorException] Cannot redeclare class Recture
+Request URL: /prokate_cake/teachers/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:51:48 Error: Fatal Error (64): Cannot redeclare class Recture in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Comment.php, line 32]
+2015-11-22 02:51:48 Error: [FatalErrorException] Cannot redeclare class Recture
+Request URL: /prokate_cake/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:53:03 Error: Fatal Error (64): Cannot redeclare class Recture in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Comment.php, line 32]
+2015-11-22 02:53:03 Error: [FatalErrorException] Cannot redeclare class Recture
+Request URL: /prokate_cake/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-22 02:54:05 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-22 02:54:05 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-22 02:54:05 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-22 03:01:42 Error: Fatal Error (4): syntax error, unexpected end of file in [/Applications/MAMP/htdocs/prokate_cake/app/View/Teachers/view.ctp, line 95]
+2015-11-22 03:01:42 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /prokate_cake/teachers/view/11
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 95)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 95, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 95, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

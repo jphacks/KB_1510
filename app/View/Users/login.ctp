@@ -1,3 +1,4 @@
+<h2>ログイン</h2>
 <div class="Users form">
   <?php echo $this->Flash->render('auth'); ?>
   <?php

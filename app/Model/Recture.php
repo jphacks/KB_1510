@@ -11,8 +11,14 @@ class Recture extends AppModel{
       'required' => array(
         'rule' => array('notBlank'),
         'message' => 'A password is required.'
-      )
+        )
+      ),
+    'title' => array(
+      'required' => array(
+        'rule' => array('notBlank'),
+        'message' => 'A password is required.'
     )
+  )
   );
 
 
