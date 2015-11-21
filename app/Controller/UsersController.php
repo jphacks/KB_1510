@@ -25,7 +25,7 @@ class UsersController extends AppController{
   }
 
 
-    public function login(){
+  public function login(){
     if($this->request->is('post')){
       if($this->Auth->login()){
         $logged_in = $this->Auth->user();
@@ -37,7 +37,7 @@ class UsersController extends AppController{
   }
 
 
-    public function lists(){
+  public function lists(){
     $params = array(
         'order' => 'modified desc',
         'limit' => 20
@@ -75,7 +75,7 @@ class UsersController extends AppController{
     $session_id = $this->Auth->user('id');
     // $id = 5;
     if(!$session_id){
-      throw new NotFoundException(__('ログインされていません。1秒後にページが飛びます。'));
+      throw new NotFoundException(__('ログインされていません。'));
     }
     
      $params = array(
@@ -92,7 +92,6 @@ class UsersController extends AppController{
   public function profile($id = null){
     $this->set('user', $this->User->findById($id));
   }
-
 
 
 public function uploads($id = null){
@@ -140,23 +139,6 @@ public function uploads($id = null){
 
   public function add_user_student(){
     $this->_addAssociated();
-    // if($this->request->is('post')){
-    //   $this->User->create();
-    //   if($this->User->save($this->request->data)){
-
-    //       if($this->Teacher->save($this->request->data)){
-    //         $this->Flash->success(__('The teacher has been saved.'));
-    //         $this->redirect(array('action' => 'login'));
-    //         exit();
-    //       }
-    //     $this->Flash->success(__('The user has been saved.'));
-    //     $this->redirect(array('action' => 'login'));
-    //   }else{
-    //     $this->Flash->error(__('The user could not be saved. Please try again.'));
-    //   }
-    // }
-    //   $this->set('addname','生徒');
-    // }
   }
 
     public function add(){
@@ -176,19 +158,10 @@ public function uploads($id = null){
 
     public function add_user_teacher(){
       $this->_addAssociated();
-    // if($this->request->is('post')){
-    //   $this->User->create();
-    //   if($this->User->save($this->request->data)){
-    //     $this->Flash->success(__('The user has been saved.'));
-    //     $this->redirect(array('action' => 'login'));
-    //   }else{
-    //     $this->Flash->error(__('The user could not be saved. Please try again.'));
-    //   }
-    // }
- }
+    }
 
 
- private function _addAssociated() {
+ private function _addAssociated(){
         if ($this->request->is('post')) {
             $this->User->create();
  

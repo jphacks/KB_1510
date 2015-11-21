@@ -33,54 +33,21 @@ class RecturesController extends AppController{
  }
 
 
- public function jsonfunc(){
-  $data = array(
-  'status' => 'success',
-  'items' => array(
-      array('id' => 1, 'name' => 'apple', 'price' => 100),
-      array('id' => 2, 'name' => 'banana', 'price' => 80),
-    ),
-  );
-  $this->viewClass = 'Json';
-  $this->set(compact('data'));
-  $this->set('_serialize', 'data');
-}
-
-
   public function lists(){
     $params = array(
-        'order' => 'created desc',
-        'limit' => 20
+        'order' => 'modified desc'
       );
-    $this->set('comment', $this->Comment->find('all',$params));
-    if($id){
-      $this->set('id', $id);
-    }
-  }
-
-  public function lists_json(){
-  $data = array(
-  'status' => 'success',
-  'order' => 'created desc'
-  );
-  $comments = $this->Comment->find('all',$data);
-  $this->viewClass = 'Json';
-  $this->set(compact('comments'));
-  $this->set('_serialize', 'comments');
+    $this->set('recture', $this->Recture->find('all', $params));
   }
 
 
-   function method(){
+
+  function method(){
     $output->error = array(
       array('code' => '101', 'msg' => 'GET method is not supported')
     );
     $this->set('output', $output);
   }
-
-  public function apridata_json(){
-
-  }
-
 
 
   public function comment_inf(){
@@ -88,10 +55,10 @@ class RecturesController extends AppController{
   }
 
 
-     public function afterFilter() {
+  public function afterFilter() {
    /* Viewのrenderより後に実行したい処理を書く */
     $this->set('comments',$this->Comment->find('all'));
-   }
+  }
 
   public function add_to_teacher(){
     if($this->request->is('get')){
@@ -186,6 +153,40 @@ class RecturesController extends AppController{
       }
     }
   }
+
+
+
+  public function lists_json(){
+    $data = array(
+      'status' => 'success',
+      'order' => 'created desc'
+    );
+    $comments = $this->Comment->find('all',$data);
+    $this->viewClass = 'Json';
+    $this->set(compact('comments'));
+    $this->set('_serialize', 'comments');
+  }
+
+
+
+
+public function jsonfunc(){
+  $data = array(
+  'status' => 'success',
+  'items' => array(
+      array('id' => 1, 'name' => 'apple', 'price' => 100),
+      array('id' => 2, 'name' => 'banana', 'price' => 80),
+    ),
+  );
+  $this->viewClass = 'Json';
+  $this->set(compact('data'));
+  $this->set('_serialize', 'data');
+}
+
+
+  public function apridata_json(){
+  }
+
 
   // public function addfrom_user(){
 
