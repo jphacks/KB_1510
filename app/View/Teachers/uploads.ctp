@@ -21,7 +21,7 @@ foreach ($teacher['Post'] as $photo): ?>
 </table>
 
 <br>
-<?php  
+<?php
 echo $this->HTML->link('写真のアップロード',array('controller'=>'posts','action'=>'index'));
 ?>
 <h3>トップ画像を選択して下さい</h3>

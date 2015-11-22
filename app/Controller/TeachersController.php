@@ -87,7 +87,10 @@ class TeachersController extends AppController{
 
   public function lists(){
     $params = array(
-        'order' => 'modified desc'
+        'order' => 'modified desc',
+        'conditions' => array(
+            'Teacher.username !=' => NULL
+          )
       );
     $this->set('teacher', $this->Teacher->find('all', $params));
   }

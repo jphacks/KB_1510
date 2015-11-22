@@ -12,8 +12,7 @@
   ?>
 </div>
 <div class="to_Resister">
-<?php 
-
+<?php
   echo $this->HTML->link('講師登録はこちら',array('controller'=>'users','action'=>'add_user_teacher')); ?>
 <br>
 <?php 

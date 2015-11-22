@@ -44,8 +44,12 @@ class UsersController extends AppController{
 
   public function lists(){
     $params = array(
-        'order' => 'modified desc',
-        'limit' => 20
+        'order' => 'User.modified desc',
+        'limit' => 20,
+        'conditions' => array(
+            'User.username !=' => NULL,
+            'User.isteacher' => 0
+          )
       );
     $this->set('user', $this->User->find('all', $params));
     $this->set('teachersmatching',$teachermatchings);
@@ -116,6 +120,7 @@ public function uploads($id = null){
         $this->Flash->error('failed');
       }
     }
+    $this->set('datas',$this->User->findById($id));
     $this->render('uploads');
   }
 
