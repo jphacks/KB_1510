@@ -7,16 +7,28 @@ class Recture extends AppModel{
   public $belongsTo = "Teacher";
   public $hasMany = "User";
   public $validate = array(
+    'name' => array(
+      'required' => array(
+        'rule' => array('notBlank'),
+        'message' => '入力して下さい'
+        )
+      ),
     'body' => array(
       'required' => array(
         'rule' => array('notBlank'),
-        'message' => 'A password is required.'
+        'message' => '入力して下さい'
         )
       ),
       'title' => array(
         'required' => array(
           'rule' => array('notBlank'),
-          'message' => 'A password is required.'
+          'message' => '入力して下さい'
+      ),
+      'goal' => array(
+        'required' => array(
+        'rule' => array('notBlank'),
+        'message' => '入力して下さい'
+        )
       )
     )
   );

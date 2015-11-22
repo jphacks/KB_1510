@@ -33,16 +33,15 @@
     </div>
     <div><?php echo $this->Html->link('周辺情報', array('controller' => 'teachers', 'action' => 'location_map')); ?>
     </div>
-      <div class="myteachers">
+      <div class="mystudents">
         <!-- 自分の生徒一覧表示 -->
         <h2><?php echo $profile['username'] ?>さんの生徒一覧</h2>
         <?php //var_dump($teacher['Teachermatching']); ?><br>
         <?php foreach ($teacher['Teachermatching'] as $student): ?>
           <tr>
-          <td><?php echo h($student['id']) ?></td>
-          <td><?php echo $this->Html->link('生徒：'.$student['name'], array('controller' => 'users', 'action' => 'view', $student['user_id'])); ?></td>
-          </tr><br>
-        <?php endforeach ?>
+          <td><?php echo $this->Html->link('生徒：'.$student['username'], array('controller' => 'users', 'action' => 'view', $student['id'])); ?></td>
+          </tr>
+        <?php endforeach; ?>
         <h3><?php echo $this->Html->link('もっと見る', array('controller' => 'teachers', 'action' => 'matching_lists', $profile['id'])); ?></h3>
       </div>
       <div class="newteachers">

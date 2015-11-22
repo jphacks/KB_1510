@@ -15484,3 +15484,201 @@ Stack Trace:
 #3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-11-23 04:00:39 Error: Fatal Error (1): Call to a member function findById() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/RecturesController.php, line 52]
+2015-11-23 04:00:39 Error: [FatalErrorException] Call to a member function findById() on null
+Request URL: /prokate_cake/rectures/add/37
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 52)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 52, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 52, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 04:03:54 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-23 04:03:54 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-23 04:03:55 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-23 04:15:37 Error: Fatal Error (1): Call to a member function findById() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/RecturesController.php, line 55]
+2015-11-23 04:15:37 Error: [FatalErrorException] Call to a member function findById() on null
+Request URL: /prokate_cake/rectures/add/37
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 55)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 55, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 55, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 04:40:01 Error: [MissingHelperException] Helper class TeacherHelper could not be found.
+Exception Attributes: array (
+  'class' => 'TeacherHelper',
+  'plugin' => false,
+)
+Request URL: /prokate_cake/rectures/add/37
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Teacher')
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(858): HelperCollection->__isset('Teacher')
+#2 /Applications/MAMP/htdocs/prokate_cake/app/View/Rectures/add.ctp(5): View->__get('Teacher')
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(971): include('/Applications/M...')
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(933): View->_evaluate('/Applications/M...', Array)
+#5 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/View/View.php(473): View->_render('/Applications/M...')
+#6 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#7 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecturesController), Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-11-23 04:40:31 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'findAll' at line 1
+Request URL: /prokate_cake/rectures/add/37
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('findAll', Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('findAll', Array, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('findAll', Array, Array)
+#4 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Model/Model.php(827): DboSource->query('findAll', Array, Object(Teacher))
+#5 /Applications/MAMP/htdocs/prokate_cake/app/Controller/RecturesController.php(46): Model->__call('findAll', Array)
+#6 /Applications/MAMP/htdocs/prokate_cake/app/Controller/RecturesController.php(46): Teacher->findAll()
+#7 [internal function]: RecturesController->add('37')
+#8 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RecturesController), Array)
+#9 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RecturesController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-11-23 04:58:19 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/RecturesController.php, line 32]
+2015-11-23 04:58:19 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/rectures/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 04:58:25 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/RecturesController.php, line 32]
+2015-11-23 04:58:25 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/rectures/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 04:59:27 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/RecturesController.php, line 32]
+2015-11-23 04:59:27 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/rectures/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 05:01:43 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/RecturesController.php, line 32]
+2015-11-23 05:01:43 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/rectures/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 05:01:46 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff2?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-23 05:01:47 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.woff?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-23 05:01:47 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /prokate_cake/fonts/fontawesome-webfont.ttf?v=4.3.0
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-23 05:01:48 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/RecturesController.php, line 32]
+2015-11-23 05:01:48 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/rectures/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 05:10:48 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/RecturesController.php, line 32]
+2015-11-23 05:10:48 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/rectures/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 05:16:06 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/RecturesController.php, line 32]
+2015-11-23 05:16:06 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/rectures/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 05:16:32 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/prokate_cake/app/Controller/RecturesController.php, line 32]
+2015-11-23 05:16:32 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /prokate_cake/rectures/lists
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 32, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 32, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-23 05:27:58 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/prokate_cake/app/Model/Recture.php, line 33]
+2015-11-23 05:27:58 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /prokate_cake/rectures/add/37
+Stack Trace:
+#0 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 33)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 33, Array)
+#2 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 33, Array)
+#3 /Applications/MAMP/htdocs/prokate_cake/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

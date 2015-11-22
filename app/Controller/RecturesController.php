@@ -3,7 +3,7 @@
 class RecturesController extends AppController{
 
 //   public $components = array('RequestHandler');
-
+public $uses = array('Teacher', 'User','Recture');
 
 //   $parser = function ($data) {
 //     $rows = str_getcsv($data, "\n");
@@ -18,14 +18,17 @@ class RecturesController extends AppController{
  public function beforeFilter(){
     parent::beforeFilter();
 
-    $this->Auth->allow();
+    $this->Auth->allow('lists','view');
  }
 
 
   public function lists(){
     $params = array(
-        'order' => 'Recture.modified desc'
-      );
+        'order' => 'Recture.modified desc',
+        'conditions' => array(
+            'name !=' => null
+          )
+       );
     $this->set('recture', $this->Recture->find('all', $params));
   }
 
@@ -39,6 +42,7 @@ class RecturesController extends AppController{
     // if($this->request->is('get')){
     //   throw new MethodNotAllowedException();
     // }
+    // $this->set('teacher',$this->Teacher->findById($id));
     if($this->request->is('post')){
       $this->Recture->create();
       if($this->Recture->save($this->request->data)){
@@ -48,8 +52,7 @@ class RecturesController extends AppController{
         $this->Flash->error(__('登録失敗。もう一度やり直して下さい'));
       }
     }
-    // $session_id = $this->Auth->user('id');
-    $this->set('teacher',$this->Teacher->findById($id));
+    // $session_id = $this->Auth->user('id');  
   }
 
 

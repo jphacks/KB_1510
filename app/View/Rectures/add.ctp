@@ -2,22 +2,26 @@
 <div class="Rectures form">
 <?php echo $this->Form->create('Recture'); ?>
   <fieldset>
+  <?php  //var_dump($acountSession['Teacher']); ?>
     <legend><?php echo __('Add Recture'); ?></legend>
     <?php echo $this->Form->input('name', array(
-      'type' => "hidden", 'value' => $teacher['Teacher']['username']
-    ));
+      'type' => "hidden", 'value' => $acountSession['Teacher']['username']
+    )); //セッション中の講師の名前を格納
 
     echo $this->Form->input('Recture.teacher_id', array(
-      'type' => "hidden", 'value' => $teacher['Teacher']['id']
-    ));
+      'type' => "hidden", 'value' => $acountSession['id']
+    )); //セッション中の講師のIDを格納
     echo $this->Form->input('title', array(
-      "label" => "タイトル",
+      "label" => "タイトル"
     ));
      echo $this->Form->input('language', array(
-      "label" => "言語",
+      "label" => "言語"
+    ));
+      echo $this->Form->input('goal', array(
+      'label' => "到達レベル"
     ));
     echo $this->Form->input('body', array(
-      'label' => "内容",
+      'label' => "内容"
     ));
 
     echo $this->Form->input('time', array(

@@ -217,7 +217,7 @@
  */
 	Configure::write('Session', array(
 		'defaults' => 'php',
-        'timeout' => '20',
+        'timeout' => '300',
 	));
 
 /**
