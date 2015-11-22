@@ -16,7 +16,7 @@
 
             <li><?php 
             $isteacher = $acountSession['isteacher'];
-
+            $session_id = $acountSession['id'];
             if($acountSession == null){
                  echo $this->Html->link('Top', '/'); 
             }else if($isteacher == 1){
@@ -25,7 +25,6 @@
                 echo $this->Html->link('Top', '/user_mypages'); 
             }
                 // var_dump($acountSession);
-
              ?></li>
 
        <li style="margin-top: 4%;">
@@ -54,7 +53,7 @@
                 echo $this->Html->link('生徒ログイン', array('controller' => 'users', 'action' => 'login')) . "<li>";
                 echo "<li>" . $this->Html->link('講師ログイン', array('controller' => 'teachers', 'action' => 'login'));
               }else{
-                echo $this->Html->link('講義を追加',array('controller'=>'rectures', 'action' => 'add'));
+                echo $this->Html->link('講義を追加',array('controller'=>'rectures', 'action' => 'add',$session_id));
                 echo"</li><li>";
                 echo $this->Html->link('ログアウト', array('action'=>'logout'));
                 #Facebookログアウトについて

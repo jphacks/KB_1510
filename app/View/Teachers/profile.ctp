@@ -10,6 +10,7 @@
         echo "読み込みエラー！通信エラーかもしくは、ユーザーが存在しない可能性があります。";
         exit();
       }else{
+        $session_id = $acountSession['id'];
         $profile = $teacher['Teacher']; 
         } ?>
         <h2><?php echo h($profile['username']); ?></h2>
@@ -22,7 +23,7 @@
         <?php echo $this->Html->link('プロフィール編集', array('controller' => 'teachers', 'action' => 'edit', $profile['id'])); ?>
         <br>
         <?php echo $this->Html->link('トップ画編集', array('controller' => 'teachers', 'action' => 'uploads', $profile['id'])); ?><br>
-         <?php echo $this->Html->link('開設講座リスト', array('controller' => 'teachers', 'action' => 'rectures')); ?>
+         <?php echo $this->Html->link('開設講座リスト', array('controller' => 'teachers', 'action' => 'rectures',$session_id)); ?>
       </div>
     </div>
   </div>

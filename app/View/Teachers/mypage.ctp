@@ -15,10 +15,10 @@
         <?php echo h($profile['id']); ?>
         <h2><?php echo h($profile['username']); ?></h2>
         <?php
-        echo $profile['job']."<br>";
-        echo $profile['gender']."<br>";
-        echo $profile['old']."<br>";
-        echo $profile['photo_number']+1;
+        echo "職業：".$profile['job']."<br>";
+        echo "性別：".$profile['gender']."<br>";
+        echo "年齢：".$profile['old']."<br>";
+        echo "写真：".$profile['photo_number']+1;
         ?><br>
         <?php echo $profile['language']; ?><br>
         <?php echo $this->Html->link('プロフィール編集', array('controller' => 'teachers', 'action' => 'edit', $profile['id'])); ?>

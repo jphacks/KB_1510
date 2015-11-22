@@ -66,8 +66,8 @@ class TeachersController extends AppController{
   }
 
 
-  public function rectures(){
-    $this->set('recture',$this->Teacher->find('all',array('conditions' => array('Recture.teacher_id' => $session_id))));
+  public function rectures($id = null){
+    $this->set('recture',$this->Teacher->findById($session_id));
   }
 
 

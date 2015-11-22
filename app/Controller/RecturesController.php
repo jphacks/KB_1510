@@ -35,7 +35,7 @@ class RecturesController extends AppController{
   }
 
 
-  public function add($session_id = null){
+  public function add($id = null){
     // if($this->request->is('get')){
     //   throw new MethodNotAllowedException();
     // }
@@ -49,7 +49,7 @@ class RecturesController extends AppController{
       }
     }
     // $session_id = $this->Auth->user('id');
-    $this->set('teacher',$this->Teacher->findById($session_id));
+    $this->set('teacher',$this->Teacher->findById($id));
   }
 
 
