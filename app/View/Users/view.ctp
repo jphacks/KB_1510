@@ -9,7 +9,7 @@ $session_name = $acountSession['Teacher']['username'];
 if($acountSession == null){
    echo $this->Html->link('生徒リクエスト',array('controller'=>'users','action'=>'login'));
 }else{
-      echo $this->Form->create('Teachermatching',array('action'=>'add_student'));
+      echo $this->Form->create('Teachermatching',array('action'=>'add_mystudent'));
 
     echo $this->Form->input('Teachermatching.user_id',array('type'=>'hidden','value'=>$user['User']['id']));
     echo $this->Form->input('Teachermatching.name',array('type'=>'hidden','value'=>$user['User']['username']));

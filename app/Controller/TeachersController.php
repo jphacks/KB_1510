@@ -125,15 +125,15 @@ public function mypage(){
       );
 // ​
      $user = $this->User->find('all',$params);
-//     // $this->set('teacher',$teacher);
+    $this->set('teacher',$teacher);
      $this->set(compact('teacher','user'));
 }
 
 
   public function matching_lists(){
       $id = $this->Auth->user('id');
-      $id = 10; //後で消す
-      $teacher = $this->Teacher->find('first', ['conditions' => ['Teacher.id' => $id]]);
+      // $id = 10; //後で消す
+      $teacher = $this->Teacher->find('first', ['conditions' => ['Teacher.user_id' => $id]]);
       $this->set('teacher', $teacher);
   }
 
