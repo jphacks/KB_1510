@@ -2,7 +2,8 @@
 <p><?php echo h($user['User']['job']); ?></p>
 <?php
 
-$session_id = $acountSession;
+$session_id = $acountSession['Teacher']['id'];
+$session_name = $acountSession['Teacher']['username'];
 
 if($acountSession == null){
    echo $this->Html->link('生徒リクエスト',array('controller'=>'users','action'=>'login'));

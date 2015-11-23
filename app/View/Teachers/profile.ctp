@@ -10,7 +10,9 @@
         echo "読み込みエラー！通信エラーかもしくは、ユーザーが存在しない可能性があります。";
         exit();
       }else{
-        $session_id = $acountSession['id'];
+        $session_id = $acountSession['Teacher']['id'];
+        $acountSession['Teacher']['username'];
+
         $profile = $teacher['Teacher']; 
         } ?>
         <h2><?php echo h($profile['username']); ?></h2>
