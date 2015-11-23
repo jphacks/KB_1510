@@ -39,7 +39,14 @@ if($acountSession == null){
           <tr>
           <td><?php echo h($comment['id']) ?></td>
            <td><?php echo $comment['created']; ?></td>
-           <td><?php echo $this->Html->link($comment['commenter'], array('controller' => 'teachers', 'action' => 'view', $comment['teacher_id'])); ?>
+           <td><?php 
+           if($session_id == $comment['teacher_id']){
+            echo $this->Html->link($comment['commenter'], array('controller' => 'teachers', 'action' => 'profile', $comment['teacher_id']));
+          }else{
+                echo $this->Html->link($comment['commenter'], array('controller' => 'teachers', 'action' => 'view', $comment['teacher_id']));
+             }
+          ?>
+          
           <td><?php echo $comment['commenter']; ?></td>
           <td><?php echo $comment['body']; ?></td>
            </td>
