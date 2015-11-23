@@ -12,7 +12,13 @@ foreach ($teacher['Recture'] as $recture): ?></td>
 </tr>
 <br>
 <br>
+<?php
+echo $this->Html->link($teacher['Teacher']['username'].'さんの講座一覧',array('controller'=>'teachers','action'=>'rectures',$teacher['Teacher']['id']));?>
+<br>
+<br>
 <div id="request" class="btn-primary" style="width: 120px; color: white;" >
+
+
 <?php
 // $session_id = 5;
 if($acountSession == null){

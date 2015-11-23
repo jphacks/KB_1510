@@ -4,6 +4,7 @@
 
 $session_id = $acountSession['Teacher']['id'];
 $session_name = $acountSession['Teacher']['username'];
+//var_dump($session_id);
 
 if($acountSession == null){
    echo $this->Html->link('生徒リクエスト',array('controller'=>'users','action'=>'login'));
@@ -53,7 +54,11 @@ if($acountSession == null){
             <td>
           	<?php
           	if($comment['teacher_id'] == $session_id){
-          		echo $this->Html->link('削除',array('controller' => 'comments', 'action' => 'delete'));
+              if($session_id != null){
+                echo $this->Html->link('削除',array('controller' => 'comments', 'action' => 'delete'));
+              }
+              // var_dump($comment['teacher_id']);
+              // var_dump($session_id);
           	}
           	?>
           </td>

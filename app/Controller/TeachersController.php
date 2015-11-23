@@ -35,7 +35,7 @@ class TeachersController extends AppController{
   public function beforeFilter(){
     parent::beforeFilter();
 
-    $this->Auth->allow('logout','login','lists','lists_json','uploads','mypicture','mypage','edit','profile','post','matching_lists','location_map');
+    $this->Auth->allow('logout','login','lists','lists_json','uploads','mypicture','mypage','edit','profile','post','matching_lists','location_map','rectures');
   }
 
 
@@ -67,7 +67,7 @@ class TeachersController extends AppController{
 
 
   public function rectures($id = null){
-    $this->set('recture',$this->Teacher->findById($session_id));
+    $this->set('teacher',$this->Teacher->findById($id));
   }
 
 
