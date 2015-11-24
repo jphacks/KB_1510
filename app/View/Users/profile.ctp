@@ -18,7 +18,7 @@
         echo $profile['gender']."\n";
         echo $profile['old']."\n";
         ?><br>
-        <?php echo $profile['language']; ?><br>
+        <?php //echo $profile['language']; ?><br>
         <?php echo $this->Html->link('プロフィール編集', array('controller' => 'users', 'action' => 'edit', $profile['id'])); ?>
         <br>
         <?php echo $this->Html->link('トップ画編集', array('controller' => 'users', 'action' => 'upload', $profile['id'])); ?>
@@ -26,16 +26,21 @@
     </div>
   </div>
   <div class="rows">
-    <div><!-- 自分に関する生徒情報 -->
+    <div><!-- 自分に関する講師情報 -->
       <div class="mystudents">
         <!-- 自分の生徒一覧表示 -->
         <?php //var_dump($user['Teachermatching']); ?><br>
-        <?php foreach ($user['Teachermatching'] as $teacher): ?>
+        <table>
+        <?php foreach ($user['Teachermatching'] as $myteacher): ?>
           <tr>
-          <td><?php echo h($teacher['id']) ?></td>
-          <td><?php echo $this->Html->link('生徒：'.$teacher['name'], array('controller' => 'users', 'action' => 'view', $teacher['user_id'])); ?></td>
+          <td><?php //echo h($myteacher['id']) ?></td>
+          <?php if($myteacher['teacher_name'] == NULL){
+            $myteacher['teacher_name'] == "名無しさん";
+            } ?>
+          <td><?php echo $this->Html->link($myteacher['teacher_name'], array('controller' => 'teachers', 'action' => 'view', $myteacher['teacher_id'])); ?></td>
           </tr><br>
         <?php endforeach ?>
+        </table>
       </div>
       <div class="newusers">
         <!-- 新着生徒情報 -->
@@ -61,18 +66,20 @@
       <div class="mycomments">
         <!-- コメント一覧 -->
         <?php //var_dump($user['Teachermatching']); ?><br>
+        <table>
         <?php foreach ($user['Comment'] as $comment): ?>
-          <tr>
+          <tr id="comment_<?php echo ($comment['id']); ?>">
           <td><?php echo h($comment['id']) ?></td>
            <td><?php echo $comment['created']; ?></td>
           <td><?php echo $comment['commenter']; ?></td>
           <td><?php echo $comment['body']; ?></td>
           <td><?php echo $this->Html->link($comment['commenter'], array('controller' => 'teachers', 'action' => 'view', $comment['teacher_id'])); ?></td>
           <td><?php 
-          echo $this->Html->link('削除',array('controller' => 'comments', 'action' => 'delete'));
+              echo $this->Html->link('削除','#', array('class'=>'delete', 'data-comment-id'=>$comment['id'])); 
           ?></td>
           </tr><br>
         <?php endforeach ?>
+        </table>
       </div>
       </div>
     </div>
@@ -86,3 +93,17 @@
 	<li><?php echo h($comment['body']) ?> by <?php echo h($comment['commenter']); ?></li>
 <?php endforeach; ?>
 </ul> -->
+
+<script>
+$(function(){
+  $('a.delete').click(function(e){
+    if(confirm('本当に削除しますか?削除しても、相手には通知されません。')){
+      $.post('<?php echo $this->webroot; ?>comments/delete/'+$(this).data('comment-id'),{},function(res){
+        $('#comment_'+res.id).fadeOut();
+        console.log(res.id);
+      },"json");
+    }
+    return false;
+  });
+});
+</script>

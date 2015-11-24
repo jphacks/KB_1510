@@ -39,7 +39,7 @@
           <tr>
           <td><?php echo h($student['id']) ?></td>
           <td><?php 
-          echo $this->Html->link('生徒：'.$student['name'], array('controller' => 'users', 'action' => 'view', $student['user_id'])); ?></td>
+          echo $this->Html->link('生徒：'.$student['user_name'], array('controller' => 'users', 'action' => 'view', $student['user_id'])); ?></td>
           </tr><br>
         <?php endforeach ?>
       </div>
@@ -53,14 +53,6 @@
   $session_id = 8; //上と合わせると、講師のidが9という条件の選択 （この２つの値をSessionComponentsで調整）
   $session_name = "kazuki";
   $session_state = 0;
-
-//   echo $this->Form->create('Comment',array('action'=>'add_to_teacher'));
-  
-// //コメントする人が講師か生徒かによって、場合分け（講師と生徒のidは同じものがあるので、どちらのtableかを決定するため）
-//       echo $this->Form->input('body',array('rows'=>3));
-//       echo $this->Form->input('commenter',array('type'=>'hidden','value'=>$session_name)); //コメントした人
-//       echo $this->Form->input('Comment.teacher_id',array('type'=>'hidden','value'=>$session_id)); //今ログインしている人がコメントするため。
-//    echo $this->Form->end('コメント');
   ?>
       </div>
     <!-- 自分へのコメントに関する情報 -->
@@ -69,12 +61,14 @@
          <h2><?php echo $profile['username']?>さんへのコメント</h2>
         <?php //var_dump($teacher['Teachermatching']); ?>
         <br>
+        <table>
         <?php foreach ($teacher['Comment'] as $comment): ?>
-          <tr>
+          <tr id="comment_<?php echo h($comment['id']); ?>">
           <td><?php //echo h($comment['id']) ?></td>
            <td><?php echo $comment['created']; ?></td>
           <td><?php 
           // if($comment['user_id'] == $teacher['Teacher']['id'] && $session_state = 0){
+
             echo $this->Html->link($comment['commenter'], array('controller' => 'users', 'action' => 'view', $comment['user_id']));
           // }else{
           //   echo $comment['commenter'];
@@ -85,10 +79,11 @@
           <td><?php echo $comment['body']; ?></td>
           
            <td><?php
-          echo $this->Html->link('削除',array('controller' => 'teachers', 'action' => 'delete'));
+          echo $this->Html->link('削除','#',array('class' => 'delete', 'data-comment-id' => $comment['id']));
           ?></td>
           </tr><br>
         <?php endforeach ?>
+        </table>
       </div>
       </div>
     </div>

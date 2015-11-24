@@ -69,7 +69,22 @@ if($acountSession == null){
           <tr id="comment_<?php echo ($comment['id']); ?>">
           <td><?php echo h($comment['id']) ?></td>
            <td><?php echo $comment['created']; ?></td>
-            <td><?php echo $this->Html->link($comment['commenter'], array('controller' => 'users', 'action' => 'view', $comment['user_id'])); ?></td>
+            <td><?php 
+            $session_isteacher = $acountSession['isteacher'];
+
+            if($comment['user_id'] == $session_id){
+
+              if($session_isteacher == 1){
+                $comment_userid = $comment['teacher_id'];
+              }else{
+                $comment_userid = $comment['user_id'];
+              }  //講師と生徒で、戻る画面を識別
+
+              echo $this->Html->link($comment['commenter'], array('controller' => 'users', 'action' => 'mypage', $comment_userid));
+            }else{
+              echo $this->Html->link($comment['commenter'], array('controller' => 'users', 'action' => 'view', $comment_userid));
+              }
+               ?></td>
           <td><?php echo $comment['body']; ?></td>
         
           <td id="comment_<?php echo h($comment['id']); ?>">

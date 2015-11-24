@@ -114,10 +114,10 @@ class CommentsController extends AppController{
     // if($this->request->is('ajax')){
       $this->Comment->create();
       if($this->Comment->save($this->request->data)){
-        $this->Flash->success(__('The comment has been saved.'));
-        $this->redirect(array('controller'=>'teachers','action' => 'view',$this->data['Comment']['teacher_id']));
+        $this->Flash->success(__('コメント投稿完了'));
+        $this->redirect(array('controller'=>'teachers','action' => 'profile',$this->data['Comment']['teacher_id']));
       }else{
-        $this->Flash->error(__('The user could not be saved. Please try again.'));
+        $this->Flash->error(__('コメント投稿失敗。もう一度やり直して下さい。'));
       }
   }
 
@@ -152,17 +152,32 @@ class CommentsController extends AppController{
   }
 
 
-  public function delete_from_teacher($id = null){
-    $this->request->onlyAllow('post');
-
-    $this->Teacher->id = $id;
-    if($this->Comment->delete()){
-      $this->Flash->success(__('User deleted.'));
-      $this->redirect(array('action' => 'index'));
-    }
-    $this->Flash->error(__('User was not deleted.'));
-    $this->redirect(array('action' => 'index'));
-  }
+  // public function delete_from_view($id = null){
+  //   $this->request->onlyAllow('post');
+  //   $this->Teacher->id = $id;
+  //  if($this->request->is('get')){
+  //     throw new MethodNotAllowedException();
+  //   }
+  //   if($this->request->is('ajax')){
+  //       if($this->Comment->delete($id)){
+  //           $this->autoRender = false;
+  //           $this->autoLayout = false;
+  //           $response = array('id' => $id);
+  //           $this->header('Content-Type: application/json');
+  //           echo json_encode($response);
+  //           exit();
+  //       }
+  //     //↓Ajaxじゃない場合（例外処理）に戻る
+  //     $session_isteacher = $this->Auth->user('isteacher');
+  //     if($session_state == 1){ //⇢講師としてログインしてる場合
+  //       $session_id = $this->Auth->user('teacher_id');
+  //       $this->redirect(array('controller'=>'teachers', 'action' => 'profile'));
+  //     }else{
+  //       $session_id = $this->Auth->user('id');
+  //       $this->redirect(array('controller'=>'users', 'action' => 'profile'));
+  //     }
+  //   }
+  // }
 
 
   public function delete($id){
@@ -178,11 +193,11 @@ class CommentsController extends AppController{
             echo json_encode($response);
             exit();
         }
-      $session_state = 0;
-      if($session_state == 0){ //⇢講師としてログインしてる場合
-        $this->redirect(array('controller'=>'teachers', 'action' => 'mypage'));
-      }else{
+      $session_isteacher = 0;
+      if($session_isteacher == 0){ //⇢講師としてログインしてる場合
         $this->redirect(array('controller'=>'users', 'action' => 'mypage'));
+      }else{
+        $this->redirect(array('controller'=>'teachers', 'action' => 'mypage'));
       }
     }
   }
