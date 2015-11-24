@@ -53,12 +53,18 @@
                 echo $this->Html->link('生徒ログイン', array('controller' => 'users', 'action' => 'login')) . "<li>";
                 echo "<li>" . $this->Html->link('講師ログイン', array('controller' => 'teachers', 'action' => 'login'));
               }else{
-                echo $this->Html->link('講義を追加',array('controller'=>'rectures', 'action' => 'add',$session_id));
-                echo"</li><li>";
+                    if($acountSession['isteacher'] == 1){
+                        echo $this->Html->link('講義を追加',array('controller'=>'rectures', 'action' => 'add',$session_id));
+                        echo"</li><li>";
+                    }else{
+                        echo $this->Html->link('講義を探す',array('controller'=>'rectures', 'action' => 'lists'));
+                        echo"</li><li>";
+                    }
+                    
                 echo $this->Html->link('ログアウト', array('action'=>'logout'));
                 #Facebookログアウトについて
                 #echo $this->Facebook->logout(array('redirect' => array('controller' => 'users', 'action' => 'logout'), 'img' => '/Facebook/img/facebook-logout.png'));
-              }
+             }
             ?></li>
             <li><?php echo $this->Html->link('お問い合わせ', array('controller' => 'contact', 'action' => 'index')); ?></li>
         </ul>
