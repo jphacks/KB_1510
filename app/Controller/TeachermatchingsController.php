@@ -73,13 +73,13 @@ class TeachermatchingsController extends AppController{
 
 
 
-    public function add_teacher(){
+    public function add_myteacher(){
     if($this->request->is('post')){
       if($this->Teachermatching->save($this->request->data)){
         $this->Flash->success(__('講師が追加されました！'));
-        $this->redirect(array('controller'=>'teachers','action' => 'mypage'));
+        $this->redirect(array('controller'=>'users','action' => 'mypage'));
       }else{
-        $this->Flash->error(__('The user could not be saved. Please try again.'));
+        $this->Flash->error(__('登録失敗。もう一度やり直して下さい。'));
       }
     }
   }

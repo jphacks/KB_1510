@@ -89,7 +89,7 @@ public function mypage(){
   }
   
    $params = array(
-    'order' => 'modified desc',
+    'order' => 'Teacher.modified desc',
     'limit' => 10
     );
   $teacher = $this->Teacher->find('all',$params);

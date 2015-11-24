@@ -24,7 +24,7 @@ echo $this->Html->link($teacher['Teacher']['username'].'さんの講座一覧',a
 if($acountSession == null){
    echo $this->Html->link('講師リクエスト',array('controller'=>'users','action'=>'login'));
 }else{
-    	echo $this->Form->create('Teachermatching',array('action'=>'add_student'));
+    	echo $this->Form->create('Teachermatching',array('action'=>'add_myteacher'));
 
     echo $this->Form->input('Teachermatching.teacher_id',array('type'=>'hidden','value'=>$teacher['Teacher']['id']));
     echo $this->Form->input('Teachermatching.name',array('type'=>'hidden','value'=>$teacher['Teacher']['username']));
@@ -33,7 +33,8 @@ if($acountSession == null){
     echo $this->Form->end('講師リクエスト');
     echo"</div>";
 
-
+ $session_id = $acountSession['id'];
+ $session_name = $acountSession['username'];
 
   echo $this->Form->create('Comment',array('action'=>'add_to_teacherview'));
   
