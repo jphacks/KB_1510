@@ -24,10 +24,14 @@ echo $this->Html->link($teacher['Teacher']['username'].'さんの講座一覧',a
 if($acountSession == null){
    echo $this->Html->link('講師リクエスト',array('controller'=>'users','action'=>'login'));
 }else{
+    $session_id = $acountSession['id'];
+    $session_name = $acountSession['username'];
+
     	echo $this->Form->create('Teachermatching',array('action'=>'add_myteacher'));
 
     echo $this->Form->input('Teachermatching.teacher_id',array('type'=>'hidden','value'=>$teacher['Teacher']['id']));
-    echo $this->Form->input('Teachermatching.name',array('type'=>'hidden','value'=>$teacher['Teacher']['username']));
+    echo $this->Form->input('Teachermatching.teacher_name',array('type'=>'hidden','value'=>$teacher['Teacher']['username']));
+     echo $this->Form->input('Teachermatching.user_name',array('type'=>'hidden','value'=>$session_name));
     echo $this->Form->input('Teachermatching.user_id',array('type'=>'hidden','value'=>$session_id));
     echo"</br>";
     echo $this->Form->end('講師リクエスト');

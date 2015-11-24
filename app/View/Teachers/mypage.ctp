@@ -39,7 +39,8 @@
         <?php //debug($teacher['Teachermatching']); ?><br>
         <?php foreach ($teacher['Teachermatching'] as $student): ?>
           <tr>
-          <td><?php echo $this->Html->link('生徒：'.$student['name'], array('controller' => 'users', 'action' => 'view', $student['user_id'])); ?></td>
+          <?php //$student_id = $student['user_id']; ?>
+          <td><?php echo $this->Html->link($student['user_name'], array('controller' => 'users', 'action' => 'view', $student['user_id'])); ?></td>
           </tr>
         <?php endforeach; ?>
         <h3><?php echo $this->Html->link('もっと見る', array('controller' => 'teachers', 'action' => 'matching_lists', $profile['id'])); ?></h3>

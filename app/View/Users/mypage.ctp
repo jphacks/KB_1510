@@ -28,7 +28,7 @@
         <?php foreach ($user['Teachermatching'] as $myteacher): ?>
           <tr>
           <td><?php //echo h($student['id']) ?></td>
-          <td><?php echo $this->Html->link($myteacher['name'], array('controller' => 'teachers', 'action' => 'view', $myteacher['teacher_id'])); ?></td>
+          <td><?php echo $this->Html->link($myteacher['teacher_name'], array('controller' => 'teachers', 'action' => 'view', $myteacher['teacher_id'])); ?></td>
           </tr><br>
         <?php endforeach ?>
       </div>
