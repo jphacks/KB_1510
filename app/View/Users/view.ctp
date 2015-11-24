@@ -36,9 +36,10 @@ if($acountSession == null){
     <!-- 自分へのコメントに関する情報 -->
       <div class="mycomments">
         <!-- コメント一覧 -->
-        <?php //var_dump($user['Teachermatching']); ?><br>
+        <?php //var_dump($user['Teachermatching']); ?>
+        <table>
         <?php foreach ($user['Comment'] as $comment): ?>
-          <tr>
+          <tr id="comment_<?php echo ($comment['id']); ?>">
           <td><?php echo h($comment['id']) ?></td>
            <td><?php echo $comment['created']; ?></td>
            <td><?php 
@@ -54,17 +55,14 @@ if($acountSession == null){
            </td>
             <td>
           	<?php
-          	if($comment['teacher_id'] == $session_id){
-              if($session_id != null){
-                echo $this->Html->link('削除',array('controller' => 'comments', 'action' => 'delete'));
-              }
-              // var_dump($comment['teacher_id']);
-              // var_dump($session_id);
-          	}
+       if($comment['teacher_id'] == $session_id){
+              echo $this->Html->link('削除','#', array('class'=>'delete', 'data-comment-id'=>$comment['id'])); 
+            }
           	?>
           </td>
           </tr><br>
         <?php endforeach ?>
+        </table>
       </div>
       </div>
     </div>
@@ -72,3 +70,17 @@ if($acountSession == null){
     </div>
   </div>
 </div>
+
+<script>
+$(function(){
+  $('a.delete').click(function(e){
+    if(confirm('本当に削除しますか?削除しても、相手には通知されません。')){
+      $.post('<?php echo $this->webroot; ?>comments/delete/'+$(this).data('comment-id'),{},function(res){
+        $('#comment_'+res.id).fadeOut();
+        console.log(res.id);
+      },"json");
+    }
+    return false;
+  });
+});
+</script>

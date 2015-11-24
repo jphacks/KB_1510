@@ -115,7 +115,7 @@ class CommentsController extends AppController{
       $this->Comment->create();
       if($this->Comment->save($this->request->data)){
         $this->Flash->success(__('コメント投稿完了'));
-        $this->redirect(array('controller'=>'teachers','action' => 'profile',$this->data['Comment']['teacher_id']));
+        $this->redirect(array('controller'=>'teachers','action' => 'view',$this->data['Comment']['teacher_id']));
       }else{
         $this->Flash->error(__('コメント投稿失敗。もう一度やり直して下さい。'));
       }
