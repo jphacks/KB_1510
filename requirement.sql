@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: 2015 年 11 月 21 日 17:16
+-- Generation Time: 2015 年 11 月 24 日 02:53
 -- サーバのバージョン： 5.5.38
 -- PHP Version: 5.6.2
 
@@ -31,7 +31,7 @@ CREATE TABLE `comments` (
   `Comment.teacher_id` int(20) NOT NULL,
   `password` varchar(20) NOT NULL,
   `treated_value` int(2) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=74 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=79 DEFAULT CHARSET=utf8;
 
 --
 -- テーブルのデータのダンプ `comments`
@@ -96,7 +96,12 @@ INSERT INTO `comments` (`id`, `commenter`, `teacher_id`, `user_id`, `created`, `
 (70, 'kazuki', '8', 10, '2015-11-17 17:06:48', '2015-11-17 17:06:48', 'ありがとう！', 0, '', 0),
 (71, 'kazuki', '11', 10, '2015-11-18 14:16:49', '2015-11-18 14:16:49', '講師に興味があります！', 0, '', 0),
 (72, 'kazuki', '8', 3, '2015-11-19 03:16:39', '2015-11-19 03:16:39', 'ddd', 0, '', 0),
-(73, 'kazuki', '8', 32, '2015-11-21 14:52:16', '2015-11-21 14:52:16', '遊びたい', 0, '', 0);
+(73, 'kazuki', '8', 32, '2015-11-21 14:52:16', '2015-11-21 14:52:16', '遊びたい', 0, '', 0),
+(74, 'kazuki', '11', 0, '2015-11-22 02:54:24', '2015-11-22 02:54:24', '教えて下さい！', 0, '', 0),
+(75, '', '37   2015-1', 3, '2015-11-23 11:21:53', '2015-11-23 11:21:53', '教えましょうか', 0, '', 0),
+(76, 'シャナ', '63', 3, '2015-11-23 11:24:04', '2015-11-23 11:24:04', '教えるよ！', 0, '', 0),
+(77, 'シャナ', '63', 24, '2015-11-23 12:09:10', '2015-11-23 12:09:10', '教えます。', 0, '', 0),
+(78, 'シャナ', '63', 20, '2015-11-24 03:13:15', '2015-11-24 03:13:15', '教えますよ。', 0, '', 0);
 
 -- --------------------------------------------------------
 
@@ -234,7 +239,7 @@ CREATE TABLE `posts` (
   `teacher_id` int(11) DEFAULT NULL,
   `photo` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `photo_dir` varchar(255) COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- テーブルのデータのダンプ `posts`
@@ -280,7 +285,9 @@ INSERT INTO `posts` (`id`, `title`, `body`, `created`, `modified`, `user_id`, `t
 (55, NULL, NULL, '2015-11-19 03:01:11', '2015-11-19 03:01:11', NULL, 10, '416.png', '55'),
 (56, NULL, NULL, '2015-11-19 03:04:41', '2015-11-19 03:04:41', NULL, 10, '423.png', '56'),
 (57, NULL, NULL, '2015-11-19 03:05:19', '2015-11-19 03:05:19', NULL, 10, '423.png', '57'),
-(58, NULL, NULL, '2015-11-19 09:51:45', '2015-11-19 09:51:45', NULL, 10, '126.png', '58');
+(58, NULL, NULL, '2015-11-19 09:51:45', '2015-11-19 09:51:45', NULL, 10, '126.png', '58'),
+(59, NULL, NULL, '2015-11-22 05:05:16', '2015-11-22 05:05:16', NULL, 10, '430_key.png', '59'),
+(60, NULL, NULL, '2015-11-22 05:32:09', '2015-11-22 05:32:09', NULL, 37, '426_key.png', '60');
 
 -- --------------------------------------------------------
 
@@ -323,12 +330,24 @@ CREATE TABLE `rectures` (
   `title` varchar(80) DEFAULT NULL,
   `name` varchar(50) DEFAULT NULL,
   `junle` int(2) DEFAULT NULL,
-  `language` int(2) DEFAULT NULL,
+  `language` varchar(200) DEFAULT NULL,
   `body` text,
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL,
-  `teacher_id` int(8) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `teacher_id` int(8) NOT NULL,
+  `time` varchar(200) NOT NULL,
+  `fee` int(6) NOT NULL,
+  `goal` varchar(300) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+--
+-- テーブルのデータのダンプ `rectures`
+--
+
+INSERT INTO `rectures` (`id`, `title`, `name`, `junle`, `language`, `body`, `created`, `modified`, `teacher_id`, `time`, `fee`, `goal`) VALUES
+(1, 'php', '谷端', 3, NULL, 'なんでも教える。', '2015-11-20 00:00:00', '2015-11-20 00:00:00', 11, '', 0, ''),
+(2, NULL, NULL, NULL, NULL, NULL, '2015-11-22 03:36:38', '2015-11-22 03:36:38', 0, '', 0, ''),
+(3, NULL, NULL, NULL, NULL, NULL, '2015-11-22 03:36:42', '2015-11-22 03:36:42', 0, '', 0, '');
 
 -- --------------------------------------------------------
 
@@ -377,7 +396,7 @@ CREATE TABLE `teachermatchings` (
   `offer_from_me` varchar(50) NOT NULL,
   `created` datetime DEFAULT NULL,
   `matching_fee` int(6) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=53 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=utf8;
 
 --
 -- テーブルのデータのダンプ `teachermatchings`
@@ -408,7 +427,13 @@ INSERT INTO `teachermatchings` (`id`, `name`, `user_id`, `teacher_id`, `is_match
 (49, 'しー', 5, 50, NULL, '', '', '2015-11-21 12:22:44', 0),
 (50, 'しー', 32, 50, NULL, '', '', '2015-11-21 12:36:46', 0),
 (51, 'tt5', 32, 51, NULL, '', '', '2015-11-21 12:38:20', 0),
-(52, '森ちゃん', 32, 20, NULL, '', '', '2015-11-21 12:38:38', 0);
+(52, '森ちゃん', 32, 20, NULL, '', '', '2015-11-21 12:38:38', 0),
+(53, 'あああ', 26, 10, NULL, '', '', '2015-11-22 02:01:02', 0),
+(54, 'kazuki', 3, 10, NULL, '', '', '2015-11-22 10:07:18', 0),
+(55, 'kazuki', 3, 10, NULL, '', '', '2015-11-22 12:57:46', 0),
+(56, 'kazuki', 3, 37, NULL, '', '', '2015-11-23 11:19:07', 0),
+(57, 'あああ', 26, 63, NULL, '', '', '2015-11-24 03:06:15', 0),
+(58, 'あああ', 26, 63, NULL, '', '', '2015-11-24 03:10:13', 0);
 
 -- --------------------------------------------------------
 
@@ -439,7 +464,7 @@ CREATE TABLE `teachers` (
   `fee` int(6) NOT NULL,
   `payment` int(6) NOT NULL,
   `user_id` int(8) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=64 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- テーブルのデータのダンプ `teachers`
@@ -481,7 +506,10 @@ INSERT INTO `teachers` (`id`, `username`, `password`, `created`, `modified`, `ge
 (57, NULL, NULL, '2015-11-21 03:39:50', '2015-11-21 03:39:50', NULL, NULL, NULL, '例.php3年（IT起業で、cakePHPを用いたWebメディアを作っていました。）', '', '', 0, 0, '', '', '', '', '', 0, 0, 0, 29),
 (58, NULL, NULL, '2015-11-21 03:40:37', '2015-11-21 03:40:37', NULL, NULL, NULL, '例.php3年（IT起業で、cakePHPを用いたWebメディアを作っていました。）', '', '', 0, 0, '', '', '', '', '', 0, 0, 0, 30),
 (59, NULL, NULL, '2015-11-21 11:04:24', '2015-11-21 11:04:24', NULL, NULL, NULL, 'swift,php', '', '', 0, 0, '', '', '', '', '', 0, 0, 0, 31),
-(60, NULL, NULL, '2015-11-21 20:06:33', '2015-11-21 20:06:33', NULL, NULL, NULL, '例.php3年（IT起業で、cakePHPを用いたWebメディアを作っていました。）', '', '', 0, 0, '', '', '', '', '', 0, 0, 0, 33);
+(60, NULL, NULL, '2015-11-21 20:06:33', '2015-11-21 20:06:33', NULL, NULL, NULL, '例.php3年（IT起業で、cakePHPを用いたWebメディアを作っていました。）', '', '', 0, 0, '', '', '', '', '', 0, 0, 0, 33),
+(61, NULL, NULL, '2015-11-22 01:50:48', '2015-11-22 01:50:48', NULL, NULL, NULL, '例.php3年（IT起業で、cakePHPを用いたWebメディアを作っていました。）', '', '', 0, 0, '', '', '', '', '', 0, 0, 0, 35),
+(62, NULL, NULL, '2015-11-22 01:56:43', '2015-11-22 01:56:43', NULL, NULL, NULL, '例.php3年（IT起業で、cakePHPを用いたWebメディアを作っていました。）', '', '', 0, 0, '', '', '', '', '', 0, 0, 0, 36),
+(63, 'シャナ', NULL, '2015-11-22 03:28:35', '2015-11-22 20:39:03', '0', '', '学生', '', '', '', 2, 25, '', '', '', '', '', 0, 0, 0, 37);
 
 -- --------------------------------------------------------
 
@@ -510,7 +538,7 @@ CREATE TABLE `users` (
   `email` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
   `teacher_id` int(8) NOT NULL,
   `recture_id` int(8) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- テーブルのデータのダンプ `users`
@@ -549,7 +577,11 @@ INSERT INTO `users` (`id`, `username`, `password`, `role`, `created`, `modified`
 (31, 'シャナ', '$2a$10$Gf.xfhX40CrBrPS9lCfg4OvxdsR4xF2KYhs7/61EjtyibGQMeo1gS', NULL, '2015-11-21 11:04:24', '2015-11-21 11:04:24', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'rr@fdf', 0, 0),
 (32, 'あい', '$2a$10$r/HCGhPs/bCwiyO4J2qcDOWEXnNxk68zy3NsRTWxQK3y3uxysRA4i', NULL, '2015-11-21 12:19:56', '2015-11-21 12:19:56', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, '1@1', 0, 0),
 (33, 'w', '$2a$10$cPlcpMeLOZpbuWvHwvDQqOh//20LXD2g..2Ef9xuxrKn0IbkXBdTG', NULL, '2015-11-21 20:06:33', '2015-11-21 20:06:33', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'p@p', 0, 0),
-(34, 'a', '$2a$10$7r/W.Gtfg1poDevP1pL8YO5qOKshgFuPOJK6tZtqA50Nyf9z1Zy1y', NULL, '2015-11-22 00:27:07', '2015-11-22 00:27:08', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, '2@2', 0, 0);
+(34, 'a', '$2a$10$7r/W.Gtfg1poDevP1pL8YO5qOKshgFuPOJK6tZtqA50Nyf9z1Zy1y', NULL, '2015-11-22 00:27:07', '2015-11-22 00:27:08', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, '2@2', 0, 0),
+(35, 'しん', '$2a$10$dDFE4HaZYfeEhcagnKnlX.8G.e3nbg93eMSQQv3SxhF85.wXvUSda', NULL, '2015-11-22 01:50:47', '2015-11-22 01:50:48', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'c@c', 0, 0),
+(36, NULL, '$2a$10$c9zTZFXirQIQnCSXnrL7HuzsqzEVFkQ5.j/rLP69fGfkB7EmMEavy', NULL, '2015-11-22 01:56:43', '2015-11-22 01:56:43', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'v@v', 0, 0),
+(37, NULL, '$2a$10$GQ.QUkGcwU..fZkrEGC.AuOPCAxzGR3QdJPnPJLo/XnTlhw6hsjWq', NULL, '2015-11-22 03:28:35', '2015-11-22 03:28:35', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 1, 'zerus@softbank.ne.jp', 0, 0),
+(38, 'ゼクセル', '$2a$10$JExQCqnV6Plef5/r6Kv6heIbzDkDzn.slV8YXYHzRo5ifFOG3WDr2', NULL, '2015-11-24 03:16:59', '2015-11-24 03:17:00', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', 0, 'zexel01@i.softbank.jp', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -661,7 +693,7 @@ ALTER TABLE `user_matchings`
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=74;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=79;
 --
 -- AUTO_INCREMENT for table `images`
 --
@@ -686,7 +718,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=59;
+MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=61;
 --
 -- AUTO_INCREMENT for table `profiles`
 --
@@ -696,22 +728,22 @@ MODIFY `id` int(8) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 -- AUTO_INCREMENT for table `rectures`
 --
 ALTER TABLE `rectures`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `teachermatchings`
 --
 ALTER TABLE `teachermatchings`
-MODIFY `id` int(8) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=53;
+MODIFY `id` int(8) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=59;
 --
 -- AUTO_INCREMENT for table `teachers`
 --
 ALTER TABLE `teachers`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=61;
+MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=64;
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=35;
+MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=39;
 --
 -- AUTO_INCREMENT for table `user_matchings`
 --
