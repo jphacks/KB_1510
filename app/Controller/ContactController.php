@@ -5,6 +5,12 @@ class ContactController extends AppController{
 
   public $components = array('Session');
 
+    public function beforeFilter(){
+    parent::beforeFilter();
+
+    $this->Auth->allow('resetpass');
+  }
+
   public function index(){
     if (!$this->request->is('post') || !$this->request->data) {
         return;
@@ -33,6 +39,7 @@ class ContactController extends AppController{
     }
   }
 
+
   private function sendContact($content){
 
     App::uses('CakeEmail', 'Network/Email');
@@ -45,4 +52,10 @@ class ContactController extends AppController{
         ->template('default')
         ->send();
   }
+
+
+  public function resetpass(){
+    $this->render(resetpass);
+  }
+
 }

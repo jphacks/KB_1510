@@ -18,3 +18,8 @@
 <?php 
   echo $this->HTML->link('生徒登録はこちら',array('controller'=>'users','action'=>'add'));
 ?>
+<br>
+<br>
+<?php 
+  echo $this->HTML->link('メールアドレス.パスワードを忘れた方',array('controller'=>'contact','action'=>'resetpass'));
+?>

@@ -81,9 +81,9 @@ if($acountSession == null){
               }  //講師と生徒で、戻る画面を識別
 
               echo $this->Html->link($comment['commenter'], array('controller' => 'users', 'action' => 'mypage', $comment_userid));
-            }else{
-              echo $this->Html->link($comment['commenter'], array('controller' => 'users', 'action' => 'view', $comment_userid));
-              }
+          }else{
+              echo $this->Html->link($comment['commenter'], array('controller' => 'users', 'action' => 'view', $comment['user_id']));
+          }
                ?></td>
           <td><?php echo $comment['body']; ?></td>
         
