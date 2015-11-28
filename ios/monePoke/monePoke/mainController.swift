@@ -55,8 +55,8 @@ class mainController: UIViewController,MKMapViewDelegate,CLLocationManagerDelega
         
         print("my location is [\(myLat):\(myLon)]")
         
-        let myLatDist:CLLocationDistance = 300
-        let myLonDist:CLLocationDistance = 300
+        let myLatDist:CLLocationDistance = 2000
+        let myLonDist:CLLocationDistance = 2000
         
         let myRegion: MKCoordinateRegion = MKCoordinateRegionMakeWithDistance(myConrdinate, myLatDist, myLonDist)
         
