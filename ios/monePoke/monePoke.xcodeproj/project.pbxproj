@@ -15,6 +15,7 @@
 		0529B7401C09386300CABAB5 /* monePokeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529B73F1C09386300CABAB5 /* monePokeUITests.swift */; };
 		0529B7511C094B3800CABAB5 /* loginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529B74F1C094B3800CABAB5 /* loginController.swift */; };
 		0529B7521C094B3800CABAB5 /* mainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529B7501C094B3800CABAB5 /* mainController.swift */; };
+		0529B7541C094C5D00CABAB5 /* locationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529B7531C094C5D00CABAB5 /* locationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0529B7411C09386300CABAB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0529B74F1C094B3800CABAB5 /* loginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginController.swift; sourceTree = "<group>"; };
 		0529B7501C094B3800CABAB5 /* mainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainController.swift; sourceTree = "<group>"; };
+		0529B7531C094C5D00CABAB5 /* locationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				0529B74F1C094B3800CABAB5 /* loginController.swift */,
 				0529B7501C094B3800CABAB5 /* mainController.swift */,
 				0529B7231C09386300CABAB5 /* Main.storyboard */,
+				0529B7531C094C5D00CABAB5 /* locationView.swift */,
 				0529B7261C09386300CABAB5 /* Assets.xcassets */,
 				0529B7281C09386300CABAB5 /* LaunchScreen.storyboard */,
 				0529B72B1C09386300CABAB5 /* Info.plist */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0529B7521C094B3800CABAB5 /* mainController.swift in Sources */,
+				0529B7541C094C5D00CABAB5 /* locationView.swift in Sources */,
 				0529B7201C09386300CABAB5 /* AppDelegate.swift in Sources */,
 				0529B7511C094B3800CABAB5 /* loginController.swift in Sources */,
 			);
