@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import UIKit
+
+class loginController:UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+}
