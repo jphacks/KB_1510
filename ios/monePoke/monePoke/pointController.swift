@@ -37,4 +37,173 @@ class pointController:UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    @IBAction func donatePush(sender: AnyObject) {
+        var alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円", preferredStyle: .Alert)
+        let saveAction = UIAlertAction(title: "寄付", style: .Default) { (action:UIAlertAction!) -> Void in
+            let textField = alart.textFields![0] as UITextField
+            textField.placeholder = "point"
+            print("change \(textField.text) point")
+        }
+        
+        let cancelAction = UIAlertAction(title: "やめる", style: .Default) { (action:UIAlertAction!) -> Void in
+        }
+        
+        alart.addTextFieldWithConfigurationHandler { (textField:UITextField!) -> Void in
+            textField.keyboardType = UIKeyboardType.NumberPad
+        }
+        
+        alart.addAction(saveAction)
+        alart.addAction(cancelAction)
+        
+        presentViewController(alart, animated: true, completion: nil)
+    }
+    
+    @IBAction func luku10Push(sender: AnyObject) {
+        var alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円", preferredStyle: .Alert)
+        let saveAction = UIAlertAction(title: "変換", style: .Default) { (action:UIAlertAction!) -> Void in
+            let textField = alart.textFields![0] as UITextField
+            textField.placeholder = "point"
+            print("change \(textField.text) point")
+        }
+        
+        let cancelAction = UIAlertAction(title: "やめる", style: .Default) { (action:UIAlertAction!) -> Void in
+        }
+        
+        alart.addTextFieldWithConfigurationHandler { (textField:UITextField!) -> Void in
+            textField.keyboardType = UIKeyboardType.NumberPad
+        }
+        
+        alart.addAction(saveAction)
+        alart.addAction(cancelAction)
+        
+        presentViewController(alart, animated: true, completion: nil)
+    }
+    
+    @IBAction func limePush(sender: AnyObject) {
+        var alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円", preferredStyle: .Alert)
+        let saveAction = UIAlertAction(title: "変換", style: .Default) { (action:UIAlertAction!) -> Void in
+            let textField = alart.textFields![0] as UITextField
+            textField.placeholder = "point"
+            print("change \(textField.text) point")
+        }
+        
+        let cancelAction = UIAlertAction(title: "やめる", style: .Default) { (action:UIAlertAction!) -> Void in
+        }
+        
+        alart.addTextFieldWithConfigurationHandler { (textField:UITextField!) -> Void in
+            textField.keyboardType = UIKeyboardType.NumberPad
+        }
+        
+        alart.addAction(saveAction)
+        alart.addAction(cancelAction)
+        
+        presentViewController(alart, animated: true, completion: nil)
+    }
+    
+    @IBAction func nanazomPush(sender: AnyObject) {
+        var alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円", preferredStyle: .Alert)
+        let saveAction = UIAlertAction(title: "変換", style: .Default) { (action:UIAlertAction!) -> Void in
+            let textField = alart.textFields![0] as UITextField
+            textField.placeholder = "point"
+            print("change \(textField.text) point")
+        }
+        
+        let cancelAction = UIAlertAction(title: "やめる", style: .Default) { (action:UIAlertAction!) -> Void in
+        }
+        
+        alart.addTextFieldWithConfigurationHandler { (textField:UITextField!) -> Void in
+            textField.keyboardType = UIKeyboardType.NumberPad
+        }
+        
+        alart.addAction(saveAction)
+        alart.addAction(cancelAction)
+        
+        presentViewController(alart, animated: true, completion: nil)
+    }
+    
+    @IBAction func ommconPush(sender: AnyObject) {
+        var alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円", preferredStyle: .Alert)
+        let saveAction = UIAlertAction(title: "変換", style: .Default) { (action:UIAlertAction!) -> Void in
+            let textField = alart.textFields![0] as UITextField
+            textField.placeholder = "point"
+            print("change \(textField.text) point")
+        }
+        
+        let cancelAction = UIAlertAction(title: "やめる", style: .Default) { (action:UIAlertAction!) -> Void in
+        }
+        
+        alart.addTextFieldWithConfigurationHandler { (textField:UITextField!) -> Void in
+            textField.keyboardType = UIKeyboardType.NumberPad
+        }
+        
+        alart.addAction(saveAction)
+        alart.addAction(cancelAction)
+        
+        presentViewController(alart, animated: true, completion: nil)
+    }
+    
+    @IBAction func palcariPush(sender: AnyObject) {
+        var alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円", preferredStyle: .Alert)
+        let saveAction = UIAlertAction(title: "変換", style: .Default) { (action:UIAlertAction!) -> Void in
+            let textField = alart.textFields![0] as UITextField
+            textField.placeholder = "point"
+            print("change \(textField.text) point")
+        }
+        
+        let cancelAction = UIAlertAction(title: "やめる", style: .Default) { (action:UIAlertAction!) -> Void in
+        }
+        
+        alart.addTextFieldWithConfigurationHandler { (textField:UITextField!) -> Void in
+            textField.keyboardType = UIKeyboardType.NumberPad
+        }
+        
+        alart.addAction(saveAction)
+        alart.addAction(cancelAction)
+        
+        presentViewController(alart, animated: true, completion: nil)
+    }
+    
+    @IBAction func imunsePush(sender: AnyObject) {
+        var alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円", preferredStyle: .Alert)
+        let saveAction = UIAlertAction(title: "変換", style: .Default) { (action:UIAlertAction!) -> Void in
+            let textField = alart.textFields![0] as UITextField
+            textField.placeholder = "point"
+            print("change \(textField.text) point")
+        }
+        
+        let cancelAction = UIAlertAction(title: "やめる", style: .Default) { (action:UIAlertAction!) -> Void in
+        }
+        
+        alart.addTextFieldWithConfigurationHandler { (textField:UITextField!) -> Void in
+            textField.keyboardType = UIKeyboardType.NumberPad
+        }
+        
+        alart.addAction(saveAction)
+        alart.addAction(cancelAction)
+        
+        presentViewController(alart, animated: true, completion: nil)
+    }
+    
+    @IBAction func hobmoneyPush(sender: AnyObject) {
+        var alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円", preferredStyle: .Alert)
+        let saveAction = UIAlertAction(title: "変換", style: .Default) { (action:UIAlertAction!) -> Void in
+            let textField = alart.textFields![0] as UITextField
+            textField.placeholder = "point"
+            print("change \(textField.text) point")
+        }
+        
+        let cancelAction = UIAlertAction(title: "やめる", style: .Default) { (action:UIAlertAction!) -> Void in
+        }
+        
+        alart.addTextFieldWithConfigurationHandler { (textField:UITextField!) -> Void in
+            textField.keyboardType = UIKeyboardType.NumberPad
+        }
+        
+        alart.addAction(saveAction)
+        alart.addAction(cancelAction)
+        
+        presentViewController(alart, animated: true, completion: nil)
+    }
+
 }

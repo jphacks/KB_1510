@@ -61,48 +61,73 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" image="donate.png"/>
+                                <connections>
+                                    <action selector="donatePush:" destination="ac4-uS-cQs" eventType="touchUpInside" id="2TT-kv-e4p"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lUy-tG-XU4">
                                 <rect key="frame" x="157" y="408" width="166" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" image="hobmoney.png"/>
+                                <connections>
+                                    <action selector="hobmoneyPush:" destination="ac4-uS-cQs" eventType="touchUpInside" id="yl4-iE-LrG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0IL-L6-j2e">
                                 <rect key="frame" x="-5" y="408" width="168" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" image="imunse.png"/>
+                                <connections>
+                                    <action selector="imunsePush:" destination="ac4-uS-cQs" eventType="touchUpInside" id="i6c-Mf-NT1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9CI-bB-i7G">
                                 <rect key="frame" x="-1" y="164" width="161" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" image="lime.png"/>
+                                <connections>
+                                    <action selector="limePush:" destination="ac4-uS-cQs" eventType="touchUpInside" id="eqj-P4-zfK"/>
+                                    <action selector="luku10Push:" destination="ac4-uS-cQs" eventType="touchUpInside" id="55o-kJ-Cw4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cIl-fJ-KFn">
                                 <rect key="frame" x="160" y="38" width="161" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" image="luk10.png"/>
+                                <connections>
+                                    <action selector="luku10Push:" destination="ac4-uS-cQs" eventType="touchUpInside" id="rUw-cf-sN0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kuu-Nt-GxS">
                                 <rect key="frame" x="160" y="164" width="160" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" image="nanazon.png"/>
+                                <connections>
+                                    <action selector="nanazomPush:" destination="ac4-uS-cQs" eventType="touchUpInside" id="5oP-rE-USc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ljo-ZA-bTj">
                                 <rect key="frame" x="158" y="287" width="163" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" image="palcari.png"/>
+                                <connections>
+                                    <action selector="palcariPush:" destination="ac4-uS-cQs" eventType="touchUpInside" id="Hlc-iM-q0o"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tzn-5i-YkF">
                                 <rect key="frame" x="-3" y="287" width="163" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <state key="normal" image="ommcon.png"/>
+                                <connections>
+                                    <action selector="ommconPush:" destination="ac4-uS-cQs" eventType="touchUpInside" id="Yw2-D9-9XM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
