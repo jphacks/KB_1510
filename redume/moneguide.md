@@ -105,7 +105,8 @@ git add .
 - データベースの設定
 「インポート」という方法でこちらのファイルをダウンロードしてデータベースを立ててください。   
 [sqlファイル](requirements.sql) 
-######ファイルの場所
+
+######- ファイルの場所
 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay
 
 [参考：phpmyadminでインポートする方法](http://www.dbonline.jp/phpmyadmin/export-import/index3.html)  
