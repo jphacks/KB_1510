@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0529B7201C09386300CABAB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529B71F1C09386300CABAB5 /* AppDelegate.swift */; };
-		0529B7221C09386300CABAB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529B7211C09386300CABAB5 /* ViewController.swift */; };
 		0529B7251C09386300CABAB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0529B7231C09386300CABAB5 /* Main.storyboard */; };
 		0529B7271C09386300CABAB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0529B7261C09386300CABAB5 /* Assets.xcassets */; };
 		0529B72A1C09386300CABAB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0529B7281C09386300CABAB5 /* LaunchScreen.storyboard */; };
 		0529B7351C09386300CABAB5 /* monePokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529B7341C09386300CABAB5 /* monePokeTests.swift */; };
 		0529B7401C09386300CABAB5 /* monePokeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529B73F1C09386300CABAB5 /* monePokeUITests.swift */; };
+		0529B7511C094B3800CABAB5 /* loginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529B74F1C094B3800CABAB5 /* loginController.swift */; };
+		0529B7521C094B3800CABAB5 /* mainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529B7501C094B3800CABAB5 /* mainController.swift */; };
+		0529B7541C094C5D00CABAB5 /* locationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529B7531C094C5D00CABAB5 /* locationView.swift */; };
+		0529B7561C097B0E00CABAB5 /* pointController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529B7551C097B0E00CABAB5 /* pointController.swift */; };
+		0529B7581C097B6800CABAB5 /* userController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529B7571C097B6800CABAB5 /* userController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		0529B71C1C09386300CABAB5 /* monePoke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = monePoke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0529B71F1C09386300CABAB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0529B7211C09386300CABAB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0529B7241C09386300CABAB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0529B7261C09386300CABAB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0529B7291C09386300CABAB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		0529B73B1C09386300CABAB5 /* monePokeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = monePokeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0529B73F1C09386300CABAB5 /* monePokeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = monePokeUITests.swift; sourceTree = "<group>"; };
 		0529B7411C09386300CABAB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0529B74F1C094B3800CABAB5 /* loginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginController.swift; sourceTree = "<group>"; };
+		0529B7501C094B3800CABAB5 /* mainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainController.swift; sourceTree = "<group>"; };
+		0529B7531C094C5D00CABAB5 /* locationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationView.swift; sourceTree = "<group>"; };
+		0529B7551C097B0E00CABAB5 /* pointController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pointController.swift; sourceTree = "<group>"; };
+		0529B7571C097B6800CABAB5 /* userController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +106,12 @@
 			isa = PBXGroup;
 			children = (
 				0529B71F1C09386300CABAB5 /* AppDelegate.swift */,
-				0529B7211C09386300CABAB5 /* ViewController.swift */,
+				0529B7571C097B6800CABAB5 /* userController.swift */,
+				0529B7551C097B0E00CABAB5 /* pointController.swift */,
+				0529B74F1C094B3800CABAB5 /* loginController.swift */,
+				0529B7501C094B3800CABAB5 /* mainController.swift */,
 				0529B7231C09386300CABAB5 /* Main.storyboard */,
+				0529B7531C094C5D00CABAB5 /* locationView.swift */,
 				0529B7261C09386300CABAB5 /* Assets.xcassets */,
 				0529B7281C09386300CABAB5 /* LaunchScreen.storyboard */,
 				0529B72B1C09386300CABAB5 /* Info.plist */,
@@ -256,8 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0529B7221C09386300CABAB5 /* ViewController.swift in Sources */,
+				0529B7581C097B6800CABAB5 /* userController.swift in Sources */,
+				0529B7521C094B3800CABAB5 /* mainController.swift in Sources */,
+				0529B7561C097B0E00CABAB5 /* pointController.swift in Sources */,
+				0529B7541C094C5D00CABAB5 /* locationView.swift in Sources */,
 				0529B7201C09386300CABAB5 /* AppDelegate.swift in Sources */,
+				0529B7511C094B3800CABAB5 /* loginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +498,7 @@
 				0529B7461C09386300CABAB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0529B7471C09386300CABAB5 /* Build configuration list for PBXNativeTarget "monePokeTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +507,7 @@
 				0529B7491C09386300CABAB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0529B74A1C09386300CABAB5 /* Build configuration list for PBXNativeTarget "monePokeUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +516,7 @@
 				0529B74C1C09386300CABAB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
