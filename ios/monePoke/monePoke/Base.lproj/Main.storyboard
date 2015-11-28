@@ -20,6 +20,21 @@
             </objects>
             <point key="canvasLocation" x="129.59999999999999" y="321.39333333333332"/>
         </scene>
+        <!--Point Controller-->
+        <scene sceneID="CRB-tD-jsH">
+            <objects>
+                <viewController id="ac4-uS-cQs" customClass="pointController" customModule="monePoke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wEG-Ok-D6S">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ra1-bi-UpQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="-356"/>
+        </scene>
         <!--Main Controller-->
         <scene sceneID="9qB-tu-tfd">
             <objects>
@@ -81,6 +96,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CuA-J3-K8v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="565" y="321"/>
+        </scene>
+        <!--User Controller-->
+        <scene sceneID="IE6-qx-tTQ">
+            <objects>
+                <viewController id="vIE-xh-pr4" customClass="userController" customModule="monePoke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jj4-EY-rHG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NvM-aQ-dSx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="1051"/>
         </scene>
         <!--Location View-->
         <scene sceneID="WQQ-Fu-amp">
