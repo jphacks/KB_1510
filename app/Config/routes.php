@@ -39,6 +39,7 @@ Router::connect('/user_mypages/*', array('controller' => 'users', 'action' => 'm
 
 Router::connect('/usersjson/*', array('controller' => 'users', 'action' => 'lists_json'));
 
+Router::connect('/placesjson/*', array('controller' => 'places', 'action' => 'lists_json'));
 
 Router::mapResources('CommentsController');
 Router::parseExtensions('json');

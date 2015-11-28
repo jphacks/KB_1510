@@ -40,7 +40,7 @@ class PlacesController extends AppController{
   public function index(){
     #$this->set('teacher', $this->Teacher->find('all', array('limit' => 10)));
     $params = $this->Place->find('all' ,array('limit' => 10));
-    $this->set('place',$this->Place->find('all',$params);
+    $this->set('place',$this->Place->find('all',$params));
   }
 
   /*public function index(){
