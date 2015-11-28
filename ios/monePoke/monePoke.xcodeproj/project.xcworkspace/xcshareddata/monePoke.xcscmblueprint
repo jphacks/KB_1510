@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A5293AB7A5D50E254AA066698FCE6165FE065575",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "80EFF9D829EDDB29DB90BAA0835AEAE94349C429" : 0,
+    "A5293AB7A5D50E254AA066698FCE6165FE065575" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9DD1A96C-B315-4348-A266-529E4502236C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "80EFF9D829EDDB29DB90BAA0835AEAE94349C429" : "",
+    "A5293AB7A5D50E254AA066698FCE6165FE065575" : "KB_10\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "monePoke",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios\/monePoke\/monePoke.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jphacks\/KB_10",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "80EFF9D829EDDB29DB90BAA0835AEAE94349C429"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jphacks\/KB_10",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A5293AB7A5D50E254AA066698FCE6165FE065575"
+    }
+  ]
+}
