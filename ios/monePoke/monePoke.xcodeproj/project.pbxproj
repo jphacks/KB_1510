@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0529B7201C09386300CABAB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529B71F1C09386300CABAB5 /* AppDelegate.swift */; };
+		0529B7251C09386300CABAB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0529B7231C09386300CABAB5 /* Main.storyboard */; };
+		0529B7271C09386300CABAB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0529B7261C09386300CABAB5 /* Assets.xcassets */; };
+		0529B72A1C09386300CABAB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0529B7281C09386300CABAB5 /* LaunchScreen.storyboard */; };
+		0529B7351C09386300CABAB5 /* monePokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529B7341C09386300CABAB5 /* monePokeTests.swift */; };
+		0529B7401C09386300CABAB5 /* monePokeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529B73F1C09386300CABAB5 /* monePokeUITests.swift */; };
+		0529B7511C094B3800CABAB5 /* loginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529B74F1C094B3800CABAB5 /* loginController.swift */; };
+		0529B7521C094B3800CABAB5 /* mainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529B7501C094B3800CABAB5 /* mainController.swift */; };
+		0529B7541C094C5D00CABAB5 /* locationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529B7531C094C5D00CABAB5 /* locationView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0529B7311C09386300CABAB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0529B7141C09386300CABAB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0529B71B1C09386300CABAB5;
+			remoteInfo = monePoke;
+		};
+		0529B73C1C09386300CABAB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0529B7141C09386300CABAB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0529B71B1C09386300CABAB5;
+			remoteInfo = monePoke;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0529B71C1C09386300CABAB5 /* monePoke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = monePoke.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0529B71F1C09386300CABAB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0529B7241C09386300CABAB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0529B7261C09386300CABAB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0529B7291C09386300CABAB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0529B72B1C09386300CABAB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0529B7301C09386300CABAB5 /* monePokeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = monePokeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0529B7341C09386300CABAB5 /* monePokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = monePokeTests.swift; sourceTree = "<group>"; };
+		0529B7361C09386300CABAB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0529B73B1C09386300CABAB5 /* monePokeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = monePokeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0529B73F1C09386300CABAB5 /* monePokeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = monePokeUITests.swift; sourceTree = "<group>"; };
+		0529B7411C09386300CABAB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0529B74F1C094B3800CABAB5 /* loginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginController.swift; sourceTree = "<group>"; };
+		0529B7501C094B3800CABAB5 /* mainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainController.swift; sourceTree = "<group>"; };
+		0529B7531C094C5D00CABAB5 /* locationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0529B7191C09386300CABAB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0529B72D1C09386300CABAB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0529B7381C09386300CABAB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0529B7131C09386300CABAB5 = {
+			isa = PBXGroup;
+			children = (
+				0529B71E1C09386300CABAB5 /* monePoke */,
+				0529B7331C09386300CABAB5 /* monePokeTests */,
+				0529B73E1C09386300CABAB5 /* monePokeUITests */,
+				0529B71D1C09386300CABAB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0529B71D1C09386300CABAB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0529B71C1C09386300CABAB5 /* monePoke.app */,
+				0529B7301C09386300CABAB5 /* monePokeTests.xctest */,
+				0529B73B1C09386300CABAB5 /* monePokeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0529B71E1C09386300CABAB5 /* monePoke */ = {
+			isa = PBXGroup;
+			children = (
+				0529B71F1C09386300CABAB5 /* AppDelegate.swift */,
+				0529B74F1C094B3800CABAB5 /* loginController.swift */,
+				0529B7501C094B3800CABAB5 /* mainController.swift */,
+				0529B7231C09386300CABAB5 /* Main.storyboard */,
+				0529B7531C094C5D00CABAB5 /* locationView.swift */,
+				0529B7261C09386300CABAB5 /* Assets.xcassets */,
+				0529B7281C09386300CABAB5 /* LaunchScreen.storyboard */,
+				0529B72B1C09386300CABAB5 /* Info.plist */,
+			);
+			path = monePoke;
+			sourceTree = "<group>";
+		};
+		0529B7331C09386300CABAB5 /* monePokeTests */ = {
+			isa = PBXGroup;
+			children = (
+				0529B7341C09386300CABAB5 /* monePokeTests.swift */,
+				0529B7361C09386300CABAB5 /* Info.plist */,
+			);
+			path = monePokeTests;
+			sourceTree = "<group>";
+		};
+		0529B73E1C09386300CABAB5 /* monePokeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0529B73F1C09386300CABAB5 /* monePokeUITests.swift */,
+				0529B7411C09386300CABAB5 /* Info.plist */,
+			);
+			path = monePokeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0529B71B1C09386300CABAB5 /* monePoke */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0529B7441C09386300CABAB5 /* Build configuration list for PBXNativeTarget "monePoke" */;
+			buildPhases = (
+				0529B7181C09386300CABAB5 /* Sources */,
+				0529B7191C09386300CABAB5 /* Frameworks */,
+				0529B71A1C09386300CABAB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = monePoke;
+			productName = monePoke;
+			productReference = 0529B71C1C09386300CABAB5 /* monePoke.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0529B72F1C09386300CABAB5 /* monePokeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0529B7471C09386300CABAB5 /* Build configuration list for PBXNativeTarget "monePokeTests" */;
+			buildPhases = (
+				0529B72C1C09386300CABAB5 /* Sources */,
+				0529B72D1C09386300CABAB5 /* Frameworks */,
+				0529B72E1C09386300CABAB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0529B7321C09386300CABAB5 /* PBXTargetDependency */,
+			);
+			name = monePokeTests;
+			productName = monePokeTests;
+			productReference = 0529B7301C09386300CABAB5 /* monePokeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0529B73A1C09386300CABAB5 /* monePokeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0529B74A1C09386300CABAB5 /* Build configuration list for PBXNativeTarget "monePokeUITests" */;
+			buildPhases = (
+				0529B7371C09386300CABAB5 /* Sources */,
+				0529B7381C09386300CABAB5 /* Frameworks */,
+				0529B7391C09386300CABAB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0529B73D1C09386300CABAB5 /* PBXTargetDependency */,
+			);
+			name = monePokeUITests;
+			productName = monePokeUITests;
+			productReference = 0529B73B1C09386300CABAB5 /* monePokeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0529B7141C09386300CABAB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = IkegamiYuki;
+				TargetAttributes = {
+					0529B71B1C09386300CABAB5 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					0529B72F1C09386300CABAB5 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 0529B71B1C09386300CABAB5;
+					};
+					0529B73A1C09386300CABAB5 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 0529B71B1C09386300CABAB5;
+					};
+				};
+			};
+			buildConfigurationList = 0529B7171C09386300CABAB5 /* Build configuration list for PBXProject "monePoke" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0529B7131C09386300CABAB5;
+			productRefGroup = 0529B71D1C09386300CABAB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0529B71B1C09386300CABAB5 /* monePoke */,
+				0529B72F1C09386300CABAB5 /* monePokeTests */,
+				0529B73A1C09386300CABAB5 /* monePokeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0529B71A1C09386300CABAB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0529B72A1C09386300CABAB5 /* LaunchScreen.storyboard in Resources */,
+				0529B7271C09386300CABAB5 /* Assets.xcassets in Resources */,
+				0529B7251C09386300CABAB5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0529B72E1C09386300CABAB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0529B7391C09386300CABAB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0529B7181C09386300CABAB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0529B7521C094B3800CABAB5 /* mainController.swift in Sources */,
+				0529B7541C094C5D00CABAB5 /* locationView.swift in Sources */,
+				0529B7201C09386300CABAB5 /* AppDelegate.swift in Sources */,
+				0529B7511C094B3800CABAB5 /* loginController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0529B72C1C09386300CABAB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0529B7351C09386300CABAB5 /* monePokeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0529B7371C09386300CABAB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0529B7401C09386300CABAB5 /* monePokeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0529B7321C09386300CABAB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0529B71B1C09386300CABAB5 /* monePoke */;
+			targetProxy = 0529B7311C09386300CABAB5 /* PBXContainerItemProxy */;
+		};
+		0529B73D1C09386300CABAB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0529B71B1C09386300CABAB5 /* monePoke */;
+			targetProxy = 0529B73C1C09386300CABAB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0529B7231C09386300CABAB5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0529B7241C09386300CABAB5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0529B7281C09386300CABAB5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0529B7291C09386300CABAB5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0529B7421C09386300CABAB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0529B7431C09386300CABAB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0529B7451C09386300CABAB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = monePoke/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vajack.monePoke;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0529B7461C09386300CABAB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = monePoke/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vajack.monePoke;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0529B7481C09386300CABAB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = monePokeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vajack.monePokeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/monePoke.app/monePoke";
+			};
+			name = Debug;
+		};
+		0529B7491C09386300CABAB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = monePokeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vajack.monePokeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/monePoke.app/monePoke";
+			};
+			name = Release;
+		};
+		0529B74B1C09386300CABAB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = monePokeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vajack.monePokeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = monePoke;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		0529B74C1C09386300CABAB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = monePokeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vajack.monePokeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = monePoke;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0529B7171C09386300CABAB5 /* Build configuration list for PBXProject "monePoke" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0529B7421C09386300CABAB5 /* Debug */,
+				0529B7431C09386300CABAB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0529B7441C09386300CABAB5 /* Build configuration list for PBXNativeTarget "monePoke" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0529B7451C09386300CABAB5 /* Debug */,
+				0529B7461C09386300CABAB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0529B7471C09386300CABAB5 /* Build configuration list for PBXNativeTarget "monePokeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0529B7481C09386300CABAB5 /* Debug */,
+				0529B7491C09386300CABAB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0529B74A1C09386300CABAB5 /* Build configuration list for PBXNativeTarget "monePokeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0529B74B1C09386300CABAB5 /* Debug */,
+				0529B74C1C09386300CABAB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0529B7141C09386300CABAB5 /* Project object */;
+}
