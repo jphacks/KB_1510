@@ -26,26 +26,19 @@
  *
  * Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
 */
-Router::connect('/', array('controller' => 'users', 'action' => 'index'));
+Router::connect('/', array('controller' => 'users', 'action' => 'login'));
 /**
 * ...and connect the rest of 'Pages' controller's URLs.
 */
 /*いらないと思ったもの
 Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 */
-Router::connect('/teacher_mypages/*', array('controller' => 'teachers', 'action' => 'mypage'));
-
 
 Router::connect('/user_mypages/*', array('controller' => 'users', 'action' => 'mypage'));
 //Router::connect('/comments/*', array('controller' => 'comments', 'action' => 'lists'));
 
-Router::connect('/jsons/*', array('controller' => 'comments', 'action' => 'method'));
+Router::connect('/usersjson/*', array('controller' => 'users', 'action' => 'lists_json'));
 
-Router::connect('/info/*', array('controller' => 'notices', 'action' => 'lists'));
-
-Router::connect('/comjsons/*', array('controller' => 'comments', 'action' => 'comment_inf'));
-
-Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
 Router::mapResources('CommentsController');
 Router::parseExtensions('json');

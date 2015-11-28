@@ -76,7 +76,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => 'root',
-		'database' => 'prokate',
+		'database' => 'monepokey',
 		'prefix' => '',
 		'encoding' => 'utf8'
 		//'encoding' => 'utf8',

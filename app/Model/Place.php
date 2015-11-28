@@ -3,29 +3,10 @@
 App::uses('AppModel', 'Model');
 App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 
-class User extends AppModel{
+class Place extends AppModel{
   
 
-  public $name = 'User';
-  
-  public $validate = array(
-    'username' => array(
-      'required' => array(
-        'rule' => array('notBlank'),
-        'message' => 'A username is required.'
-      )
-    ),
-    'password' => array(
-      'required' => array(
-        'rule' => array('notBlank'),
-        'message' => 'A password is required.'
-      ),
-      array(
-        'rule' => array('minLength', 2),
-        'message' => '8文字以上で入力して下さい'
-        )
-    ),
-  );
+  public $name = 'Place';
 
     public $actsAs = [
         'Upload.Upload' => [
