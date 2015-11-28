@@ -14,6 +14,7 @@ class mainController: UIViewController,MKMapViewDelegate,CLLocationManagerDelega
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var pointLabel: UILabel!
     @IBOutlet weak var plabel: UILabel!
+    @IBOutlet weak var userLabel: UILabel!
     var myLocation:CLLocationManager!
     
     let targetPlace1 = [34.694404,135.196027]
@@ -25,8 +26,12 @@ class mainController: UIViewController,MKMapViewDelegate,CLLocationManagerDelega
         self.view.backgroundColor = UIColor(red: 0.475, green: 0.729, blue: 0.910, alpha: 1)
 
         pointLabel.frame = CGRectMake(0, UIScreen.mainScreen().bounds.height/15, UIScreen.mainScreen().bounds.width * 4 / 5, mapView.frame.minY - UIScreen.mainScreen().bounds.height/15)
+        pointLabel.font = UIFont(name: "Chalkduster", size: 50)
         
         plabel.center = CGPoint(x: pointLabel.frame.maxX + 25, y: pointLabel.frame.midY + 20)
+        plabel.font = UIFont(name: "Chalkduster", size: 17)
+        
+        userLabel.font = UIFont(name: "Chalkduster", size: 22)
         
         myLocation = CLLocationManager()
         myLocation.delegate = self

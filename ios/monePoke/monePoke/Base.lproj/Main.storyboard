@@ -170,6 +170,7 @@
                         <outlet property="mapView" destination="wyC-ge-tJy" id="ghe-xe-Ns1"/>
                         <outlet property="plabel" destination="f89-i5-sw9" id="qnq-Th-44P"/>
                         <outlet property="pointLabel" destination="x5U-El-4TT" id="MCc-eU-bRN"/>
+                        <outlet property="userLabel" destination="Uqi-96-cH6" id="IoB-Kh-tSh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CuA-J3-K8v" userLabel="First Responder" sceneMemberID="firstResponder"/>
