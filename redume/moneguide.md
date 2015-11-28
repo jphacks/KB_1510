@@ -129,9 +129,10 @@ cakePHPでは、主に3つのフォルダをいじります。
 
 ***
 
-###5. jsonのurl
+###5. 各種url
 1. ユーザーリストの取得用json⇢http://localhost:8888/JPHACKS/KB_10/database/data_moneplay/usersjson
 2. 場所リストの取得用json⇢http://localhost:8888/JPHACKS/KB_10/database/data_moneplay/placesjson
+3. トップページ用のルートurl⇢http://localhost:8888/JPHACKS/KB_10/database/data_moneplay/
 
 
 
