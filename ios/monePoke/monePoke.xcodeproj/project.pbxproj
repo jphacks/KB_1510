@@ -18,6 +18,9 @@
 		0529B7541C094C5D00CABAB5 /* locationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529B7531C094C5D00CABAB5 /* locationView.swift */; };
 		0529B7561C097B0E00CABAB5 /* pointController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529B7551C097B0E00CABAB5 /* pointController.swift */; };
 		0529B7581C097B6800CABAB5 /* userController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529B7571C097B6800CABAB5 /* userController.swift */; };
+		0529B7661C0992C500CABAB5 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529B7651C0992C500CABAB5 /* home.png */; };
+		0529B7681C0992CC00CABAB5 /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529B7671C0992CC00CABAB5 /* point.png */; };
+		0529B76A1C0992D300CABAB5 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529B7691C0992D300CABAB5 /* user.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		0529B7531C094C5D00CABAB5 /* locationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationView.swift; sourceTree = "<group>"; };
 		0529B7551C097B0E00CABAB5 /* pointController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pointController.swift; sourceTree = "<group>"; };
 		0529B7571C097B6800CABAB5 /* userController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userController.swift; sourceTree = "<group>"; };
+		0529B7651C0992C500CABAB5 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		0529B7671C0992CC00CABAB5 /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point.png; sourceTree = "<group>"; };
+		0529B7691C0992D300CABAB5 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,9 @@
 		0529B71E1C09386300CABAB5 /* monePoke */ = {
 			isa = PBXGroup;
 			children = (
+				0529B7651C0992C500CABAB5 /* home.png */,
+				0529B7691C0992D300CABAB5 /* user.png */,
+				0529B7671C0992CC00CABAB5 /* point.png */,
 				0529B71F1C09386300CABAB5 /* AppDelegate.swift */,
 				0529B7571C097B6800CABAB5 /* userController.swift */,
 				0529B7551C097B0E00CABAB5 /* pointController.swift */,
@@ -241,7 +250,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0529B7661C0992C500CABAB5 /* home.png in Resources */,
 				0529B72A1C09386300CABAB5 /* LaunchScreen.storyboard in Resources */,
+				0529B76A1C0992D300CABAB5 /* user.png in Resources */,
+				0529B7681C0992CC00CABAB5 /* point.png in Resources */,
 				0529B7271C09386300CABAB5 /* Assets.xcassets in Resources */,
 				0529B7251C09386300CABAB5 /* Main.storyboard in Resources */,
 			);

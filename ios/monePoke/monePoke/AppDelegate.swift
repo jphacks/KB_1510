@@ -12,24 +12,8 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    private var myTabBarController: UITabBarController!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        
-        let mainView:UIViewController = mainController()
-        let pointView:UIViewController = pointController()
-        let userView:UIViewController = userController()
-        
-        let tabSet = NSArray(objects: mainView,pointView,userView)
-        
-        myTabBarController = UITabBarController()
-        myTabBarController?.setViewControllers(tabSet as? [UIViewController], animated: false)
-        
-        self.window!.rootViewController = myTabBarController
-        self.window!.makeKeyAndVisible()
-        
         return true
     }
 

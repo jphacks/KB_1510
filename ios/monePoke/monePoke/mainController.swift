@@ -9,30 +9,20 @@
 import UIKit
 import MapKit
 
-class mainController: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate {
+class mainController: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate,UITabBarControllerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
-    @IBOutlet weak var tabBar: UITabBar!
     @IBOutlet weak var pointLabel: UILabel!
     @IBOutlet weak var plabel: UILabel!
     var myLocation:CLLocationManager!
     
-    init(){
-        super.init(nibName: nil, bundle: nil)
-        
-        self.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Featured, tag: 1)
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    }
+    let targetPlace1 = [34.694404,135.196027]
+    let targetPlace2 = [34.682631,135.186724]
+    let targetPlace3 = [34.685716,135.182215]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         pointLabel.frame = CGRectMake(0, UIScreen.mainScreen().bounds.height/15, UIScreen.mainScreen().bounds.width * 4 / 5, mapView.frame.minY - UIScreen.mainScreen().bounds.height/15)
         
         plabel.center = CGPoint(x: pointLabel.frame.maxX + 25, y: pointLabel.frame.midY + 20)
@@ -48,7 +38,7 @@ class mainController: UIViewController,MKMapViewDelegate,CLLocationManagerDelega
         }
         
         myLocation.startUpdatingLocation()
-        mapView.frame = CGRectMake(0, UIScreen.mainScreen().bounds.height/5, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height - tabBar.frame.height - UIScreen.mainScreen().bounds.height/5)
+        mapView.frame = CGRectMake(0, UIScreen.mainScreen().bounds.height/5, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height - (self.tabBarController?.tabBar.frame.height)! - UIScreen.mainScreen().bounds.height/5)
         mapView.delegate = self
     }
 
@@ -76,7 +66,37 @@ class mainController: UIViewController,MKMapViewDelegate,CLLocationManagerDelega
         
         mapView.setRegion(myRegion, animated: true)
         
+        setPin()
     }
-
+    
+    func setPin(){
+        let firstPin: MKPointAnnotation = MKPointAnnotation()
+        firstPin.coordinate = CLLocationCoordinate2DMake(CLLocationDegrees(targetPlace1[0]), CLLocationDegrees(targetPlace1[1]))
+        firstPin.title = "ミント神戸"
+        firstPin.subtitle = "20pt"
+        mapView.addAnnotation(firstPin)
+        
+        let secondPin: MKPointAnnotation = MKPointAnnotation()
+        secondPin.coordinate = CLLocationCoordinate2DMake(CLLocationDegrees(targetPlace2[0]), CLLocationDegrees(targetPlace2[1]))
+        secondPin.title = "神戸ポートタワー"
+        secondPin.subtitle = "10pt"
+        mapView.addAnnotation(secondPin)
+        
+        let thirdPin:MKPointAnnotation = MKPointAnnotation()
+        thirdPin.coordinate = CLLocationCoordinate2DMake(CLLocationDegrees(targetPlace3[0]), CLLocationDegrees(targetPlace3[1]))
+        thirdPin.title = "老祥紀"
+        thirdPin.subtitle = "50pt"
+        mapView.addAnnotation(thirdPin)
+    }
+    
+    func mapView(mapView: MKMapView, didAddAnnotationViews views: [MKAnnotationView]) {
+        for view in views {
+            view.rightCalloutAccessoryView = UIButton(type: UIButtonType.DetailDisclosure)
+        }
+    }
+    
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        
+    }
 }
 
