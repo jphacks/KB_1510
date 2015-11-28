@@ -12,6 +12,7 @@ import UIKit
 class locationView:UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(red: 0.475, green: 0.729, blue: 0.910, alpha: 1)
     }
     
     override func didReceiveMemoryWarning() {

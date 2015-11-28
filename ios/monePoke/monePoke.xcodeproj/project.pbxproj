@@ -21,6 +21,16 @@
 		0529B7661C0992C500CABAB5 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529B7651C0992C500CABAB5 /* home.png */; };
 		0529B7681C0992CC00CABAB5 /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529B7671C0992CC00CABAB5 /* point.png */; };
 		0529B76A1C0992D300CABAB5 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529B7691C0992D300CABAB5 /* user.png */; };
+		0529B76C1C09B24E00CABAB5 /* joinBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529B76B1C09B24E00CABAB5 /* joinBtn.png */; };
+		0529B76F1C09BB9900CABAB5 /* donate.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529B76D1C09BB9900CABAB5 /* donate.png */; };
+		0529B7701C09BB9900CABAB5 /* hobmoney.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529B76E1C09BB9900CABAB5 /* hobmoney.png */; };
+		0529B7721C09BBA200CABAB5 /* imunse.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529B7711C09BBA200CABAB5 /* imunse.png */; };
+		0529B7781C09BBA900CABAB5 /* lime.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529B7731C09BBA900CABAB5 /* lime.png */; };
+		0529B7791C09BBA900CABAB5 /* luk10.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529B7741C09BBA900CABAB5 /* luk10.png */; };
+		0529B77A1C09BBA900CABAB5 /* nanazon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529B7751C09BBA900CABAB5 /* nanazon.png */; };
+		0529B77B1C09BBA900CABAB5 /* ommcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529B7761C09BBA900CABAB5 /* ommcon.png */; };
+		0529B77C1C09BBA900CABAB5 /* palcari.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529B7771C09BBA900CABAB5 /* palcari.png */; };
+		0529B77F1C09E2C700CABAB5 /* userName.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529B77E1C09E2C700CABAB5 /* userName.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +71,16 @@
 		0529B7651C0992C500CABAB5 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		0529B7671C0992CC00CABAB5 /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point.png; sourceTree = "<group>"; };
 		0529B7691C0992D300CABAB5 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		0529B76B1C09B24E00CABAB5 /* joinBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joinBtn.png; sourceTree = "<group>"; };
+		0529B76D1C09BB9900CABAB5 /* donate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donate.png; sourceTree = "<group>"; };
+		0529B76E1C09BB9900CABAB5 /* hobmoney.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hobmoney.png; sourceTree = "<group>"; };
+		0529B7711C09BBA200CABAB5 /* imunse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imunse.png; sourceTree = "<group>"; };
+		0529B7731C09BBA900CABAB5 /* lime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lime.png; sourceTree = "<group>"; };
+		0529B7741C09BBA900CABAB5 /* luk10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = luk10.png; sourceTree = "<group>"; };
+		0529B7751C09BBA900CABAB5 /* nanazon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nanazon.png; sourceTree = "<group>"; };
+		0529B7761C09BBA900CABAB5 /* ommcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ommcon.png; sourceTree = "<group>"; };
+		0529B7771C09BBA900CABAB5 /* palcari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = palcari.png; sourceTree = "<group>"; };
+		0529B77E1C09E2C700CABAB5 /* userName.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userName.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,14 +131,12 @@
 		0529B71E1C09386300CABAB5 /* monePoke */ = {
 			isa = PBXGroup;
 			children = (
-				0529B7651C0992C500CABAB5 /* home.png */,
-				0529B7691C0992D300CABAB5 /* user.png */,
-				0529B7671C0992CC00CABAB5 /* point.png */,
+				0529B77D1C09BBB900CABAB5 /* photoData */,
 				0529B71F1C09386300CABAB5 /* AppDelegate.swift */,
 				0529B7571C097B6800CABAB5 /* userController.swift */,
 				0529B7551C097B0E00CABAB5 /* pointController.swift */,
-				0529B74F1C094B3800CABAB5 /* loginController.swift */,
 				0529B7501C094B3800CABAB5 /* mainController.swift */,
+				0529B74F1C094B3800CABAB5 /* loginController.swift */,
 				0529B7231C09386300CABAB5 /* Main.storyboard */,
 				0529B7531C094C5D00CABAB5 /* locationView.swift */,
 				0529B7261C09386300CABAB5 /* Assets.xcassets */,
@@ -144,6 +162,26 @@
 				0529B7411C09386300CABAB5 /* Info.plist */,
 			);
 			path = monePokeUITests;
+			sourceTree = "<group>";
+		};
+		0529B77D1C09BBB900CABAB5 /* photoData */ = {
+			isa = PBXGroup;
+			children = (
+				0529B77E1C09E2C700CABAB5 /* userName.png */,
+				0529B7651C0992C500CABAB5 /* home.png */,
+				0529B7691C0992D300CABAB5 /* user.png */,
+				0529B7671C0992CC00CABAB5 /* point.png */,
+				0529B76B1C09B24E00CABAB5 /* joinBtn.png */,
+				0529B76D1C09BB9900CABAB5 /* donate.png */,
+				0529B76E1C09BB9900CABAB5 /* hobmoney.png */,
+				0529B7711C09BBA200CABAB5 /* imunse.png */,
+				0529B7731C09BBA900CABAB5 /* lime.png */,
+				0529B7741C09BBA900CABAB5 /* luk10.png */,
+				0529B7751C09BBA900CABAB5 /* nanazon.png */,
+				0529B7761C09BBA900CABAB5 /* ommcon.png */,
+				0529B7771C09BBA900CABAB5 /* palcari.png */,
+			);
+			name = photoData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,12 +288,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0529B7781C09BBA900CABAB5 /* lime.png in Resources */,
+				0529B77A1C09BBA900CABAB5 /* nanazon.png in Resources */,
+				0529B77C1C09BBA900CABAB5 /* palcari.png in Resources */,
+				0529B7791C09BBA900CABAB5 /* luk10.png in Resources */,
+				0529B7721C09BBA200CABAB5 /* imunse.png in Resources */,
+				0529B77B1C09BBA900CABAB5 /* ommcon.png in Resources */,
+				0529B76F1C09BB9900CABAB5 /* donate.png in Resources */,
 				0529B7661C0992C500CABAB5 /* home.png in Resources */,
 				0529B72A1C09386300CABAB5 /* LaunchScreen.storyboard in Resources */,
 				0529B76A1C0992D300CABAB5 /* user.png in Resources */,
+				0529B7701C09BB9900CABAB5 /* hobmoney.png in Resources */,
 				0529B7681C0992CC00CABAB5 /* point.png in Resources */,
+				0529B76C1C09B24E00CABAB5 /* joinBtn.png in Resources */,
 				0529B7271C09386300CABAB5 /* Assets.xcassets in Resources */,
 				0529B7251C09386300CABAB5 /* Main.storyboard in Resources */,
+				0529B77F1C09E2C700CABAB5 /* userName.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
