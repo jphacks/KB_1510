@@ -12,18 +12,6 @@ class UsersController extends AppController{
       'action'=>'tomypage'));
   }
 
-  // public function login_user_student($teacher = null){
-  //   if($this->request->is('post')){
-  //     if($this->Auth->login()){
-  //       $logged_in = $this->Auth->user();
-  //       $this->redirect($this->Auth->redirect());
-  //     }else{
-  //       $this->Flash->error(__('メールアドレスとパスワードのどちらかが間違っています。もう一度入力してください。'));
-  //     }
-  //   }
-  //     $this->set('loginname','生徒');
-  // }
-
 
   public function login(){
     if($this->request->is('post')){
@@ -64,14 +52,9 @@ public function mypage(){
     throw new NotFoundException(__('ログインされていません。'));
   }
   
-   $params = array(
-    'order' => 'Teacher.modified desc',
-    'limit' => 10
-    );
-  $teacher = $this->Teacher->find('all',$params);
-  // $this->set('teacher',$teacher);
+
   $user = $this->User->findById($session_id);
-  $this->set(compact('teacher','user'));
+  $this->set('user',$this->User->findById($session_id));
 }
 
 
@@ -105,16 +88,14 @@ public function profile($id = null){
   }
 
 
-    public function add(){
-    $this->_addAssociated();
+  public function add(){
     if($this->request->is('post')){
       $this->User->create();
       if($this->User->save($this->request->data)){
-
-        $this->Flash->success(__('登録完了しました。'));
+        $this->Flash->success(__('The user has been saved.'));
         $this->redirect(array('action' => 'login'));
       }else{
-        $this->Flash->error(__('エラーがあります。以下の内容を確認して下さい。'));
+        $this->Flash->error(__('The user could not be saved. Please try again.'));
       }
     }
   }
