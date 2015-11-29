@@ -30,7 +30,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userName.png" id="OQP-vJ-Mwx">
-                                <rect key="frame" x="20" y="128" width="240" height="49"/>
+                                <rect key="frame" x="20" y="128" width="240" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                             </imageView>
@@ -209,10 +209,54 @@
                     <view key="view" contentMode="scaleToFill" id="jj4-EY-rHG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userName.png" id="X7k-7z-gvA">
+                                <rect key="frame" x="20" y="103" width="240" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yourPoint.png" id="vVp-zL-IAw">
+                                <rect key="frame" x="20" y="272" width="240" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="KIc-je-aiQ">
+                                <rect key="frame" x="20" y="154" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="l1z-kZ-Ga5">
+                                <rect key="frame" x="20" y="330" width="280" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.90980392156862744" green="0.67999987126925077" blue="0.34759793720809706" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8P7-3M-fct">
+                                <rect key="frame" x="78" y="444" width="165" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" image="changeProfile.png"/>
+                                <connections>
+                                    <action selector="changePush:" destination="vIE-xh-pr4" eventType="touchUpInside" id="aqQ-sS-b9c"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="User" image="user.png" id="WfS-zO-aau"/>
+                    <connections>
+                        <outlet property="changeBtn" destination="8P7-3M-fct" id="xNK-82-LiB"/>
+                        <outlet property="pointLabel" destination="l1z-kZ-Ga5" id="m56-Sw-xUc"/>
+                        <outlet property="userName" destination="X7k-7z-gvA" id="Cw7-zg-pYY"/>
+                        <outlet property="userTextfiled" destination="KIc-je-aiQ" id="YP6-4h-1xz"/>
+                        <outlet property="yourPimg" destination="vVp-zL-IAw" id="MrK-en-odI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NvM-aQ-dSx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -255,6 +299,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="changeProfile.png" width="342" height="90"/>
         <image name="donate.png" width="156" height="99"/>
         <image name="hobmoney.png" width="156" height="99"/>
         <image name="home.png" width="21" height="19"/>
@@ -268,5 +313,6 @@
         <image name="point.png" width="20" height="20"/>
         <image name="user.png" width="15" height="19"/>
         <image name="userName.png" width="212" height="31"/>
+        <image name="yourPoint.png" width="221" height="33"/>
     </resources>
 </document>
