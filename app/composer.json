@@ -1,0 +1,8 @@
+{
+	"require": {
+		"webpay/webpay": "~2.2"
+	},
+	"config": {
+        "vendor-dir": "Vendor"
+    }
+}
