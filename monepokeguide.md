@@ -19,49 +19,29 @@ git clone レポジトリurl(今回は　https://github.com/jphacks/KB_10.git)
 　因みに,
 フォルダのリモートレポジトリurl確認方法　
 
-`
-git remote -v
-
-`
+`git remote -v`
 
 push(フォルダの中身をgithub上に上げる)
 
-`
-git add .  //←変更を加えたファイル名　.は、全てという意味
+`git add .  //←変更を加えたファイル名　.は、全てという意味   git commit -m “変更を加えた内容を書く`
 
-`
-
-`
-git commit -m “変更を加えた内容を書く
-
-`
-
-`
-(1回目)
-git push -u origin master
-
-`
-(2回目)
-git push
+`(1回目)git push -u origin master`
+`(2回目) git push`
 
 pull 
 (1回目)
-'
-git pull -u origin master
-'
-'
-(2回目)
-git pull
-'
+`git pull -u origin master`
+
+`(2回目)git pull`
 
 ブランチ切る。マージ
-git checkout -b branch名
-git push -u origin ブランチ名
-2回目以降は　git push　のみでOK
+`git checkout -b branch名`
+`git push -u origin ブランチ名`
+2回目以降は　`git push`　のみでOK
 
 マージコマンド
-git checkout master
-git merge branch名
+`git checkout master`
+`git merge branch名`
 
 
 
@@ -137,13 +117,14 @@ cakePHPでは、主に3つのフォルダをいじります。
 1. 各コントローラーの機能
 2. jsonのURL
 
-####1. PlacesController  
+####1.1  PlacesController  
 地名や、そこでのポイントをデータベースに格納し、jsonとして吐き出すコントローラー
-#####UsersController
+#####1.2 PlacesController  
 monepokeyのユーザー情報を格納するコントローラー。短期的にはiosデバイスのみでデバイスidで管理するが、長期的に見た場合、ユーザー数による不可に耐え、ユーザーの特徴付けを深めるために設けてある。
 
-####2. places,users
-`places` 
+####1.3 places,users
+documentroot/usersjson ユーザーのjsonURL
+  documentroot/placesjson 各地の場所のjsonURL
   
 
 ***
