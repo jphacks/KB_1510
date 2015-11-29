@@ -116,16 +116,22 @@ cakePHPでは、主に3つのフォルダをいじります。
 ###5. システム詳細
 1. 各コントローラーの機能
 2. jsonのURL
+3. 各フォルダの役割
 
-####1.1  PlacesController  
+####1-1.  PlacesController  
 地名や、そこでのポイントをデータベースに格納し、jsonとして吐き出すコントローラー
-#####1.2 PlacesController  
+#####1-2. PlacesController  
 monepokeyのユーザー情報を格納するコントローラー。短期的にはiosデバイスのみでデバイスidで管理するが、長期的に見た場合、ユーザー数による不可に耐え、ユーザーの特徴付けを深めるために設けてある。
 
-####1.3 places,users
+####2. places,users
 documentroot/usersjson ユーザーのjsonURL
   documentroot/placesjson 各地の場所のjsonURL
   
+  ####3-1. getDataruby
+    rubyスクレイピングによる、周平情報の取得用。csvに一旦格納し、sqlにインポートします。
+    
+  ####3-2. README
+  meファイルを格納した、説明用のテキストディレクトリです。
 
 ***
 
