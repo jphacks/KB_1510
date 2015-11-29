@@ -19,49 +19,29 @@ git clone レポジトリurl(今回は　https://github.com/jphacks/KB_10.git)
 　因みに,
 フォルダのリモートレポジトリurl確認方法　
 
-`
-git remote -v
-
-`
+`git remote -v`
 
 push(フォルダの中身をgithub上に上げる)
 
-`
-git add .  //←変更を加えたファイル名　.は、全てという意味
+`git add .  //←変更を加えたファイル名　.は、全てという意味   git commit -m “変更を加えた内容を書く`
 
-`
-
-`
-git commit -m “変更を加えた内容を書く
-
-`
-
-`
-(1回目)
-git push -u origin master
-
-`
-(2回目)
-git push
+`(1回目)git push -u origin master`
+`(2回目) git push`
 
 pull 
 (1回目)
-'
-git pull -u origin master
-'
-'
-(2回目)
-git pull
-'
+`git pull -u origin master`
+
+`(2回目)git pull`
 
 ブランチ切る。マージ
-git checkout -b branch名
-git push -u origin ブランチ名
-2回目以降は　git push　のみでOK
+`git checkout -b branch名`
+`git push -u origin ブランチ名`
+2回目以降は　`git push`　のみでOK
 
 マージコマンド
-git checkout master
-git merge branch名
+`git checkout master`
+`git merge branch名`
 
 
 
@@ -84,23 +64,15 @@ git add .とすると全てのファイルをステージングエリアに投�
 ファイルの指定の仕方
 Contoroller内のUsersController.phpをいじった場合  
 
-`
-git add Controller/UsersController.php
-`
+`git add Controller/UsersController.php`
 
-`
-git commit -m "好きなコメント"
-`
+`git commit -m "好きなコメント"`
 
 ####1回目
-`
-git push -u origin master(現在いるブランチ名)
-`
+`git push -u origin master(現在いるブランチ名)`
 
 ####2回目以降
-`
-git push
-`
+`git push`
 
 例の通りadd->commit->pushしてください。
 
@@ -111,13 +83,9 @@ git checkoutによってtmp以下のファイルの変更がキャンセルさ�
 （例）  
 Contoroller内のTeachersController.phpをいじった場合  
 
-`
-git checkout tmp/ 
-`
+`git checkout tmp/ `
 
-`
-git add .
-`
+`git add .`
 
 以下はわかる通り。
 
@@ -147,11 +115,17 @@ cakePHPでは、主に3つのフォルダをいじります。
 
 ###5. システム詳細
 1. 各コントローラーの機能
-2. 各コントローラーの関係性
-3. テーブル一覧
-4. テーブルごとの役割
+2. jsonのURL
 
+####1.1  PlacesController  
+地名や、そこでのポイントをデータベースに格納し、jsonとして吐き出すコントローラー
+#####1.2 PlacesController  
+monepokeyのユーザー情報を格納するコントローラー。短期的にはiosデバイスのみでデバイスidで管理するが、長期的に見た場合、ユーザー数による不可に耐え、ユーザーの特徴付けを深めるために設けてある。
 
+####1.3 places,users
+documentroot/usersjson ユーザーのjsonURL
+  documentroot/placesjson 各地の場所のjsonURL
+  
 
 ***
 
