@@ -22,15 +22,18 @@ class userController:UIViewController,UITextFieldDelegate {
 
         userName.center = CGPoint(x: UIScreen.mainScreen().bounds.width/2, y: UIScreen.mainScreen().bounds.height/4)
         userTextfiled.center = CGPoint(x: UIScreen.mainScreen().bounds.width/2, y: UIScreen.mainScreen().bounds.height/4 + 35)
-        userTextfiled.placeholder = "\(userInfo.objectForKey("name")!)"
         userTextfiled.delegate = self
         yourPimg.center = CGPoint(x: UIScreen.mainScreen().bounds.width/2, y: UIScreen.mainScreen().bounds.height/2)
-        pointLabel.text = "\(userInfo.objectForKey("point")!)point"
         pointLabel.font = UIFont(name: "Chalkduster", size: 35)
         pointLabel.center = CGPoint(x: UIScreen.mainScreen().bounds.width/2, y: UIScreen.mainScreen().bounds.height/2 + 50)
         pointLabel.layer.cornerRadius = 10
         pointLabel.clipsToBounds = true
         changeBtn.center = CGPoint(x: UIScreen.mainScreen().bounds.width/2, y: UIScreen.mainScreen().bounds.height*4/5)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        userTextfiled.placeholder = "\(userInfo.objectForKey("name")!)"
+        pointLabel.text = "\(userInfo.objectForKey("point")!)point"
     }
     
     override func didReceiveMemoryWarning() {
@@ -55,6 +58,7 @@ class userController:UIViewController,UITextFieldDelegate {
             let sucAlert = UIAlertController(title: "プロフィールを変更しました！", message: "変更名:\(userTextfiled.text!)", preferredStyle: .Alert)
             let okAction = UIAlertAction(title: "OK", style: .Default, handler: { (action:UIAlertAction!) -> Void in
                 userInfo.setObject(self.userTextfiled.text!, forKey: "name")
+                self.userTextfiled.placeholder = userInfo.objectForKey("name") as? String
                 self.userTextfiled.text = ""
             })
             sucAlert.addAction(okAction)

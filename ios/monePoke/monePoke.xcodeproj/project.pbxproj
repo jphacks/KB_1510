@@ -40,6 +40,8 @@
 		0529B79B1C09FE2100CABAB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0529B79A1C09FE2100CABAB5 /* LaunchScreen.storyboard */; };
 		0529B79F1C0A6E4900CABAB5 /* yourPoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529B79E1C0A6E4900CABAB5 /* yourPoint.png */; };
 		0529B7A11C0A74FE00CABAB5 /* changeProfile.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529B7A01C0A74FE00CABAB5 /* changeProfile.png */; };
+		0529B7A31C0AA73E00CABAB5 /* checkinBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0529B7A21C0AA73E00CABAB5 /* checkinBtn.png */; };
+		0529B7A51C0AC20800CABAB5 /* marche06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0529B7A41C0AC20800CABAB5 /* marche06.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,8 @@
 		0529B79A1C09FE2100CABAB5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0529B79E1C0A6E4900CABAB5 /* yourPoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yourPoint.png; sourceTree = "<group>"; };
 		0529B7A01C0A74FE00CABAB5 /* changeProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = changeProfile.png; sourceTree = "<group>"; };
+		0529B7A21C0AA73E00CABAB5 /* checkinBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkinBtn.png; sourceTree = "<group>"; };
+		0529B7A41C0AC20800CABAB5 /* marche06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marche06.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +189,8 @@
 		0529B77D1C09BBB900CABAB5 /* photoData */ = {
 			isa = PBXGroup;
 			children = (
+				0529B7A41C0AC20800CABAB5 /* marche06.jpg */,
+				0529B7A21C0AA73E00CABAB5 /* checkinBtn.png */,
 				0529B7A01C0A74FE00CABAB5 /* changeProfile.png */,
 				0529B79E1C0A6E4900CABAB5 /* yourPoint.png */,
 				0529B7801C09EEED00CABAB5 /* icon29x2.png */,
@@ -319,6 +325,7 @@
 				0529B7911C09F40800CABAB5 /* icon260x2.png in Resources */,
 				0529B7781C09BBA900CABAB5 /* lime.png in Resources */,
 				0529B77A1C09BBA900CABAB5 /* nanazon.png in Resources */,
+				0529B7A31C0AA73E00CABAB5 /* checkinBtn.png in Resources */,
 				0529B77C1C09BBA900CABAB5 /* palcari.png in Resources */,
 				0529B7791C09BBA900CABAB5 /* luk10.png in Resources */,
 				0529B7721C09BBA200CABAB5 /* imunse.png in Resources */,
@@ -330,6 +337,7 @@
 				0529B76F1C09BB9900CABAB5 /* donate.png in Resources */,
 				0529B7661C0992C500CABAB5 /* home.png in Resources */,
 				0529B76A1C0992D300CABAB5 /* user.png in Resources */,
+				0529B7A51C0AC20800CABAB5 /* marche06.jpg in Resources */,
 				0529B7A11C0A74FE00CABAB5 /* changeProfile.png in Resources */,
 				0529B78F1C09F40800CABAB5 /* icon229x2.png in Resources */,
 				0529B7701C09BB9900CABAB5 /* hobmoney.png in Resources */,

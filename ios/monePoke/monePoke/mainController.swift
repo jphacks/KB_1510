@@ -9,6 +9,10 @@
 import UIKit
 import MapKit
 
+var selectPlace:String!
+var selectPoint:String!
+var selectLocation:Bool!
+
 class mainController: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate,UITabBarControllerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
@@ -16,10 +20,15 @@ class mainController: UIViewController,MKMapViewDelegate,CLLocationManagerDelega
     @IBOutlet weak var plabel: UILabel!
     @IBOutlet weak var userLabel: UILabel!
     var myLocation:CLLocationManager!
+    var myLati:CLLocationDegrees!
+    var myLont:CLLocationDegrees!
     
     let targetPlace1 = [34.694404,135.196027]
     let targetPlace2 = [34.682631,135.186724]
     let targetPlace3 = [34.685716,135.182215]
+    let targetPlace4 = [34.679907,135.184402]
+    let targetPlace5 = [34.699826,135.190234]
+    let targetPlace6 = [34.682121,135.188633]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,13 +36,11 @@ class mainController: UIViewController,MKMapViewDelegate,CLLocationManagerDelega
 
         pointLabel.frame = CGRectMake(0, UIScreen.mainScreen().bounds.height/15, UIScreen.mainScreen().bounds.width * 4 / 5, mapView.frame.minY - UIScreen.mainScreen().bounds.height/15)
         pointLabel.font = UIFont(name: "Chalkduster", size: 50)
-        pointLabel.text = "\(userInfo.objectForKey("point")!)"
         
         plabel.center = CGPoint(x: pointLabel.frame.maxX + 25, y: pointLabel.frame.midY + 20)
         plabel.font = UIFont(name: "Chalkduster", size: 17)
         
         userLabel.font = UIFont(name: "Chalkduster", size: 22)
-        userLabel.text = "\(userInfo.objectForKey("name")!)様"
         
         myLocation = CLLocationManager()
         myLocation.delegate = self
@@ -50,6 +57,11 @@ class mainController: UIViewController,MKMapViewDelegate,CLLocationManagerDelega
         mapView.delegate = self
     }
 
+    override func viewWillAppear(animated: Bool) {
+        pointLabel.text = "\(userInfo.objectForKey("point")!)"
+        userLabel.text = "\(userInfo.objectForKey("name")!)様"
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
@@ -65,10 +77,13 @@ class mainController: UIViewController,MKMapViewDelegate,CLLocationManagerDelega
         let myLon: CLLocationDegrees = manager.location!.coordinate.longitude
         let myConrdinate:CLLocationCoordinate2D = CLLocationCoordinate2DMake(myLat, myLon) as CLLocationCoordinate2D
         
+        myLati = myLat
+        myLont = myLon
+        
         print("my location is [\(myLat):\(myLon)]")
         
-        let myLatDist:CLLocationDistance = 1000
-        let myLonDist:CLLocationDistance = 1000
+        let myLatDist:CLLocationDistance = 2500
+        let myLonDist:CLLocationDistance = 2500
         
         let myRegion: MKCoordinateRegion = MKCoordinateRegionMakeWithDistance(myConrdinate, myLatDist, myLonDist)
         
@@ -95,19 +110,50 @@ class mainController: UIViewController,MKMapViewDelegate,CLLocationManagerDelega
         thirdPin.title = "老祥紀"
         thirdPin.subtitle = "50pt"
         mapView.addAnnotation(thirdPin)
+
+        let forthPin:MKPointAnnotation = MKPointAnnotation()
+        forthPin.coordinate = CLLocationCoordinate2DMake(CLLocationDegrees(targetPlace4[0]), CLLocationDegrees(targetPlace4[1]))
+        forthPin.title = "モザイク"
+        forthPin.subtitle = "40pt"
+        mapView.addAnnotation(forthPin)
+        
+        let fifthPin:MKPointAnnotation = MKPointAnnotation()
+        fifthPin.coordinate = CLLocationCoordinate2DMake(CLLocationDegrees(targetPlace5[0]), CLLocationDegrees(targetPlace5[1]))
+        fifthPin.title = "Starbucks 北野異人館店"
+        fifthPin.subtitle = "60pt"
+        mapView.addAnnotation(fifthPin)
+        
+        let sixPin:MKPointAnnotation = MKPointAnnotation()
+        sixPin.coordinate = CLLocationCoordinate2DMake(CLLocationDegrees(targetPlace6[0]), CLLocationDegrees(targetPlace6[1]))
+        sixPin.title = "メリケンパーク"
+        sixPin.subtitle = "30pt"
+        mapView.addAnnotation(sixPin)
     }
     
     func mapView(mapView: MKMapView, didAddAnnotationViews views: [MKAnnotationView]) {
         for view in views {
             view.rightCalloutAccessoryView = UIButton(type: UIButtonType.DetailDisclosure)
-//            let toLocationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("locationViewController")
-//            toLocationController.modalTransitionStyle = UIModalTransitionStyle.CoverVertical
-//            self.presentViewController(toLocationController, animated: false, completion: nil)
         }
     }
     
     func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         
+        selectPlace = view.annotation?.title!
+        selectPoint = view.annotation?.subtitle!
+        
+        let myLoc:CLLocation = CLLocation(latitude: myLati, longitude: myLont)
+        let targetLocation: CLLocation = CLLocation(latitude: view.annotation!.coordinate.latitude, longitude: view.annotation!.coordinate.longitude)
+        
+        if targetLocation.distanceFromLocation(myLoc) < 50.0 {
+            selectLocation = true
+        }else{
+            selectLocation = false
+        }
+        
+        let toLocationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("locationViewController")
+        toLocationController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        self.presentViewController(toLocationController, animated: true, completion: nil)
     }
+    
 }
 
