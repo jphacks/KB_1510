@@ -39,6 +39,22 @@ class PlacesController extends AppController{
   }
 
 
+    public function json_pointhigh(){
+    $data = array(
+      'status' => 'success',
+      'order' => 'Place.point desc',
+       'conditions' => array(
+            'Place.name !=' => NULL
+          )
+    );
+      $places = $this->Place->find('all',$data);
+      $this->viewClass = 'Json';
+      $this->set(compact('places'));
+      $this->set('_serialize', 'places');
+  }
+
+
+
   public function index(){
     #$this->set('teacher', $this->Teacher->find('all', array('limit' => 10)));
     $params = $this->Place->find('all' ,array('limit' => 10));
