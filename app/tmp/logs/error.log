@@ -18254,3 +18254,945 @@ Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
 Stack Trace:
 #0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-11-29 00:50:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:50:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:50:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:50:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:51:38 Error: [MissingActionException] Action UsersController::tomypage() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'tomypage',
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/users/tomypage
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-29 00:51:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:51:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:51:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:51:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:52:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:52:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:52:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:52:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:52:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:52:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:52:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:52:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:52:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:52:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:52:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:52:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:52:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:52:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:52:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:52:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:53:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:53:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:53:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:53:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:53:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:53:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:53:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:53:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:55:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:55:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:55:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:55:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:55:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:55:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:55:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 00:55:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 01:03:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 01:03:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 01:03:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 01:03:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 01:04:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 01:04:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 01:04:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 01:04:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 01:04:13 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 01:04:13 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 01:04:13 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 01:04:13 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:30:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:30:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:30:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:30:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:37:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:37:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:37:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:37:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:37:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:37:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:37:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:37:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:39:57 Error: [MissingControllerException] Controller class FooController could not be found.
+Exception Attributes: array (
+  'class' => 'FooController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/foo_/index
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:39:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:39:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:39:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:39:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:40:49 Error: [MissingControllerException] Controller class FooController could not be found.
+Exception Attributes: array (
+  'class' => 'FooController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/foo_/index
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:40:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:40:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:40:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:40:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:40:53 Error: [MissingControllerException] Controller class FooController could not be found.
+Exception Attributes: array (
+  'class' => 'FooController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/foo_/index
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:40:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:40:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:40:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:40:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:41:25 Error: [MissingControllerException] Controller class FooController could not be found.
+Exception Attributes: array (
+  'class' => 'FooController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/foo_/index
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:41:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:41:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:41:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:41:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:41:36 Error: [MissingControllerException] Controller class FooController could not be found.
+Exception Attributes: array (
+  'class' => 'FooController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/foo_/index
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:41:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:41:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:41:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:41:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:42:21 Error: [MissingComponentException] Component class GeoComponent could not be found.
+Exception Attributes: array (
+  'class' => 'GeoComponent',
+  'plugin' => false,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/foo_/index
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Geo', Array)
+#1 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(FooController))
+#2 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/lib/Cake/Routing/Dispatcher.php(188): Controller->constructClasses()
+#3 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(FooController), Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-29 02:42:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:42:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:42:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 02:42:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 09:10:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 09:10:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 09:10:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 09:10:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 09:51:13 Error: [MissingControllerException] Controller class PlacejsonController could not be found.
+Exception Attributes: array (
+  'class' => 'PlacejsonController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/placejson
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 09:51:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/animate.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 09:51:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/font-awesome.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 09:51:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 09:51:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /JPHACKS/KB_10/database/data_moneplay/css/style.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/JPHACKS/KB_10/database/data_moneplay/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

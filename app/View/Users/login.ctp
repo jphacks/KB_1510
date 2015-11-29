@@ -4,9 +4,8 @@
   <?php
   echo $this->Form->create('User');
   echo $this->Form->inputs(array(
-    'legend' => __('メールアドレスとパスワードを入力してください、'),
-    'email',
-    'password',
+    'legend' => __('メールアドレスを入力してください。'),
+    'email'
   ));
   echo $this->Form->end(__('ログインする'));
   ?>

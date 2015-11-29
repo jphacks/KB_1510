@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: 2015 年 11 月 28 日 15:45
+-- Generation Time: 2015 年 11 月 29 日 01:59
 -- サーバのバージョン： 5.5.38
 -- PHP Version: 5.6.2
 
@@ -21,16 +21,35 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `places` (
-  `name` varchar(200) DEFAULT NULL,
-  `address` varchar(200) DEFAULT NULL,
-  `detail` varchar(200) DEFAULT NULL,
-  `url` varchar(255) DEFAULT NULL,
-  `imgurl` varchar(255) DEFAULT NULL,
-  `latitude` varchar(20) DEFAULT NULL,
-  `longitude` varchar(20) DEFAULT NULL,
+  `name` varchar(200) CHARACTER SET utf8 DEFAULT NULL,
+  `address` varchar(200) CHARACTER SET utf8 DEFAULT NULL,
+  `detail` varchar(200) CHARACTER SET utf8 DEFAULT NULL,
+  `url` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `imgurl` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `latitude` varchar(20) CHARACTER SET utf8 DEFAULT NULL,
+  `longitude` varchar(20) CHARACTER SET utf8 DEFAULT NULL,
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- テーブルのデータのダンプ `places`
+--
+
+INSERT INTO `places` (`name`, `address`, `detail`, `url`, `imgurl`, `latitude`, `longitude`, `created`, `modified`) VALUES
+('?????', NULL, '???????', 'http://mint-kobe.jp/', 'http//', '135.2', '33.3', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+('?????', NULL, '???????', 'http://mint-kobe.jp/', 'http//', '135.196027', '34.694404', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+('????????', NULL, '??????????', 'http://www.kobe-port-tower.com/', 'http//', '135.186724', '34.682631', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+('???', NULL, '????', 'http://roushouki.com/', 'http//', '135.182215', '34.685716', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+('????', NULL, '???', 'http://umie.jp/', 'http//', '135.184402', '34.679907', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+('??????? ????????', NULL, '???????????', 'http://www.starbucks.co.jp/store/search/detail.php?id=940', 'http//', '135.190234', '34.699826', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+('???????', NULL, '?????', 'http://www.kobe-meriken.or.jp/', 'http//', '135.188633', '34.682121', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+('ミント神戸', NULL, '買い物ができる', 'http://mint-kobe.jp/', 'http//', '135.196027', '34.694404', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+('神戸ポートタワー', NULL, '神戸の象徴とシンボル', 'http://www.kobe-port-tower.com/', 'http//', '135.186724', '34.682631', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+('老祥記', NULL, '豚まん！', 'http://roushouki.com/', 'http//', '135.182215', '34.685716', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+('モザイク', NULL, 'モール', 'http://umie.jp/', 'http//', '135.184402', '34.679907', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+('スターバックス 神戸北野異人館店', NULL, '美味しいコーヒーあるよ', 'http://www.starbucks.co.jp/store/search/detail.php?id=940', 'http//', '135.190234', '34.699826', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+('メリケンパーク', NULL, '綺麗な公園', 'http://www.kobe-meriken.or.jp/', 'http//', '135.188633', '34.682121', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 

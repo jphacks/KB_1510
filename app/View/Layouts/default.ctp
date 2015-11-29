@@ -35,9 +35,9 @@
 <body>
 	<div id="container">
 		<!-- ナビゲーション -->
-		<div class="header">
+		<!-- <div class="header">
 			<?php echo $this->element('navbar'); ?>
-		</div>
+		</div> -->
 
 		<!-- コンテンツ部分 -->
 		<div id="content">
@@ -46,7 +46,7 @@
 		</div>
 
 		<!-- フッター部分 -->
-		<?php echo $this->element('footer'); ?>
+		<?php //echo $this->element('footer'); ?>
 	</div>
 	<?php $this->Facebook->init(); ?>
 	<?php echo $this->Html->script(array('http://code.jquery.com/jquery-2.1.4.min.js', 'bootstrap.min' , 'script')); ?>

@@ -17,7 +17,7 @@ class PlacesController extends AppController{
     $params = array(
         'order' => 'Place.modified desc',
         'conditions' => array(
-            'Place.name !=' => NULL
+            'Place.name !=' => "?????"
           )
       );
     $this->set('place', $this->Place->find('all', $params));
@@ -28,9 +28,11 @@ class PlacesController extends AppController{
   public function lists_json(){
     $data = array(
       'status' => 'success',
-      'order' => 'created desc'
+       'conditions' => array(
+            'Place.name !=' => NULL
+          )
     );
-      $users = $this->Place->find('all',$data);
+      $places = $this->Place->find('all',$data);
       $this->viewClass = 'Json';
       $this->set(compact('places'));
       $this->set('_serialize', 'places');
