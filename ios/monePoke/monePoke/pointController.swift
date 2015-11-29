@@ -39,7 +39,7 @@ class pointController:UIViewController {
     }
     
     @IBAction func donatePush(sender: AnyObject) {
-        let alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円\n所持ポイント9999point", preferredStyle: .Alert)
+        let alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円\n所持ポイント:\(userInfo.objectForKey("point")!)point", preferredStyle: .Alert)
         let saveAction = UIAlertAction(title: "寄付", style: .Default) { (action:UIAlertAction!) -> Void in
             let textField = alart.textFields![0] as UITextField
             print("change \(textField.text) point")
@@ -64,7 +64,7 @@ class pointController:UIViewController {
     }
     
     @IBAction func luku10Push(sender: AnyObject) {
-        let alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円\n所持ポイント9999point", preferredStyle: .Alert)
+        let alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円\n所持ポイント:\(userInfo.objectForKey("point")!)point", preferredStyle: .Alert)
         let saveAction = UIAlertAction(title: "変換", style: .Default) { (action:UIAlertAction!) -> Void in
             let textField = alart.textFields![0] as UITextField
             print("change \(textField.text) point")
@@ -89,7 +89,7 @@ class pointController:UIViewController {
     }
     
     @IBAction func limePush(sender: AnyObject) {
-        let alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円\n所持ポイント9999point", preferredStyle: .Alert)
+        let alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円\n所持ポイント:\(userInfo.objectForKey("point")!)point", preferredStyle: .Alert)
         let saveAction = UIAlertAction(title: "変換", style: .Default) { (action:UIAlertAction!) -> Void in
             let textField = alart.textFields![0] as UITextField
             print("change \(textField.text) point")
@@ -114,7 +114,7 @@ class pointController:UIViewController {
     }
     
     @IBAction func nanazomPush(sender: AnyObject) {
-        let alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円\n所持ポイント9999point", preferredStyle: .Alert)
+        let alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円\n所持ポイント:\(userInfo.objectForKey("point")!)point", preferredStyle: .Alert)
         let saveAction = UIAlertAction(title: "変換", style: .Default) { (action:UIAlertAction!) -> Void in
             let textField = alart.textFields![0] as UITextField
             print("change \(textField.text) point")
@@ -139,7 +139,7 @@ class pointController:UIViewController {
     }
     
     @IBAction func ommconPush(sender: AnyObject) {
-        let alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円\n所持ポイント9999point", preferredStyle: .Alert)
+        let alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円\n所持ポイント:\(userInfo.objectForKey("point")!)point", preferredStyle: .Alert)
         let saveAction = UIAlertAction(title: "変換", style: .Default) { (action:UIAlertAction!) -> Void in
             let textField = alart.textFields![0] as UITextField
             print("change \(textField.text) point")
@@ -164,7 +164,7 @@ class pointController:UIViewController {
     }
     
     @IBAction func palcariPush(sender: AnyObject) {
-        let alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円\n所持ポイント9999point", preferredStyle: .Alert)
+        let alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円\n所持ポイント:\(userInfo.objectForKey("point")!)point", preferredStyle: .Alert)
         let saveAction = UIAlertAction(title: "変換", style: .Default) { (action:UIAlertAction!) -> Void in
             let textField = alart.textFields![0] as UITextField
             print("change \(textField.text) point")
@@ -189,7 +189,7 @@ class pointController:UIViewController {
     }
     
     @IBAction func imunsePush(sender: AnyObject) {
-        let alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円\n所持ポイント9999point", preferredStyle: .Alert)
+        let alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円\n所持ポイント:\(userInfo.objectForKey("point")!)point", preferredStyle: .Alert)
         let saveAction = UIAlertAction(title: "変換", style: .Default) { (action:UIAlertAction!) -> Void in
             let textField = alart.textFields![0] as UITextField
             print("change \(textField.text) point")
@@ -214,7 +214,7 @@ class pointController:UIViewController {
     }
     
     @IBAction func hobmoneyPush(sender: AnyObject) {
-        let alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円\n所持ポイント9999point", preferredStyle: .Alert)
+        let alart  = UIAlertController(title: "何ポイント利用しますか？", message: "10pt = 1円\n所持ポイント:\(userInfo.objectForKey("point")!)point", preferredStyle: .Alert)
         let saveAction = UIAlertAction(title: "変換", style: .Default) { (action:UIAlertAction!) -> Void in
             let textField = alart.textFields![0] as UITextField
             print("change \(textField.text) point")

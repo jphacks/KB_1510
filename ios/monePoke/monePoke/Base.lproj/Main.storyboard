@@ -26,6 +26,7 @@
                                 <animations/>
                                 <state key="normal" image="joinBtn.png"/>
                                 <connections>
+                                    <action selector="joinPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fLb-cL-aAS"/>
                                     <segue destination="cjZ-fN-MeE" kind="modal" id="4X1-mo-5g6"/>
                                 </connections>
                             </button>
@@ -265,7 +266,7 @@
         <!--Location View-->
         <scene sceneID="WQQ-Fu-amp">
             <objects>
-                <viewController id="Ra7-j1-fAA" customClass="locationView" customModule="monePoke" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="locationViewController" id="Ra7-j1-fAA" customClass="locationView" customModule="monePoke" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rxd-Ny-SWj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -280,7 +281,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="JHm-oi-nwQ">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="cjZ-fN-MeE" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarController" automaticallyAdjustsScrollViewInsets="NO" id="cjZ-fN-MeE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="HAo-rq-Gvx">
                         <autoresizingMask key="autoresizingMask"/>

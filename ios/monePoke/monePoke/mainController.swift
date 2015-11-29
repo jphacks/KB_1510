@@ -27,11 +27,13 @@ class mainController: UIViewController,MKMapViewDelegate,CLLocationManagerDelega
 
         pointLabel.frame = CGRectMake(0, UIScreen.mainScreen().bounds.height/15, UIScreen.mainScreen().bounds.width * 4 / 5, mapView.frame.minY - UIScreen.mainScreen().bounds.height/15)
         pointLabel.font = UIFont(name: "Chalkduster", size: 50)
+        pointLabel.text = "\(userInfo.objectForKey("point")!)"
         
         plabel.center = CGPoint(x: pointLabel.frame.maxX + 25, y: pointLabel.frame.midY + 20)
         plabel.font = UIFont(name: "Chalkduster", size: 17)
         
         userLabel.font = UIFont(name: "Chalkduster", size: 22)
+        userLabel.text = "\(userInfo.objectForKey("name")!)様"
         
         myLocation = CLLocationManager()
         myLocation.delegate = self
@@ -98,6 +100,9 @@ class mainController: UIViewController,MKMapViewDelegate,CLLocationManagerDelega
     func mapView(mapView: MKMapView, didAddAnnotationViews views: [MKAnnotationView]) {
         for view in views {
             view.rightCalloutAccessoryView = UIButton(type: UIButtonType.DetailDisclosure)
+//            let toLocationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("locationViewController")
+//            toLocationController.modalTransitionStyle = UIModalTransitionStyle.CoverVertical
+//            self.presentViewController(toLocationController, animated: false, completion: nil)
         }
     }
     

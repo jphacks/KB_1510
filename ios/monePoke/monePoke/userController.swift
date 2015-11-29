@@ -22,10 +22,10 @@ class userController:UIViewController,UITextFieldDelegate {
 
         userName.center = CGPoint(x: UIScreen.mainScreen().bounds.width/2, y: UIScreen.mainScreen().bounds.height/4)
         userTextfiled.center = CGPoint(x: UIScreen.mainScreen().bounds.width/2, y: UIScreen.mainScreen().bounds.height/4 + 35)
-        userTextfiled.placeholder = "vajack"
+        userTextfiled.placeholder = "\(userInfo.objectForKey("name")!)"
         userTextfiled.delegate = self
         yourPimg.center = CGPoint(x: UIScreen.mainScreen().bounds.width/2, y: UIScreen.mainScreen().bounds.height/2)
-        pointLabel.text = "999999point"
+        pointLabel.text = "\(userInfo.objectForKey("point")!)point"
         pointLabel.font = UIFont(name: "Chalkduster", size: 35)
         pointLabel.center = CGPoint(x: UIScreen.mainScreen().bounds.width/2, y: UIScreen.mainScreen().bounds.height/2 + 50)
         pointLabel.layer.cornerRadius = 10
@@ -45,6 +45,23 @@ class userController:UIViewController,UITextFieldDelegate {
 
     @IBAction func changePush(sender: AnyObject) {
         
+        if userTextfiled.text == "" {
+            let sucAlert = UIAlertController(title: "ユーザ名を入力してください．", message: "", preferredStyle: .Alert)
+            let okAction = UIAlertAction(title: "OK", style: .Default, handler: { (action:UIAlertAction!) -> Void in
+            })
+            sucAlert.addAction(okAction)
+            self.presentViewController(sucAlert, animated: true, completion: nil)
+        }else{
+            let sucAlert = UIAlertController(title: "プロフィールを変更しました！", message: "変更名:\(userTextfiled.text!)", preferredStyle: .Alert)
+            let okAction = UIAlertAction(title: "OK", style: .Default, handler: { (action:UIAlertAction!) -> Void in
+                userInfo.setObject(self.userTextfiled.text!, forKey: "name")
+                self.userTextfiled.text = ""
+            })
+            sucAlert.addAction(okAction)
+            self.presentViewController(sucAlert, animated: true, completion: nil)
+        }
+        
+
     }
 
 }
