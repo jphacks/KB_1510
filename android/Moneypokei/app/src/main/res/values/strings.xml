@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Moneypokei</string>
+    <string name="map">https://www.google.co.jp/maps</string>
+    <string name="google_maps_key">AIzaSyChPAK_1wYXdQCtOF2zMKa-o-fZvUBayMo</string>
+</resources>

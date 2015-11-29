@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="place_number">4</integer>
+    <string-array name="place1">
+        <item>ミント神戸</item>
+        <item>20</item>
+        <item>34.694404</item>
+        <item>135.196027</item>
+        <item>http://mint-kobe.jp/</item>
+        <item>ショッピングからイベント会場まで！</item>
+        <item>mint</item>
+    </string-array>
+    <string-array name="place2">
+        <item>神戸ポートタワー</item>
+        <item>30</item>
+        <item>34.682631</item>
+        <item>135.186724</item>
+        <item>http://www.kobe-port-tower.com/</item>
+        <item>神戸の象徴とシンボル</item>
+        <item>mint</item>
+    </string-array>
+    <string-array name="place3">
+        <item>老祥記</item>
+        <item>40</item>
+        <item>34.685716</item>
+        <item>135.182215</item>
+        <item>http://roushouki.com/</item>
+        <item>豚まん！</item>
+        <item>mint</item>
+    </string-array>
+    <string-array name="place4">
+        <item>モザイク</item>
+        <item>50</item>
+        <item>34.679907</item>
+        <item>135.184402</item>
+        <item>http://umie.jp/</item>
+        <item>モール</item>
+        <item>mint</item>
+    </string-array>
+</resources>
