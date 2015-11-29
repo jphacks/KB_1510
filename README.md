@@ -27,7 +27,7 @@ monepocey(マネポケイ)
 
 #### フレームワーク・ライブラリ・モジュール
 * Cakephp
-* 
+* 仕様書解説　https://github.com/jphacks/KB_10/blob/master/redume/moneguide.md
 
 #### デバイス
 * iOS
