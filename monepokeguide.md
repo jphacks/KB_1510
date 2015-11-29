@@ -127,10 +127,10 @@ monepokeyのユーザー情報を格納するコントローラー。短期的�
 documentroot/usersjson ユーザーのjsonURL
   documentroot/placesjson 各地の場所のjsonURL
   
-  ####3-1. getDataruby
+####3-1. getDataruby
     rubyスクレイピングによる、周平情報の取得用。csvに一旦格納し、sqlにインポートします。
     
-  ####3-2. README
+####3-2. README
   meファイルを格納した、説明用のテキストディレクトリです。
 
 ***
